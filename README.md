@@ -73,3 +73,7 @@ AI-Convert/
 3. `AGENTS.md`
 
 然后说明当前要继续的 Phase，例如“继续 Phase 5：Excel 转 Markdown”。
+
+## SEO 与部署前配置
+
+站点已包含 `robots.txt`、`sitemap.xml` 与 `llms.txt`。目前站点地图以 GitHub Pages 的预期地址 `https://zhltzh.github.io/AI-Convert/` 为基准；若部署到自己的域名、Cloudflare Pages、Vercel 或 Netlify，请先替换其中的站点地址。

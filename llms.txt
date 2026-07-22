@@ -1,0 +1,18 @@
+# AI Convert
+
+AI Convert is a free, browser-based AI content conversion platform. It helps users turn AI-generated Markdown content into professional documents and knowledge-base formats without uploading files to a server.
+
+## Main tools
+
+- Markdown to Word: /tools/markdown-to-word.html
+- Markdown to PDF: /tools/markdown-to-pdf.html
+- Excel to Markdown: /tools/excel-to-markdown.html
+- WeChat Markdown formatter: /tools/wechat-format.html
+
+## Supported AI content sources
+
+DeepSeek, ChatGPT, Claude, Gemini, Doubao, Tongyi Qianwen, and Kimi.
+
+## Purpose
+
+Convert AI-generated content into Word documents, PDF documents, Markdown knowledge-base content, and WeChat-ready rich text. Processing happens locally in the user's browser.
