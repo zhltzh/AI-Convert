@@ -1,0 +1,13 @@
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+# Local tooling and dependencies
+node_modules/
+.env
+.env.*
+npm-debug.log*
+
+# Editor settings
+.vscode/
+.idea/
