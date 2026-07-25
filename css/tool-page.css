@@ -1,4 +1,8 @@
 .tool-hero { padding: 88px 0 52px; text-align: center; }
+.tool-hero { background: radial-gradient(circle at 50% -25%, var(--color-accent-soft, #eff6ff) 0, rgba(255,255,255,0) 56%); }
+.converter .button--primary { background: var(--color-accent, #2563eb); border-color: var(--color-accent, #2563eb); }
+.converter .button--primary:hover { background: var(--color-accent-strong, #1d4ed8); }
+html[lang="zh-CN"] { --color-accent: #0f766e; --color-accent-strong: #0b5f59; --color-accent-soft: #edf9f6; }
 .tool-hero h1 { margin-bottom: 18px; font-size: clamp(40px, 6vw, 64px); letter-spacing: -.065em; line-height: 1.08; }
 .tool-hero__lead { max-width: 640px; margin: 0 auto; color: var(--color-muted); font-size: 17px; line-height: 1.75; }
 .breadcrumb { display: flex; justify-content: center; gap: 8px; margin-bottom: 26px; color: var(--color-muted); font-size: 13px; }

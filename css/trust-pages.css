@@ -1,0 +1,10 @@
+.trust-page { width: min(780px, calc(100% - 48px)); margin: 0 auto; padding: 84px 0 110px; }
+.trust-page h1 { margin: 12px 0 20px; font-size: clamp(38px, 6vw, 58px); letter-spacing: -.065em; line-height: 1.1; }
+.trust-page h2 { margin: 50px 0 16px; font-size: 26px; letter-spacing: -.045em; }
+.trust-page p, .trust-page li { color: #393939; line-height: 1.85; }
+.trust-page ul { padding-left: 1.4em; }
+.trust-page__lead { color: var(--color-muted); font-size: 18px; line-height: 1.75; }
+.trust-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--color-border); }
+.trust-list li { display: grid; grid-template-columns: 112px 1fr; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--color-border); }
+.trust-list time { color: var(--color-soft); font-family: var(--font-mono); font-size: 13px; }
+@media (max-width: 760px) { .trust-page { width: min(100% - 32px, 780px); padding: 56px 0 72px; } .trust-list li { grid-template-columns: 1fr; gap: 5px; } }

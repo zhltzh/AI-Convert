@@ -63,7 +63,7 @@ exportButton.addEventListener('click', async () => {
   exportButton.disabled = true;
   exportButton.textContent = '正在生成…';
   try {
-    const html = await renderMarkdown(input.value, { sanitize: false });
+    const html = await renderMarkdown(input.value);
     await exportWord(html);
     status.textContent = 'Word 文件已开始下载';
   } catch (error) {
