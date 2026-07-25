@@ -17,9 +17,9 @@ const sample = `# AI 内容整理示例
 
 > AI Convert 的所有转换都在浏览器本地完成。
 
-```text
+\`\`\`text
 Markdown → HTML → PDF
-````;
+\`\`\``;
 
 document.querySelector('#site-header').innerHTML = renderHeader();
 document.querySelector('#site-footer').innerHTML = renderFooter();
