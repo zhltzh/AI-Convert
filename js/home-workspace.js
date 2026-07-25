@@ -116,6 +116,9 @@ function wireOfficeWorkspace() {
   const copyButton = document.querySelector('#copy-office');
   const downloadButton = document.querySelector('#download-office');
   fileInput.addEventListener('change', async () => {
+    output.value = '';
+    copyButton.disabled = true;
+    downloadButton.disabled = true;
     try {
       const [file] = fileInput.files;
       if (!file) return;

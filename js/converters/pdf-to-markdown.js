@@ -1,5 +1,7 @@
 const PDFJS_CDN = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@5.4.149/build/pdf.min.mjs';
 const PDF_WORKER_CDN = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@5.4.149/build/pdf.worker.min.mjs';
+const PDF_CMAP_CDN = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@5.4.149/cmaps/';
+const PDF_STANDARD_FONTS_CDN = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@5.4.149/standard_fonts/';
 const MAX_FILE_BYTES = 20 * 1024 * 1024;
 const MAX_PAGES = 100;
 let pdfJsLoader;
@@ -41,7 +43,14 @@ export async function readPdfAsMarkdown(file) {
   if (file.size > MAX_FILE_BYTES) throw new Error('文件超过 20MB。请使用更小的 PDF 文件后重试。');
   const pdfjs = await loadPdfJs();
   let pdf;
-  try { pdf = await pdfjs.getDocument({ data: new Uint8Array(await file.arrayBuffer()) }).promise; }
+  try {
+    pdf = await pdfjs.getDocument({
+      data: new Uint8Array(await file.arrayBuffer()),
+      cMapUrl: PDF_CMAP_CDN,
+      cMapPacked: true,
+      standardFontDataUrl: PDF_STANDARD_FONTS_CDN,
+    }).promise;
+  }
   catch { throw new Error('无法读取该 PDF。请确认文件未加密、未损坏，且包含可选中的文字。'); }
   if (pdf.numPages > MAX_PAGES) throw new Error(`PDF 共 ${pdf.numPages} 页，超过单次 ${MAX_PAGES} 页限制。`);
   const pages = [];
