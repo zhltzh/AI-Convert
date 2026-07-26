@@ -19,7 +19,9 @@ for (const file of requiredRootFiles) {
 }
 
 const allFiles = await walk(root);
-const htmlFiles = allFiles.filter((file) => file.endsWith('.html'));
+const htmlFiles = allFiles.filter((file) => (
+  file.endsWith('.html') && !/^baidu_verify_[^/\\]+\.html$/i.test(relative(root, file))
+));
 const errors = [];
 
 for (const file of htmlFiles) {
