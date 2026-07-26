@@ -15,7 +15,7 @@ const sample = `# AI 内容整理示例
 2. 选择需要的格式
 3. 下载并分享文档
 
-> AI Convert 的所有转换都在浏览器本地完成。
+> Aixuno 的所有转换都在浏览器本地完成。
 
 \`\`\`text
 Markdown → HTML → PDF

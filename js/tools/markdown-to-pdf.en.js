@@ -4,7 +4,7 @@ import { renderPreviewPanel } from '../components/preview-panel.js';
 import { renderMarkdown } from '../core/markdown-engine.js';
 import { exportPdf } from '../exporters/pdf-export.js';
 
-const sample = `# AI content brief\n\nCreate a clean PDF from an AI-generated Markdown answer.\n\n## Three steps\n\n1. Paste your content\n2. Check the preview\n3. Download a shareable PDF\n\n> AI Convert handles the conversion locally in your browser.`;
+const sample = `# AI content brief\n\nCreate a clean PDF from an AI-generated Markdown answer.\n\n## Three steps\n\n1. Paste your content\n2. Check the preview\n3. Download a shareable PDF\n\n> Aixuno handles the conversion locally in your browser.`;
 
 document.querySelector('#site-header').innerHTML = renderEnglishHeader();
 document.querySelector('#site-footer').innerHTML = renderEnglishFooter();

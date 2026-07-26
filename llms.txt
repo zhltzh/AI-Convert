@@ -1,6 +1,6 @@
-# AI Convert
+# Aixuno
 
-AI Convert is a free, browser-based AI content conversion platform. It helps users turn AI-generated Markdown content into professional documents and knowledge-base formats without uploading files to a server.
+Aixuno is a free, browser-based AI content conversion platform. It helps users turn AI-generated Markdown content into professional documents and knowledge-base formats without uploading files to a server.
 
 ## Main tools
 
