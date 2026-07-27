@@ -4,7 +4,7 @@ import { renderPreviewPanel } from '../components/preview-panel.js';
 import { renderMarkdown } from '../core/markdown-engine.js';
 import { exportWord } from '../exporters/word-export.js';
 
-const sample = `# AI content brief\n\nTurn an AI answer into a document you can edit, share, and keep.\n\n## Key points\n\n- No sign-up\n- Processed locally in your browser\n- Supports common Markdown structure\n\n> Copy an answer from ChatGPT, DeepSeek, Claude, or Gemini and export it as a Word file.\n\n| Source | Output |\n| --- | --- |\n| ChatGPT | Word |\n| DeepSeek | Word |`;
+const sample = `# AI content brief\n\nTurn an AI answer into a document you can edit, share, and keep.\n\n## Key points\n\n- No sign-up\n- Processed locally in your browser\n- Supports common Markdown structure\n\n> Copy an answer from ChatGPT, Claude, Gemini, or Copilot and export it as a Word file.\n\n| Source | Output |\n| --- | --- |\n| ChatGPT | Word |\n| Gemini | Word |`;
 
 document.querySelector('#site-header').innerHTML = renderEnglishHeader();
 document.querySelector('#site-footer').innerHTML = renderEnglishFooter();
