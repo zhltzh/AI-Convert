@@ -35,7 +35,7 @@ function createPrintContainer(html) {
   return container;
 }
 
-export async function exportPdf(html, filename = 'ai-convert-document.pdf') {
+export async function exportPdf(html, filename = 'aixuno-document.pdf') {
   if (!html.trim()) throw new Error('请先输入需要转换的 Markdown 内容。');
   const html2pdf = await loadPdfExporter();
   const container = createPrintContainer(html);

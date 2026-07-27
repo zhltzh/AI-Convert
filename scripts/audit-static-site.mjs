@@ -1,5 +1,5 @@
 import { readFile, readdir } from 'node:fs/promises';
-import { join, relative } from 'node:path';
+import { dirname, join, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
@@ -31,6 +31,20 @@ for (const file of htmlFiles) {
   if (!/<meta\s+name="description"/i.test(html) && !label.endsWith('404.html')) errors.push(`${label}: missing description`);
   if (!/<html\s+lang="[^"]+"/i.test(html)) errors.push(`${label}: missing language marker`);
   if (/\son\w+\s*=/i.test(html)) errors.push(`${label}: contains inline event handler`);
+
+  const localLinks = [...html.matchAll(/href="([^"]+)"/gi)]
+    .map((match) => match[1].split(/[?#]/)[0])
+    .filter((href) => href && !/^(?:https?:|mailto:|tel:|javascript:)/i.test(href));
+
+  for (const href of localLinks) {
+    let target = resolve(dirname(file), decodeURIComponent(href));
+    if (href.endsWith('/')) target = join(target, 'index.html');
+    try {
+      await readFile(target);
+    } catch {
+      errors.push(`${label}: broken local link ${href}`);
+    }
+  }
 }
 
 const sitemap = await readFile(join(root, 'sitemap.xml'), 'utf8');

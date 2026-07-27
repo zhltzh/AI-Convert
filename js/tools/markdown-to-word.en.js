@@ -23,5 +23,5 @@ async function updatePreview() {
   catch (error) { if (pendingRender === request) status.textContent = error.message; }
 }
 input.addEventListener('input', () => { clearTimeout(input.renderTimer); input.renderTimer = setTimeout(updatePreview, 180); });
-exportButton.addEventListener('click', async () => { exportButton.disabled = true; exportButton.textContent = 'Creating document…'; try { await exportWord(await renderMarkdown(input.value), 'ai-convert-document.docx'); status.textContent = 'Your Word document is downloading.'; } catch { status.textContent = 'Unable to create the document. Check your connection and try again.'; } finally { exportButton.disabled = false; exportButton.innerHTML = 'Download Word <span aria-hidden="true">→</span>'; } });
+exportButton.addEventListener('click', async () => { exportButton.disabled = true; exportButton.textContent = 'Creating document…'; try { await exportWord(await renderMarkdown(input.value), 'aixuno-document.docx'); status.textContent = 'Your Word document is downloading.'; } catch { status.textContent = 'Unable to create the document. Check your connection and try again.'; } finally { exportButton.disabled = false; exportButton.innerHTML = 'Download Word <span aria-hidden="true">→</span>'; } });
 updatePreview();

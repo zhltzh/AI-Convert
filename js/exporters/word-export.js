@@ -32,7 +32,7 @@ function createDocument(html) {
   </style></head><body>${html}</body></html>`;
 }
 
-export async function exportWord(html, filename = 'ai-convert-document.docx') {
+export async function exportWord(html, filename = 'aixuno-document.docx') {
   if (!html.trim()) throw new Error('请先输入需要转换的 Markdown 内容。');
   const exporter = await loadWordExporter();
   const blob = exporter.asBlob(createDocument(html));
