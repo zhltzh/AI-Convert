@@ -124,3 +124,5 @@
   .hero h1, .home--zh .hero h1 { font-size: 43px; }
   .hero-tool-links { gap: 7px 14px; margin-top: 18px; }
 }
+
+.language-menu{position:relative}.language-menu summary{cursor:pointer;list-style:none;white-space:nowrap}.language-menu summary::-webkit-details-marker{display:none}.language-menu__list{position:absolute;right:0;top:calc(100% + .65rem);z-index:30;display:grid;min-width:10rem;padding:.55rem;background:#fff;border:1px solid var(--color-border,#e5e7eb);border-radius:.8rem;box-shadow:0 16px 36px rgba(15,23,42,.14)}.language-menu__list a{padding:.55rem .7rem;border-radius:.5rem}.language-menu__list a:hover{background:#fff7ed}@media(max-width:760px){.language-menu__list{right:0}.nav>a:nth-child(2),.nav>a:nth-child(3){display:none}}

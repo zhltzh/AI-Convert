@@ -1,41 +1,47 @@
 # Aixuno
 
-Aixuno is a free, browser-based AI content conversion platform. It helps users turn AI-generated Markdown content into professional documents and knowledge-base formats without uploading files to a server.
+Aixuno is a free, browser-based Markdown and AI content conversion platform. Content is processed locally without uploading files to an Aixuno application server.
 
-## Main tools
+## Default English tools
 
 - Markdown to Word: /tools/markdown-to-word.html
 - Markdown to PDF: /tools/markdown-to-pdf.html
-- Excel to Markdown: /tools/excel-to-markdown.html
-- WeChat Markdown formatter: /tools/wechat-format.html
+- Markdown to HTML: /tools/markdown-to-html.html
+- Office files to Markdown: /tools/excel-to-markdown.html
 
-## English tools
+## Language versions
 
-- Markdown to Word: /en/tools/markdown-to-word.html
-- Markdown to PDF: /en/tools/markdown-to-pdf.html
-- Excel to Markdown: /en/tools/excel-to-markdown.html
+- English: /
+- Simplified Chinese: /zh/
+- Spanish: /es/
+- German: /de/
+- Japanese: /ja/
+- French: /fr/
+
+Each language homepage contains working Markdown to Word, Markdown to PDF, Markdown to HTML, and office-file-to-Markdown workflows.
 
 ## English guides
 
-- Convert DeepSeek answers to Word: /en/guides/deepseek-to-word.html
-- Export ChatGPT answers to Word: /en/guides/chatgpt-to-word.html
-- Choose Word, PDF, or Markdown for an AI answer: /en/guides/how-to-export-ai-answer.html
+- Export ChatGPT answers to Word: /guides/chatgpt-to-word.html
+- Convert DeepSeek answers to Word: /guides/deepseek-to-word.html
+- Excel and CSV to Markdown: /guides/excel-to-markdown-guide.html
+- Choose an export format for AI content: /guides/how-to-export-ai-answer.html
+
+## Chinese content
+
+- Chinese homepage: /zh/
+- Chinese Markdown to WeChat formatter: /zh/tools/wechat-format.html
+- Chinese guides: /zh/guides/
 
 ## Supported AI content sources
 
-DeepSeek, ChatGPT, Claude, Gemini, Doubao, Tongyi Qianwen, and Kimi.
-
-## Chinese guides
-
-- Convert an MD file to Word: /guides/md-file-to-word.html
-- Format AI content for WeChat Official Accounts: /guides/ai-content-to-wechat.html
-
-## Purpose
-
-Convert AI-generated content into Word documents, PDF documents, Markdown knowledge-base content, and WeChat-ready rich text. Processing happens locally in the user's browser.
+The international versions are designed for content from ChatGPT, Claude, Gemini, Microsoft Copilot, Perplexity, Grok, and other assistants. The Chinese version additionally covers DeepSeek, Doubao, Tencent Yuanbao, Qwen, and ERNIE Bot.
 
 ## Trust and product information
 
-- About: /about.html and /en/about.html
-- Privacy: /privacy.html and /en/privacy.html
-- Changelog: /changelog.html and /en/changelog.html
+- About: /about.html
+- Contact: /contact.html
+- Privacy: /privacy.html
+- Terms: /terms.html
+- Disclaimer: /disclaimer.html
+- Changelog: /changelog.html
