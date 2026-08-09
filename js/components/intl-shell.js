@@ -34,5 +34,5 @@ export function renderIntlFooter() {
     fr:['À propos','Contact','Confidentialité','Conditions','Mentions légales','Modifications','Votre contenu reste dans votre navigateur.']
   }[locale.code] || ['About','Contact','Privacy','Terms','Disclaimer','Changelog','Your content stays in your browser.'];
   const pages=['about.html','contact.html','privacy.html','terms.html','disclaimer.html','changelog.html'];
-  return `<footer class="site-footer"><div class="container site-footer__inner"><span>© ${new Date().getFullYear()} Aixuno</span><span class="footer-links">${pages.map((p,i)=>`<a href="${prefix}${p}">${words[i]}</a>`).join('')}</span><span>${words[6]}</span></div></footer>`;
+  return `<footer class="site-footer"><div class="container site-footer__inner"><span>© ${new Date().getFullYear()} Aixuno</span><span class="footer-links">${pages.map((p,i)=>`<a href="${prefix}${p}">${words[i]}</a>`).join('')}<a href="https://image.aixuno.com/">Image Tools</a></span><span>${words[6]}</span></div></footer>`;
 }

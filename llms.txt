@@ -22,16 +22,25 @@ Each language homepage contains working Markdown to Word, Markdown to PDF, Markd
 
 ## English guides
 
+- Guide directory: /guides/
 - Export ChatGPT answers to Word: /guides/chatgpt-to-word.html
 - Convert DeepSeek answers to Word: /guides/deepseek-to-word.html
 - Excel and CSV to Markdown: /guides/excel-to-markdown-guide.html
 - Choose an export format for AI content: /guides/how-to-export-ai-answer.html
+- Copy an AI answer to Word without losing formatting: /guides/copy-ai-answer-to-word.html
+- Convert an AI response to PDF: /guides/ai-response-to-pdf.html
+- Move a Markdown table to Excel: /guides/markdown-table-to-excel.html
+- Convert Markdown to clean HTML: /guides/markdown-to-html-guide.html
 
 ## Chinese content
 
 - Chinese homepage: /zh/
 - Chinese Markdown to WeChat formatter: /zh/tools/wechat-format.html
 - Chinese guides: /zh/guides/
+
+## Related Aixuno product
+
+- Batch image conversion: https://image.aixuno.com/
 
 ## Supported AI content sources
 

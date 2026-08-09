@@ -48,7 +48,7 @@ for (const file of htmlFiles) {
 }
 
 const sitemap = await readFile(join(root, 'sitemap.xml'), 'utf8');
-for (const route of ['/zh/', '/es/', '/de/', '/ja/', '/fr/', '/tools/markdown-to-html.html', '/zh/tools/wechat-format.html', '/about.html', '/privacy.html']) {
+for (const route of ['/zh/', '/es/', '/de/', '/ja/', '/fr/', '/tools/markdown-to-html.html', '/zh/tools/wechat-format.html', '/about.html', '/privacy.html', '/guides/', '/zh/guides/', '/guides/copy-ai-answer-to-word.html', '/zh/guides/copy-ai-answer-to-word.html']) {
   if (!sitemap.includes(route)) errors.push(`sitemap.xml: missing ${route}`);
 }
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://aixuno.com/</loc><lastmod>2026-07-27</lastmod></url>
+  <url><loc>https://aixuno.com/</loc><lastmod>2026-08-09</lastmod></url>
   <url><loc>https://aixuno.com/about.html</loc><lastmod>2026-07-27</lastmod></url>
   <url><loc>https://aixuno.com/changelog.html</loc><lastmod>2026-07-27</lastmod></url>
   <url><loc>https://aixuno.com/contact.html</loc><lastmod>2026-07-27</lastmod></url>
@@ -26,6 +26,11 @@
   <url><loc>https://aixuno.com/guides/excel-to-markdown-guide.html</loc><lastmod>2026-07-27</lastmod></url>
   <url><loc>https://aixuno.com/guides/how-to-export-ai-answer.html</loc><lastmod>2026-07-27</lastmod></url>
   <url><loc>https://aixuno.com/guides/md-file-to-word.html</loc><lastmod>2026-07-27</lastmod></url>
+  <url><loc>https://aixuno.com/guides/</loc><lastmod>2026-08-09</lastmod></url>
+  <url><loc>https://aixuno.com/guides/copy-ai-answer-to-word.html</loc><lastmod>2026-08-09</lastmod></url>
+  <url><loc>https://aixuno.com/guides/ai-response-to-pdf.html</loc><lastmod>2026-08-09</lastmod></url>
+  <url><loc>https://aixuno.com/guides/markdown-table-to-excel.html</loc><lastmod>2026-08-09</lastmod></url>
+  <url><loc>https://aixuno.com/guides/markdown-to-html-guide.html</loc><lastmod>2026-08-09</lastmod></url>
   <url><loc>https://aixuno.com/ja/</loc><lastmod>2026-07-27</lastmod></url>
   <url><loc>https://aixuno.com/ja/tools/excel-to-markdown.html</loc><lastmod>2026-07-27</lastmod></url>
   <url><loc>https://aixuno.com/ja/tools/markdown-to-html.html</loc><lastmod>2026-07-27</lastmod></url>
@@ -38,7 +43,7 @@
   <url><loc>https://aixuno.com/tools/markdown-to-pdf.html</loc><lastmod>2026-07-27</lastmod></url>
   <url><loc>https://aixuno.com/tools/markdown-to-word.html</loc><lastmod>2026-07-27</lastmod></url>
   <url><loc>https://aixuno.com/tools/wechat-format.html</loc><lastmod>2026-07-27</lastmod></url>
-  <url><loc>https://aixuno.com/zh/</loc><lastmod>2026-07-27</lastmod></url>
+  <url><loc>https://aixuno.com/zh/</loc><lastmod>2026-08-09</lastmod></url>
   <url><loc>https://aixuno.com/zh/about.html</loc><lastmod>2026-07-27</lastmod></url>
   <url><loc>https://aixuno.com/zh/changelog.html</loc><lastmod>2026-07-27</lastmod></url>
   <url><loc>https://aixuno.com/zh/contact.html</loc><lastmod>2026-07-27</lastmod></url>
@@ -49,6 +54,11 @@
   <url><loc>https://aixuno.com/zh/guides/excel-to-markdown-guide.html</loc><lastmod>2026-07-27</lastmod></url>
   <url><loc>https://aixuno.com/zh/guides/how-to-export-ai-answer.html</loc><lastmod>2026-07-27</lastmod></url>
   <url><loc>https://aixuno.com/zh/guides/md-file-to-word.html</loc><lastmod>2026-07-27</lastmod></url>
+  <url><loc>https://aixuno.com/zh/guides/</loc><lastmod>2026-08-09</lastmod></url>
+  <url><loc>https://aixuno.com/zh/guides/copy-ai-answer-to-word.html</loc><lastmod>2026-08-09</lastmod></url>
+  <url><loc>https://aixuno.com/zh/guides/ai-response-to-pdf.html</loc><lastmod>2026-08-09</lastmod></url>
+  <url><loc>https://aixuno.com/zh/guides/markdown-table-to-excel.html</loc><lastmod>2026-08-09</lastmod></url>
+  <url><loc>https://aixuno.com/zh/guides/markdown-to-html-guide.html</loc><lastmod>2026-08-09</lastmod></url>
   <url><loc>https://aixuno.com/zh/privacy.html</loc><lastmod>2026-07-27</lastmod></url>
   <url><loc>https://aixuno.com/zh/terms.html</loc><lastmod>2026-07-27</lastmod></url>
   <url><loc>https://aixuno.com/zh/tools/excel-to-markdown.html</loc><lastmod>2026-07-27</lastmod></url>
