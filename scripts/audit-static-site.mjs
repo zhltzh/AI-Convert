@@ -30,6 +30,8 @@ for (const file of htmlFiles) {
   if (!/<title>[^<]+<\/title>/i.test(html)) errors.push(`${label}: missing title`);
   if (!/<meta\s+name="description"/i.test(html) && !label.endsWith('404.html')) errors.push(`${label}: missing description`);
   if (!/<html\s+lang="[^"]+"/i.test(html)) errors.push(`${label}: missing language marker`);
+  if (!html.includes('<script defer src="/js/analytics.js"></script>')) errors.push(`${label}: missing analytics marker`);
+  if ((html.match(/\/js\/analytics\.js/g) || []).length !== 1) errors.push(`${label}: analytics marker must appear once`);
   if (/\son\w+\s*=/i.test(html)) errors.push(`${label}: contains inline event handler`);
 
   const localLinks = [...html.matchAll(/href="([^"]+)"/gi)]
