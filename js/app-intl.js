@@ -1,5 +1,10 @@
 import { renderIntlHeader, renderIntlFooter } from './components/intl-shell.js';
 import { mountIntlWorkspace } from './home-workspace.intl.js';
+import { rememberLocaleLinks } from './core/locale.js';
+import { mountEcosystem } from './components/ecosystem.js';
+import './language-router.js';
 document.querySelector('#site-header').innerHTML=renderIntlHeader();
 document.querySelector('#site-footer').innerHTML=renderIntlFooter();
+rememberLocaleLinks();
+mountEcosystem(document.documentElement.lang.split('-')[0]);
 mountIntlWorkspace({cards:document.querySelector('#mode-cards'),workspace:document.querySelector('#workspace')});

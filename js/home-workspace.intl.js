@@ -6,8 +6,20 @@ import { readDocxAsMarkdown } from './converters/docx-to-markdown.js';
 import { readPdfAsMarkdown } from './converters/pdf-to-markdown.js';
 import { downloadBlob } from './core/download.js';
 import { getLocale } from './i18n/home-locales.js';
+import { renderMarkdownUpload, wireMarkdownUpload } from './components/markdown-upload.js';
 
 const locale = getLocale();
+const uploadCopy = {
+  en:{title:'Drop a Markdown file here, or click to choose',hint:'Supports .md and .markdown · 5 MB max · processed locally',invalid:'Choose a .md or .markdown file.',readError:'This Markdown file could not be read.',loaded:'Loaded {name}. You can export it now.'},
+  es:{title:'Arrastra un archivo Markdown aquí o haz clic para elegirlo',hint:'Admite .md y .markdown · máximo 5 MB · procesamiento local',invalid:'Elige un archivo .md o .markdown.',readError:'No se pudo leer el archivo Markdown.',loaded:'{name} cargado. Ya puedes exportarlo.'},
+  de:{title:'Markdown-Datei hier ablegen oder zum Auswählen klicken',hint:'Unterstützt .md und .markdown · max. 5 MB · lokale Verarbeitung',invalid:'Bitte eine .md- oder .markdown-Datei auswählen.',readError:'Die Markdown-Datei konnte nicht gelesen werden.',loaded:'{name} geladen. Die Datei kann jetzt exportiert werden.'},
+  ja:{title:'Markdownファイルをここにドロップ、またはクリックして選択',hint:'.md・.markdown対応 · 最大5MB · ローカル処理',invalid:'.mdまたは.markdownファイルを選択してください。',readError:'Markdownファイルを読み込めませんでした。',loaded:'{name}を読み込みました。書き出しできます。'},
+  fr:{title:'Déposez un fichier Markdown ici ou cliquez pour le choisir',hint:'Formats .md et .markdown · 5 Mo max. · traitement local',invalid:'Choisissez un fichier .md ou .markdown.',readError:'Impossible de lire ce fichier Markdown.',loaded:'{name} chargé. Vous pouvez maintenant l’exporter.'}
+}[locale.code];
+locale.workspace.drop = uploadCopy;
+locale.workspace.fileInvalid = uploadCopy.invalid;
+locale.workspace.fileReadError = uploadCopy.readError;
+locale.workspace.loaded = uploadCopy.loaded;
 const modes = locale.modes;
 const drafts = new Map();
 let activeMode = document.body.dataset.mode || new URLSearchParams(location.search).get('mode') || 'word';
@@ -22,7 +34,7 @@ function cardMarkup(mode) {
 function markdownWorkspace(mode) {
   const t = locale.workspace;
   const htmlExtra = mode.id === 'html' ? '<button class="button button--secondary" type="button" id="download-html">Download HTML</button>' : '';
-  return `<div class="workspace__top"><div><p class="eyebrow">${mode.label}</p><h2>${mode.title}</h2><p>${mode.description}</p></div></div><div class="editor-grid"><div class="editor-pane"><div class="pane-title"><label for="home-markdown">${t.input}</label><label class="utility-button">${t.upload}<input type="file" accept=".md,.markdown,text/markdown,text/plain" data-md-upload /></label></div><textarea id="home-markdown" rows="16" placeholder="${t.placeholder}">${drafts.get(mode.id) ?? ''}</textarea><p class="field-note">${t.support}</p></div><div class="preview-pane"><div class="pane-title"><p class="preview-pane__label">${t.preview}</p><button class="utility-button" type="button" id="copy-preview">${t.copyPreview}</button></div><article id="home-preview" class="markdown-preview"><p class="preview-empty">${t.empty}</p></article></div></div><div class="workspace__actions"><span class="status" id="workspace-status">${t.privacy}</span><button class="button button--primary" type="button" id="workspace-action">${mode.action}</button>${htmlExtra}</div>`;
+  return `<div class="workspace__top"><div><p class="eyebrow">${mode.label}</p><h2>${mode.title}</h2><p>${mode.description}</p></div></div><div class="editor-grid"><div class="editor-pane"><div class="pane-title"><label for="home-markdown">${t.input}</label></div>${renderMarkdownUpload(t.drop)}<textarea id="home-markdown" rows="16" placeholder="${t.placeholder}">${drafts.get(mode.id) ?? ''}</textarea><p class="field-note">${t.support}</p></div><div class="preview-pane"><div class="pane-title"><p class="preview-pane__label">${t.preview}</p><button class="utility-button" type="button" id="copy-preview">${t.copyPreview}</button></div><article id="home-preview" class="markdown-preview"><p class="preview-empty">${t.empty}</p></article></div></div><div class="workspace__actions"><span class="status" id="workspace-status">${t.privacy}</span><button class="button button--primary" type="button" id="workspace-action">${mode.action}</button>${htmlExtra}</div>`;
 }
 
 function officeWorkspace() {
@@ -57,7 +69,7 @@ async function wireMarkdownWorkspace(mode){
   const input=document.querySelector('#home-markdown');const preview=document.querySelector('#home-preview');let html='';
   const update=async()=>{drafts.set(mode.id,input.value);try{html=await renderMarkdown(input.value);preview.innerHTML=html||`<p class="preview-empty">${locale.workspace.empty}</p>`;}catch(error){setStatus(error.message,true);}};
   input.addEventListener('input',update);
-  document.querySelector('[data-md-upload]').addEventListener('change',async event=>{const[file]=event.target.files;if(!file)return;if(file.size>5*1024*1024){setStatus(locale.workspace.fileLarge,true);return;}input.value=await file.text();await update();setStatus(locale.workspace.loaded);});
+  wireMarkdownUpload({onFile:async text=>{input.value=text;await update();},setStatus,messages:{invalid:locale.workspace.fileInvalid,large:locale.workspace.fileLarge,loaded:locale.workspace.loaded,readError:locale.workspace.fileReadError}});
   await update();
   document.querySelector('#workspace-action').addEventListener('click',async()=>{try{html=await renderMarkdown(input.value);if(!html)throw new Error(locale.workspace.needContent);if(mode.id==='word')await exportWord(html,'aixuno-document.docx');if(mode.id==='pdf')await exportPdf(html,'aixuno-document.pdf');if(mode.id==='html'){await navigator.clipboard.writeText(html);setStatus(locale.workspace.htmlCopied);return;}setStatus(locale.workspace.downloaded);}catch(error){setStatus(error.message,true);}});
   document.querySelector('#copy-preview').addEventListener('click',async()=>{try{await copyRichText(await renderMarkdown(input.value));setStatus(locale.workspace.previewCopied);}catch(error){setStatus(error.message,true);}});

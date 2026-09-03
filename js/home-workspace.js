@@ -6,6 +6,7 @@ import { readSpreadsheet } from './converters/excel-to-md.js';
 import { readDocxAsMarkdown } from './converters/docx-to-markdown.js';
 import { readPdfAsMarkdown } from './converters/pdf-to-markdown.js';
 import { downloadBlob } from './core/download.js';
+import { renderMarkdownUpload, wireMarkdownUpload } from './components/markdown-upload.js';
 
 const modes = [
   { id: 'word', target: 'W', title: 'Markdown 转 Word', label: '文档交付', description: '将 Markdown 内容或 MD 文件转为可编辑 Word 文档。', action: '下载 Word' },
@@ -26,7 +27,7 @@ function cardMarkup(mode) {
 function markdownWorkspace(mode) {
   const isWechat = mode.id === 'wechat';
   const placeholder = '在这里粘贴 Markdown 内容，例如来自 DeepSeek、豆包、ChatGPT 或 Claude 的回答…';
-  return `<div class="workspace__top"><div><p class="eyebrow">${mode.label}</p><h2>${mode.title}</h2><p>${mode.description}</p></div></div><div class="editor-grid"><div class="editor-pane"><div class="pane-title"><label for="home-markdown">Markdown 内容</label><label class="utility-button">上传 MD 文件<input type="file" accept=".md,.markdown,text/markdown,text/plain" data-md-upload /></label></div><textarea id="home-markdown" rows="16" placeholder="${placeholder}">${drafts.get(mode.id) ?? ''}</textarea><p class="field-note">支持标题、列表、表格、引用和代码块。</p></div><div class="preview-pane"><div class="pane-title"><p class="preview-pane__label">实时预览</p><button class="utility-button" type="button" id="copy-preview">复制预览</button></div><article id="home-preview" class="markdown-preview"><p class="preview-empty">粘贴内容后，会在这里显示预览。</p></article></div></div><div class="workspace__actions"><span class="status" id="workspace-status">支持 DeepSeek、豆包、腾讯元宝、通义千问、文心一言、ChatGPT、Claude 等 AI 内容；内容只在当前浏览器中处理。</span><button class="button button--primary" type="button" id="workspace-action">${mode.action}</button>${isWechat ? '<button class="button button--secondary" type="button" id="wechat-theme">切换简洁主题</button>' : ''}</div>`;
+  return `<div class="workspace__top"><div><p class="eyebrow">${mode.label}</p><h2>${mode.title}</h2><p>${mode.description}</p></div></div><div class="editor-grid"><div class="editor-pane"><div class="pane-title"><label for="home-markdown">Markdown 内容</label></div>${renderMarkdownUpload({title:'将 Markdown 文件拖到这里，或点击选择文件',hint:'支持 .md、.markdown · 最大 5MB · 文件仅在本地处理'})}<textarea id="home-markdown" rows="16" placeholder="${placeholder}">${drafts.get(mode.id) ?? ''}</textarea><p class="field-note">支持标题、列表、表格、引用和代码块。</p></div><div class="preview-pane"><div class="pane-title"><p class="preview-pane__label">实时预览</p><button class="utility-button" type="button" id="copy-preview">复制预览</button></div><article id="home-preview" class="markdown-preview"><p class="preview-empty">粘贴内容后，会在这里显示预览。</p></article></div></div><div class="workspace__actions"><span class="status" id="workspace-status">支持 DeepSeek、豆包、腾讯元宝、通义千问、文心一言、ChatGPT、Claude 等 AI 内容；内容只在当前浏览器中处理。</span><button class="button button--primary" type="button" id="workspace-action">${mode.action}</button>${isWechat ? '<button class="button button--secondary" type="button" id="wechat-theme">切换简洁主题</button>' : ''}</div>`;
 }
 
 function officeWorkspace() {
@@ -78,14 +79,7 @@ async function wireMarkdownWorkspace(mode) {
     catch (error) { setStatus(error.message, true); }
   };
   input.addEventListener('input', updatePreview);
-  document.querySelector('[data-md-upload]').addEventListener('change', async (event) => {
-    const [file] = event.target.files;
-    if (!file) return;
-    if (file.size > 5 * 1024 * 1024) { setStatus('MD 文件不能超过 5MB。', true); return; }
-    input.value = await file.text();
-    await updatePreview();
-    setStatus(`已载入 ${file.name}，可直接${mode.action}。`);
-  });
+  wireMarkdownUpload({onFile:async text=>{input.value=text;await updatePreview();},setStatus,messages:{invalid:'请选择 .md 或 .markdown 格式的文件。',large:'Markdown 文件不能超过 5MB。',loaded:'已载入 {name}，可直接转换或导出。',readError:'无法读取该 Markdown 文件。'}});
   await updatePreview();
   document.querySelector('#workspace-action').addEventListener('click', async () => {
     try {
