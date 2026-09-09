@@ -34,5 +34,5 @@ export function renderIntlFooter() {
     fr:['À propos','Contact','Confidentialité','Conditions','Mentions légales','Modifications','Votre contenu reste dans votre navigateur.','Outils image','Détourage IA — Bientôt','Outils PDF — Bientôt']
   }[locale.code] || ['About','Contact','Privacy','Terms','Disclaimer','Changelog','Your content stays in your browser.'];
   const pages=['about.html','contact.html','privacy.html','terms.html','disclaimer.html','changelog.html'];
-  return `<footer class="site-footer"><div class="container site-footer__inner"><span>© ${new Date().getFullYear()} Aixuno</span><span class="footer-links">${pages.map((p,i)=>`<a href="${prefix}${p}">${words[i]}</a>`).join('')}<a href="https://image.aixuno.com/">${words[7]}</a><span>${words[8]}</span><span>${words[9]}</span></span><span>${words[6]}</span></div></footer>`;
+  return `<footer class="site-footer"><div class="container site-footer__inner"><span>© ${new Date().getFullYear()} Aixuno</span><span class="footer-links">${pages.map((p,i)=>`<a href="${prefix}${p}">${words[i]}</a>`).join('')}<a href="https://aixuno.com/">Markdown</a><a href="https://image.aixuno.com/">Pixkit</a><a href="https://compress.aixuno.com/">Compress</a><a href="https://pdf.aixuno.com/">PDF</a><a href="https://bg.aixuno.com/">AI Cutout</a></span><span>${words[6]}</span></div></footer>`;
 }
