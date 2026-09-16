@@ -18,6 +18,15 @@ html[lang="zh-CN"] { --color-accent: #0f766e; --color-accent-strong: #0b5f59; --
 .converter-panel__hint { color: var(--color-soft); font-size: 12px; font-weight: 400; }
 .markdown-editor { min-height: 390px; width: 100%; flex: 1; resize: vertical; border: 0; outline: 0; padding: 20px; color: var(--color-ink); font-family: var(--font-mono); font-size: 14px; line-height: 1.7; }
 .markdown-editor::placeholder { color: #a2a2a2; }
+#markdown-table-input { min-height: 390px; width: 100%; flex: 1; resize: vertical; border: 0; outline: 0; padding: 20px; color: var(--color-ink); font-family: var(--font-mono); font-size: 14px; line-height: 1.7; }
+#markdown-table-input:focus { box-shadow: inset 0 0 0 2px var(--color-accent); }
+#table-preview { flex: 1; overflow: auto; padding: 20px; }
+#table-preview section + section { margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--color-border); }
+#table-preview h3 { margin: 0 0 12px; font-size: 16px; }
+#table-preview .table-scroll { overflow-x: auto; }
+#table-preview table { width: 100%; border-collapse: collapse; font-size: 13px; }
+#table-preview th, #table-preview td { padding: 9px; border: 1px solid var(--color-border); text-align: left; vertical-align: top; }
+#table-preview th { background: var(--color-surface); }
 .preview-panel { flex: 1; overflow: auto; padding: 20px; color: #262626; font-size: 15px; line-height: 1.75; }
 .preview-panel:empty::before { content: '预览将在这里显示'; color: #999; }
 .preview-panel h1, .preview-panel h2, .preview-panel h3 { line-height: 1.25; letter-spacing: -.03em; }

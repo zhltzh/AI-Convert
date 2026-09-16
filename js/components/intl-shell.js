@@ -11,7 +11,7 @@ function pageSuffix() {
 
 function languageHref(code) {
   let suffix = pageSuffix();
-  if (code === 'zh' && suffix === 'tools/markdown-to-html.html') suffix = 'tools/wechat-format.html';
+  if (code === 'zh' && suffix === 'tools/markdown-to-html.html') return '/zh/';
   const prefix = code === 'en' ? '/' : `/${code}/`;
   return prefix + suffix;
 }

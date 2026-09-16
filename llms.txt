@@ -35,7 +35,7 @@ Each language homepage contains working Markdown to Word, Markdown to PDF, Markd
 ## Chinese content
 
 - Chinese homepage: /zh/
-- Chinese Markdown to WeChat formatter: /zh/tools/wechat-format.html
+- Chinese Markdown table to Excel / CSV: /zh/tools/markdown-table-to-excel.html
 - Chinese guides: /zh/guides/
 
 ## Related Aixuno product

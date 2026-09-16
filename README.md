@@ -11,6 +11,7 @@ AI Convert 面向 DeepSeek、ChatGPT、Claude、Gemini、豆包、通义千问�
 - Markdown 转 Word
 - Markdown 转 PDF
 - Excel 转 Markdown
+- Markdown 表格转 Excel / CSV
 
 ## 产品原则
 
@@ -43,7 +44,7 @@ AI Convert 面向 DeepSeek、ChatGPT、Claude、Gemini、豆包、通义千问�
 | Phase 4 | Markdown → PDF |
 | Phase 5 | Excel → Markdown |
 | Phase 6 | SEO 教程、AI 平台专题与案例内容 |
-| Phase 7 | 微信公众号排版独立模块 |
+| Phase 7 | Markdown 表格转 Excel / CSV |
 
 详细需求、页面规范、SEO/GEO 规则和开发约束见 [AI-Convert-PRD.md](AI-Convert-PRD.md)。
 

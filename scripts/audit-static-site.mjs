@@ -50,7 +50,7 @@ for (const file of htmlFiles) {
 }
 
 const sitemap = await readFile(join(root, 'sitemap.xml'), 'utf8');
-for (const route of ['/zh/', '/es/', '/de/', '/ja/', '/fr/', '/tools/markdown-to-html.html', '/zh/tools/wechat-format.html', '/about.html', '/privacy.html', '/guides/', '/zh/guides/', '/guides/copy-ai-answer-to-word.html', '/zh/guides/copy-ai-answer-to-word.html']) {
+for (const route of ['/zh/', '/es/', '/de/', '/ja/', '/fr/', '/tools/markdown-to-html.html', '/zh/tools/markdown-table-to-excel.html', '/about.html', '/privacy.html', '/guides/', '/zh/guides/', '/guides/copy-ai-answer-to-word.html', '/zh/guides/copy-ai-answer-to-word.html']) {
   if (!sitemap.includes(route)) errors.push(`sitemap.xml: missing ${route}`);
 }
 
@@ -59,7 +59,7 @@ if (errors.length) {
   process.exit(1);
 }
 
-for (const route of ['index.html', 'tools/markdown-to-word.html', 'tools/markdown-to-pdf.html', 'tools/excel-to-markdown.html', 'tools/markdown-to-html.html', 'zh/tools/wechat-format.html']) {
+for (const route of ['index.html', 'tools/markdown-to-word.html', 'tools/markdown-to-pdf.html', 'tools/excel-to-markdown.html', 'tools/markdown-to-html.html', 'zh/tools/markdown-table-to-excel.html']) {
   const html = await readFile(join(root, route), 'utf8');
   if (!/application\/ld\+json/i.test(html)) errors.push(`${route}: missing structured data`);
 }

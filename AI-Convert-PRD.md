@@ -29,7 +29,7 @@ AI Convert 不只是格式转换站。它的长期方向是连接 AI 生成、�
 | 用户 | 典型输入 | 需求 |
 | --- | --- | --- |
 | AI 办公用户 | 工作总结、方案、调研报告、产品文档 | 将 AI 输出快速整理为 Word |
-| 内容创作者 | 公众号、博客、小红书内容 | 排版并发布 AI 生成内容 |
+| 数据整理用户 | AI 生成的 Markdown 表格 | 导出 Excel 或 CSV 继续编辑 |
 | 知识管理用户 | Excel、PDF、Word 资料 | 转为 Markdown，导入 Obsidian、Notion 或 AI 知识库 |
 
 ## 4. 功能规划
@@ -41,13 +41,13 @@ AI Convert 不只是格式转换站。它的长期方向是连接 AI 生成、�
 | Markdown 转 Word | `/tools/markdown-to-word` | 最高优先级；承接 DeepSeek、ChatGPT 等内容导出需求 |
 | Markdown 转 PDF | `/tools/markdown-to-pdf` | 将 Markdown 内容导出为高质量 PDF |
 | Excel 转 Markdown | `/tools/excel-to-markdown` | 将 xlsx、xls、csv 表格转成 Markdown 表格 |
+| Markdown 表格转 Excel / CSV | `/tools/markdown-table-to-excel` | 将 AI 生成的 Markdown 表格导出为可编辑表格 |
 
 ### 后续工具
 
 - Markdown 转 HTML：`/tools/markdown-to-html`
 - Word 转 Markdown：`/tools/word-to-markdown`
 - PDF 转 Markdown：`/tools/pdf-to-markdown`
-- 微信公众号排版：`/tools/wechat-format`，作为独立内容发布工作流，最后开发。
 
 ## 5. 信息架构
 
@@ -114,6 +114,13 @@ Hero → 转换工作区 → 功能介绍 → 使用教程 → 应用场景 → 
 - 流程：Excel → SheetJS → 二维数组 → Markdown Table
 - 提供复制 Markdown 与下载 `.md` 操作。
 
+### Markdown 表格转 Excel / CSV
+
+- 识别标准 Markdown 表格，支持多表格。
+- 多表格导出 XLSX 时，每个表格对应一个工作表。
+- 提供 CSV 下载与制表符文本复制，方便粘贴到 Excel / WPS。
+- 解析与文件生成均在浏览器本地完成。
+
 ## 8. 设计系统
 
 设计风格参考 Apple 官网、Linear、Vercel：极简、高级、专业、留白、克制。
@@ -160,6 +167,7 @@ Hero → 转换工作区 → 功能介绍 → 使用教程 → 应用场景 → 
 Markdown → marked.js → HTML → html-docx-js → DOCX
 Markdown → HTML → html2pdf.js → PDF
 Excel → SheetJS → 二维数组 → Markdown Table
+Markdown Table → 二维数组 → SheetJS / CSV
 ```
 
 ## 10. 预计文件结构
@@ -249,7 +257,7 @@ AI-Convert/
 | Phase 4 | Markdown → PDF 页面与导出 | 可下载 PDF |
 | Phase 5 | Excel → Markdown 页面与导出 | 可处理 xlsx、xls、csv |
 | Phase 6 | SEO 内容建设 | 上线教程、专题与案例 |
-| Phase 7 | 微信公众号排版 | 独立内容发布模块 |
+| Phase 7 | Markdown 表格转 Excel / CSV | 可复制到 Excel，并下载 XLSX 或 CSV |
 
 ## 15. 上线检查清单
 
