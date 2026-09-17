@@ -38,9 +38,12 @@ Each language homepage contains working Markdown to Word, Markdown to PDF, Markd
 - Chinese Markdown table to Excel / CSV: /zh/tools/markdown-table-to-excel.html
 - Chinese guides: /zh/guides/
 
-## Related Aixuno product
+## Aixuno tool ecosystem
 
 - Batch image conversion: https://image.aixuno.com/
+- File compression: https://compress.aixuno.com/
+- PDF tools: https://pdf.aixuno.com/
+- AI background removal: https://bg.aixuno.com/
 
 ## Supported AI content sources
 
