@@ -27,9 +27,21 @@ const errors = [];
 for (const file of htmlFiles) {
   const html = await readFile(file, 'utf8');
   const label = relative(root, file);
+  const isRedirectPage = /<meta\s+http-equiv="refresh"/i.test(html);
   if (!/<title>[^<]+<\/title>/i.test(html)) errors.push(`${label}: missing title`);
   if (!/<meta\s+name="description"/i.test(html) && !label.endsWith('404.html')) errors.push(`${label}: missing description`);
   if (!/<html\s+lang="[^"]+"/i.test(html)) errors.push(`${label}: missing language marker`);
+  if (!label.endsWith('404.html') && !/^baidu_verify_/i.test(label)) {
+    const canonicalCount = (html.match(/rel="canonical"/gi) || []).length;
+    if (canonicalCount !== 1) errors.push(`${label}: expected one canonical, found ${canonicalCount}`);
+  }
+  if (!isRedirectPage && !label.endsWith('404.html')) {
+    const h1Count = (html.match(/<h1\b/gi) || []).length;
+    if (h1Count !== 1) errors.push(`${label}: expected one h1, found ${h1Count}`);
+  }
+  for (const match of html.matchAll(/<script\s+type="application\/ld\+json">([\s\S]*?)<\/script>/gi)) {
+    try { JSON.parse(match[1]); } catch { errors.push(`${label}: invalid JSON-LD`); }
+  }
   if (!html.includes('<script defer src="/js/analytics.js"></script>')) errors.push(`${label}: missing analytics marker`);
   if ((html.match(/\/js\/analytics\.js/g) || []).length !== 1) errors.push(`${label}: analytics marker must appear once`);
   if (/\son\w+\s*=/i.test(html)) errors.push(`${label}: contains inline event handler`);
