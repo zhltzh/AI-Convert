@@ -71,6 +71,44 @@ if (errors.length) {
   process.exit(1);
 }
 
+for (const route of [
+  'zh/tools/markdown-to-word.html',
+  'zh/tools/markdown-to-pdf.html',
+  'zh/tools/excel-to-markdown.html',
+  'zh/tools/markdown-table-to-excel.html',
+]) {
+  const html = await readFile(join(root, route), 'utf8');
+  const faqCount = (html.match(/<details\b/gi) || []).length;
+  if (faqCount < 5) errors.push(`${route}: expected at least five visible FAQ items, found ${faqCount}`);
+}
+
+const localeFiles = {
+  en: '',
+  'zh-CN': 'zh/',
+  es: 'es/',
+  de: 'de/',
+  ja: 'ja/',
+  fr: 'fr/',
+};
+for (const suffix of ['', 'tools/markdown-to-word.html', 'tools/markdown-to-pdf.html', 'tools/excel-to-markdown.html', 'tools/markdown-to-html.html']) {
+  const activeLocales = suffix === 'tools/markdown-to-html.html'
+    ? Object.fromEntries(Object.entries(localeFiles).filter(([locale]) => locale !== 'zh-CN'))
+    : localeFiles;
+  for (const [locale, prefix] of Object.entries(activeLocales)) {
+    const file = join(root, prefix, suffix || 'index.html');
+    const html = await readFile(file, 'utf8');
+    for (const [alternateLocale, alternatePrefix] of Object.entries(activeLocales)) {
+      const expectedUrl = `https://aixuno.com/${alternatePrefix}${suffix}`;
+      const expectedTag = `hreflang="${alternateLocale}" href="${expectedUrl}"`;
+      if (!html.includes(expectedTag)) errors.push(`${relative(root, file)}: missing alternate ${alternateLocale} for ${suffix || 'homepage'}`);
+    }
+    const defaultUrl = `https://aixuno.com/${suffix}`;
+    if (!html.includes(`hreflang="x-default" href="${defaultUrl}"`)) {
+      errors.push(`${relative(root, file)}: missing x-default for ${suffix || 'homepage'}`);
+    }
+  }
+}
+
 for (const route of ['index.html', 'tools/markdown-to-word.html', 'tools/markdown-to-pdf.html', 'tools/excel-to-markdown.html', 'tools/markdown-to-html.html', 'zh/tools/markdown-table-to-excel.html']) {
   const html = await readFile(join(root, route), 'utf8');
   if (!/application\/ld\+json/i.test(html)) errors.push(`${route}: missing structured data`);
