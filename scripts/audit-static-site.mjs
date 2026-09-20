@@ -39,6 +39,11 @@ for (const file of htmlFiles) {
     const h1Count = (html.match(/<h1\b/gi) || []).length;
     if (h1Count !== 1) errors.push(`${label}: expected one h1, found ${h1Count}`);
   }
+  const normalizedLabel = label.replaceAll('\\', '/');
+  const isGuideArticle = normalizedLabel.includes('guides/') && !normalizedLabel.endsWith('guides/index.html');
+  if (isGuideArticle && !isRedirectPage && !/application\/ld\+json/i.test(html)) {
+    errors.push(`${label}: guide article missing structured data`);
+  }
   for (const match of html.matchAll(/<script\s+type="application\/ld\+json">([\s\S]*?)<\/script>/gi)) {
     try { JSON.parse(match[1]); } catch { errors.push(`${label}: invalid JSON-LD`); }
   }
