@@ -67,8 +67,16 @@ for (const file of htmlFiles) {
 }
 
 const sitemap = await readFile(join(root, 'sitemap.xml'), 'utf8');
+const sitemapUrls = new Set([...sitemap.matchAll(/<loc>(https:\/\/aixuno\.com\/[^<]*)<\/loc>/g)].map((match) => match[1]));
 for (const route of ['/zh/', '/es/', '/de/', '/ja/', '/fr/', '/tools/markdown-to-html.html', '/zh/tools/markdown-table-to-excel.html', '/about.html', '/privacy.html', '/guides/', '/zh/guides/', '/guides/copy-ai-answer-to-word.html', '/zh/guides/copy-ai-answer-to-word.html']) {
   if (!sitemap.includes(route)) errors.push(`sitemap.xml: missing ${route}`);
+}
+
+for (const file of htmlFiles) {
+  const html = await readFile(file, 'utf8');
+  if (/<meta\s+http-equiv="refresh"/i.test(html) || /<meta\s+name="robots"\s+content="[^"]*noindex/i.test(html)) continue;
+  const canonical = html.match(/<link\s+rel="canonical"\s+href="([^"]+)"/i)?.[1];
+  if (canonical && !sitemapUrls.has(canonical)) errors.push(`${relative(root, file)}: canonical missing from sitemap`);
 }
 
 if (errors.length) {
