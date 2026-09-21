@@ -77,6 +77,10 @@ if (errors.length) {
 }
 
 for (const route of [
+  'tools/markdown-to-word.html',
+  'tools/markdown-to-pdf.html',
+  'tools/excel-to-markdown.html',
+  'tools/markdown-to-html.html',
   'zh/tools/markdown-to-word.html',
   'zh/tools/markdown-to-pdf.html',
   'zh/tools/excel-to-markdown.html',
