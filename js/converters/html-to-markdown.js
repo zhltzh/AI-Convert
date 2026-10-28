@@ -23,6 +23,25 @@ function tableToMarkdown(table) {
   return [`| ${normalized[0].join(' | ')} |`, `| ${normalized[0].map(() => '---').join(' | ')} |`, ...normalized.slice(1).map((row) => `| ${row.join(' | ')} |`)].join('\n');
 }
 
+const CONTAINER_TAGS = new Set(['div', 'section', 'article', 'main', 'header', 'footer', 'body']);
+
+function listToMarkdown(node, indent = '') {
+  const ordered = node.tagName?.toLowerCase() === 'ol';
+  const start = Number(node.getAttribute?.('start')) || 1;
+  return [...node.children]
+    .filter((child) => child.tagName?.toLowerCase() === 'li')
+    .map((item, index) => {
+      const nested = [...item.children].filter((child) => ['ul', 'ol'].includes(child.tagName?.toLowerCase()));
+      const clone = item.cloneNode(true);
+      clone.querySelectorAll('ul,ol').forEach((list) => list.remove());
+      const marker = ordered ? `${start + index}.` : '-';
+      const text = cleanText(inline(clone)).replace(/\n/g, `\n${indent}  `);
+      const nestedMarkdown = nested.map((list) => listToMarkdown(list, `${indent}  `)).join('\n');
+      return `${indent}${marker} ${text}${nestedMarkdown ? `\n${nestedMarkdown}` : ''}`;
+    })
+    .join('\n');
+}
+
 function block(node) {
   const tag = node.tagName?.toLowerCase();
   if (!tag) return inline(node);
@@ -31,8 +50,9 @@ function block(node) {
   if (tag === 'blockquote') return cleanText(inline(node)).split('\n').map((line) => `> ${line}`).join('\n');
   if (tag === 'pre') return `\`\`\`\n${node.textContent.trim()}\n\`\`\``;
   if (tag === 'table') return tableToMarkdown(node);
-  if (tag === 'ul' || tag === 'ol') return [...node.children].filter((child) => child.tagName?.toLowerCase() === 'li').map((item, index) => `${tag === 'ol' ? `${index + 1}.` : '-'} ${cleanText(inline(item))}`).join('\n');
+  if (tag === 'ul' || tag === 'ol') return listToMarkdown(node);
   if (tag === 'img') return inline(node);
+  if (CONTAINER_TAGS.has(tag)) return [...node.children].map(block).filter(Boolean).join('\n\n');
   return cleanText(inline(node));
 }
 
