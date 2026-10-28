@@ -1,6 +1,7 @@
 import { renderEnglishHeader, renderEnglishFooter } from '../components/english-shell.js';
 import { downloadBlob } from '../core/download.js';
 import { readSpreadsheet } from '../converters/excel-to-md.js';
+import { mountDownloadTray } from '../components/download-tray.js';
 
 document.querySelector('#site-header').innerHTML = renderEnglishHeader();
 document.querySelector('#site-footer').innerHTML = renderEnglishFooter();
@@ -25,3 +26,4 @@ sheetSelect.addEventListener('change', renderSheet);
 uploadBox.addEventListener('drop', (event) => loadFile(event.dataTransfer.files[0]));
 copyButton.addEventListener('click', async () => { try { await navigator.clipboard.writeText(currentMarkdown); status.textContent = 'Markdown copied to your clipboard.'; } catch { status.textContent = 'Copy failed. Please select and copy the text manually.'; } });
 downloadButton.addEventListener('click', () => downloadBlob(new Blob([currentMarkdown], { type: 'text/markdown;charset=utf-8' }), 'excel-to-markdown.md'));
+mountDownloadTray({ triggers: [downloadButton] });

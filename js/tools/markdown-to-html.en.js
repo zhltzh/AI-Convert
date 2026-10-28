@@ -1,6 +1,7 @@
 import { renderEnglishHeader, renderEnglishFooter } from '../components/english-shell.js';
 import { renderMarkdownEditor } from '../components/markdown-editor.js';
 import { renderPreviewPanel } from '../components/preview-panel.js';
+import { mountDownloadTray } from '../components/download-tray.js';
 import { renderMarkdown } from '../core/markdown-engine.js';
 
 const sample = `# AI research summary
@@ -84,3 +85,4 @@ ${output.value}
 });
 
 updateOutput();
+mountDownloadTray({ triggers: [downloadButton] });

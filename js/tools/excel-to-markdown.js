@@ -3,6 +3,7 @@ import { renderFooter } from '../components/footer.js';
 import { renderUploadBox } from '../components/upload-box.js';
 import { downloadBlob } from '../core/download.js';
 import { readSpreadsheet } from '../converters/excel-to-md.js';
+import { mountDownloadTray } from '../components/download-tray.js';
 
 document.querySelector('#site-header').innerHTML = renderHeader();
 document.querySelector('#site-footer').innerHTML = renderFooter();
@@ -48,3 +49,4 @@ copyButton.addEventListener('click', async () => {
   try { await navigator.clipboard.writeText(currentMarkdown); status.textContent = 'Markdown 已复制到剪贴板'; } catch { status.textContent = '复制失败，请手动选择并复制内容'; }
 });
 downloadButton.addEventListener('click', () => downloadBlob(new Blob([currentMarkdown], { type: 'text/markdown;charset=utf-8' }), 'excel-to-markdown.md'));
+mountDownloadTray({ triggers: [downloadButton] });

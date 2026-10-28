@@ -4,6 +4,7 @@ import { renderMarkdownEditor } from '../components/markdown-editor.js';
 import { renderPreviewPanel } from '../components/preview-panel.js';
 import { renderMarkdown } from '../core/markdown-engine.js';
 import { exportWord } from '../exporters/word-export.js';
+import { mountDownloadTray } from '../components/download-tray.js';
 
 const sample = `# AI 内容整理示例
 
@@ -75,3 +76,4 @@ exportButton.addEventListener('click', async () => {
 });
 
 updatePreview();
+mountDownloadTray({ triggers: [exportButton] });

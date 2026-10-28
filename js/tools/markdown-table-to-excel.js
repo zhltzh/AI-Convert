@@ -2,6 +2,7 @@ import { renderHeader } from '../components/header.js';
 import { renderFooter } from '../components/footer.js';
 import { downloadBlob } from '../core/download.js';
 import { exportTablesToXlsx, parseMarkdownTables, tableToCsv, tableToTsv } from '../converters/markdown-table.js';
+import { mountDownloadTray } from '../components/download-tray.js';
 
 const sample = `| 产品 | 数量 | 单价 | 备注 |
 | --- | ---: | ---: | --- |
@@ -60,3 +61,4 @@ excelButton.addEventListener('click', async () => {
 });
 
 renderTables();
+mountDownloadTray({ triggers: [excelButton] });

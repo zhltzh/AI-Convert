@@ -3,7 +3,8 @@
  * Marked is loaded only when a conversion tool needs it, keeping the homepage
  * free from conversion-library downloads.
  */
-const MARKED_CDN = 'https://cdn.jsdelivr.net/npm/marked/marked.min.js';
+const LOCAL_MARKED = new URL('../../vendor/marked.min.js', import.meta.url).href;
+const MARKED_CDN = 'https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js';
 let markedLoader;
 
 function normalizeMarkdown(markdown) {
@@ -38,12 +39,14 @@ export async function loadMarkdownParser() {
     throw new Error('Markdown parser is only available in a browser environment.');
   }
 
-  markedLoader ??= loadScript(MARKED_CDN).then(() => {
-    if (!globalThis.marked?.parse) {
-      throw new Error('Markdown parser loaded, but is unavailable.');
-    }
-    return globalThis.marked;
-  });
+  markedLoader ??= loadScript(LOCAL_MARKED)
+    .catch(() => loadScript(MARKED_CDN))
+    .then(() => {
+      if (!globalThis.marked?.parse) {
+        throw new Error('Markdown parser loaded, but is unavailable.');
+      }
+      return globalThis.marked;
+    });
 
   return markedLoader;
 }

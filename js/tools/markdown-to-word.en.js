@@ -3,6 +3,7 @@ import { renderMarkdownEditor } from '../components/markdown-editor.js';
 import { renderPreviewPanel } from '../components/preview-panel.js';
 import { renderMarkdown } from '../core/markdown-engine.js';
 import { exportWord } from '../exporters/word-export.js';
+import { mountDownloadTray } from '../components/download-tray.js';
 
 const sample = `# AI content brief\n\nTurn an AI answer into a document you can edit, share, and keep.\n\n## Key points\n\n- No sign-up\n- Processed locally in your browser\n- Supports common Markdown structure\n\n> Copy an answer from ChatGPT, Claude, Gemini, or Copilot and export it as a Word file.\n\n| Source | Output |\n| --- | --- |\n| ChatGPT | Word |\n| Gemini | Word |`;
 
@@ -25,3 +26,4 @@ async function updatePreview() {
 input.addEventListener('input', () => { clearTimeout(input.renderTimer); input.renderTimer = setTimeout(updatePreview, 180); });
 exportButton.addEventListener('click', async () => { exportButton.disabled = true; exportButton.textContent = 'Creating document…'; try { await exportWord(await renderMarkdown(input.value), 'aixuno-document.docx'); status.textContent = 'Your Word document is downloading.'; } catch { status.textContent = 'Unable to create the document. Check your connection and try again.'; } finally { exportButton.disabled = false; exportButton.innerHTML = 'Download Word <span aria-hidden="true">→</span>'; } });
 updatePreview();
+mountDownloadTray({ triggers: [exportButton] });
