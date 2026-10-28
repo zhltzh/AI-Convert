@@ -9,6 +9,7 @@ import { downloadBlob } from './core/download.js';
 import { renderMarkdownUpload, wireMarkdownUpload } from './components/markdown-upload.js';
 import { wireFileDrop } from './components/file-drop.js';
 import { mountDownloadTray } from './components/download-tray.js';
+import { printDocument } from './exporters/print-pdf.js';
 
 const OFFICE_MAX_SIZE = 20 * 1024 * 1024;
 const OFFICE_EXTENSION = /\.(docx|xlsx|xls|csv|pdf|doc)$/i;
@@ -35,7 +36,7 @@ function cardMarkup(mode) {
 
 function markdownWorkspace(mode) {
   const placeholder = '在这里粘贴 Markdown 内容，例如来自 DeepSeek、豆包、ChatGPT 或 Claude 的回答…';
-  return `<div class="workspace__top"><div><p class="eyebrow">${mode.label}</p><h2>${mode.title}</h2><p>${mode.description}</p></div>${workspaceCta(mode.action)}</div><div class="editor-grid"><div class="editor-pane"><div class="pane-title"><label for="home-markdown">Markdown 内容</label></div>${renderMarkdownUpload({title:'将 Markdown 文件拖到这里，或点击选择文件',hint:'支持 .md、.markdown · 最大 5MB · 文件仅在本地处理'})}<textarea id="home-markdown" rows="16" placeholder="${placeholder}">${drafts.get(mode.id) ?? ''}</textarea><p class="field-note">支持标题、列表、表格、引用和代码块。</p></div><div class="preview-pane"><div class="pane-title"><p class="preview-pane__label">实时预览</p><button class="utility-button" type="button" id="copy-preview">复制预览</button></div><article id="home-preview" class="markdown-preview"><p class="preview-empty">粘贴内容后，会在这里显示预览。</p></article></div></div><div class="workspace__actions"><span class="status" id="workspace-status">支持 DeepSeek、豆包、腾讯元宝、通义千问、文心一言、ChatGPT、Claude 等 AI 内容；内容只在当前浏览器中处理。</span><button class="button button--primary" type="button" id="workspace-action">${mode.action}</button></div>`;
+  return `<div class="workspace__top"><div><p class="eyebrow">${mode.label}</p><h2>${mode.title}</h2><p>${mode.description}</p></div>${workspaceCta(mode.action)}</div><div class="editor-grid"><div class="editor-pane"><div class="pane-title"><label for="home-markdown">Markdown 内容</label></div>${renderMarkdownUpload({title:'将 Markdown 文件拖到这里，或点击选择文件',hint:'支持 .md、.markdown · 最大 5MB · 文件仅在本地处理'})}<textarea id="home-markdown" rows="16" placeholder="${placeholder}">${drafts.get(mode.id) ?? ''}</textarea><p class="field-note">支持标题、列表、表格、引用和代码块。</p></div><div class="preview-pane"><div class="pane-title"><p class="preview-pane__label">实时预览</p><button class="utility-button" type="button" id="copy-preview">复制预览</button></div><article id="home-preview" class="markdown-preview"><p class="preview-empty">粘贴内容后，会在这里显示预览。</p></article></div></div><div class="workspace__actions"><span class="status" id="workspace-status">支持 DeepSeek、豆包、腾讯元宝、通义千问、文心一言、ChatGPT、Claude 等 AI 内容；内容只在当前浏览器中处理。</span>${mode.id === 'pdf' ? '<button class="button button--secondary" type="button" id="workspace-print-pdf">打印 / 另存为 PDF</button>' : ''}<button class="button button--primary" type="button" id="workspace-action">${mode.action}</button></div>`;
 }
 
 function tableWorkspace() {
@@ -44,7 +45,7 @@ function tableWorkspace() {
 }
 
 function officeWorkspace() {
-  return `<div class="workspace__top"><div><p class="eyebrow">资料整理</p><h3>办公文件转 Markdown</h3><p>支持单个 Word、Excel / CSV、PDF 文件本地转换。</p></div>${workspaceCta('下载 MD 文件', { disabled: true })}</div><div class="office-types" role="list"><span role="listitem" class="office-type is-ready">Word <small>.docx 可转换</small></span><span role="listitem" class="office-type is-ready">Excel / CSV <small>可转换</small></span><span role="listitem" class="office-type is-ready">PDF <small>文本可转换</small></span></div><div class="office-upload"><label class="drop-zone" for="office-file"><strong>上传办公文件</strong><span>支持 .docx、.xlsx、.xls、.csv、.pdf；单个文件不超过 20MB<br />旧版 .doc 请先在 Word 或 WPS 中另存为 .docx</span><input id="office-file" type="file" accept=".docx,.xlsx,.xls,.csv,.pdf,text/csv,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" /></label><div class="office-result"><p class="preview-pane__label">Markdown 结果</p><textarea id="office-output" rows="10" readonly placeholder="转换后的 Markdown 内容会显示在这里。"></textarea></div></div><div class="workspace__actions"><span class="status" id="workspace-status">文件只在当前浏览器中读取和处理。</span><button class="button button--secondary" type="button" id="copy-office" disabled>复制 Markdown</button><button class="button button--primary" type="button" id="download-office" disabled>下载 MD 文件</button></div>`;
+  return `<div class="workspace__top"><div><p class="eyebrow">资料整理</p><h3>办公文件转 Markdown</h3><p>支持单个 Word、Excel / CSV、PDF 文件本地转换。</p></div>${workspaceCta('下载 MD 文件', { disabled: true })}</div><div class="office-types" role="list"><span role="listitem" class="office-type is-ready">Word <small>.docx 可转换</small></span><span role="listitem" class="office-type is-ready">Excel / CSV <small>可转换</small></span><span role="listitem" class="office-type is-ready">PDF <small>文本可转换</small></span></div><div class="office-upload"><label class="drop-zone" for="office-file"><strong>上传办公文件</strong><span>支持 .docx、.xlsx、.xls、.csv、.pdf；单个文件不超过 20MB<br />旧版 .doc 请先在 Word 或 WPS 中另存为 .docx</span><input id="office-file" type="file" accept=".docx,.xlsx,.xls,.csv,.pdf,text/csv,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" /></label><div class="office-result"><p class="preview-pane__label">Markdown 结果 <select id="office-sheet" aria-label="选择工作表" hidden></select></p><textarea id="office-output" rows="10" readonly placeholder="转换后的 Markdown 内容会显示在这里。"></textarea></div></div><div class="workspace__actions"><span class="status" id="workspace-status">文件只在当前浏览器中读取和处理。</span><button class="button button--secondary" type="button" id="copy-office" disabled>复制 Markdown</button><button class="button button--primary" type="button" id="download-office" disabled>下载 MD 文件</button></div>`;
 }
 
 async function copyText(value) {
@@ -92,7 +93,7 @@ async function wireMarkdownWorkspace(mode) {
     catch (error) { setStatus(error.message, true); }
   };
   input.addEventListener('input', updatePreview);
-  wireMarkdownUpload({onFile:async text=>{input.value=text;await updatePreview();},setStatus,messages:{invalid:'请选择 .md 或 .markdown 格式的文件。',large:'Markdown 文件不能超过 5MB。',loaded:'已载入 {name}，可直接转换或导出。',readError:'无法读取该 Markdown 文件。'},dropTarget:document.querySelector('.editor-pane')});
+  wireMarkdownUpload({onFile:async text=>{input.value=text;await updatePreview();},setStatus,messages:{invalid:'请选择 .md 或 .markdown 格式的文件。',large:'Markdown 文件不能超过 5MB。',loaded:'已载入 {name}，可直接转换或导出。',readError:'无法读取该 Markdown 文件。',wrongType:file => /\.(docx|doc|xlsx|xls|csv|pdf)$/i.test(file.name) ? '这是办公文件，请切换到「办公文件转 Markdown」再上传。' : '请选择 .md 或 .markdown 格式的文件。'},dropTarget:document.querySelector('.editor-pane')});
   await updatePreview();
   const actionButtons = ['#workspace-action-top', '#workspace-action'].map(selector => document.querySelector(selector)).filter(Boolean);
   const runAction = async () => {
@@ -107,6 +108,13 @@ async function wireMarkdownWorkspace(mode) {
   };
   actionButtons.forEach(button => button.addEventListener('click', runAction));
   mountDownloadTray({ triggers: actionButtons });
+  document.querySelector('#workspace-print-pdf')?.addEventListener('click', async () => {
+    try {
+      const html = await renderMarkdown(input.value);
+      await printDocument(html, 'Markdown 转 PDF');
+      setStatus('已打开打印窗口：目标选择“另存为 PDF”，得到的是可选文字、可搜索的 PDF。');
+    } catch (error) { setStatus(error.message, true); }
+  });
   document.querySelector('#copy-preview').addEventListener('click', async () => {
     try {
       const html = await renderMarkdown(input.value);
@@ -158,8 +166,29 @@ function wireOfficeWorkspace() {
     if (topButton) topButton.disabled = !output.value;
   };
 
+  const sheetSelect = document.querySelector('#office-sheet');
+  let currentBook = null;
+
+  const showSheet = () => {
+    if (!currentBook) return;
+    output.value = currentBook.toMarkdown(sheetSelect.value);
+    syncActions();
+  };
+
+  const fillSheets = (book) => {
+    currentBook = book;
+    const multiple = book.sheetNames.length > 1;
+    sheetSelect.hidden = !multiple;
+    sheetSelect.innerHTML = multiple
+      ? book.sheetNames.map(name => `<option value="${name}">${name}</option>`).join('')
+      : '';
+  };
+
   const convert = async (file) => {
     output.value = '';
+    currentBook = null;
+    sheetSelect.hidden = true;
+    sheetSelect.innerHTML = '';
     syncActions();
     if (!file) return;
     setStatus('正在本地读取文件…');
@@ -175,12 +204,20 @@ function wireOfficeWorkspace() {
         setStatus(result.imagePages ? `已转换 ${file.name}。其中 ${result.imagePages} 页含图片或图形，当前结果保留文字内容。` : `已转换 ${file.name}。`);
       } else {
         const spreadsheet = await readSpreadsheet(file);
+        fillSheets(spreadsheet);
         output.value = spreadsheet.toMarkdown(spreadsheet.sheetNames[0]);
-        setStatus(`已转换 ${file.name} 的“${spreadsheet.sheetNames[0]}”工作表。`);
+        setStatus(spreadsheet.sheetNames.length > 1
+          ? `已转换 ${file.name} 的“${spreadsheet.sheetNames[0]}”工作表，可在上方切换其他工作表。`
+          : `已转换 ${file.name} 的“${spreadsheet.sheetNames[0]}”工作表。`);
       }
     } catch (error) { setStatus(error.message, true); }
     syncActions();
   };
+
+  sheetSelect.addEventListener('change', () => {
+    showSheet();
+    setStatus(`已切换到“${sheetSelect.value}”工作表。`);
+  });
 
   fileInput.addEventListener('change', () => convert(fileInput.files[0]));
   wireFileDrop({

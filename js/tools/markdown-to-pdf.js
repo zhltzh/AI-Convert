@@ -5,6 +5,7 @@ import { renderMarkdownUpload, wireMarkdownUpload } from '../components/markdown
 import { renderPreviewPanel } from '../components/preview-panel.js';
 import { renderMarkdown } from '../core/markdown-engine.js';
 import { exportPdf } from '../exporters/pdf-export.js';
+import { printDocument } from '../exporters/print-pdf.js';
 import { mountDownloadTray } from '../components/download-tray.js';
 
 const sample = `# AI 内容整理示例
@@ -79,6 +80,15 @@ exportButton.addEventListener('click', async () => {
   } finally {
     exportButton.disabled = false;
     exportButton.innerHTML = '生成 PDF <span aria-hidden="true">↓</span>';
+  }
+});
+
+document.querySelector('#print-pdf')?.addEventListener('click', async () => {
+  try {
+    await printDocument(preview.innerHTML, 'Markdown 转 PDF');
+    status.textContent = '已打开打印窗口：目标选择「另存为 PDF」即可得到文字可选、可搜索的 PDF';
+  } catch (error) {
+    status.textContent = error.message;
   }
 });
 

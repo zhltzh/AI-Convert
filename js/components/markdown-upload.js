@@ -27,7 +27,7 @@ export function wireMarkdownUpload({ onFile, setStatus, messages, dropTarget }) 
     target: dropTarget || zone,
     zone,
     isValid: file => VALID_EXTENSION.test(file.name),
-    rejectMessage: messages.invalid,
+    rejectMessage: file => (typeof messages.wrongType === 'function' ? messages.wrongType(file) : messages.invalid),
     maxSize: MAX_SIZE,
     tooLargeMessage: messages.large,
     onFile: load,

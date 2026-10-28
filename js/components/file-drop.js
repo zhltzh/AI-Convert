@@ -32,7 +32,7 @@ export function wireFileDrop({
     if (!list.length) return;
     const [file] = list;
     if (typeof isValid === 'function' && !isValid(file)) {
-      setStatus?.(rejectMessage, true);
+      setStatus?.(typeof rejectMessage === 'function' ? rejectMessage(file) : rejectMessage, true);
       return;
     }
     if (maxSize && file.size > maxSize) {

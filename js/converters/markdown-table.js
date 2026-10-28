@@ -1,5 +1,5 @@
 const LOCAL_SHEETJS = new URL('../../vendor/xlsx.full.min.js', import.meta.url).href;
-const SHEETJS_CDN = 'https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js';
+const SHEETJS_CDN = 'https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js';
 let sheetJsLoader;
 
 function splitRow(line) {

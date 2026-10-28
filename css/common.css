@@ -150,3 +150,4 @@
 .download-tray .button { min-height: 42px; padding: 0 16px; font-size: 14px; }
 @media (max-width: 760px) { .workspace__cta { width: 100%; } .workspace__cta .button { width: 100%; } .download-tray { left: 12px; right: 12px; bottom: 12px; padding: 8px; } .download-tray .button { width: 100%; } }
 @media print { .download-tray { display: none; } }
+.n.preview-pane__label select { margin-left: 10px; max-width: 190px; min-height: 30px; padding: 0 8px; border: 1px solid var(--color-border); border-radius: 8px; background: #fff; font-size: 12px; vertical-align: middle; }
