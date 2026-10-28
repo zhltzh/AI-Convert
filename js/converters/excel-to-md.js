@@ -1,3 +1,4 @@
+const LOCAL_SHEETJS = new URL('../../vendor/xlsx.full.min.js', import.meta.url).href;
 const SHEETJS_CDN = 'https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js';
 const MAX_FILE_BYTES = 20 * 1024 * 1024;
 const SUPPORTED_EXTENSIONS = new Set(['xlsx', 'xls', 'csv']);
@@ -16,10 +17,12 @@ function loadScript(source) {
 
 async function loadSheetJs() {
   if (globalThis.XLSX?.read) return globalThis.XLSX;
-  sheetJsLoader ??= loadScript(SHEETJS_CDN).then(() => {
-    if (!globalThis.XLSX?.read) throw new Error('Excel 解析组件加载失败。');
-    return globalThis.XLSX;
-  });
+  sheetJsLoader ??= loadScript(LOCAL_SHEETJS)
+    .catch(() => loadScript(SHEETJS_CDN))
+    .then(() => {
+      if (!globalThis.XLSX?.read) throw new Error('Excel 解析组件加载失败。');
+      return globalThis.XLSX;
+    });
   return sheetJsLoader;
 }
 
@@ -52,7 +55,10 @@ export async function readSpreadsheet(file) {
   const XLSX = await loadSheetJs();
   // Blob.text() keeps UTF-8 Chinese CSV content intact. XLSX/XLS files still
   // need their original binary data so formatting and workbook structure work.
-  const source = extension === 'csv' ? await file.text() : await file.arrayBuffer();
+  // A leading BOM would otherwise leak into the first header cell.
+  const source = extension === 'csv'
+    ? (await file.text()).replace(/^\uFEFF/, '')
+    : await file.arrayBuffer();
   const workbook = XLSX.read(source, extension === 'csv' ? { type: 'string' } : { type: 'array' });
   return {
     sheetNames: workbook.SheetNames,

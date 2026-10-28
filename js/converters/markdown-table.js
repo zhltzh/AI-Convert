@@ -1,3 +1,4 @@
+const LOCAL_SHEETJS = new URL('../../vendor/xlsx.full.min.js', import.meta.url).href;
 const SHEETJS_CDN = 'https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js';
 let sheetJsLoader;
 
@@ -29,7 +30,8 @@ function splitRow(line) {
 
 function isDivider(line) {
   const cells = splitRow(line);
-  return cells.length > 0 && cells.every((cell) => /^:?-{3,}:?$/.test(cell.replace(/\s/g, '')));
+  // GFM accepts one or more hyphens per cell; AI output often uses `|--|--|`.
+  return cells.length > 0 && cells.every((cell) => /^:?-+:?$/.test(cell.replace(/\s/g, '')));
 }
 
 export function parseMarkdownTables(markdown) {
@@ -76,10 +78,12 @@ function loadScript(source) {
 
 async function loadSheetJs() {
   if (globalThis.XLSX?.utils) return globalThis.XLSX;
-  sheetJsLoader ??= loadScript(SHEETJS_CDN).then(() => {
-    if (!globalThis.XLSX?.utils) throw new Error('Excel 导出组件加载失败。');
-    return globalThis.XLSX;
-  });
+  sheetJsLoader ??= loadScript(LOCAL_SHEETJS)
+    .catch(() => loadScript(SHEETJS_CDN))
+    .then(() => {
+      if (!globalThis.XLSX?.utils) throw new Error('Excel 导出组件加载失败。');
+      return globalThis.XLSX;
+    });
   return sheetJsLoader;
 }
 

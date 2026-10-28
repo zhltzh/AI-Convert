@@ -1,5 +1,9 @@
+const LOCAL_PDFJS = new URL('../../vendor/pdf.min.mjs', import.meta.url).href;
+const LOCAL_PDF_WORKER = new URL('../../vendor/pdf.worker.min.mjs', import.meta.url).href;
 const PDFJS_CDN = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@5.4.149/build/pdf.min.mjs';
 const PDF_WORKER_CDN = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@5.4.149/build/pdf.worker.min.mjs';
+// Character maps and standard fonts stay on the CDN: they are only fetched for
+// PDFs that need them, and a failure there degrades font metrics, not extraction.
 const PDF_CMAP_CDN = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@5.4.149/cmaps/';
 const PDF_STANDARD_FONTS_CDN = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@5.4.149/standard_fonts/';
 const MAX_FILE_BYTES = 20 * 1024 * 1024;
@@ -7,14 +11,14 @@ const MAX_PAGES = 100;
 let pdfJsLoader;
 
 async function loadPdfJs() {
-  pdfJsLoader ??= import(PDFJS_CDN).then((pdfjs) => {
-    pdfjs.GlobalWorkerOptions.workerSrc = PDF_WORKER_CDN;
-    return pdfjs;
-  }).catch(() => { throw new Error('无法加载 PDF 解析组件，请检查网络后重试。'); });
+  pdfJsLoader ??= import(LOCAL_PDFJS)
+    .then((pdfjs) => { pdfjs.GlobalWorkerOptions.workerSrc = LOCAL_PDF_WORKER; return pdfjs; })
+    .catch(() => import(PDFJS_CDN).then((pdfjs) => { pdfjs.GlobalWorkerOptions.workerSrc = PDF_WORKER_CDN; return pdfjs; }))
+    .catch(() => { throw new Error('无法加载 PDF 解析组件，请检查网络后重试。'); });
   return pdfJsLoader;
 }
 
-function toLines(items) {
+export function toLines(items) {
   const sorted = [...items].filter((item) => item.str?.trim()).sort((a, b) => b.transform[5] - a.transform[5] || a.transform[4] - b.transform[4]);
   const lines = [];
   for (const item of sorted) {
@@ -26,14 +30,23 @@ function toLines(items) {
   return lines.map((line) => ({ text: line.items.sort((a, b) => a.transform[4] - b.transform[4]).map((item) => item.str).join(' ').replace(/\s+/g, ' ').trim(), size: Math.max(...line.items.map((item) => Math.abs(item.transform[0]) || 10)) }));
 }
 
-function lineToMarkdown(line, sizes) {
-  if (!line.text) return '';
-  const average = sizes.reduce((total, size) => total + size, 0) / sizes.length;
-  if (line.size >= average * 1.65 && line.text.length < 90) return `# ${line.text}`;
-  if (line.size >= average * 1.32 && line.text.length < 110) return `## ${line.text}`;
-  if (/^[•●▪◦\-–—]\s+/.test(line.text)) return `- ${line.text.replace(/^[•●▪◦\-–—]\s+/, '')}`;
-  if (/^\d+[.)、]\s+/.test(line.text)) return line.text;
-  return line.text;
+export function lineToMarkdown(line, average) {
+  if (!line.text) return null;
+  if (line.size >= average * 1.65 && line.text.length < 90) return { kind: 'heading', text: `# ${line.text}` };
+  if (line.size >= average * 1.32 && line.text.length < 110) return { kind: 'heading', text: `## ${line.text}` };
+  if (/^[•●▪◦\-–—]\s+/.test(line.text)) return { kind: 'list', text: `- ${line.text.replace(/^[•●▪◦\-–—]\s+/, '')}` };
+  if (/^\d+[.)、]\s+/.test(line.text)) return { kind: 'list', text: line.text };
+  return { kind: 'body', text: line.text };
+}
+
+/** Body lines stay in one paragraph; headings and list items get their own block. */
+export function blocksToMarkdown(blocks) {
+  return blocks.map((block, index) => {
+    if (index === 0) return block.text;
+    const previous = blocks[index - 1];
+    const separator = previous.kind === 'body' && block.kind === 'body' ? '\n' : '\n\n';
+    return separator + block.text;
+  }).join('');
 }
 
 export async function readPdfAsMarkdown(file) {
@@ -59,7 +72,9 @@ export async function readPdfAsMarkdown(file) {
     const page = await pdf.getPage(pageNumber);
     const textContent = await page.getTextContent();
     const lines = toLines(textContent.items);
-    const markdown = lines.map((line) => lineToMarkdown(line, lines.map((entry) => entry.size))).filter(Boolean).join('\n\n');
+    const average = lines.length ? lines.reduce((total, line) => total + line.size, 0) / lines.length : 0;
+    const blocks = lines.map((line) => lineToMarkdown(line, average)).filter(Boolean);
+    const markdown = blocksToMarkdown(blocks);
     try {
       const operators = await page.getOperatorList();
       if (operators.fnArray.some((operator) => [pdfjs.OPS.paintImageXObject, pdfjs.OPS.paintJpegXObject, pdfjs.OPS.paintInlineImageXObject].includes(operator))) imagePages += 1;

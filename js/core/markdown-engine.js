@@ -80,11 +80,14 @@ export function sanitizeHtml(html) {
     [...element.attributes].forEach((attribute) => {
       const name = attribute.name.toLowerCase();
       const isUrl = name === 'href' || name === 'src';
+      const isSpan = (name === 'colspan' || name === 'rowspan') && /^\d{1,3}$/.test(attribute.value.trim());
       const isAllowedAttribute = ['href', 'src', 'alt', 'title'].includes(name);
 
-      if (!isAllowedAttribute || (isUrl && !isSafeUrl(attribute.value))) {
+      if (!isAllowedAttribute && !isSpan) {
         element.removeAttribute(attribute.name);
+        return;
       }
+      if (isUrl && !isSafeUrl(attribute.value)) element.removeAttribute(attribute.name);
     });
   });
 

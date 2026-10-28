@@ -1,6 +1,7 @@
 import { renderHeader } from '../components/header.js';
 import { renderFooter } from '../components/footer.js';
 import { renderMarkdownEditor } from '../components/markdown-editor.js';
+import { renderMarkdownUpload, wireMarkdownUpload } from '../components/markdown-upload.js';
 import { renderPreviewPanel } from '../components/preview-panel.js';
 import { renderMarkdown } from '../core/markdown-engine.js';
 import { exportWord } from '../exporters/word-export.js';
@@ -32,7 +33,7 @@ const exportButton = document.querySelector('#export-word');
 
 header.innerHTML = renderHeader();
 footer.innerHTML = renderFooter();
-editorMount.innerHTML = renderMarkdownEditor(sample);
+editorMount.innerHTML = renderMarkdownUpload({ title: '拖入 Markdown 文件，或点击选择', hint: '支持 .md、.markdown · 最大 5MB · 文件仅在本地处理' }) + renderMarkdownEditor(sample);
 previewMount.innerHTML = renderPreviewPanel();
 
 const input = document.querySelector('#markdown-input');
@@ -58,6 +59,21 @@ async function updatePreview() {
 input.addEventListener('input', () => {
   window.clearTimeout(input.renderTimer);
   input.renderTimer = window.setTimeout(updatePreview, 180);
+});
+
+wireMarkdownUpload({
+  onFile: async (text) => { input.value = text; await updatePreview(); },
+  setStatus: (message, isError) => {
+    status.textContent = message;
+    status.classList.toggle('converter__status--error', Boolean(isError));
+  },
+  messages: {
+    invalid: '请选择 .md 或 .markdown 格式的文件。',
+    large: 'Markdown 文件不能超过 5MB。',
+    loaded: '已载入 {name}，可直接生成 Word。',
+    readError: '无法读取该 Markdown 文件。',
+  },
+  dropTarget: document.querySelector('#editor-mount')?.closest('.converter-panel'),
 });
 
 exportButton.addEventListener('click', async () => {

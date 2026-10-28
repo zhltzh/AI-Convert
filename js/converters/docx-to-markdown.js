@@ -1,19 +1,29 @@
 import { htmlToMarkdown } from './html-to-markdown.js';
 
+const LOCAL_MAMMOTH = new URL('../../vendor/mammoth.browser.min.js', import.meta.url).href;
 const MAMMOTH_CDN = 'https://cdn.jsdelivr.net/npm/mammoth@1.12.0/mammoth.browser.min.js';
 const MAX_FILE_BYTES = 20 * 1024 * 1024;
 let mammothLoader;
 
-function loadMammoth() {
-  if (globalThis.mammoth?.convertToHtml) return Promise.resolve(globalThis.mammoth);
-  mammothLoader ??= new Promise((resolve, reject) => {
+function injectScript(source) {
+  return new Promise((resolve, reject) => {
     const script = document.createElement('script');
-    script.src = MAMMOTH_CDN;
+    script.src = source;
     script.async = true;
-    script.onload = () => globalThis.mammoth?.convertToHtml ? resolve(globalThis.mammoth) : reject(new Error('Word 解析组件加载失败，请刷新后重试。'));
+    script.onload = resolve;
     script.onerror = () => reject(new Error('无法加载 Word 解析组件，请检查网络后重试。'));
     document.head.append(script);
   });
+}
+
+function loadMammoth() {
+  if (globalThis.mammoth?.convertToHtml) return Promise.resolve(globalThis.mammoth);
+  mammothLoader ??= injectScript(LOCAL_MAMMOTH)
+    .catch(() => injectScript(MAMMOTH_CDN))
+    .then(() => {
+      if (!globalThis.mammoth?.convertToHtml) throw new Error('Word 解析组件加载失败，请刷新后重试。');
+      return globalThis.mammoth;
+    });
   return mammothLoader;
 }
 

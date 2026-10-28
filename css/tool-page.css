@@ -10,7 +10,7 @@ html[lang="zh-CN"] { --color-accent: #0f766e; --color-accent-strong: #0b5f59; --
 .converter { padding: 0 0 96px; }
 .converter__shell { overflow: hidden; border: 1px solid var(--color-border); border-radius: var(--radius-card); box-shadow: var(--shadow-soft); }
 .converter__bar { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 16px 20px; background: var(--color-surface); border-bottom: 1px solid var(--color-border); }
-.converter__status { color: var(--color-muted); font-size: 13px; }
+.converter__status { color: var(--color-muted); font-size: 13px; }.converter__status--error { color: #b42318; }
 .converter__layout { display: grid; grid-template-columns: 1fr 1fr; min-height: 480px; }
 .converter-panel { display: flex; flex-direction: column; min-width: 0; }
 .converter-panel + .converter-panel { border-left: 1px solid var(--color-border); }

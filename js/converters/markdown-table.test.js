@@ -19,3 +19,11 @@ test('creates valid CSV and paste-ready TSV', () => {
   assert.equal(tableToCsv(rows), '名称,说明\r\nA,"含有,逗号"\r\nB,"含有""引号"""\r\nC,"两行\n文字"');
   assert.equal(tableToTsv(rows), '名称\t说明\nA\t含有,逗号\nB\t含有"引号"\nC\t两行 文字');
 });
+
+test('accepts short and aligned divider rows produced by AI output', () => {
+  assert.deepEqual(parseMarkdownTables('| A | B |\n|--|:-:|\n| 1 | 2 |')[0], [['A', 'B'], ['1', '2']]);
+});
+
+test('ignores plain text that only looks like a table header', () => {
+  assert.deepEqual(parseMarkdownTables('A | B 只是正文\n没有分隔行'), []);
+});
