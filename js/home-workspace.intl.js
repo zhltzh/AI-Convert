@@ -11,6 +11,12 @@ import { wireFileDrop } from './components/file-drop.js';
 import { mountDownloadTray } from './components/download-tray.js';
 import { printDocument } from './exporters/print-pdf.js';
 
+// Resolved before any locale-dependent map so imports stay side-effect free.
+const locale = getLocale();
+
+const OFFICE_MAX_SIZE = 20 * 1024 * 1024;
+const OFFICE_EXTENSION = /\.(docx|xlsx|xls|csv|pdf|doc)$/i;
+
 const printCopy = {
   en:{label:'Print / Save as PDF',done:'Print dialog opened. Choose “Save as PDF” for a text-based, searchable PDF.'},
   es:{label:'Imprimir / Guardar como PDF',done:'Se abrió el diálogo de impresión. Elige «Guardar como PDF» para obtener un PDF con texto seleccionable.'},
@@ -18,10 +24,6 @@ const printCopy = {
   ja:{label:'印刷 / PDFとして保存',done:'印刷ダイアログを開きました。「PDFに保存」を選ぶと、文字を選択できるPDFになります。'},
   fr:{label:'Imprimer / Enregistrer en PDF',done:'La boîte d’impression est ouverte. Choisissez « Enregistrer au format PDF » pour un PDF avec texte sélectionnable.'}
 }[locale.code] || {label:'Print / Save as PDF',done:'Print dialog opened.'};
-const OFFICE_MAX_SIZE = 20 * 1024 * 1024;
-const OFFICE_EXTENSION = /\.(docx|xlsx|xls|csv|pdf|doc)$/i;
-
-const locale = getLocale();
 const uploadCopy = {
   en:{title:'Drop a Markdown file here, or click to choose',hint:'Supports .md and .markdown · 5 MB max · processed locally',invalid:'Choose a .md or .markdown file.',readError:'This Markdown file could not be read.',loaded:'Loaded {name}. You can export it now.',officeFile:'That is an office file. Switch to the “Office files to Markdown” mode to convert it.'},
   es:{title:'Arrastra un archivo Markdown aquí o haz clic para elegirlo',hint:'Admite .md y .markdown · máximo 5 MB · procesamiento local',invalid:'Elige un archivo .md o .markdown.',readError:'No se pudo leer el archivo Markdown.',loaded:'{name} cargado. Ya puedes exportarlo.',officeFile:'Es un archivo de Office. Cambia al modo «Archivos de Office a Markdown» para convertirlo.'},
