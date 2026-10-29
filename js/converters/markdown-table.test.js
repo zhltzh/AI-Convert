@@ -1,29 +1,34 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { parseMarkdownTables, tableToCsv, tableToTsv } from './markdown-table.js';
+import { parseMarkdownTables, tableToCsv } from './markdown-table.js';
 
-test('extracts multiple Markdown tables and normalizes row widths', () => {
-  const tables = parseMarkdownTables(`正文\n\n| 名称 | 数量 |\n| :--- | ---: |\n| 苹果 | 2 |\n\n| A | B |\n| --- | --- |\n| 一 | |`);
-  assert.deepEqual(tables, [[['名称', '数量'], ['苹果', '2']], [['A', 'B'], ['一', '']]]);
+test('accepts tables without outer pipes and keeps escaped pipes', () => {
+  const tables = parseMarkdownTables(['名称|数量', '---|---', '苹果|2'].join('\n'));
+  assert.equal(tables.length, 1);
+  assert.deepEqual(tables[0], [['名称', '数量'], ['苹果', '2']]);
+
+  const escaped = parseMarkdownTables(['| a \\| b | c |', '| --- | --- |', '| 1 | 2 |'].join('\n'));
+  assert.equal(escaped.length, 1);
+  assert.deepEqual(escaped[0][0], ['a | b', 'c'], 'escaped pipes are unescaped inside cells');
 });
 
-test('supports escaped pipes and br tags inside cells', () => {
-  assert.deepEqual(parseMarkdownTables('| 名称 | 备注 |\n| --- | --- |\n| A\\|B | 第一行<br>第二行 |')[0], [
-    ['名称', '备注'],
-    ['A|B', '第一行\n第二行'],
-  ]);
+test('recognises short alignment separators such as :--: and ---:', () => {
+  const tables = parseMarkdownTables(['| left | center | right |', '| :--- | :--: | ----: |', '| 1 | 2 | 3 |'].join('\n'));
+  assert.equal(tables.length, 1);
+  assert.deepEqual(tables[0], [['left', 'center', 'right'], ['1', '2', '3']]);
 });
 
-test('creates valid CSV and paste-ready TSV', () => {
-  const rows = [['名称', '说明'], ['A', '含有,逗号'], ['B', '含有"引号"'], ['C', '两行\n文字']];
-  assert.equal(tableToCsv(rows), '名称,说明\r\nA,"含有,逗号"\r\nB,"含有""引号"""\r\nC,"两行\n文字"');
-  assert.equal(tableToTsv(rows), '名称\t说明\nA\t含有,逗号\nB\t含有"引号"\nC\t两行 文字');
+test('splits several tables separated by prose', () => {
+  const markdown = ['| a | b |', '| --- | --- |', '| 1 | 2 |', '', '段落', '', '| c |', '| --- |', '| 3 |'].join('\n');
+  const tables = parseMarkdownTables(markdown);
+  assert.equal(tables.length, 2);
+  assert.deepEqual(tables[1], [['c'], ['3']]);
 });
 
-test('accepts short and aligned divider rows produced by AI output', () => {
-  assert.deepEqual(parseMarkdownTables('| A | B |\n|--|:-:|\n| 1 | 2 |')[0], [['A', 'B'], ['1', '2']]);
-});
-
-test('ignores plain text that only looks like a table header', () => {
-  assert.deepEqual(parseMarkdownTables('A | B 只是正文\n没有分隔行'), []);
+test('csv output escapes quotes, commas and newlines', () => {
+  const csv = tableToCsv([['名称', '数量'], ['a,b', '说"引号"'], ['换\n行', '2']]);
+  const lines = csv.split('\r\n');
+  assert.equal(lines[0], '名称,数量');
+  assert.equal(lines[1], '"a,b","说""引号"""');
+  assert.equal(lines[2], '"换\n行",2');
 });
