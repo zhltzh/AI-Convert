@@ -2,10 +2,11 @@ const LOCAL_PDFJS = new URL('../../vendor/pdf.min.mjs', import.meta.url).href;
 const LOCAL_PDF_WORKER = new URL('../../vendor/pdf.worker.min.mjs', import.meta.url).href;
 const PDFJS_CDN = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@5.4.149/build/pdf.min.mjs';
 const PDF_WORKER_CDN = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@5.4.149/build/pdf.worker.min.mjs';
-// Character maps and standard fonts stay on the CDN: they are only fetched for
-// PDFs that need them, and a failure there degrades font metrics, not extraction.
-const PDF_CMAP_CDN = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@5.4.149/cmaps/';
-const PDF_STANDARD_FONTS_CDN = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@5.4.149/standard_fonts/';
+// Character maps and standard fonts ship with the site: the CDN copy is often
+// unreachable on mainland networks, and a missing CJK cmap degrades extraction
+// to garbage text instead of failing loudly.
+const LOCAL_CMAPS = new URL('../../vendor/cmaps/', import.meta.url).href;
+const LOCAL_STANDARD_FONTS = new URL('../../vendor/standard_fonts/', import.meta.url).href;
 const MAX_FILE_BYTES = 20 * 1024 * 1024;
 const MAX_PAGES = 100;
 let pdfJsLoader;
@@ -59,9 +60,9 @@ export async function readPdfAsMarkdown(file) {
   try {
     pdf = await pdfjs.getDocument({
       data: new Uint8Array(await file.arrayBuffer()),
-      cMapUrl: PDF_CMAP_CDN,
+      cMapUrl: LOCAL_CMAPS,
       cMapPacked: true,
-      standardFontDataUrl: PDF_STANDARD_FONTS_CDN,
+      standardFontDataUrl: LOCAL_STANDARD_FONTS,
     }).promise;
   }
   catch { throw new Error('无法读取该 PDF。请确认文件未加密、未损坏，且包含可选中的文字。'); }
