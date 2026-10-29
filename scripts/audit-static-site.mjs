@@ -56,7 +56,9 @@ for (const file of htmlFiles) {
     .filter((href) => href && !/^(?:https?:|mailto:|tel:|javascript:)/i.test(href));
 
   for (const href of localLinks) {
-    let target = resolve(dirname(file), decodeURIComponent(href));
+    const decoded = decodeURIComponent(href);
+    // Site-root links (/js/analytics.js, /favicon.ico) resolve from the repo root.
+    let target = decoded.startsWith('/') ? resolve(root, decoded.slice(1)) : resolve(dirname(file), decoded);
     if (href.endsWith('/')) target = join(target, 'index.html');
     try {
       await readFile(target);
