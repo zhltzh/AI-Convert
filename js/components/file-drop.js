@@ -63,6 +63,7 @@ export function wireFileDrop({
   };
 
   const onDrop = (event) => {
+    if (!hasFiles(event)) return;
     event.preventDefault();
     depth = 0;
     highlight(false);

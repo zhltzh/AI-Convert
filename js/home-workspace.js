@@ -221,7 +221,7 @@ function wireOfficeWorkspace() {
 
   fileInput.addEventListener('change', () => convert(fileInput.files[0]));
   wireFileDrop({
-    target: document.querySelector('.office-upload'),
+    target: document.querySelector('.workspace') || document.querySelector('.office-upload'),
     zone: document.querySelector('.drop-zone'),
     isValid: file => OFFICE_EXTENSION.test(file.name),
     rejectMessage: '请选择 .docx、.xlsx、.xls、.csv 或 .pdf 文件。',

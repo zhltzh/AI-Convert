@@ -104,7 +104,7 @@ function wireOfficeWorkspace(){
   const convert=async(file)=>{output.value='';currentBook=null;sheetSelect.hidden=true;sheetSelect.innerHTML='';syncActions();if(!file)return;setStatus(t.reading);try{const ext=file.name.split('.').pop().toLowerCase();if(ext==='docx'||ext==='doc'){output.value=(await readDocxAsMarkdown(file)).markdown;}else if(ext==='pdf'){output.value=(await readPdfAsMarkdown(file)).markdown;}else{const book=await readSpreadsheet(file);fillSheets(book);output.value=book.toMarkdown(book.sheetNames[0]);}setStatus(t.converted);}catch(error){setStatus(error.message,true);}syncActions();};
   sheetSelect.addEventListener('change',()=>{if(!currentBook)return;output.value=currentBook.toMarkdown(sheetSelect.value);syncActions();});
   fileInput.addEventListener('change',()=>convert(fileInput.files[0]));
-  wireFileDrop({target:document.querySelector('.office-upload'),zone:document.querySelector('.drop-zone'),isValid:file=>OFFICE_EXTENSION.test(file.name),rejectMessage:t.hint,tooLargeMessage:t.hint,maxSize:OFFICE_MAX_SIZE,onFile:convert,setStatus});
+  wireFileDrop({target:document.querySelector('.workspace')||document.querySelector('.office-upload'),zone:document.querySelector('.drop-zone'),isValid:file=>OFFICE_EXTENSION.test(file.name),rejectMessage:t.hint,tooLargeMessage:t.hint,maxSize:OFFICE_MAX_SIZE,onFile:convert,setStatus});
   copyButton.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(output.value);setStatus(t.copied);}catch(error){setStatus(error.message,true);}});
   const downloadOffice=()=>{downloadBlob(new Blob([output.value],{type:'text/markdown;charset=utf-8'}),'aixuno-document.md');setStatus(locale.workspace.downloaded);};
   downloadButton.addEventListener('click',downloadOffice);

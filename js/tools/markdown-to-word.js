@@ -63,6 +63,8 @@ input.addEventListener('input', () => {
 
 wireMarkdownUpload({
   onFile: async (text) => { input.value = text; await updatePreview(); },
+  // Dropping anywhere in the left panel, not just the dashed box, loads the file.
+  dropTarget: document.querySelector('[aria-labelledby="input-title"]') || document.querySelector('.converter-panel'),
   setStatus: (message, isError) => {
     status.textContent = message;
     status.classList.toggle('converter__status--error', Boolean(isError));

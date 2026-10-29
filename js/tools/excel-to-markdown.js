@@ -41,9 +41,11 @@ async function loadFile(file) {
 
 fileInput.addEventListener('change', () => loadFile(fileInput.files[0]));
 sheetSelect.addEventListener('change', renderSheet);
-['dragenter', 'dragover'].forEach((eventName) => uploadBox.addEventListener(eventName, (event) => { event.preventDefault(); uploadBox.classList.add('upload-box--active'); }));
-['dragleave', 'drop'].forEach((eventName) => uploadBox.addEventListener(eventName, (event) => { event.preventDefault(); uploadBox.classList.remove('upload-box--active'); }));
-uploadBox.addEventListener('drop', (event) => loadFile(event.dataTransfer.files[0]));
+// The whole workspace accepts drops; only the dashed box lights up.
+const dropRegion = document.querySelector('.excel-workspace') || uploadBox;
+['dragenter', 'dragover'].forEach((eventName) => dropRegion.addEventListener(eventName, (event) => { event.preventDefault(); uploadBox.classList.add('upload-box--active'); }));
+['dragleave', 'drop'].forEach((eventName) => dropRegion.addEventListener(eventName, (event) => { event.preventDefault(); uploadBox.classList.remove('upload-box--active'); }));
+dropRegion.addEventListener('drop', (event) => loadFile(event.dataTransfer.files[0]));
 
 copyButton.addEventListener('click', async () => {
   try { await navigator.clipboard.writeText(currentMarkdown); status.textContent = 'Markdown 已复制到剪贴板'; } catch { status.textContent = '复制失败，请手动选择并复制内容'; }
