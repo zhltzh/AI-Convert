@@ -20,7 +20,7 @@ export function renderIntlHeader() {
   const locale = getLocale();
   const home = locale.code === 'en' ? '/' : `/${locale.code}/`;
   const languageLinks = languageOrder.map(code => `<a href="${languageHref(code)}" hreflang="${code}" lang="${code}" data-locale="${code}">${labels[code]}</a>`).join('');
-  return `<header class="site-header"><div class="container site-header__inner"><a class="brand" href="${home}" aria-label="Aixuno"><span class="brand__mark" aria-hidden="true">M</span><span>${locale.brand}</span><small>Aixuno</small></a><nav class="nav" aria-label="Primary navigation"><a href="${home}#tools">${locale.nav[0]}</a><a href="${home}#guides">${locale.nav[1]}</a><a href="${home}#faq">${locale.nav[2]}</a><details class="language-menu"><summary>🌐 ${labels[locale.code]}</summary><div class="language-menu__list">${languageLinks}</div></details></nav></div></header>`;
+  return `<header class="site-header"><div class="container site-header__inner"><a class="brand" href="${home}"><span class="brand__mark" aria-hidden="true">M</span><span>${locale.brand}</span><small>Aixuno</small></a><nav class="nav" aria-label="Primary navigation"><a href="${home}#tools">${locale.nav[0]}</a><a href="${home}#guides">${locale.nav[1]}</a><a href="${home}#faq">${locale.nav[2]}</a><details class="language-menu"><summary>🌐 ${labels[locale.code]}</summary><div class="language-menu__list">${languageLinks}</div></details></nav></div></header>`;
 }
 
 export function renderIntlFooter() {

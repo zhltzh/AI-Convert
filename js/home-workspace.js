@@ -241,12 +241,13 @@ async function renderWorkspace(workspace) {
   const mode = modes.find((item) => item.id === activeMode);
   workspace.classList.remove('workspace--enter');
   workspace.innerHTML = activeMode === 'office' ? officeWorkspace() : activeMode === 'table' ? tableWorkspace() : markdownWorkspace(mode);
+  workspace.classList.add('is-ready');
   requestAnimationFrame(() => workspace.classList.add('workspace--enter'));
   if (activeMode === 'office') wireOfficeWorkspace(); else if (activeMode === 'table') wireTableWorkspace(); else await wireMarkdownWorkspace(mode);
 }
 
 export async function mountHomeWorkspace({ cards, workspace }) {
-  const renderCards = () => { cards.className = `mode-cards mode-cards--${activeMode}`; cards.innerHTML = modes.map(cardMarkup).join(''); };
+  const renderCards = () => { cards.className = `mode-cards mode-cards--${activeMode}`; cards.innerHTML = modes.map(cardMarkup).join(''); cards.classList.add('is-ready'); };
   renderCards();
   cards.addEventListener('click', async (event) => {
     const card = event.target.closest('[data-mode]');

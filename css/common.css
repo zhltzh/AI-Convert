@@ -115,7 +115,7 @@
 .faq__layout > div > p:not(.eyebrow) { color: var(--color-muted); line-height: 1.7; margin-top: 24px; }
 .faq__list { border-top: 1px solid var(--color-border); }
 .faq details { border-bottom: 1px solid var(--color-border); padding: 21px 0; }
-.faq summary { cursor: pointer; font-weight: 600; list-style: none; padding-right: 22px; position: relative; }
+.faq summary { cursor: pointer; font-weight: 600; list-style: none; padding: 4px 22px 4px 0; position: relative; }
 .faq summary::after { content: '+'; position: absolute; right: 0; color: var(--color-muted); font-size: 19px; font-weight: 400; }
 .faq details[open] summary::after { content: '−'; }
 .faq details p { margin: 14px 28px 0 0; color: var(--color-muted); font-size: 14px; line-height: 1.7; }
@@ -151,3 +151,18 @@
 @media (max-width: 760px) { .workspace__cta { width: 100%; } .workspace__cta .button { width: 100%; } .download-tray { left: 12px; right: 12px; bottom: 12px; padding: 8px; } .download-tray .button { width: 100%; } }
 @media print { .download-tray { display: none; } }
 .n.preview-pane__label select { margin-left: 10px; max-width: 190px; min-height: 30px; padding: 0 8px; border: 1px solid var(--color-border); border-radius: 8px; background: #fff; font-size: 12px; vertical-align: middle; }
+#site-header { min-height: 72px; }
+.text-link { display: inline-block; padding-block: 3px; }
+@media (max-width: 760px) { #site-header { min-height: 64px; } }
+
+/* Reserve the space JavaScript fills in, so the mode cards and workspace do not
+   shove the rest of the page down after first paint (large CLS on mobile). */
+#mode-cards:not(.is-ready) { min-height: 185px; }
+#workspace:not(.is-ready) { min-height: 780px; }
+@media (max-width: 760px) { #mode-cards:not(.is-ready) { min-height: 207px; } #workspace:not(.is-ready) { min-height: 1000px; } }
+
+/* FAQ summaries on the tool pages sit directly under .faq__list, so they missed
+   the .faq rules above; give them the same target size and open/close marker. */
+.faq__list summary { cursor: pointer; font-weight: 600; list-style: none; padding: 4px 22px 4px 0; position: relative; }
+.faq__list summary::after { content: '+'; position: absolute; right: 0; color: var(--color-muted); font-size: 19px; font-weight: 400; }
+.faq__list details[open] summary::after { content: '−'; }
