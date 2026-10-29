@@ -105,9 +105,30 @@ function stampPageNumbers(pdf) {
   }
 }
 
+/**
+ * html2canvas paints an empty page whenever the window is scrolled: it renders the
+ * clone from the document top while the capture target sits further down. Jumping
+ * to the top has to settle before the clone is taken, and the root's smooth
+ * scrolling rule has to be switched off or the jump is animated frame by frame.
+ */
+async function scrollToTop() {
+  const root = document.documentElement;
+  const previousBehavior = root.style.scrollBehavior;
+  const previousX = window.scrollX;
+  const previousY = window.scrollY;
+  root.style.scrollBehavior = 'auto';
+  window.scrollTo(0, 0);
+  for (let frame = 0; frame < 30 && window.scrollY !== 0; frame += 1) {
+    await new Promise((resolve) => requestAnimationFrame(resolve));
+  }
+  await new Promise((resolve) => requestAnimationFrame(resolve));
+  return { previousBehavior, previousX, previousY };
+}
+
 export async function exportPdf(html, filename = 'aixuno-document.pdf') {
   if (!html.trim()) throw new Error('请先输入需要转换的 Markdown 内容。');
   const html2pdf = await loadPdfExporter();
+  const restore = await scrollToTop();
   const { overlay, article } = createPrintContainer(html);
 
   try {
@@ -132,5 +153,9 @@ export async function exportPdf(html, filename = 'aixuno-document.pdf') {
     pdf.save(filename);
   } finally {
     overlay.remove();
+    // Scroll back while scrolling is still instant, then hand the page its
+    // smooth behaviour again.
+    window.scrollTo(restore.previousX, restore.previousY);
+    document.documentElement.style.scrollBehavior = restore.previousBehavior;
   }
 }

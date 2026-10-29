@@ -45,7 +45,7 @@ copyButton.addEventListener('click', async () => {
   try {
     await navigator.clipboard.writeText(tableToTsv(tables[0]));
     status.textContent = '第一个表格已复制，可直接粘贴到 Excel 或 WPS';
-  } catch (error) { status.textContent = error.message; }
+  } catch { status.textContent = '复制失败，请手动选择预览中的表格复制'; }
 });
 csvButton.addEventListener('click', () => {
   downloadBlob(new Blob(['\ufeff', tableToCsv(tables[0])], { type: 'text/csv;charset=utf-8' }), 'markdown-table.csv');
