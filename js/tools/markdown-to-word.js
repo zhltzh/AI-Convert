@@ -37,6 +37,8 @@ editorMount.innerHTML = renderMarkdownUpload({ title: '拖入 Markdown 文件，
 previewMount.innerHTML = renderPreviewPanel();
 
 const input = document.querySelector('#markdown-input');
+// The page ships with a demo sample; it should not float a download prompt on its own.
+const initialSample = input.value;
 const preview = document.querySelector('#markdown-preview');
 let pendingRender;
 
@@ -93,4 +95,4 @@ exportButton.addEventListener('click', async () => {
 });
 
 updatePreview();
-mountDownloadTray({ triggers: [exportButton], canShow: () => input.value.trim().length > 0 });
+mountDownloadTray({ triggers: [exportButton], canShow: () => input.value.trim().length > 0 && input.value !== initialSample });

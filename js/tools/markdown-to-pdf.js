@@ -30,6 +30,8 @@ document.querySelector('#editor-mount').innerHTML = renderMarkdownUpload({ title
 document.querySelector('#preview-mount').innerHTML = renderPreviewPanel();
 
 const input = document.querySelector('#markdown-input');
+// The page ships with a demo sample; it should not float a download prompt on its own.
+const initialSample = input.value;
 const preview = document.querySelector('#markdown-preview');
 const status = document.querySelector('#converter-status');
 const exportButton = document.querySelector('#export-pdf');
@@ -94,4 +96,4 @@ document.querySelector('#print-pdf')?.addEventListener('click', async () => {
 });
 
 updatePreview();
-mountDownloadTray({ triggers: [exportButton], canShow: () => input.value.trim().length > 0 });
+mountDownloadTray({ triggers: [exportButton], canShow: () => input.value.trim().length > 0 && input.value !== initialSample });
