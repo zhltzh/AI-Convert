@@ -125,6 +125,66 @@ async function scrollToTop() {
   return { previousBehavior, previousX, previousY };
 }
 
+/**
+ * A blocked or swallowed download used to fail silently: `pdf.save()` triggers an
+ * anchor click that the browser can cancel (site permission, antivirus, a second
+ * download without a fresh gesture) with no visible result. The blob URL is kept
+ * so the save bar below can offer a manual save instead.
+ */
+function savePdfBlob(pdf, filename) {
+  const blob = pdf.output('blob');
+  const url = URL.createObjectURL(blob);
+  const anchor = document.createElement('a');
+  anchor.href = url;
+  anchor.download = filename;
+  anchor.style.display = 'none';
+  document.body.append(anchor);
+  anchor.click();
+  anchor.remove();
+  return { url, filename, bytes: blob.size };
+}
+
+/** Shown after every export: the click above is not guaranteed to reach the disk. */
+function showSaveFallback({ url, filename, bytes }) {
+  const previous = document.querySelector('[data-pdf-save-bar]');
+  if (previous) {
+    previous.remove();
+    if (previous.dataset.blobUrl) URL.revokeObjectURL(previous.dataset.blobUrl);
+  }
+  const bar = document.createElement('div');
+  bar.setAttribute('data-pdf-save-bar', '');
+  bar.dataset.blobUrl = url;
+  bar.style.cssText = 'position:fixed;left:50%;bottom:20px;transform:translateX(-50%);z-index:2147483646;display:flex;gap:12px;align-items:center;padding:10px 14px;border-radius:12px;background:#111;color:#fff;font:500 13px/1.4 system-ui,sans-serif;box-shadow:0 8px 24px rgba(0,0,0,.24);max-width:calc(100vw - 32px);';
+
+  const label = document.createElement('span');
+  label.textContent = `PDF 已生成（${Math.max(1, Math.round(bytes / 1024))} KB）。没有自动下载？`;
+
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = filename;
+  link.textContent = '点此保存';
+  link.style.cssText = 'flex:none;padding:5px 12px;border-radius:8px;background:#fff;color:#111;font-weight:600;text-decoration:none;';
+
+  const close = document.createElement('button');
+  close.type = 'button';
+  close.textContent = '关闭';
+  close.setAttribute('aria-label', '关闭提示');
+  close.style.cssText = 'flex:none;padding:5px 10px;border:1px solid #555;border-radius:8px;background:transparent;color:#ddd;font:inherit;cursor:pointer;';
+
+  const dismiss = () => {
+    if (!bar.isConnected) return;
+    bar.remove();
+    URL.revokeObjectURL(url);
+  };
+  const dismissSoon = () => window.setTimeout(dismiss, 2000);
+  close.addEventListener('click', dismiss);
+  // Saving from the bar counts as done, so the prompt can go away.
+  link.addEventListener('click', dismissSoon);
+  bar.append(label, link, close);
+  document.body.append(bar);
+  window.setTimeout(dismiss, 20000);
+}
+
 export async function exportPdf(html, filename = 'aixuno-document.pdf') {
   if (!html.trim()) throw new Error('请先输入需要转换的 Markdown 内容。');
   const html2pdf = await loadPdfExporter();
@@ -150,7 +210,9 @@ export async function exportPdf(html, filename = 'aixuno-document.pdf') {
     await worker.toPdf();
     const pdf = await worker.get('pdf');
     stampPageNumbers(pdf);
-    pdf.save(filename);
+    const result = savePdfBlob(pdf, filename);
+    showSaveFallback(result);
+    return result;
   } finally {
     overlay.remove();
     // Scroll back while scrolling is still instant, then hand the page its

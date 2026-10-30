@@ -68,7 +68,6 @@ wireMarkdownUpload({
     loaded: '已载入 {name}，可直接生成 PDF。',
     readError: '无法读取该 Markdown 文件。',
   },
-  dropTarget: document.querySelector('#editor-mount')?.closest('.converter-panel'),
 });
 
 exportButton.addEventListener('click', async () => {

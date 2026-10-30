@@ -61,7 +61,6 @@ wireMarkdownUpload({
     loaded: '已载入 {name}，可继续排版预览。',
     readError: '无法读取该 Markdown 文件。',
   },
-  dropTarget: document.querySelector('#editor-mount')?.closest('.converter-panel'),
 });
 theme.addEventListener('change', updatePreview);
 copyButton.addEventListener('click', async () => {
