@@ -94,4 +94,4 @@ document.querySelector('#print-pdf')?.addEventListener('click', async () => {
 });
 
 updatePreview();
-mountDownloadTray({ triggers: [exportButton] });
+mountDownloadTray({ triggers: [exportButton], canShow: () => input.value.trim().length > 0 });

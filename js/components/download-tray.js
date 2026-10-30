@@ -23,7 +23,7 @@ export function unmountDownloadTray() {
   currentTray = null;
 }
 
-export function mountDownloadTray({ triggers, label }) {
+export function mountDownloadTray({ triggers, label, canShow }) {
   unmountDownloadTray();
   const buttons = (triggers || []).filter(Boolean);
   if (!buttons.length || typeof document === 'undefined') return () => {};
@@ -38,6 +38,13 @@ export function mountDownloadTray({ triggers, label }) {
   trayButton.addEventListener('click', () => primary.click());
   document.body.append(tray);
 
+  /** Nothing to export means nothing to float: empty editors and disabled triggers stay clear. */
+  const shouldShow = () => {
+    if (buttons.some(isVisible)) return false;
+    if (primary.disabled) return false;
+    return canShow ? Boolean(canShow()) : true;
+  };
+
   let frame = 0;
   let fallbackTimer = 0;
   const sync = () => {
@@ -46,7 +53,7 @@ export function mountDownloadTray({ triggers, label }) {
     const text = labelOf(primary);
     if (text) trayButton.textContent = text;
     trayButton.disabled = primary.disabled;
-    tray.hidden = buttons.some(isVisible);
+    tray.hidden = !shouldShow();
   };
   const schedule = () => {
     if (frame || fallbackTimer) return;
@@ -73,6 +80,9 @@ export function mountDownloadTray({ triggers, label }) {
 
   window.addEventListener('scroll', schedule, { passive: true });
   window.addEventListener('resize', schedule);
+  // Typing or loading a file changes whether a download is even available.
+  window.addEventListener('input', schedule, true);
+  window.addEventListener('change', schedule, true);
   trayButton.addEventListener('click', schedule);
   schedule();
 
@@ -82,6 +92,8 @@ export function mountDownloadTray({ triggers, label }) {
     observer?.disconnect();
     window.removeEventListener('scroll', schedule);
     window.removeEventListener('resize', schedule);
+    window.removeEventListener('input', schedule, true);
+    window.removeEventListener('change', schedule, true);
     tray.remove();
   };
 

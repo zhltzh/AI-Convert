@@ -107,7 +107,7 @@ async function wireMarkdownWorkspace(mode) {
     finally { actionButtons.forEach(button => { button.disabled = false; }); }
   };
   actionButtons.forEach(button => button.addEventListener('click', runAction));
-  mountDownloadTray({ triggers: actionButtons });
+  mountDownloadTray({ triggers: actionButtons, canShow: () => Boolean(input.value.trim()) });
   document.querySelector('#workspace-print-pdf')?.addEventListener('click', async () => {
     try {
       const html = await renderMarkdown(input.value);
@@ -149,7 +149,7 @@ function wireTableWorkspace() {
   };
   xlsxButton.addEventListener('click', downloadXlsx);
   topButton?.addEventListener('click', downloadXlsx);
-  mountDownloadTray({ triggers: [topButton, xlsxButton] });
+  mountDownloadTray({ triggers: [topButton, xlsxButton], canShow: () => tables.length > 0 });
   update();
 }
 
