@@ -1,66 +1,543 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://aixuno.com/</loc><lastmod>2026-09-18</lastmod></url>
-  <url><loc>https://aixuno.com/about.html</loc><lastmod>2026-07-27</lastmod></url>
-  <url><loc>https://aixuno.com/changelog.html</loc><lastmod>2026-07-27</lastmod></url>
-  <url><loc>https://aixuno.com/contact.html</loc><lastmod>2026-07-27</lastmod></url>
-  <url><loc>https://aixuno.com/de/</loc><lastmod>2026-07-27</lastmod></url>
-  <url><loc>https://aixuno.com/de/tools/excel-to-markdown.html</loc><lastmod>2026-09-19</lastmod></url>
-  <url><loc>https://aixuno.com/de/tools/markdown-to-html.html</loc><lastmod>2026-09-19</lastmod></url>
-  <url><loc>https://aixuno.com/de/tools/markdown-to-pdf.html</loc><lastmod>2026-09-19</lastmod></url>
-  <url><loc>https://aixuno.com/de/tools/markdown-to-word.html</loc><lastmod>2026-09-19</lastmod></url>
-  <url><loc>https://aixuno.com/disclaimer.html</loc><lastmod>2026-07-27</lastmod></url>
-  <url><loc>https://aixuno.com/es/</loc><lastmod>2026-07-27</lastmod></url>
-  <url><loc>https://aixuno.com/es/tools/excel-to-markdown.html</loc><lastmod>2026-09-19</lastmod></url>
-  <url><loc>https://aixuno.com/es/tools/markdown-to-html.html</loc><lastmod>2026-09-19</lastmod></url>
-  <url><loc>https://aixuno.com/es/tools/markdown-to-pdf.html</loc><lastmod>2026-09-19</lastmod></url>
-  <url><loc>https://aixuno.com/es/tools/markdown-to-word.html</loc><lastmod>2026-09-19</lastmod></url>
-  <url><loc>https://aixuno.com/fr/</loc><lastmod>2026-07-27</lastmod></url>
-  <url><loc>https://aixuno.com/fr/tools/excel-to-markdown.html</loc><lastmod>2026-09-19</lastmod></url>
-  <url><loc>https://aixuno.com/fr/tools/markdown-to-html.html</loc><lastmod>2026-09-19</lastmod></url>
-  <url><loc>https://aixuno.com/fr/tools/markdown-to-pdf.html</loc><lastmod>2026-09-19</lastmod></url>
-  <url><loc>https://aixuno.com/fr/tools/markdown-to-word.html</loc><lastmod>2026-09-19</lastmod></url>
-  <url><loc>https://aixuno.com/guides/chatgpt-to-word.html</loc><lastmod>2026-07-27</lastmod></url>
-  <url><loc>https://aixuno.com/guides/deepseek-to-word.html</loc><lastmod>2026-07-27</lastmod></url>
-  <url><loc>https://aixuno.com/guides/excel-to-markdown-guide.html</loc><lastmod>2026-07-27</lastmod></url>
-  <url><loc>https://aixuno.com/guides/how-to-export-ai-answer.html</loc><lastmod>2026-07-27</lastmod></url>
-  <url><loc>https://aixuno.com/guides/</loc><lastmod>2026-08-09</lastmod></url>
-  <url><loc>https://aixuno.com/guides/copy-ai-answer-to-word.html</loc><lastmod>2026-09-20</lastmod></url>
-  <url><loc>https://aixuno.com/guides/ai-response-to-pdf.html</loc><lastmod>2026-09-20</lastmod></url>
-  <url><loc>https://aixuno.com/guides/markdown-table-to-excel.html</loc><lastmod>2026-09-20</lastmod></url>
-  <url><loc>https://aixuno.com/guides/markdown-to-html-guide.html</loc><lastmod>2026-09-20</lastmod></url>
-  <url><loc>https://aixuno.com/ja/</loc><lastmod>2026-07-27</lastmod></url>
-  <url><loc>https://aixuno.com/ja/tools/excel-to-markdown.html</loc><lastmod>2026-09-19</lastmod></url>
-  <url><loc>https://aixuno.com/ja/tools/markdown-to-html.html</loc><lastmod>2026-09-19</lastmod></url>
-  <url><loc>https://aixuno.com/ja/tools/markdown-to-pdf.html</loc><lastmod>2026-09-19</lastmod></url>
-  <url><loc>https://aixuno.com/ja/tools/markdown-to-word.html</loc><lastmod>2026-09-19</lastmod></url>
-  <url><loc>https://aixuno.com/privacy.html</loc><lastmod>2026-07-27</lastmod></url>
-  <url><loc>https://aixuno.com/terms.html</loc><lastmod>2026-07-27</lastmod></url>
-  <url><loc>https://aixuno.com/tools/excel-to-markdown.html</loc><lastmod>2026-09-21</lastmod></url>
-  <url><loc>https://aixuno.com/tools/markdown-to-html.html</loc><lastmod>2026-09-21</lastmod></url>
-  <url><loc>https://aixuno.com/tools/markdown-to-pdf.html</loc><lastmod>2026-09-21</lastmod></url>
-  <url><loc>https://aixuno.com/tools/markdown-to-word.html</loc><lastmod>2026-09-21</lastmod></url>
-  <url><loc>https://aixuno.com/zh/</loc><lastmod>2026-09-17</lastmod></url>
-  <url><loc>https://aixuno.com/zh/about.html</loc><lastmod>2026-07-27</lastmod></url>
-  <url><loc>https://aixuno.com/zh/changelog.html</loc><lastmod>2026-07-27</lastmod></url>
-  <url><loc>https://aixuno.com/zh/contact.html</loc><lastmod>2026-07-27</lastmod></url>
-  <url><loc>https://aixuno.com/zh/disclaimer.html</loc><lastmod>2026-07-27</lastmod></url>
-  <url><loc>https://aixuno.com/zh/guides/chatgpt-to-word.html</loc><lastmod>2026-09-20</lastmod></url>
-  <url><loc>https://aixuno.com/zh/guides/deepseek-to-word.html</loc><lastmod>2026-09-20</lastmod></url>
-  <url><loc>https://aixuno.com/zh/guides/excel-to-markdown-guide.html</loc><lastmod>2026-07-27</lastmod></url>
-  <url><loc>https://aixuno.com/zh/guides/how-to-export-ai-answer.html</loc><lastmod>2026-09-20</lastmod></url>
-  <url><loc>https://aixuno.com/zh/guides/md-file-to-word.html</loc><lastmod>2026-07-27</lastmod></url>
-  <url><loc>https://aixuno.com/zh/guides/</loc><lastmod>2026-08-09</lastmod></url>
-  <url><loc>https://aixuno.com/zh/guides/ai-content-to-wechat.html</loc><lastmod>2026-09-20</lastmod></url>
-  <url><loc>https://aixuno.com/zh/guides/copy-ai-answer-to-word.html</loc><lastmod>2026-09-20</lastmod></url>
-  <url><loc>https://aixuno.com/zh/guides/ai-response-to-pdf.html</loc><lastmod>2026-09-20</lastmod></url>
-  <url><loc>https://aixuno.com/zh/guides/markdown-table-to-excel.html</loc><lastmod>2026-09-20</lastmod></url>
-  <url><loc>https://aixuno.com/zh/guides/markdown-to-html-guide.html</loc><lastmod>2026-09-20</lastmod></url>
-  <url><loc>https://aixuno.com/zh/privacy.html</loc><lastmod>2026-07-27</lastmod></url>
-  <url><loc>https://aixuno.com/zh/terms.html</loc><lastmod>2026-07-27</lastmod></url>
-  <url><loc>https://aixuno.com/zh/tools/excel-to-markdown.html</loc><lastmod>2026-09-19</lastmod></url>
-  <url><loc>https://aixuno.com/zh/tools/markdown-to-pdf.html</loc><lastmod>2026-09-19</lastmod></url>
-  <url><loc>https://aixuno.com/zh/tools/markdown-to-word.html</loc><lastmod>2026-09-19</lastmod></url>
-  <url><loc>https://aixuno.com/zh/tools/markdown-table-to-excel.html</loc><lastmod>2026-09-19</lastmod></url>
-  <url><loc>https://aixuno.com/zh/tools/wechat-format.html</loc><lastmod>2026-09-21</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://aixuno.com/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aixuno.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aixuno.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/about.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/about.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/changelog.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/changelog.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/changelog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/changelog.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/contact.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/contact.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/de/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aixuno.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aixuno.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/de/tools/excel-to-markdown.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aixuno.com/es/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aixuno.com/de/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/excel-to-markdown.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/de/tools/markdown-to-html.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/tools/markdown-to-html.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aixuno.com/es/tools/markdown-to-html.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aixuno.com/de/tools/markdown-to-html.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/markdown-to-html.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/markdown-to-html.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/markdown-to-html.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/de/tools/markdown-to-pdf.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aixuno.com/es/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aixuno.com/de/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/markdown-to-pdf.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/de/tools/markdown-to-word.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aixuno.com/es/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aixuno.com/de/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/markdown-to-word.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/disclaimer.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/disclaimer.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/disclaimer.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/disclaimer.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/es/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aixuno.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aixuno.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/es/tools/excel-to-markdown.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aixuno.com/es/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aixuno.com/de/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/excel-to-markdown.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/es/tools/markdown-to-html.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/tools/markdown-to-html.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aixuno.com/es/tools/markdown-to-html.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aixuno.com/de/tools/markdown-to-html.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/markdown-to-html.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/markdown-to-html.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/markdown-to-html.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/es/tools/markdown-to-pdf.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aixuno.com/es/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aixuno.com/de/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/markdown-to-pdf.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/es/tools/markdown-to-word.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aixuno.com/es/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aixuno.com/de/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/markdown-to-word.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/fr/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aixuno.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aixuno.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/fr/tools/excel-to-markdown.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aixuno.com/es/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aixuno.com/de/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/excel-to-markdown.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/fr/tools/markdown-to-html.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/tools/markdown-to-html.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aixuno.com/es/tools/markdown-to-html.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aixuno.com/de/tools/markdown-to-html.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/markdown-to-html.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/markdown-to-html.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/markdown-to-html.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/fr/tools/markdown-to-pdf.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aixuno.com/es/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aixuno.com/de/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/markdown-to-pdf.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/fr/tools/markdown-to-word.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aixuno.com/es/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aixuno.com/de/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/markdown-to-word.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/guides/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/guides/ai-response-to-pdf.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/ai-response-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/ai-response-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/ai-response-to-pdf.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/guides/chatgpt-to-word.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/chatgpt-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/chatgpt-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/chatgpt-to-word.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/guides/copy-ai-answer-to-word.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/copy-ai-answer-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/copy-ai-answer-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/copy-ai-answer-to-word.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/guides/deepseek-to-word.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/deepseek-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/deepseek-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/deepseek-to-word.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/guides/excel-to-markdown-guide.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/excel-to-markdown-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/excel-to-markdown-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/excel-to-markdown-guide.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/guides/how-to-export-ai-answer.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/how-to-export-ai-answer.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/how-to-export-ai-answer.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/how-to-export-ai-answer.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/guides/markdown-table-to-excel.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/markdown-table-to-excel.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/markdown-table-to-excel.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/markdown-table-to-excel.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/guides/markdown-to-html-guide.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/markdown-to-html-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/markdown-to-html-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/markdown-to-html-guide.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/ja/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aixuno.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aixuno.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/ja/tools/excel-to-markdown.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aixuno.com/es/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aixuno.com/de/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/excel-to-markdown.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/ja/tools/markdown-to-html.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/tools/markdown-to-html.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aixuno.com/es/tools/markdown-to-html.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aixuno.com/de/tools/markdown-to-html.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/markdown-to-html.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/markdown-to-html.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/markdown-to-html.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/ja/tools/markdown-to-pdf.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aixuno.com/es/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aixuno.com/de/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/markdown-to-pdf.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/ja/tools/markdown-to-word.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aixuno.com/es/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aixuno.com/de/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/markdown-to-word.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/privacy.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/terms.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/terms.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/tools/excel-to-markdown.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aixuno.com/es/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aixuno.com/de/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/excel-to-markdown.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/tools/markdown-to-html.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/tools/markdown-to-html.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aixuno.com/es/tools/markdown-to-html.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aixuno.com/de/tools/markdown-to-html.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/markdown-to-html.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/markdown-to-html.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/markdown-to-html.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/tools/markdown-to-pdf.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aixuno.com/es/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aixuno.com/de/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/markdown-to-pdf.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/tools/markdown-to-word.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aixuno.com/es/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aixuno.com/de/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/markdown-to-word.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aixuno.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aixuno.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/about.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/about.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/changelog.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/changelog.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/changelog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/changelog.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/contact.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/contact.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/disclaimer.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/disclaimer.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/disclaimer.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/disclaimer.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/guides/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/guides/ai-content-to-wechat.html</loc>
+    <lastmod>2026-11-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/guides/ai-response-to-pdf.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/ai-response-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/ai-response-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/ai-response-to-pdf.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/guides/chatgpt-to-word.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/chatgpt-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/chatgpt-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/chatgpt-to-word.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/guides/copy-ai-answer-to-word.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/copy-ai-answer-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/copy-ai-answer-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/copy-ai-answer-to-word.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/guides/deepseek-to-word.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/deepseek-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/deepseek-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/deepseek-to-word.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/guides/excel-to-markdown-guide.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/excel-to-markdown-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/excel-to-markdown-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/excel-to-markdown-guide.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/guides/how-to-export-ai-answer.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/how-to-export-ai-answer.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/how-to-export-ai-answer.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/how-to-export-ai-answer.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/guides/markdown-table-to-excel.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/markdown-table-to-excel.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/markdown-table-to-excel.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/markdown-table-to-excel.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/guides/markdown-to-html-guide.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/markdown-to-html-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/markdown-to-html-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/markdown-to-html-guide.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/guides/md-file-to-word.html</loc>
+    <lastmod>2026-11-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/privacy.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/terms.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/terms.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/tools/excel-to-markdown.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aixuno.com/es/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aixuno.com/de/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/excel-to-markdown.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/excel-to-markdown.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/tools/markdown-table-to-excel.html</loc>
+    <lastmod>2026-11-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/tools/markdown-to-pdf.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aixuno.com/es/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aixuno.com/de/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/markdown-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/markdown-to-pdf.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/tools/markdown-to-word.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aixuno.com/es/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://aixuno.com/de/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/markdown-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/markdown-to-word.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/tools/wechat-format.html</loc>
+    <lastmod>2026-11-01</lastmod>
+  </url>
 </urlset>
