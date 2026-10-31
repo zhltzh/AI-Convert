@@ -95,12 +95,25 @@ export function sanitizeHtml(html) {
 }
 
 /**
+ * The preview panel already sits inside a page that owns the single <h1>, so the
+ * rendered headings drop one level. `data-md-level` keeps the original level so
+ * CSS can preserve the exact same visual size.
+ * @param {string} html
+ * @returns {string}
+ */
+export function demoteHeadingsForPreview(html) {
+  return html
+    .replace(/<h([1-5])(\s[^>]*)?>/g, (match, level, attrs = "") => `<h${Number(level) + 1}${attrs} data-md-level="${level}">`)
+    .replace(/<\/h([1-5])>/g, (match, level) => `</h${Number(level) + 1}>`);
+}
+
+/**
  * Converts GitHub-flavoured Markdown to safe, presentation-ready HTML.
  * @param {string} markdown
- * @param {{ sanitize?: boolean }} options
+ * @param {{ sanitize?: boolean, demoteHeadings?: boolean }} options
  * @returns {Promise<string>}
  */
-export async function renderMarkdown(markdown, { sanitize = true } = {}) {
+export async function renderMarkdown(markdown, { sanitize = true, demoteHeadings = false } = {}) {
   const parser = await loadMarkdownParser();
   const normalized = normalizeMarkdown(markdown);
 
@@ -115,5 +128,6 @@ export async function renderMarkdown(markdown, { sanitize = true } = {}) {
     mangle: false,
   });
 
-  return sanitize ? sanitizeHtml(html) : html;
+  const safeHtml = sanitize ? sanitizeHtml(html) : html;
+  return demoteHeadings ? demoteHeadingsForPreview(safeHtml) : safeHtml;
 }

@@ -3,7 +3,7 @@ import { renderFooter } from '../components/footer.js';
 import { renderMarkdownEditor } from '../components/markdown-editor.js';
 import { renderMarkdownUpload, wireMarkdownUpload } from '../components/markdown-upload.js';
 import { renderPreviewPanel } from '../components/preview-panel.js';
-import { renderMarkdown } from '../core/markdown-engine.js';
+import { demoteHeadingsForPreview, renderMarkdown } from '../core/markdown-engine.js';
 import { formatWechatHtml } from '../converters/wechat-format.js';
 
 const sample = `# 一份适合微信公众号的 AI 内容
@@ -40,7 +40,9 @@ async function updatePreview() {
   try {
     const html = await renderMarkdown(input.value);
     currentHtml = formatWechatHtml(html, theme.value);
-    preview.innerHTML = currentHtml;
+    // The preview drops one heading level so the page keeps a single <h1>;
+    // the copied rich text keeps the original structure.
+    preview.innerHTML = demoteHeadingsForPreview(currentHtml);
     status.textContent = input.value.trim() ? '排版预览已更新 · 内容仅在本地处理' : '等待输入 Markdown 内容';
   } catch (error) { status.textContent = error.message; }
 }

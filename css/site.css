@@ -146,6 +146,18 @@ button, a, input, textarea, select { -webkit-tap-highlight-color: transparent; }
 .markdown-preview { min-height: 328px; padding: 18px; overflow: auto; color: #2d2926; font-size: 14px; line-height: 1.72; }
 .markdown-preview h1, .markdown-preview h2, .markdown-preview h3 { margin: 1.15em 0 .55em; line-height: 1.25; }
 .markdown-preview h1 { font-size: 25px; }.markdown-preview h2 { font-size: 20px; }.markdown-preview h3 { font-size: 17px; }
+/* Preview headings are demoted one level to keep a single <h1> per page. These
+   rules restore the size and spacing each level had before the demotion: the
+   browser defaults for previews without their own heading styles, and the
+   explicit sizes below for the home workspace preview. */
+[data-md-level="1"] { font-size: 2em; margin: .67em 0; }
+[data-md-level="2"] { font-size: 1.5em; margin: .83em 0; }
+[data-md-level="3"] { font-size: 1.17em; margin: 1em 0; }
+[data-md-level="4"] { font-size: 1em; margin: 1.33em 0; }
+[data-md-level="5"] { font-size: .83em; margin: 1.67em 0; }
+[data-md-level="6"] { font-size: .67em; margin: 2.33em 0; }
+.markdown-preview [data-md-level] { margin: 1.15em 0 .55em; line-height: 1.25; }
+.markdown-preview [data-md-level="1"] { font-size: 25px; }.markdown-preview [data-md-level="2"] { font-size: 20px; }.markdown-preview [data-md-level="3"] { font-size: 17px; }
 .markdown-preview table { width: 100%; border-collapse: collapse; }.markdown-preview th, .markdown-preview td { padding: 6px; border: 1px solid var(--color-border); text-align: left; }.markdown-preview th { background: #fff7ed; }
 .preview-empty { color: var(--color-soft); }
 .workspace__actions { display: flex; align-items: center; justify-content: flex-end; gap: 10px; margin-top: 18px; }

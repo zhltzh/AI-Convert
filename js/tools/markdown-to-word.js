@@ -48,7 +48,7 @@ async function updatePreview() {
   status.textContent = '正在更新预览…';
 
   try {
-    const html = await renderMarkdown(input.value);
+    const html = await renderMarkdown(input.value, { demoteHeadings: true });
     if (pendingRender !== request) return;
     preview.innerHTML = html;
     status.textContent = input.value.trim() ? '预览已更新 · 内容仅在本地处理' : '等待输入 Markdown 内容';

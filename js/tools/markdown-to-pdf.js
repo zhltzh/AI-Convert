@@ -42,7 +42,7 @@ async function updatePreview() {
   pendingRender = request;
   status.textContent = '正在更新预览…';
   try {
-    const html = await renderMarkdown(input.value);
+    const html = await renderMarkdown(input.value, { demoteHeadings: true });
     if (pendingRender !== request) return;
     preview.innerHTML = html;
     status.textContent = input.value.trim() ? '预览已更新 · 内容仅在本地处理' : '等待输入 Markdown 内容';
@@ -76,7 +76,7 @@ exportButton.addEventListener('click', async () => {
   exportButton.disabled = true;
   exportButton.textContent = '正在生成…';
   try {
-    await exportPdf(preview.innerHTML);
+    await exportPdf(await renderMarkdown(input.value));
     status.textContent = 'PDF 文件已开始下载';
   } catch (error) {
     status.textContent = error.message;
@@ -88,7 +88,7 @@ exportButton.addEventListener('click', async () => {
 
 document.querySelector('#print-pdf')?.addEventListener('click', async () => {
   try {
-    await printDocument(preview.innerHTML, 'Markdown 转 PDF');
+    await printDocument(await renderMarkdown(input.value), 'Markdown 转 PDF');
     status.textContent = '已打开打印窗口：目标选择「另存为 PDF」即可得到文字可选、可搜索的 PDF';
   } catch (error) {
     status.textContent = error.message;

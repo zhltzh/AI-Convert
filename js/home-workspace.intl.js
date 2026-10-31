@@ -37,6 +37,8 @@ locale.workspace.fileReadError = uploadCopy.readError;
 locale.workspace.loaded = uploadCopy.loaded;
 const modes = locale.modes;
 const drafts = new Map();
+// All markdown modes share one draft so switching Word/PDF/HTML/table keeps the text.
+const SHARED_DRAFT = 'markdown';
 let activeMode = document.body.dataset.mode || new URLSearchParams(location.search).get('mode') || 'word';
 if (!modes.some(mode => mode.id === activeMode)) activeMode = 'word';
 
@@ -50,7 +52,7 @@ function markdownWorkspace(mode) {
   const t = locale.workspace;
   const htmlExtra = mode.id === 'html' ? '<button class="button button--secondary" type="button" id="download-html">Download HTML</button>' : '';
   const printExtra = mode.id === 'pdf' ? `<button class="button button--secondary" type="button" id="workspace-print-pdf">${printCopy.label}</button>` : '';
-  return `<div class="workspace__top"><div><p class="eyebrow">${mode.label}</p><h2>${mode.title}</h2><p>${mode.description}</p></div><div class="workspace__cta"><button class="button button--primary" type="button" id="workspace-action-top">${mode.action}</button></div></div><div class="editor-grid"><div class="editor-pane"><div class="pane-title"><label for="home-markdown">${t.input}</label></div>${renderMarkdownUpload(t.drop)}<textarea id="home-markdown" rows="16" placeholder="${t.placeholder}">${drafts.get(mode.id) ?? ''}</textarea><p class="field-note">${t.support}</p></div><div class="preview-pane"><div class="pane-title"><p class="preview-pane__label">${t.preview}</p><button class="utility-button" type="button" id="copy-preview">${t.copyPreview}</button></div><article id="home-preview" class="markdown-preview"><p class="preview-empty">${t.empty}</p></article></div></div><div class="workspace__actions"><span class="status" id="workspace-status" role="status" aria-live="polite">${t.privacy}</span>${printExtra}<button class="button button--primary" type="button" id="workspace-action">${mode.action}</button>${htmlExtra}</div>`;
+  return `<div class="workspace__top"><div><p class="eyebrow">${mode.label}</p><h2>${mode.title}</h2><p>${mode.description}</p></div><div class="workspace__cta"><button class="button button--primary" type="button" id="workspace-action-top">${mode.action}</button></div></div><div class="editor-grid"><div class="editor-pane"><div class="pane-title"><label for="home-markdown">${t.input}</label></div>${renderMarkdownUpload(t.drop)}<textarea id="home-markdown" rows="16" placeholder="${t.placeholder}">${drafts.get(SHARED_DRAFT) ?? ''}</textarea><p class="field-note">${t.support}</p></div><div class="preview-pane"><div class="pane-title"><p class="preview-pane__label">${t.preview}</p><button class="utility-button" type="button" id="copy-preview">${t.copyPreview}</button></div><article id="home-preview" class="markdown-preview"><p class="preview-empty">${t.empty}</p></article></div></div><div class="workspace__actions"><span class="status" id="workspace-status" role="status" aria-live="polite">${t.privacy}</span>${printExtra}<button class="button button--primary" type="button" id="workspace-action">${mode.action}</button>${htmlExtra}</div>`;
 }
 
 function officeWorkspace() {
@@ -83,7 +85,7 @@ ${body}
 
 async function wireMarkdownWorkspace(mode){
   const input=document.querySelector('#home-markdown');const preview=document.querySelector('#home-preview');let html='';
-  const update=async()=>{drafts.set(mode.id,input.value);try{html=await renderMarkdown(input.value);preview.innerHTML=html||`<p class="preview-empty">${locale.workspace.empty}</p>`;}catch(error){setStatus(error.message,true);}};
+  const update=async()=>{drafts.set(SHARED_DRAFT,input.value);try{html=await renderMarkdown(input.value,{demoteHeadings:true});preview.innerHTML=html||`<p class="preview-empty">${locale.workspace.empty}</p>`;}catch(error){setStatus(error.message,true);}};
   input.addEventListener('input',update);
   wireMarkdownUpload({onFile:async text=>{input.value=text;await update();},setStatus,messages:{invalid:locale.workspace.fileInvalid,large:locale.workspace.fileLarge,loaded:locale.workspace.loaded,readError:locale.workspace.fileReadError,wrongType:file=>/\.(docx|doc|xlsx|xls|csv|pdf)$/i.test(file.name)?uploadCopy.officeFile:locale.workspace.fileInvalid},dropTarget:document.querySelector('.editor-pane')});
   await update();

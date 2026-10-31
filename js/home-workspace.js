@@ -26,6 +26,8 @@ const modes = [
 ];
 
 const drafts = new Map();
+// All markdown modes share one draft so switching Word/PDF/HTML/table keeps the text.
+const SHARED_DRAFT = 'markdown';
 let activeMode = 'word';
 
 function cardMarkup(mode) {
@@ -36,11 +38,11 @@ function cardMarkup(mode) {
 
 function markdownWorkspace(mode) {
   const placeholder = '在这里粘贴 Markdown 内容，例如来自 DeepSeek、豆包、ChatGPT 或 Claude 的回答…';
-  return `<div class="workspace__top"><div><p class="eyebrow">${mode.label}</p><h2>${mode.title}</h2><p>${mode.description}</p></div>${workspaceCta(mode.action)}</div><div class="editor-grid"><div class="editor-pane"><div class="pane-title"><label for="home-markdown">Markdown 内容</label></div>${renderMarkdownUpload({title:'将 Markdown 文件拖到这里，或点击选择文件',hint:'支持 .md、.markdown · 最大 5MB · 文件仅在本地处理'})}<textarea id="home-markdown" rows="16" placeholder="${placeholder}">${drafts.get(mode.id) ?? ''}</textarea><p class="field-note">支持标题、列表、表格、引用和代码块。</p></div><div class="preview-pane"><div class="pane-title"><p class="preview-pane__label">实时预览</p><button class="utility-button" type="button" id="copy-preview">复制预览</button></div><article id="home-preview" class="markdown-preview"><p class="preview-empty">粘贴内容后，会在这里显示预览。</p></article></div></div><div class="workspace__actions"><span class="status" id="workspace-status" role="status" aria-live="polite">支持 DeepSeek、豆包、腾讯元宝、通义千问、文心一言、ChatGPT、Claude 等 AI 内容；内容只在当前浏览器中处理。</span>${mode.id === 'pdf' ? '<button class="button button--secondary" type="button" id="workspace-print-pdf">打印 / 另存为 PDF</button>' : ''}<button class="button button--primary" type="button" id="workspace-action">${mode.action}</button></div>`;
+  return `<div class="workspace__top"><div><p class="eyebrow">${mode.label}</p><h2>${mode.title}</h2><p>${mode.description}</p></div>${workspaceCta(mode.action)}</div><div class="editor-grid"><div class="editor-pane"><div class="pane-title"><label for="home-markdown">Markdown 内容</label></div>${renderMarkdownUpload({title:'将 Markdown 文件拖到这里，或点击选择文件',hint:'支持 .md、.markdown · 最大 5MB · 文件仅在本地处理'})}<textarea id="home-markdown" rows="16" placeholder="${placeholder}">${drafts.get(SHARED_DRAFT) ?? ''}</textarea><p class="field-note">支持标题、列表、表格、引用和代码块。</p></div><div class="preview-pane"><div class="pane-title"><p class="preview-pane__label">实时预览</p><button class="utility-button" type="button" id="copy-preview">复制预览</button></div><article id="home-preview" class="markdown-preview"><p class="preview-empty">粘贴内容后，会在这里显示预览。</p></article></div></div><div class="workspace__actions"><span class="status" id="workspace-status" role="status" aria-live="polite">支持 DeepSeek、豆包、腾讯元宝、通义千问、文心一言、ChatGPT、Claude 等 AI 内容；内容只在当前浏览器中处理。</span>${mode.id === 'pdf' ? '<button class="button button--secondary" type="button" id="workspace-print-pdf">打印 / 另存为 PDF</button>' : ''}<button class="button button--primary" type="button" id="workspace-action">${mode.action}</button></div>`;
 }
 
 function tableWorkspace() {
-  const sample = drafts.get('table') ?? '| 项目 | 数量 | 备注 |\n| --- | ---: | --- |\n| 示例 A | 10 | 可直接导出 |\n| 示例 B | 20 | 中文内容正常 |';
+  const sample = drafts.get(SHARED_DRAFT) ?? '| 项目 | 数量 | 备注 |\n| --- | ---: | --- |\n| 示例 A | 10 | 可直接导出 |\n| 示例 B | 20 | 中文内容正常 |';
   return `<div class="workspace__top"><div><p class="eyebrow">表格整理</p><h2>Markdown 表格转 Excel / CSV</h2><p>粘贴 AI 生成的 Markdown 表格，在本地导出为可编辑表格。</p></div>${workspaceCta('下载 Excel')}</div><div class="editor-grid"><div class="editor-pane"><div class="pane-title"><label for="home-markdown">Markdown 表格</label></div><textarea id="home-markdown" rows="16" placeholder="粘贴包含 | 列头 | 的 Markdown 表格…">${sample}</textarea><p class="field-note">可同时识别多个表格；Excel 中每个表格会生成一个工作表。</p></div><div class="preview-pane"><div class="pane-title"><p class="preview-pane__label">表格预览</p><span id="table-count">0 个表格</span></div><article id="home-preview" class="markdown-preview"></article></div></div><div class="workspace__actions"><span class="status" id="workspace-status" role="status" aria-live="polite">内容只在当前浏览器中解析和导出。</span><button class="button button--secondary" type="button" id="copy-table">复制到 Excel</button><button class="button button--secondary" type="button" id="download-csv">下载 CSV</button><button class="button button--primary" type="button" id="download-xlsx">下载 Excel</button></div>`;
 }
 
@@ -88,8 +90,8 @@ async function wireMarkdownWorkspace(mode) {
   const input = document.querySelector('#home-markdown');
   const preview = document.querySelector('#home-preview');
   const updatePreview = async () => {
-    drafts.set(mode.id, input.value);
-    try { preview.innerHTML = (await renderMarkdown(input.value)) || '<p class="preview-empty">粘贴内容后，会在这里显示预览。</p>'; }
+    drafts.set(SHARED_DRAFT, input.value);
+    try { preview.innerHTML = (await renderMarkdown(input.value, { demoteHeadings: true })) || '<p class="preview-empty">粘贴内容后，会在这里显示预览。</p>'; }
     catch (error) { setStatus(error.message, true); }
   };
   input.addEventListener('input', updatePreview);
@@ -130,10 +132,10 @@ function wireTableWorkspace() {
   const count = document.querySelector('#table-count');
   let tables = [];
   const update = async () => {
-    drafts.set('table', input.value);
+    drafts.set(SHARED_DRAFT, input.value);
     tables = parseMarkdownTables(input.value);
     count.textContent = `${tables.length} 个表格`;
-    preview.innerHTML = tables.length ? await renderMarkdown(input.value) : '<p class="preview-empty">未识别到 Markdown 表格，请检查表头下方是否有 <code>| --- |</code> 分隔行。</p>';
+    preview.innerHTML = tables.length ? await renderMarkdown(input.value, { demoteHeadings: true }) : '<p class="preview-empty">未识别到 Markdown 表格，请检查表头下方是否有 <code>| --- |</code> 分隔行。</p>';
   };
   input.addEventListener('input', update);
   document.querySelector('#copy-table').addEventListener('click', async () => {
