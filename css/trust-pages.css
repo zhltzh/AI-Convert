@@ -3,6 +3,10 @@
 .trust-page h2 { margin: 50px 0 16px; font-size: 26px; letter-spacing: -.045em; }
 .trust-page p, .trust-page li { color: #393939; line-height: 1.85; }
 .trust-page ul { padding-left: 1.4em; }
+.trust-page table { width: 100%; border-collapse: collapse; margin: 22px 0; font-size: 15px; }
+.trust-page th, .trust-page td { padding: 10px 12px; border: 1px solid var(--color-border); text-align: left; vertical-align: top; }
+.trust-page th { background: var(--color-surface); font-weight: 600; }
+.trust-page .table-scroll { overflow-x: auto; }
 .trust-page__lead { color: var(--color-muted); font-size: 18px; line-height: 1.75; }
 .trust-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--color-border); }
 .trust-list li { display: grid; grid-template-columns: 112px 1fr; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--color-border); }

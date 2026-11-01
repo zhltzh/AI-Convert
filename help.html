@@ -1,0 +1,53 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8" /><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://cdn.sheetjs.com https://static.cloudflareinsights.com; worker-src 'self' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; font-src 'self' data: https://cdn.jsdelivr.net; connect-src 'self' https://cdn.jsdelivr.net https://cdn.sheetjs.com https://cloudflareinsights.com https://static.cloudflareinsights.com; object-src 'none'; base-uri 'self'; form-action 'self'"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#ffffff"><meta name="viewport" content="width=device-width,initial-scale=1" /><meta name="description" content="What each Aixuno tool takes and produces, common questions, and a symptom-to-fix table for when the output does not look right." /> /><title>Help and Quick Reference — Every Aixuno Tool</title><meta property="og:type" content="website" /><meta property="og:site_name" content="Aixuno" /><meta property="og:locale" content="en_US" /> /><meta property="og:title" content="Help and Quick Reference — Every Aixuno Tool" /> /> /><meta property="og:description" content="What each Aixuno tool takes and produces, common questions, and a symptom-to-fix table for when the output does not look right." /> /><meta property="og:url" content="https://aixuno.com/help.html" /> /><meta property="og:image" content="https://aixuno.com/og-image.png" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="Help and Quick Reference — Every Aixuno Tool" /> /> /><meta name="twitter:description" content="What each Aixuno tool takes and produces, common questions, and a symptom-to-fix table for when the output does not look right." /> /><meta name="twitter:image" content="https://aixuno.com/og-image.png" /><link rel="stylesheet" href="css/site.css" /><link rel="stylesheet" href="css/guide-page.css" /><link rel="stylesheet" href="css/trust-pages.css" /><script type="application/ld+json">{"@context":"https://schema.org","@type":"AboutPage","name":"About Aixuno","description":"Aixuno is a local-first AI content conversion tool platform."}</script><link rel="canonical" href="https://aixuno.com/help.html" /> /><script defer src="/js/analytics.js"></script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I need an account?","acceptedAnswer":{"@type":"Answer","text":"No. No tool requires registration, and there is no account system to create."}},{"@type":"Question","name":"Are my files uploaded?","acceptedAnswer":{"@type":"Answer","text":"No. Text and files are read and converted inside the browser. Nothing is sent to an Aixuno server."}},{"@type":"Question","name":"Which Markdown features are supported?","acceptedAnswer":{"@type":"Answer","text":"Headings, paragraphs, lists, links, tables, blockquotes and fenced code blocks."}},{"@type":"Question","name":"Can it convert a scanned PDF?","acceptedAnswer":{"@type":"Answer","text":"Not yet. A scanned file has no text layer, so it needs OCR before it can be converted."}},{"@type":"Question","name":"Why did my headings disappear after pasting?","acceptedAnswer":{"@type":"Answer","text":"Either the copy came from a rich-text source that dropped the markers, or the hashes were written without a space after them."}},{"@type":"Question","name":"Can I change the PDF page size?","acceptedAnswer":{"@type":"Answer","text":"No. The current version exports A4 portrait only, with 12 mm side margins and a page counter in the bottom-right corner."}},{"@type":"Question","name":"Is there a length limit?","acceptedAnswer":{"@type":"Answer","text":"No fixed limit is applied. Very long documents are bounded only by what the browser can hold in a text field."}},{"@type":"Question","name":"Will this work on a phone?","acceptedAnswer":{"@type":"Answer","text":"Yes, the tools run in mobile browsers. Editing long tables is still easier on a desktop screen."}}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Aixuno","item":"https://aixuno.com/"},{"@type":"ListItem","position":2,"name":"Help","item":"https://aixuno.com/help.html"}]}</script><link rel="alternate" hreflang="en" href="https://aixuno.com/help.html"/><link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/help.html"/><link rel="alternate" hreflang="x-default" href="https://aixuno.com/help.html"/></head><body><header class="mini-header"><div class="container mini-header__inner"><a class="brand" href="index.html"><span class="brand__mark">A</span>Aixuno</a><nav class="mini-nav"><a href="index.html#tools">Tools</a><a href="zh/help.html">中文</a></nav></div></header><main><article class="trust-page"><p class="eyebrow">Help</p><h1>Help and quick reference</h1><p class="trust-page__lead">What each tool takes, what it produces, and what to check when the output does not look right.</p>
+
+<h2>Start here</h2>
+<ol>
+<li>Copy what you want to convert — an AI answer, the contents of a Markdown file, or a spreadsheet.</li>
+<li>Paste it into the matching tool. The preview updates as you type or as the file is read.</li>
+<li>Check the preview, then export the file or copy the result.</li>
+</ol>
+
+<h2>Tool reference</h2>
+<div class="table-scroll"><table><thead><tr><th>Tool</th><th>Takes</th><th>Produces</th><th>Typical use</th></tr></thead><tbody>
+<tr><td>Markdown to Word</td><td>Markdown text or pasted .md content</td><td>.docx</td><td>Sending a draft that needs comments</td></tr>
+<tr><td>Markdown to PDF</td><td>Markdown text</td><td>A4 PDF with page numbers</td><td>Reading, printing, archiving a final version</td></tr>
+<tr><td>Markdown to HTML</td><td>Markdown text</td><td>Complete HTML5 file, no CSS</td><td>Blogs, CMS, static sites</td></tr>
+<tr><td>Excel to Markdown</td><td>.xlsx, .xls, .csv, .docx, text-based PDF</td><td>Markdown table</td><td>Documentation, wikis, notes for an AI assistant</td></tr>
+<tr><td>Markdown table to Excel</td><td>A Markdown pipe table</td><td>.xlsx, one sheet per table</td><td>Calculating, filtering, sorting</td></tr>
+<tr><td>WeChat formatter</td><td>Markdown text</td><td>Rich text with inline styles</td><td>Pasting into a WeChat article editor</td></tr>
+</tbody></table></div>
+
+<h2>Common questions</h2>
+<h3>Do I need an account?</h3>
+<p>No. No tool requires registration, and there is no account system to create.</p>
+<h3>Are my files uploaded?</h3>
+<p>No. Text and files are read and converted inside the browser. Nothing is sent to an Aixuno server.</p>
+<h3>Which Markdown features are supported?</h3>
+<p>Headings, paragraphs, lists, links, tables, blockquotes and fenced code blocks. Footnotes and raw HTML are kept as text rather than interpreted.</p>
+<h3>Can it convert a scanned PDF?</h3>
+<p>Not yet. A scanned file has no text layer, so it needs OCR before it can be converted.</p>
+<h3>Why did my headings disappear after pasting?</h3>
+<p>Either the copy came from a rich-text source that dropped the markers, or the hashes were written without a space after them. Both are fixed by re-adding the markers on their own lines.</p>
+<h3>Can I change the PDF page size?</h3>
+<p>No. The current version exports A4 portrait only, with 12&nbsp;mm side margins and a page counter in the bottom-right corner.</p>
+<h3>Is there a length limit?</h3>
+<p>No fixed limit is applied. Very long documents are bounded only by what the browser can hold in a text field, so splitting into two or three parts is more reliable.</p>
+<h3>Will this work on a phone?</h3>
+<p>Yes, the tools run in mobile browsers. Editing long tables is still easier on a desktop screen.</p>
+
+<h2>If something goes wrong</h2>
+<div class="table-scroll"><table><thead><tr><th>Symptom</th><th>Likely cause</th><th>What to do</th></tr></thead><tbody>
+<tr><td>Hash marks appear in the document</td><td>No space after the marker</td><td>Write a space after each <code>#</code></td></tr>
+<tr><td>A table arrives as one paragraph</td><td>The delimiter row is missing</td><td>Add a row of dashes under the header row</td></tr>
+<tr><td>The exported PDF is blank</td><td>The page was scrolled during capture</td><td>Scroll to the top and export again</td></tr>
+<tr><td>The download does not start</td><td>The browser blocked it</td><td>Use the manual save link shown in the status bar</td></tr>
+<tr><td>Numbering restarts mid-document</td><td>An interrupted list</td><td>Merge the list into one block before converting</td></tr>
+<tr><td>Column contents are shifted</td><td>An unescaped pipe inside a cell</td><td>Escape it as <code>\|</code></td></tr>
+</tbody></table></div>
+
+<h2>Data and privacy</h2>
+<p>Pasted text and selected files stay in the browser's memory. Page analytics record which page was viewed, not what was converted. The <a class="text-link" href="privacy.html">privacy notice</a> describes the full data flow, including the third-party scripts used for parsing.</p>
+
+<h2>Still stuck</h2>
+<p>Send the tool name, browser, the steps you took and what you expected instead. The <a class="text-link" href="contact.html">contact page</a> explains what makes a report reproducible.</p>
+</article></main><footer class="mini-footer">Aixuno · Make AI content useful.</footer></body></html>

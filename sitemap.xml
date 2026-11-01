@@ -540,4 +540,6 @@
     <loc>https://aixuno.com/zh/tools/wechat-format.html</loc>
     <lastmod>2026-11-01</lastmod>
   </url>
+  <url><loc>https://aixuno.com/help.html</loc><lastmod>2026-11-01</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/help.html"/><xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/help.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/help.html"/></url>
+  <url><loc>https://aixuno.com/zh/help.html</loc><lastmod>2026-11-01</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/help.html"/><xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/help.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/help.html"/></url>
 </urlset>
