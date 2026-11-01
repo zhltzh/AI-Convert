@@ -237,3 +237,10 @@ button, a, input, textarea, select { -webkit-tap-highlight-color: transparent; }
 .faq__list summary { cursor: pointer; font-weight: 600; list-style: none; padding: 4px 22px 4px 0; position: relative; }
 .faq__list summary::after { content: '+'; position: absolute; right: 0; color: var(--color-muted); font-size: 19px; font-weight: 400; }
 .faq__list details[open] summary::after { content: '−'; }
+
+.share-links { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 34px 0 0; padding-top: 26px; border-top: 1px solid var(--color-border); }
+.share-links__label { margin-right: 2px; color: var(--color-muted); font-size: 13px; letter-spacing: .01em; }
+.share-links a, .share-links button { display: inline-flex; align-items: center; gap: 7px; padding: 8px 15px; border: 1px solid var(--color-border); border-radius: 999px; background: #fff; color: var(--color-ink); font-family: inherit; font-size: 13px; line-height: 1; text-decoration: none; cursor: pointer; transition: border-color .2s ease, background .2s ease; }
+.share-links a:hover, .share-links button:hover { border-color: var(--color-ink); background: var(--color-surface); }
+.share-links button[data-copied="1"] { border-color: #16a34a; color: #16a34a; }
+@media (max-width: 560px) { .share-links { gap: 8px; } .share-links__label { width: 100%; margin-bottom: 2px; } }
