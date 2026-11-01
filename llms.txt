@@ -2,12 +2,16 @@
 
 Aixuno is a free, browser-based Markdown and AI content conversion platform. Content is processed locally without uploading files to an Aixuno application server.
 
+> Full text of every page (66 pages, ~100k characters): https://aixuno.com/llms-full.txt
+> Help and troubleshooting: https://aixuno.com/help.html (Chinese: https://aixuno.com/zh/help.html)
+
 ## Default English tools
 
 - Markdown to Word: /tools/markdown-to-word.html
 - Markdown to PDF: /tools/markdown-to-pdf.html
 - Markdown to HTML: /tools/markdown-to-html.html
 - Office files to Markdown: /tools/excel-to-markdown.html
+- Help and reference: /help.html
 
 ## Language versions
 

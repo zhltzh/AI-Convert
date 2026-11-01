@@ -1,0 +1,4091 @@
+# Aixuno — complete content reference
+
+> Full text of every public page on https://aixuno.com, generated for language models.
+> The condensed index is at https://aixuno.com/llms.txt.
+> Generated 2026-11-01. 66 pages.
+
+## Contents
+
+- [Markdown Converter — Word, PDF, HTML, Free & Local](https://aixuno.com/)
+- [Markdown 转换工具｜转 Word、PDF、HTML，本地免费](https://aixuno.com/zh/)
+- [Excel to Markdown Table — XLSX, CSV, DOCX, PDF](https://aixuno.com/tools/excel-to-markdown.html)
+- [Markdown to HTML Converter — Clean Semantic HTML](https://aixuno.com/tools/markdown-to-html.html)
+- [Markdown to PDF Converter — Free, No Upload](https://aixuno.com/tools/markdown-to-pdf.html)
+- [Markdown to Word — Convert MD to DOCX Free](https://aixuno.com/tools/markdown-to-word.html)
+- [Excel / CSV 转 Markdown 表格｜本地转换](https://aixuno.com/zh/tools/excel-to-markdown.html)
+- [Markdown 表格转 Excel｜一键导出 xlsx](https://aixuno.com/zh/tools/markdown-table-to-excel.html)
+- [Markdown 转 PDF｜免费在线，不上传文件](https://aixuno.com/zh/tools/markdown-to-pdf.html)
+- [Markdown 转 Word｜免费生成 docx，本地处理](https://aixuno.com/zh/tools/markdown-to-word.html)
+- [Markdown 转公众号排版｜三种主题一键复制](https://aixuno.com/zh/tools/wechat-format.html)
+- [Markdown Konverter — Word, PDF, HTML, kostenlos](https://aixuno.com/de/)
+- [Excel zu Markdown umwandeln — kostenlos, ohne Upload](https://aixuno.com/de/tools/excel-to-markdown.html)
+- [Markdown zu HTML umwandeln — sauberes HTML, kostenlos](https://aixuno.com/de/tools/markdown-to-html.html)
+- [Markdown zu PDF umwandeln — kostenlos, ohne Upload](https://aixuno.com/de/tools/markdown-to-pdf.html)
+- [Markdown zu Word umwandeln — DOCX kostenlos erstellen](https://aixuno.com/de/tools/markdown-to-word.html)
+- [Conversor Markdown — Word, PDF, HTML, gratis](https://aixuno.com/es/)
+- [Convertir Excel a Markdown — gratis, sin subir archivos](https://aixuno.com/es/tools/excel-to-markdown.html)
+- [Convertir Markdown a HTML — gratis, sin subir archivos](https://aixuno.com/es/tools/markdown-to-html.html)
+- [Convertir Markdown a PDF — gratis, sin subir archivos](https://aixuno.com/es/tools/markdown-to-pdf.html)
+- [Convertir Markdown a Word — gratis, sin subir archivos](https://aixuno.com/es/tools/markdown-to-word.html)
+- [Convertisseur Markdown — Word, PDF, HTML, gratuit](https://aixuno.com/fr/)
+- [Convertir Excel en Markdown — gratuit, sans envoi](https://aixuno.com/fr/tools/excel-to-markdown.html)
+- [Convertir Markdown en HTML — gratuit, sans envoi](https://aixuno.com/fr/tools/markdown-to-html.html)
+- [Convertir Markdown en PDF — gratuit, sans envoi](https://aixuno.com/fr/tools/markdown-to-pdf.html)
+- [Convertir Markdown en Word — gratuit, sans envoi](https://aixuno.com/fr/tools/markdown-to-word.html)
+- [Markdown 変換ツール｜Word・PDF・HTML へ無料変換](https://aixuno.com/ja/)
+- [Excel を Markdown に変換｜無料・アップロード不要](https://aixuno.com/ja/tools/excel-to-markdown.html)
+- [Markdown を HTML に変換｜無料・アップロード不要](https://aixuno.com/ja/tools/markdown-to-html.html)
+- [Markdown を PDF に変換｜無料・アップロード不要](https://aixuno.com/ja/tools/markdown-to-pdf.html)
+- [Markdown を Word に変換｜無料・アップロード不要](https://aixuno.com/ja/tools/markdown-to-word.html)
+- [Convert an AI Response to PDF | Free Browser Tool | Aixuno](https://aixuno.com/guides/ai-response-to-pdf.html)
+- [How to Export ChatGPT Answers to Word | Aixuno](https://aixuno.com/guides/chatgpt-to-word.html)
+- [Copy an AI Answer to Word Without Losing Formatting | Aixuno](https://aixuno.com/guides/copy-ai-answer-to-word.html)
+- [How to Convert DeepSeek Answers to Word | Aixuno](https://aixuno.com/guides/deepseek-to-word.html)
+- [How to Convert Excel or CSV to a Markdown Table | Aixuno](https://aixuno.com/guides/excel-to-markdown-guide.html)
+- [How to Export an AI Answer: Word, PDF, or Markdown | Aixuno](https://aixuno.com/guides/how-to-export-ai-answer.html)
+- [AI Content and Markdown Conversion Guides | Aixuno](https://aixuno.com/guides/)
+- [How to Convert a Markdown Table to Excel | Aixuno](https://aixuno.com/guides/markdown-table-to-excel.html)
+- [How to Convert Markdown to Clean HTML | Aixuno](https://aixuno.com/guides/markdown-to-html-guide.html)
+- [AI 内容怎么排版到公众号？Markdown 转公众号教程｜Markdown 万能转换器](https://aixuno.com/zh/guides/ai-content-to-wechat.html)
+- [AI回答转PDF：免费在线转换方法 | Aixuno](https://aixuno.com/zh/guides/ai-response-to-pdf.html)
+- [ChatGPT回答怎么导出Word？免费教程｜Aixuno](https://aixuno.com/zh/guides/chatgpt-to-word.html)
+- [复制AI回答到Word格式不乱 | Aixuno](https://aixuno.com/zh/guides/copy-ai-answer-to-word.html)
+- [DeepSeek怎么转Word？免费导出教程｜Aixuno](https://aixuno.com/zh/guides/deepseek-to-word.html)
+- [Excel 表格怎么转 Markdown？CSV 转 MD 表格完整教程 | Aixuno](https://aixuno.com/zh/guides/excel-to-markdown-guide.html)
+- [如何保存AI回答为Word、PDF或Markdown？｜Aixuno](https://aixuno.com/zh/guides/how-to-export-ai-answer.html)
+- [AI内容与Markdown转换教程 | Aixuno](https://aixuno.com/zh/guides/)
+- [Markdown表格转Excel的方法与注意事项 | Aixuno](https://aixuno.com/zh/guides/markdown-table-to-excel.html)
+- [Markdown转HTML完整方法 | Aixuno](https://aixuno.com/zh/guides/markdown-to-html-guide.html)
+- [MD 文件怎么转 Word？Markdown 文件转换教程｜Markdown 万能转换器](https://aixuno.com/zh/guides/md-file-to-word.html)
+- [Help and Quick Reference — Every Aixuno Tool](https://aixuno.com/help.html)
+- [帮助与速查｜各工具输入、输出与故障排查](https://aixuno.com/zh/help.html)
+- [About Aixuno — Local-First Document Conversion](https://aixuno.com/about.html)
+- [baidu_verify_codeva-vi7uthga3h.html](https://aixuno.com/baidu_verify_codeva-vi7uthga3h.html)
+- [Aixuno Changelog — New Tools and Fixes](https://aixuno.com/changelog.html)
+- [Contact Aixuno — Feedback and Bug Reports](https://aixuno.com/contact.html)
+- [Disclaimer — Aixuno Conversion Limits](https://aixuno.com/disclaimer.html)
+- [Privacy — Your Files Stay in Your Browser](https://aixuno.com/privacy.html)
+- [Terms of Service — Aixuno](https://aixuno.com/terms.html)
+- [关于 Aixuno｜本地优先的文档转换工具](https://aixuno.com/zh/about.html)
+- [Aixuno 更新日志｜新工具与修复记录](https://aixuno.com/zh/changelog.html)
+- [联系 Aixuno｜反馈与问题报告](https://aixuno.com/zh/contact.html)
+- [免责声明｜转换结果的边界与责任](https://aixuno.com/zh/disclaimer.html)
+- [隐私说明｜内容只在你的浏览器处理](https://aixuno.com/zh/privacy.html)
+- [服务条款｜使用范围与责任说明](https://aixuno.com/zh/terms.html)
+
+---
+
+## Markdown Converter — Word, PDF, HTML, Free & Local
+
+URL: https://aixuno.com/
+Summary: Free browser tools to turn Markdown and AI answers into Word, PDF, HTML or reusable Markdown. No account, no upload.
+
+Markdown Converter · Aixuno
+Online Markdown Converter
+
+Choose a workflow, then paste, upload, download, or copy. Your content is processed only in this browser.
+
+
+ Simple without cutting corners
+From AI output to a useful document in two steps
+
+01Paste or upload
+Paste Markdown or upload MD, DOCX, Excel, CSV, or PDF files.
+
+02Download or copy
+Export Word, PDF, HTML, or reusable Markdown.
+
+Local processingYour content stays on your device
+Conversion happens in your browser and is not uploaded to our servers.
+
+
+ Practical guides
+More than format conversion
+
+Learn how to export ChatGPT, Claude, Gemini and other AI answers to Word or PDF, move Markdown tables into Excel, and publish clean HTML.
+Browse all conversion guides →Need batch image conversion? Open Aixuno Image Tools →
+
+
+ Frequently asked questions
+About the Markdown Converter
+
+What is the difference between Markdown and an MD file?
+Markdown is a lightweight markup format. An MD file stores Markdown content with a .md or .markdown extension.
+
+Can I convert AI-generated content directly?
+Yes. Paste structured content from ChatGPT, Claude, Gemini, Copilot, Perplexity, Grok, or another AI assistant.
+
+Which office files can be converted to Markdown?
+DOCX, Excel, CSV, and PDFs with selectable text are supported. Scanned PDFs require OCR.
+
+What happens to images inside a PDF?
+The current converter extracts selectable text and asks you to review pages containing images or graphics.
+
+Are my files uploaded?
+No. Conversion runs locally in your browser. Avoid using any online tool for information that must never be exposed.
+
+---
+
+## Markdown 转换工具｜转 Word、PDF、HTML，本地免费
+
+URL: https://aixuno.com/zh/
+Summary: Markdown 万能转换器：将 Markdown 或 MD 文件转为 Word、PDF、Excel 和 CSV，也可将办公文件整理为 Markdown。支持 DeepSeek、豆包、通义千问、ChatGPT 等 AI 内容，本地处理无需登录。
+
+Markdown 万能转换器 · Aixuno
+Markdown 在线转换工具
+
+点击一个场景，立即粘贴、上传、下载或复制。
+内容只在当前浏览器中处理。
+
+
+ 简单，但不粗糙
+从 AI 输出到可交付文档，只需两步
+
+01粘贴或上传
+粘贴 Markdown，或上传 MD、DOCX、Excel、CSV、PDF 文件。
+
+02下载或复制
+导出 Word、PDF、Excel 或 CSV，也可复制表格到 Excel。
+
+本地处理内容不离开设备
+转换在浏览器中完成，不上传到我们的服务器。
+
+
+ 使用说明
+不只是格式转换，更是内容交付
+
+查看AI回答转Word、AI回答转PDF、Markdown表格转Excel和Markdown转HTML等具体教程。
+浏览全部转换教程 →要把内容排版发公众号？打开 Markdown 转 HTML / 公众号排版 →
+需要批量处理图片？打开Aixuno图片工具 →
+
+
+ 常见问题
+关于 Markdown 万能转换器
+
+Markdown 和 MD 文件有什么区别？
+Markdown 是一种轻量标记格式；MD 文件通常是以 .md 或 .markdown 为扩展名、保存 Markdown 内容的文件。本工具同时支持粘贴 Markdown 内容和上传 MD 文件。
+
+AI 内容可以直接转换吗？
+可以。DeepSeek、豆包、腾讯元宝、通义千问、文心一言、ChatGPT、Claude 等 AI 输出中常见的标题、列表、表格和引用结构，可作为 Markdown 内容粘贴后转换。
+
+哪些办公文件可以转 Markdown？
+支持 DOCX、Excel、CSV 和包含可选文字的 PDF。旧版 .doc 请先在 Word 或 WPS 中另存为 .docx；扫描 PDF 需要 OCR，当前会明确提示无法直接提取文字。
+
+PDF 中的图片会怎样处理？
+当前会提取可选文字；含图片或图形的页面会保留可提取的文字并提示你检查结果。扫描件或纯图片 PDF 不会被误报为已成功转换。
+
+我的文件会上传到服务器吗？
+不会。当前转换过程在你的浏览器本地完成；请仍避免在任何在线工具中处理不应暴露的敏感资料。
+
+---
+
+## Excel to Markdown Table — XLSX, CSV, DOCX, PDF
+
+URL: https://aixuno.com/tools/excel-to-markdown.html
+Summary: Convert DOCX, Excel, CSV, and text-based PDF files into reusable Markdown locally in your browser. Review, copy, or download the result without uploading your file.
+
+Free online tool
+Excel, CSV and Office Files to Markdown
+Turn Excel, CSV, DOCX and text-based PDF files into reusable Markdown without uploading them. Conversion runs locally in your browser. Your content is not uploaded.
+
+How it works
+Office Files to Markdown Converter
+
+01Paste or upload your content
+Upload DOCX, XLSX, XLS, CSV or a PDF with selectable text.
+
+02Review the result in the live preview
+The tool builds a Markdown table; check the result in the preview.
+
+03Copy or download the converted file
+Copy the Markdown table or download it as a .md file.
+
+Frequently asked questions
+Office files to Markdown FAQ
+Supported formats, limitations, and local processing.
+
+Which files can I convert?
+The converter supports Excel (XLSX, XLS), CSV, DOCX, and PDFs that contain selectable text.
+
+Can it convert a scanned PDF?
+Not yet. A scanned or image-only PDF needs OCR before its text can be converted to Markdown.
+
+Can it read an old DOC file?
+Save the file as DOCX in Word, LibreOffice, or WPS first, then upload the DOCX version.
+
+Are files uploaded?
+No. Supported files are read and converted in your browser.
+
+Will complex formatting be identical?
+No. Markdown represents content structure rather than page layout, so text boxes, images, and complex tables may require review.
+
+Guides and related tools
+Reuse tables and office content
+Convert Excel and CSV to Markdown →　Move a Markdown table into Excel →　Markdown to HTML →
+
+When to use it
+Where Markdown tables help
+
+01Feeding data to an AI assistant
+A pipe table survives pasting into chat interfaces better than a screenshot.
+
+02Documenting a dataset in a repo
+Markdown tables diff cleanly in version control, unlike binary spreadsheets.
+
+03Writing tables into docs or wikis
+Most documentation systems render pipe tables without extra markup.
+
+Limits
+What this tool will not do
+
+01Keep merged cells intact
+A merged range stores its value in the top-left cell only, so merged headers must be rebuilt.
+
+02Convert every sheet at once
+One sheet is converted per run; switch the selector and convert again for the others.
+
+03Read a scanned PDF
+A scanned file has no text layer and needs OCR before it can be converted.
+
+Further reading
+Related guides
+
+Converting spreadsheets and documents to Markdown——what happens to merged cells, formulas and multiple sheets
+Markdown table to Excel——the reverse direction, useful when the output feeds a report
+
+---
+
+## Markdown to HTML Converter — Clean Semantic HTML
+
+URL: https://aixuno.com/tools/markdown-to-html.html
+Summary: Convert Markdown or MD files into clean HTML for websites, blogs, email, and CMS platforms. Preview, copy, or download HTML locally with no account required.
+
+Free online tool
+Markdown to HTML Converter
+Turn Markdown into clean HTML, copy the code, or download a ready-to-open HTML file. Conversion runs locally in your browser. Your content is not uploaded.
+
+How it works
+Markdown to HTML Converter
+
+01Paste or upload your content
+Paste Markdown or load an MD file; the document structure is carried over.
+
+02Review the result in the live preview
+The preview shows how the finished HTML page will look.
+
+03Copy or download the converted file
+Export an .html file you can reuse in your project.
+
+Frequently asked questions
+Markdown to HTML FAQ
+Answers about generated HTML and publishing.
+
+What does the converter generate?
+It generates HTML from common Markdown headings, lists, links, tables, quotes, and code blocks.
+
+Can I copy the HTML into a CMS?
+Yes. Use the generated fragment in a CMS or blog editor that accepts HTML, then verify the final styling.
+
+Can I download a complete HTML file?
+Yes. The tool can create a file that opens in a browser as well as copy generated HTML.
+
+Is my Markdown uploaded?
+No. The supported conversion runs locally in your browser.
+
+Is generated HTML safe to publish automatically?
+Review links and embedded content before publishing, especially when the original Markdown came from an untrusted source.
+
+Guide and related tools
+Publish Markdown beyond the editor
+How to convert Markdown to clean HTML →　Markdown to Word →　Markdown to PDF →
+
+When to use it
+Where HTML is the right output
+
+01Publishing to a blog or CMS
+Semantic headings, lists and tables map onto what most editors accept.
+
+02Passing content to a developer
+A clean markup file is easier to integrate than a screenshot or a Word document.
+
+03Building an email or landing skeleton
+The structural markup is a starting point before inline styles are added.
+
+Limits
+What this tool will not do
+
+01Include any styling
+No CSS is attached, so an unstyled page will look plain until the destination supplies styles.
+
+02Add interactivity
+The output is static markup with no scripts or components.
+
+03Guess your CMS structure
+You may need to remove the outer doctype and body wrapper when embedding a partial.
+
+Further reading
+Related guides
+
+Markdown to HTML guide——what the exported file contains and what it leaves out
+Choosing an export format——when HTML beats Word or PDF
+
+---
+
+## Markdown to PDF Converter — Free, No Upload
+
+URL: https://aixuno.com/tools/markdown-to-pdf.html
+Summary: Turn Markdown or an MD file into a clean, shareable PDF in your browser. Preview before download; no account, no upload.
+
+Free online tool
+Markdown to PDF Converter
+Create a clean, shareable PDF from Markdown or an MD file. Conversion runs locally in your browser. Your content is not uploaded.
+
+How it works
+Markdown to PDF Converter
+
+01Paste or upload your content
+Paste Markdown or the text of an MD file; the heading hierarchy is preserved.
+
+02Review the result in the live preview
+Check how headings, lists, quotes and code blocks render before export.
+
+03Copy or download the converted file
+Export an A4 PDF to archive, print or share.
+
+Frequently asked questions
+Markdown to PDF FAQ
+What to expect before exporting a PDF.
+
+Can I convert an MD file to PDF?
+Yes. Upload a .md or .markdown file, check the preview, and download the generated PDF.
+
+Can I use AI-generated Markdown?
+Yes. Paste structured output from ChatGPT, Claude, Gemini, Copilot, Perplexity, or another assistant.
+
+Are tables and code blocks supported?
+Common Markdown tables, quotes, lists, headings, and code blocks are included in the rendered document.
+
+Is the file uploaded?
+No. The supported preview and PDF export run locally in your browser.
+
+Should I review the PDF?
+Yes. Check pagination, links, fonts, and complex tables before printing or publishing an important document.
+
+Guides and related tools
+Create a shareable document from AI content
+Convert an AI response to PDF →　Choose Word, PDF or Markdown →　Markdown to Word →
+
+When to use it
+Where a PDF is the right output
+
+01Sending to someone who only reads
+A recipient who opens the file to read it, not to edit it, cannot accidentally change the layout.
+
+02Printing or archiving
+Fixed A4 pages print predictably and keep the same pagination months later.
+
+03Locking a finished version
+When a draft is approved, a PDF makes the approved state explicit.
+
+Limits
+What this tool will not do
+
+01Change page size or orientation
+The current version exports A4 portrait only; landscape and custom margins are not configurable.
+
+02Carry images across
+Images are not part of copied text, so they do not appear in the generated PDF.
+
+03Keep very wide tables readable
+About 186 mm of content width is available, so tables with many columns get compressed.
+
+Further reading
+Related guides
+
+Exporting an AI answer to PDF——what the A4 output contains and where it breaks
+Exporting a ChatGPT answer to Word——when the document still needs editing
+
+---
+
+## Markdown to Word — Convert MD to DOCX Free
+
+URL: https://aixuno.com/tools/markdown-to-word.html
+Summary: Turn Markdown from ChatGPT, Claude, Gemini or Copilot into an editable Word file in your browser. Free, no account.
+
+Free online tool
+Markdown to Word Converter
+Turn AI-generated Markdown into a clean, editable Word document. Conversion runs locally in your browser. Your content is not uploaded.
+
+How it works
+Markdown to Word Converter
+
+01Paste or upload your content
+Paste Markdown from DeepSeek, ChatGPT or Claude straight into the editor.
+
+02Review the result in the live preview
+Headings, lists, tables and code blocks appear in the preview immediately.
+
+03Copy or download the converted file
+Download the DOCX file directly from your browser.
+
+Frequently asked questions
+Markdown to Word FAQ
+Practical answers about files, formatting, and privacy.
+
+Can I convert an MD file to Word?
+Yes. Upload a .md or .markdown file, review the preview, and download an editable DOCX document.
+
+Does it work with ChatGPT or Claude output?
+Yes. Paste Markdown-formatted answers from ChatGPT, Claude, Gemini, Copilot, Perplexity, or another assistant.
+
+Which formatting is preserved?
+Common headings, paragraphs, lists, tables, quotes, links, and code blocks are converted. Review complex layouts before sharing.
+
+Is my content uploaded?
+No. Supported conversion runs in your browser and the content is not uploaded to an Aixuno application server.
+
+Do I need an account?
+No. The basic Markdown to Word converter works without registration.
+
+Guides and related tools
+Keep working with AI-generated content
+Copy an AI answer to Word without losing formatting →　Export ChatGPT answers to Word →　Markdown to PDF →
+
+When to use it
+Where a DOCX is the right output
+
+01Someone needs to comment
+Tracked changes and comments only exist in an editable document, not in a PDF.
+
+02Merging into an existing report
+The generated headings and lists pick up the styles already defined in your Word template.
+
+03Following a company template
+Once exported, the document can inherit your organisation's cover page and headers.
+
+Limits
+What this tool will not do
+
+01Reproduce the source theme
+Structure is preserved; the visual styling of the AI platform you copied from is not.
+
+02Turn formulas into Word equations
+LaTeX stays as plain text and must be retyped as an equation if it needs to be editable.
+
+03Match a template automatically
+Applying your own styles is a manual step after the file is downloaded.
+
+Further reading
+Related guides
+
+Exporting a ChatGPT answer to Word——the full walkthrough with limits
+Copying from AI chats into Word——why pasted headings sometimes disappear
+
+---
+
+## Excel / CSV 转 Markdown 表格｜本地转换
+
+URL: https://aixuno.com/zh/tools/excel-to-markdown.html
+Summary: 免费 Excel、CSV 转 Markdown 在线工具。上传 XLSX、XLS 或 CSV，在浏览器本地选择工作表、预览并复制或下载 Markdown 表格，适合知识库和 AI 内容整理。
+
+办公文件转 Markdown
+Excel / CSV 转 Markdown 在线工具
+将 Excel / CSV 表格数据转换为可复制、可下载的 Markdown 表格，用于 Obsidian、Notion 与 AI 知识库。文件只在浏览器本地处理。
+
+
+ 选择一个 Excel 或 CSV 文件开始复制 Markdown下载 MD
+
+
+ 三步完成
+把表格变成可复用知识
+
+01上传单个文件
+支持 .xlsx、.xls、.csv，文件不上传服务器。
+
+02选择工作表
+多工作表文件可选择需要转换的 Sheet。
+
+03复制或下载
+获得标准 Markdown 表格，用于知识库或 AI 工作流。
+
+
+ 常见问题
+Excel / CSV 转 Markdown FAQ
+转换在浏览器本地完成。
+
+支持哪些文件格式？
+支持 xlsx、xls 与 csv 文件，单个文件不超过 20MB。
+
+Excel 文件会上传吗？
+不会。文件只在你的浏览器中读取和处理。
+
+复杂格式会保留吗？
+第一版转换表格数据本身，不保留 Excel 的颜色、合并单元格等视觉样式。
+
+生成的 Markdown 可以用于 Notion 吗？
+可以。复制生成的标准 Markdown 表格后，可粘贴到 Notion、Obsidian 或 AI 知识库工作流中。
+
+包含多个工作表怎么办？
+上传后可以选择需要转换的工作表；请逐个检查并复制或下载对应的 Markdown 结果。
+
+
+ 相关教程
+将办公资料整理为可用内容
+了解如何选择 Word、PDF 与 Markdown 格式 →
+
+
+ 相关工具与教程
+继续整理你的办公资料
+Markdown 转 Word →　Markdown 转 PDF →　如何选择 Word、PDF 与 Markdown →
+
+
+ 适用场景
+什么时候用 Markdown 表格
+
+01把数据交给 AI 或知识库
+竖线表格粘贴进对话框后不会错行，比截图更可靠。
+
+02写进 README 或文档
+Markdown 表格在 Git 里能逐行对比，二进制表格文件不能。
+
+03给 Obsidian、Notion 用
+这些工具原生渲染竖线表格，不需要额外插件。
+
+限制
+这个工具做不到什么
+
+01保留合并单元格
+合并区域只有左上角单元格存值，被覆盖的单元格是空的，表头要手动补。
+
+02一次转完所有工作表
+一次只转一张，切换选择器后再转。
+
+03读扫描版 PDF
+扫描件没有文本层，需要先做 OCR 才能转换。
+
+延伸阅读
+相关教程
+
+表格与文档转 Markdown——合并单元格、公式和多个工作表会怎么处理
+Markdown 表格转 Excel——反方向操作，适合把结果并进报表
+
+---
+
+## Markdown 表格转 Excel｜一键导出 xlsx
+
+URL: https://aixuno.com/zh/tools/markdown-table-to-excel.html
+Summary: 免费 Markdown 表格转 Excel 和 CSV 工具。粘贴 ChatGPT、DeepSeek 等 AI 生成的一个或多个 Markdown 表格，在浏览器本地预览、复制并导出 XLSX 或 CSV。
+
+免费在线表格工具
+Markdown 表格转 Excel / CSV
+将 DeepSeek、ChatGPT 等 AI 生成的 Markdown 表格转换为可编辑的 Excel 或 CSV 文件。无需登录，内容仅在浏览器本地处理。
+
+
+ 正在读取示例表格…复制到 Excel下载 CSV下载 Excel
+
+Markdown 表格可包含多个表格
+
+表格预览每个表格导出为独立工作表
+
+
+ 使用方法
+从 AI 表格到电子表格
+
+01粘贴 Markdown 表格
+支持从 AI 回答、MD 文件或编辑器中复制的标准 Markdown 表格。
+
+02检查表格预览
+自动识别多个表格，并保留中文、数字、空单元格和换行内容。
+
+03导出 Excel 或 CSV
+多个表格会写入 XLSX 的不同工作表；CSV 导出第一个表格。
+
+
+ 常见问题
+Markdown 表格转 Excel FAQ
+解析和导出均在浏览器中进行。
+
+支持多个 Markdown 表格吗？
+支持。下载 Excel 时，每个表格会成为一个独立工作表；下载 CSV 或复制时使用第一个表格。
+
+为什么没有识别到表格？
+请确认表头下一行使用至少三个连字符，例如 | --- | --- |。
+
+中文会乱码吗？
+XLSX 会保留中文；CSV 文件包含 UTF-8 BOM，使用新版 Excel 或 WPS 打开可正常显示中文。
+
+内容会上传吗？
+不会。Markdown 内容只在当前浏览器中解析，文件也在本地生成。
+
+表格中的竖线和换行怎么处理？
+单元格中的竖线应使用反斜杠转义；HTML 的 <br> 换行会在导出时转换为单元格内换行。
+
+
+ 相关工具
+继续处理表格和 Markdown
+Excel / CSV 转 Markdown →　Markdown 转 Word →　Markdown 转 PDF →
+
+
+ 适用场景
+什么时候需要转回 Excel
+
+01要在表格里做计算
+Markdown 表只能看，导出 xlsx 后才能用公式和透视表。
+
+02要交给不用 Markdown 的同事
+对方只需要打开就能编辑，不必先学语法。
+
+03要做二次筛选和排序
+Excel 的筛选比在文本里手工查找快得多。
+
+限制
+这个工具做不到什么
+
+01重建合并单元格
+Markdown 没有跨行跨列语法，合并要在 Excel 里另外做。
+
+02自动识别列类型
+数值按单元格内容写入，做公式前先确认列是数值格式。
+
+03保留单元格样式
+颜色、边框和数字格式都不在 Markdown 的表达范围内。
+
+延伸阅读
+相关教程
+
+Markdown 表格转 Excel——对齐符、空单元格和合并表头的处理方式
+表格与文档转 Markdown——反方向操作
+
+---
+
+## Markdown 转 PDF｜免费在线，不上传文件
+
+URL: https://aixuno.com/zh/tools/markdown-to-pdf.html
+Summary: 免费 Markdown 转 PDF 在线工具。粘贴 DeepSeek、ChatGPT 等 AI 生成内容，或上传 MD 文件，在浏览器本地预览并导出 PDF；无需登录，内容不上传。
+
+免费在线工具
+Markdown 转 PDF 在线工具
+将 AI 生成的 Markdown 内容快速转换为清晰、便于分享的 PDF 文档。无需登录，文件仅在你的浏览器中处理。
+
+
+ 正在加载编辑器…打印 / 另存为 PDF生成 PDF ↓
+
+Markdown 输入支持粘贴与编辑
+
+实时预览简约 PDF 样式
+
+
+ 工具说明
+把 AI 回答整理成可分享文档
+
+01编辑 Markdown
+粘贴或修改 AI 生成的内容，保留原有的文档层级。
+
+02检查实时预览
+在导出前确认标题、列表、引用和代码块的展示效果。
+
+03生成 PDF
+一键导出 A4 PDF，方便存档、打印与分享。
+
+
+ 常见问题
+Markdown 转 PDF FAQ
+基础转换无需注册，也不会将内容上传至服务器。
+
+AI 生成的 Markdown 可以转 PDF 吗？
+可以。将 DeepSeek、ChatGPT 等平台生成的 Markdown 粘贴到工具中即可导出 PDF。
+
+生成 PDF 需要上传文件吗？
+不需要。预览和 PDF 导出均在浏览器本地完成。
+
+支持表格和代码块吗？
+支持常用 Markdown 的标题、列表、表格、引用和代码块。
+
+PDF 使用什么页面尺寸？
+第一版默认使用简约的 A4 纵向文档样式，后续将增加更多模板。
+
+可以免费使用吗？
+可以。基础 Markdown 转 PDF 功能免费使用，无需登录。
+
+
+ 相关工具与教程
+继续处理你的 Markdown 内容
+Markdown 转 Word →　Markdown 表格转 Excel →　如何选择导出格式 →
+
+
+ 适用场景
+什么情况下导出 PDF 更合适
+
+01发给只看不改的人
+对方打开是为了读，不会误改版式，也不需要装任何软件。
+
+02打印或长期存档
+A4 分页固定，几个月后打开排版仍然一致。
+
+03给草稿定稿
+内容确认后导出 PDF，等于把「这一版已定」这件事说清楚。
+
+限制
+这个工具做不到什么
+
+01改页面尺寸或方向
+当前只输出 A4 纵向，横版和自定义页边距还不能设置。
+
+02把图片带过去
+图片不在复制的文本里，导出后不会出现在 PDF 中。
+
+03让超宽表格保持可读
+正文宽度约 186 mm，列数多的表会被压缩。
+
+延伸阅读
+相关教程
+
+把 AI 回答导出成 PDF——A4 输出里有什么，哪里容易出问题
+把 ChatGPT 回答导出成 Word——文档还要继续修改时用
+
+---
+
+## Markdown 转 Word｜免费生成 docx，本地处理
+
+URL: https://aixuno.com/zh/tools/markdown-to-word.html
+Summary: 免费 Markdown 转 Word 在线工具。粘贴 DeepSeek、ChatGPT 等 AI 生成内容，或上传 MD 文件，在浏览器本地预览并导出可编辑 DOCX；无需登录，内容不上传。
+
+免费在线工具
+
+ Markdown 转 Word 在线工具
+
+ 将 DeepSeek、ChatGPT 等 AI 生成的 Markdown 内容，快速转换为格式清晰的 Word 文档。无需登录，内容仅在本地处理。
+
+ 
+
+ 
+
+ 
+ 
+ 正在加载编辑器…生成 Word ↓
+
+ 
+ Markdown 输入支持粘贴与编辑
+
+
+ 实时预览浏览器本地渲染
+
+
+ 
+
+ 
+
+
+ 
+
+ 工具说明
+为 AI 内容保留清晰结构
+
+01粘贴 AI 内容
+直接粘贴 DeepSeek、ChatGPT 等 AI 平台生成的 Markdown 内容。
+
+02检查实时预览
+标题、列表、表格、引用和代码块会在右侧即时渲染。
+
+03下载 Word 文档
+点击生成 Word，即可在浏览器中下载 `.docx` 文件。
+
+
+ 常见问题
+Markdown 转 Word FAQ
+所有文档转换均在你的浏览器中完成。
+
+DeepSeek 生成的内容可以转 Word 吗？
+可以。复制 DeepSeek 生成的 Markdown 内容到输入框，即可生成 Word 文档。
+
+ChatGPT 的回答可以导出 Word 吗？
+可以。复制回答内容后，工具会保留常见的标题、列表、表格和引用结构。
+
+转换时需要上传文件吗？
+不需要。文本解析、预览和导出都在浏览器本地完成。
+
+支持哪些 Markdown 格式？
+支持标题、段落、列表、表格、引用和代码块等常用格式。
+
+生成 Word 需要登录吗？
+不需要。基础转换功能可以直接使用。
+
+
+ 相关工具与教程
+继续处理你的 Markdown 内容
+Markdown 转 PDF →　Markdown 表格转 Excel →　MD 文件转 Word 教程 →
+
+
+ 适用场景
+什么情况下要 Word 而不是 PDF
+
+01需要别人批注或修回
+修订记录和批注只存在于可编辑文档里，PDF 做不到。
+
+02要并进已有的报告
+导出的标题和列表会沿用你 Word 模板里已定义的样式。
+
+03要套公司模板
+下载后可以直接套封面、页眉和品牌样式。
+
+限制
+这个工具做不到什么
+
+01还原原平台的字体和配色
+结构会保留，你复制来源的那个平台的视觉主题不会。
+
+02把公式变成 Word 公式对象
+LaTeX 以纯文本保留，需要可编辑公式时要重新输入。
+
+03自动套用指定模板
+套模板是下载之后的单独一步，工具不会替你做。
+
+延伸阅读
+相关教程
+
+把 ChatGPT 回答导出成 Word——完整步骤与限制说明
+本地 .md 文件转 Word——为什么建议复制内容而不是直接上传文件
+
+---
+
+## Markdown 转公众号排版｜三种主题一键复制
+
+URL: https://aixuno.com/zh/tools/wechat-format.html
+Summary: 免费 Markdown 转公众号排版工具。将 DeepSeek、豆包、ChatGPT 等 AI 内容在浏览器本地整理为可复制到微信公众号编辑器的富文本。
+
+内容发布工具
+Markdown 转公众号排版工具
+将 DeepSeek、豆包、腾讯元宝、通义千问、文心一言、ChatGPT 等 AI 内容整理为清晰的公众号富文本，一键复制到微信公众号编辑器。
+
+
+ 正在加载编辑器…简约黑森林绿海洋蓝复制排版内容
+
+Markdown 内容粘贴 AI 内容
+
+公众号预览复制后粘贴到编辑器
+
+
+ 发布流程
+从 AI 回答到公众号文章
+
+01粘贴内容
+保留 AI 回答中的标题、列表、引用和表格结构。
+
+02检查预览
+选择适合文章的配色，并检查标题层级和段落间距。
+
+03复制发布
+复制富文本后，直接粘贴到微信公众号编辑器。
+
+
+ 常见问题
+公众号排版 FAQ
+排版只在浏览器本地完成。
+
+可以直接粘贴 AI 回答吗？
+可以。DeepSeek、豆包、腾讯元宝、通义千问、ChatGPT、Claude 等 AI 输出的常见 Markdown 结构都可以直接粘贴。
+
+复制后如何发到公众号？
+点击“复制排版内容”，再粘贴到微信公众号编辑器。发布前建议检查图片、链接和数据准确性。
+
+内容会上传到服务器吗？
+不会。解析、预览和复制操作均在当前浏览器本地完成。
+
+支持哪些排版样式？
+目前提供简约黑、森林绿与海洋蓝三种基础文章配色，可在预览后选择。
+
+
+ 相关教程
+把 AI 内容变成可发布文章
+查看 AI 内容排版到公众号的完整步骤 →
+
+
+ 相关工具与教程
+继续完成内容交付
+Markdown 转 Word →　Markdown 转 PDF →　AI 内容排版到公众号教程 →
+
+
+ 适用场景
+什么时候用公众号排版
+
+01把 AI 草稿直接发公众号
+模型输出的 Markdown 粘进来，一次成型，不用在编辑器里逐段调格式。
+
+02保持多篇文章风格一致
+同一个主题反复使用，标题、引用和代码块的样式不会漂移。
+
+03需要代码块和表格的文章
+公众号编辑器不擅长这些元素，内联样式能保住基本呈现。
+
+限制
+这个工具做不到什么
+
+01以原生 Markdown 粘贴
+公众号编辑器只接受富文本，必须走「复制富文本」这一步。
+
+02带上图片
+图片不会随富文本传递，需要单独上传到素材库。
+
+03让宽表在手机上不挤压
+超过四列的表建议拆成两张，公众号会自动压缩列宽。
+
+延伸阅读
+相关教程
+
+公众号排版指南——三个主题的取舍，以及粘贴后要检查什么
+Markdown 转 HTML——需要放到自己的网站时用
+
+---
+
+## Markdown Konverter — Word, PDF, HTML, kostenlos
+
+URL: https://aixuno.com/de/
+Summary: Markdown und KI-Inhalte in Word, PDF, HTML oder Markdown umwandeln. Inhalte aus ChatGPT, Claude, Gemini und Copilot lokal verarbeiten.
+
+Markdown-Konverter · Aixuno
+Online Markdown-Konverter
+
+Workflow auswählen und Inhalte einfügen, hochladen, herunterladen oder kopieren. Alles wird nur im Browser verarbeitet.
+
+
+ Einfach und zuverlässig
+In zwei Schritten vom KI-Ergebnis zum nutzbaren Dokument
+
+01Einfügen oder hochladen
+Markdown einfügen oder MD-, DOCX-, Excel-, CSV- oder PDF-Dateien hochladen.
+
+02Herunterladen oder kopieren
+Word, PDF, HTML oder wiederverwendbares Markdown exportieren.
+
+Lokale VerarbeitungInhalte bleiben auf deinem Gerät
+Die Konvertierung erfolgt im Browser und wird nicht auf unsere Server hochgeladen.
+
+
+ Praktische Anleitungen
+Mehr als nur Formatkonvertierung
+
+Jedes Werkzeug erklärt unterstützte Formate, Arbeitsschritte und Datenschutz. KI-Inhalte werden zu bearbeitbaren und veröffentlichbaren Dokumenten.
+Anleitungen ansehen →
+
+
+ Datenschutz
+Wie deine Inhalte verarbeitet werden
+
+01Verarbeitung im Browser
+Die Umwandlung läuft vollständig im Browser. Inhalte werden nicht an einen Aixuno-Server gesendet.
+
+02Kein Konto nötig
+Es gibt keine Anmeldung und kein Konto; eingefügte Inhalte werden nicht gespeichert.
+
+03Nach dem Schließen ist Schluss
+Beim Schließen der Seite gibt der Browser die eingefügten Inhalte aus dem Arbeitsspeicher frei.
+
+04Was verarbeitet wird
+Überschriften, Listen, Tabellen, Zitate und Codeblöcke werden korrekt übernommen.
+
+Häufige Fragen
+Über den Markdown-Konverter
+
+Was ist der Unterschied zwischen Markdown und einer MD-Datei?
+Markdown ist ein leichtes Auszeichnungsformat. MD-Dateien speichern Markdown mit der Endung .md oder .markdown.
+
+Kann ich KI-generierte Inhalte direkt umwandeln?
+Ja. Inhalte aus ChatGPT, Claude, Gemini, Copilot, Perplexity, Grok und anderen Assistenten können eingefügt werden.
+
+Welche Office-Dateien werden unterstützt?
+DOCX, Excel, CSV und PDFs mit auswählbarem Text werden unterstützt. Gescannte PDFs benötigen OCR.
+
+Was geschieht mit Bildern in PDFs?
+Auswählbarer Text wird extrahiert; Seiten mit Bildern oder Grafiken sollten geprüft werden.
+
+Werden meine Dateien hochgeladen?
+Nein. Die Konvertierung erfolgt lokal in deinem Browser.
+
+---
+
+## Excel zu Markdown umwandeln — kostenlos, ohne Upload
+
+URL: https://aixuno.com/de/tools/excel-to-markdown.html
+Summary: DOCX-, Excel-, CSV- und Text-PDF-Dateien im Browser in Markdown umwandeln. Ergebnis prüfen, kopieren oder herunterladen, ohne Upload.
+
+Kostenloses Online-Werkzeug
+Office-Dateien-zu-Markdown-Konverter
+Office-Dateien ohne Upload in wiederverwendbares Markdown umwandeln. Die Konvertierung erfolgt lokal im Browser. Deine Inhalte werden nicht hochgeladen.
+
+So funktioniert es
+Office-Dateien-zu-Markdown-Konverter
+
+01Inhalt einfügen oder hochladen
+Lade DOCX, XLSX, XLS, CSV oder ein PDF mit auswählbarem Text hoch.
+
+02Ergebnis in der Vorschau prüfen
+Das Werkzeug erzeugt eine Markdown-Tabelle; prüfe das Ergebnis in der Vorschau.
+
+03Konvertierte Datei kopieren oder herunterladen
+Übernimm die Markdown-Tabelle per Kopieren oder als .md-Datei.
+
+Häufige Fragen
+Office-Dateien-zu-Markdown-Konverter — FAQ
+Die Grundfunktionen sind kostenlos und ohne Anmeldung nutzbar; Inhalte verlassen den Browser nicht.
+
+Welche Dateitypen kann ich umwandeln?
+DOCX, XLSX, XLS, CSV und PDFs mit auswählbarem Text.
+
+Werden eingescannte PDFs unterstützt?
+Noch nicht. Eingescannte PDFs benötigen zuerst eine Texterkennung (OCR).
+
+Werden meine Dateien hochgeladen?
+Nein. Die Dateien werden lokal im Browser gelesen und umgewandelt.
+
+Einsatz
+Wann sich das lohnt
+
+01Daten an einen KI-Assistenten geben
+Eine Pipe-Tabelle übersteht das Einfügen in Chat-Oberflächen besser als ein Screenshot.
+
+02Datensätze im Repository dokumentieren
+Markdown-Tabellen lassen sich in der Versionsverwaltung zeilenweise vergleichen.
+
+03Tabellen in Doku oder Wiki schreiben
+Die meisten Dokumentationssysteme rendern Pipe-Tabellen ohne Zusatz-Markup.
+
+Grenzen
+Was dieses Werkzeug nicht leistet
+
+01Verbundene Zellen erhalten
+Ein verbundener Bereich speichert den Wert nur in der oberen linken Zelle; verbundene Kopfzeilen müssen neu gesetzt werden.
+
+02Alle Arbeitsblätter auf einmal umwandeln
+Pro Durchlauf wird ein Blatt umgewandelt; für weitere Blätter erneut konvertieren.
+
+03Ein eingescanntes PDF lesen
+Ohne Textebene ist zuerst eine Texterkennung (OCR) nötig.
+
+---
+
+## Markdown zu HTML umwandeln — sauberes HTML, kostenlos
+
+URL: https://aixuno.com/de/tools/markdown-to-html.html
+Summary: Markdown oder MD-Dateien in sauberes HTML für Websites, Blogs, E-Mails und CMS umwandeln. HTML lokal prüfen, kopieren oder herunterladen – ohne Anmeldung.
+
+Kostenloses Online-Werkzeug
+Markdown-zu-HTML-Konverter
+Sauberes HTML erzeugen, Code kopieren oder eine HTML-Datei herunterladen. Die Konvertierung erfolgt lokal im Browser. Deine Inhalte werden nicht hochgeladen.
+
+So funktioniert es
+Markdown-zu-HTML-Konverter
+
+01Inhalt einfügen oder hochladen
+Füge Markdown ein oder lade eine MD-Datei; die Dokumentstruktur wird übernommen.
+
+02Ergebnis in der Vorschau prüfen
+Die Vorschau zeigt, wie die fertige HTML-Seite im Browser aussieht.
+
+03Konvertierte Datei kopieren oder herunterladen
+Exportiere eine .html-Datei zur weiteren Verwendung.
+
+Häufige Fragen
+Markdown-zu-HTML-Konverter — FAQ
+Die Grundfunktionen sind kostenlos und ohne Anmeldung nutzbar; Inhalte verlassen den Browser nicht.
+
+Welches HTML erzeugt das Werkzeug?
+Semantisches HTML aus Überschriften, Listen, Links, Tabellen, Zitaten und Codeblöcken.
+
+Kann ich die Ausgabe in meine Website übernehmen?
+Ja. Du erhältst eine HTML-Datei, die du in dein Projekt einbinden kannst.
+
+Werden Inhalte hochgeladen?
+Nein. Die Umwandlung läuft lokal im Browser.
+
+Einsatz
+Wann sich das lohnt
+
+01Auf Blog oder CMS veröffentlichen
+Semantische Überschriften, Listen und Tabellen passen zu den meisten Editoren.
+
+02An Entwickler weitergeben
+Sauberes Markup lässt sich leichter integrieren als ein Screenshot oder ein Word-Dokument.
+
+03Grundgerüst für E-Mail oder Landingpage
+Die Struktur ist der Ausgangspunkt, bevor Inline-Styles dazukommen.
+
+04Die Vorschau ist nicht das Ergebnis
+Die Vorschau zeigt Struktur und Textfluss, nicht die Gestaltung der Zielseite – diese entsteht erst dort.
+
+Grenzen
+Was dieses Werkzeug nicht leistet
+
+01Gestaltung mitliefern
+Es ist kein CSS enthalten; ohne Stylesheet bleibt die Seite schlicht.
+
+02Interaktivität hinzufügen
+Die Ausgabe ist statisches Markup ohne Skripte oder Komponenten.
+
+03Die CMS-Struktur erraten
+Beim Einbetten als Teilseite müssen doctype und body eventuell entfernt werden.
+
+---
+
+## Markdown zu PDF umwandeln — kostenlos, ohne Upload
+
+URL: https://aixuno.com/de/tools/markdown-to-pdf.html
+Summary: KI-generiertes Markdown oder MD-Dateien im Browser in eine teilbare PDF umwandeln. Vorschau und Download lokal, ohne Anmeldung.
+
+Kostenloses Online-Werkzeug
+Markdown-zu-PDF-Konverter
+Aus Markdown oder einer MD-Datei eine teilbare PDF erstellen. Die Konvertierung erfolgt lokal im Browser. Deine Inhalte werden nicht hochgeladen.
+
+So funktioniert es
+Markdown-zu-PDF-Konverter
+
+01Inhalt einfügen oder hochladen
+Füge Markdown oder den Text einer MD-Datei ein; die Überschriftenstruktur bleibt erhalten.
+
+02Ergebnis in der Vorschau prüfen
+Prüfe vor dem Export, wie Überschriften, Listen, Zitate und Codeblöcke dargestellt werden.
+
+03Konvertierte Datei kopieren oder herunterladen
+Exportiere eine A4-PDF zum Archivieren, Drucken oder Teilen.
+
+Häufige Fragen
+Markdown-zu-PDF-Konverter — FAQ
+Die Grundfunktionen sind kostenlos und ohne Anmeldung nutzbar; Inhalte verlassen den Browser nicht.
+
+Lässt sich mit KI erzeugtes Markdown in PDF umwandeln?
+Ja. Füge Markdown aus DeepSeek, ChatGPT oder anderen Assistenten ein und exportiere es direkt als PDF.
+
+Muss ich eine Datei hochladen?
+Nein. Vorschau und PDF-Export laufen vollständig lokal im Browser.
+
+Werden Tabellen und Codeblöcke unterstützt?
+Ja. Überschriften, Listen, Tabellen, Zitate und Codeblöcke werden übernommen.
+
+Einsatz
+Wann sich das lohnt
+
+01An Personen senden, die nur lesen
+Wer die Datei nur öffnet, um zu lesen, kann das Layout nicht versehentlich verändern.
+
+02Drucken oder archivieren
+Feste A4-Seiten drucken berechenbar und behalten Monate später dieselbe Aufteilung.
+
+03Einen fertigen Stand festschreiben
+Ist ein Entwurf freigegeben, macht die PDF diesen Stand eindeutig.
+
+Grenzen
+Was dieses Werkzeug nicht leistet
+
+01Seitengröße oder Ausrichtung ändern
+Die aktuelle Version exportiert nur A4 hochkant; Querformat und eigene Ränder sind nicht einstellbar.
+
+02Bilder mitnehmen
+Bilder gehören nicht zum kopierten Text und erscheinen deshalb nicht im erzeugten PDF.
+
+03Sehr breite Tabellen lesbar halten
+Es stehen rund 186 mm Textbreite zur Verfügung; Tabellen mit vielen Spalten werden gestaucht.
+
+---
+
+## Markdown zu Word umwandeln — DOCX kostenlos erstellen
+
+URL: https://aixuno.com/de/tools/markdown-to-word.html
+Summary: Markdown oder MD-Dateien aus ChatGPT, Claude, Gemini oder Copilot in ein bearbeitbares Word-Dokument umwandeln – lokal, ohne Konto.
+
+Kostenloses Online-Werkzeug
+Markdown-zu-Word-Konverter
+KI-generiertes Markdown in ein sauberes, bearbeitbares Word-Dokument umwandeln. Die Konvertierung erfolgt lokal im Browser. Deine Inhalte werden nicht hochgeladen.
+
+So funktioniert es
+Markdown-zu-Word-Konverter
+
+01Inhalt einfügen oder hochladen
+Füge Markdown aus DeepSeek, ChatGPT oder Claude direkt in das Eingabefeld ein.
+
+02Ergebnis in der Vorschau prüfen
+Überschriften, Listen, Tabellen und Codeblöcke erscheinen sofort in der rechten Vorschau.
+
+03Konvertierte Datei kopieren oder herunterladen
+Lade die DOCX-Datei direkt im Browser herunter.
+
+Häufige Fragen
+Markdown-zu-Word-Konverter — FAQ
+Die Grundfunktionen sind kostenlos und ohne Anmeldung nutzbar; Inhalte verlassen den Browser nicht.
+
+Kann ich eine ChatGPT-Antwort als Word-Datei speichern?
+Ja. Kopiere die Antwort in das Eingabefeld; Überschriften, Listen und Tabellen bleiben erhalten.
+
+Ist eine Anmeldung erforderlich?
+Nein. Die Grundfunktionen sind ohne Konto nutzbar.
+
+Welche Markdown-Elemente werden übernommen?
+Überschriften, Absätze, Listen, Tabellen, Zitate und Codeblöcke.
+
+Einsatz
+Wann sich das lohnt
+
+01Jemand muss kommentieren
+Änderungsverfolgung und Kommentare gibt es nur in bearbeitbaren Dokumenten.
+
+02In einen bestehenden Bericht einfügen
+Überschriften und Listen übernehmen die Formatvorlagen deiner Word-Vorlage.
+
+03Einer Unternehmensvorlage folgen
+Nach dem Export lässt sich das Dokument in Deckblatt und Kopfzeilen einpassen.
+
+Grenzen
+Was dieses Werkzeug nicht leistet
+
+01Das Theme der Quelle nachbauen
+Die Struktur bleibt erhalten, das visuelle Design der KI-Plattform nicht.
+
+02Formeln in Word-Gleichungen umwandeln
+LaTeX bleibt als Text erhalten und muss für bearbeitbare Gleichungen neu eingegeben werden.
+
+03Eine Vorlage automatisch anwenden
+Das Anwenden eigener Formatvorlagen ist ein manueller Schritt nach dem Download.
+
+---
+
+## Conversor Markdown — Word, PDF, HTML, gratis
+
+URL: https://aixuno.com/es/
+Summary: Convierte Markdown y contenido de IA a Word, PDF, HTML o Markdown. Procesa contenido de ChatGPT, Claude, Gemini y Copilot localmente.
+
+Conversor Markdown · Aixuno
+Conversor Markdown en línea
+
+Elige una tarea y pega, sube, descarga o copia. Tu contenido se procesa únicamente en este navegador.
+
+
+ Sencillo, pero completo
+Del contenido de IA a un documento útil en dos pasos
+
+01Pega o sube
+Pega Markdown o sube archivos MD, DOCX, Excel, CSV o PDF.
+
+02Descarga o copia
+Exporta Word, PDF, HTML o Markdown reutilizable.
+
+Procesamiento localTu contenido permanece en tu dispositivo
+La conversión se realiza en el navegador y no se sube a nuestros servidores.
+
+
+ Guías prácticas
+Más que conversión de formatos
+
+Cada herramienta explica los formatos compatibles, los pasos y la privacidad. Convierte contenido útil de IA en documentos editables y publicables.
+Ver las guías →
+
+
+ Privacidad
+Cómo se procesan tus contenidos
+
+01Procesamiento en el navegador
+La conversión se ejecuta por completo en el navegador. El contenido no se envía a un servidor de Aixuno.
+
+02Sin cuenta
+No hay registro ni cuenta, y el contenido pegado no se almacena.
+
+03Al cerrar, se libera
+Cuando cierras la página, el navegador libera el contenido pegado de la memoria.
+
+04Qué se admite
+Se respetan encabezados, listas, tablas, citas y bloques de código.
+
+Preguntas frecuentes
+Sobre el conversor Markdown
+
+¿Qué diferencia hay entre Markdown y un archivo MD?
+Markdown es un formato de marcado ligero. Un archivo MD guarda contenido Markdown con extensión .md o .markdown.
+
+¿Puedo convertir directamente contenido generado por IA?
+Sí. Pega contenido de ChatGPT, Claude, Gemini, Copilot, Perplexity, Grok u otro asistente.
+
+¿Qué archivos de Office se pueden convertir?
+Se admiten DOCX, Excel, CSV y PDF con texto seleccionable. Los PDF escaneados necesitan OCR.
+
+¿Qué ocurre con las imágenes de un PDF?
+Se extrae el texto seleccionable y se recomienda revisar las páginas con imágenes o gráficos.
+
+¿Se suben mis archivos?
+No. La conversión se ejecuta localmente en tu navegador.
+
+---
+
+## Convertir Excel a Markdown — gratis, sin subir archivos
+
+URL: https://aixuno.com/es/tools/excel-to-markdown.html
+Summary: Convierte DOCX, Excel, CSV y PDF con texto en Markdown reutilizable en tu navegador. Revisa, copia o descarga sin subir el archivo.
+
+Herramienta en línea gratuita
+Conversor de archivos Office a Markdown
+Transforma archivos de Office en Markdown reutilizable sin subirlos. La conversión se ejecuta localmente en tu navegador. Tu contenido no se sube.
+
+Cómo funciona
+Conversor de archivos Office a Markdown
+
+01Pega o sube el contenido
+Sube DOCX, XLSX, XLS, CSV o un PDF con texto seleccionable.
+
+02Revisa el resultado en la vista previa
+La herramienta genera una tabla Markdown; revisa el resultado en la vista previa.
+
+03Copia o descarga el archivo convertido
+Copia la tabla Markdown o descárgala como archivo .md.
+
+Preguntas frecuentes
+Conversor de archivos Office a Markdown — FAQ
+Las funciones básicas son gratuitas y no requieren cuenta; el contenido no sale del navegador.
+
+¿Qué tipos de archivo puedo convertir?
+DOCX, XLSX, XLS, CSV y PDF con texto seleccionable.
+
+¿Se admiten PDF escaneados?
+Todavía no. Un PDF escaneado necesita OCR antes de convertirlo a Markdown.
+
+¿Se suben mis archivos?
+No. Los archivos se leen y convierten localmente en el navegador.
+
+Cuándo usarlo
+Situaciones en las que encaja
+
+01Pasar datos a un asistente de IA
+Una tabla de pipes sobrevive al pegado en interfaces de chat mejor que una captura.
+
+02Documentar un conjunto de datos
+Las tablas Markdown se comparan línea a línea en el control de versiones.
+
+03Escribir tablas en documentación
+La mayoría de los sistemas de documentación renderizan tablas de pipes sin marcado extra.
+
+Límites
+Qué no hace esta herramienta
+
+01Mantener celdas combinadas
+Un rango combinado guarda el valor solo en la celda superior izquierda; los encabezados combinados hay que rehacerlos.
+
+02Convertir todas las hojas a la vez
+Se convierte una hoja por ejecución; cambia el selector y repite.
+
+03Leer un PDF escaneado
+Sin capa de texto hace falta OCR antes de convertir.
+
+---
+
+## Convertir Markdown a HTML — gratis, sin subir archivos
+
+URL: https://aixuno.com/es/tools/markdown-to-html.html
+Summary: Convierte Markdown o archivos MD en HTML limpio para sitios web, blogs, correo y CMS. Previsualiza, copia o descarga el HTML localmente y sin registro.
+
+Herramienta en línea gratuita
+Conversor de Markdown a HTML
+Genera HTML limpio, copia el código o descarga un archivo HTML. La conversión se ejecuta localmente en tu navegador. Tu contenido no se sube.
+
+Cómo funciona
+Conversor de Markdown a HTML
+
+01Pega o sube el contenido
+Pega Markdown o sube un archivo MD; se mantiene la estructura del documento.
+
+02Revisa el resultado en la vista previa
+La vista previa muestra cómo quedará la página HTML final.
+
+03Copia o descarga el archivo convertido
+Exporta un archivo .html para reutilizarlo en tu proyecto.
+
+Preguntas frecuentes
+Conversor de Markdown a HTML — FAQ
+Las funciones básicas son gratuitas y no requieren cuenta; el contenido no sale del navegador.
+
+¿Qué HTML genera la herramienta?
+HTML semántico a partir de encabezados, listas, enlaces, tablas, citas y bloques de código.
+
+¿Puedo usar el resultado en mi web?
+Sí. Obtienes un archivo HTML que puedes integrar en tu proyecto.
+
+¿Se suben los contenidos?
+No. La conversión se ejecuta localmente en el navegador.
+
+Cuándo usarlo
+Situaciones en las que encaja
+
+01Publicar en un blog o CMS
+Los encabezados, listas y tablas semánticas encajan en la mayoría de editores.
+
+02Entregar contenido a un desarrollador
+Un marcado limpio se integra más fácil que una captura o un Word.
+
+03Base para un correo o landing
+La estructura es el punto de partida antes de añadir estilos en línea.
+
+Límites
+Qué no hace esta herramienta
+
+01Incluir estilos
+No se incluye CSS; sin hoja de estilos la página se ve simple.
+
+02Añadir interactividad
+La salida es marcado estático, sin scripts ni componentes.
+
+03Adivinar la estructura del CMS
+Al incrustar como parcial puede que debas quitar el doctype y el body.
+
+---
+
+## Convertir Markdown a PDF — gratis, sin subir archivos
+
+URL: https://aixuno.com/es/tools/markdown-to-pdf.html
+Summary: Convierte Markdown o archivos MD de IA en un PDF limpio y compartible. Vista previa y descarga local, sin registro ni subida.
+
+Herramienta en línea gratuita
+Conversor de Markdown a PDF
+Crea un PDF limpio y fácil de compartir desde Markdown o un archivo MD. La conversión se ejecuta localmente en tu navegador. Tu contenido no se sube.
+
+Cómo funciona
+Conversor de Markdown a PDF
+
+01Pega o sube el contenido
+Pega Markdown o el texto de un archivo MD; se conserva la jerarquía de encabezados.
+
+02Revisa el resultado en la vista previa
+Revisa cómo se muestran los encabezados, listas, citas y bloques de código antes de exportar.
+
+03Copia o descarga el archivo convertido
+Exporta un PDF en A4 para archivar, imprimir o compartir.
+
+Preguntas frecuentes
+Conversor de Markdown a PDF — FAQ
+Las funciones básicas son gratuitas y no requieren cuenta; el contenido no sale del navegador.
+
+¿Se puede convertir Markdown generado por IA a PDF?
+Sí. Pega el Markdown de DeepSeek, ChatGPT u otros asistentes y expórtalo como PDF.
+
+¿Hay que subir un archivo?
+No. La vista previa y la exportación a PDF se ejecutan por completo en el navegador.
+
+¿Se admiten tablas y bloques de código?
+Sí. Se conservan encabezados, listas, tablas, citas y bloques de código.
+
+Límites
+Qué no hace esta herramienta
+
+01Cambiar el tamaño u orientación
+La versión actual solo exporta A4 vertical; horizontal y márgenes propios no son configurables.
+
+02Llevarse las imágenes
+Las imágenes no forman parte del texto copiado, así que no aparecen en el PDF generado.
+
+03Mantener legibles tablas muy anchas
+Hay unos 186 mm de ancho de texto; las tablas con muchas columnas se comprimen.
+
+---
+
+## Convertir Markdown a Word — gratis, sin subir archivos
+
+URL: https://aixuno.com/es/tools/markdown-to-word.html
+Summary: Convierte Markdown o archivos MD de ChatGPT, Claude, Gemini o Copilot en un documento Word editable. La conversión se realiza localmente y sin necesidad de cuenta.
+
+Herramienta en línea gratuita
+Conversor de Markdown a Word
+Transforma Markdown generado por IA en un documento Word limpio y editable. La conversión se ejecuta localmente en tu navegador. Tu contenido no se sube.
+
+Cómo funciona
+Conversor de Markdown a Word
+
+01Pega o sube el contenido
+Pega directamente Markdown generado por DeepSeek, ChatGPT o Claude.
+
+02Revisa el resultado en la vista previa
+Los encabezados, listas, tablas y bloques de código aparecen al instante en la vista previa.
+
+03Copia o descarga el archivo convertido
+Descarga el archivo DOCX desde el navegador.
+
+Preguntas frecuentes
+Conversor de Markdown a Word — FAQ
+Las funciones básicas son gratuitas y no requieren cuenta; el contenido no sale del navegador.
+
+¿Puedo guardar una respuesta de ChatGPT como Word?
+Sí. Copia la respuesta en el campo de entrada y se mantendrán encabezados, listas y tablas.
+
+¿Es necesario registrarse?
+No. Las funciones básicas se usan sin cuenta.
+
+¿Qué elementos de Markdown se conservan?
+Encabezados, párrafos, listas, tablas, citas y bloques de código.
+
+Límites
+Qué no hace esta herramienta
+
+01Reproducir el tema de origen
+La estructura se conserva; el estilo visual de la plataforma de IA no.
+
+02Convertir fórmulas en ecuaciones de Word
+El LaTeX queda como texto y hay que reintroducirlo para que sea editable.
+
+03Aplicar una plantilla automáticamente
+Aplicar tus estilos es un paso manual después de la descarga.
+
+---
+
+## Convertisseur Markdown — Word, PDF, HTML, gratuit
+
+URL: https://aixuno.com/fr/
+Summary: Convertissez Markdown et le contenu IA en Word, PDF, HTML ou Markdown. Traitez le contenu de ChatGPT, Claude, Gemini et Copilot localement.
+
+Convertisseur Markdown · Aixuno
+Convertisseur Markdown en ligne
+
+Choisissez une tâche, puis collez, importez, téléchargez ou copiez. Votre contenu est traité uniquement dans ce navigateur.
+
+
+ Simple et complet
+Du contenu IA à un document utile en deux étapes
+
+01Coller ou importer
+Collez du Markdown ou importez des fichiers MD, DOCX, Excel, CSV ou PDF.
+
+02Télécharger ou copier
+Exportez en Word, PDF, HTML ou Markdown réutilisable.
+
+Traitement localVotre contenu reste sur votre appareil
+La conversion s’effectue dans le navigateur sans envoi vers nos serveurs.
+
+
+ Guides pratiques
+Plus qu’une conversion de format
+
+Chaque outil explique les formats compatibles, les étapes et les limites de confidentialité. Transformez les contenus IA en documents modifiables et publiables.
+Voir les guides →
+
+
+ Confidentialité
+Comment vos contenus sont traités
+
+01Traitement dans le navigateur
+La conversion s'exécute entièrement dans le navigateur. Le contenu n'est pas envoyé à un serveur Aixuno.
+
+02Aucun compte requis
+Aucune inscription, aucun compte ; le contenu collé n'est pas conservé.
+
+03Fermer suffit à libérer
+Lorsque vous fermez la page, le navigateur libère le contenu collé de la mémoire.
+
+04Éléments pris en charge
+Les titres, listes, tableaux, citations et blocs de code sont conservés.
+
+Questions fréquentes
+À propos du convertisseur Markdown
+
+Quelle différence entre Markdown et un fichier MD ?
+Markdown est un format de balisage léger. Un fichier MD enregistre du Markdown avec l’extension .md ou .markdown.
+
+Puis-je convertir directement du contenu généré par IA ?
+Oui. Collez du contenu provenant de ChatGPT, Claude, Gemini, Copilot, Perplexity, Grok ou d’un autre assistant.
+
+Quels fichiers Office sont compatibles ?
+DOCX, Excel, CSV et les PDF avec texte sélectionnable sont pris en charge. Les PDF numérisés nécessitent un OCR.
+
+Que deviennent les images d’un PDF ?
+Le texte sélectionnable est extrait et les pages contenant des images ou graphiques doivent être vérifiées.
+
+Mes fichiers sont-ils envoyés ?
+Non. La conversion est exécutée localement dans votre navigateur.
+
+---
+
+## Convertir Excel en Markdown — gratuit, sans envoi
+
+URL: https://aixuno.com/fr/tools/excel-to-markdown.html
+Summary: Convertissez DOCX, Excel, CSV et PDF texte en Markdown réutilisable dans votre navigateur. Vérifiez, copiez ou téléchargez sans envoi.
+
+Outil en ligne gratuit
+Convertisseur de fichiers Office vers Markdown
+Transformez des fichiers Office en Markdown réutilisable sans les envoyer. La conversion s’effectue localement dans votre navigateur. Votre contenu n’est pas envoyé.
+
+Comment ça marche
+Convertisseur de fichiers Office vers Markdown
+
+01Collez ou importez votre contenu
+Importez un fichier DOCX, XLSX, XLS, CSV ou un PDF avec du texte sélectionnable.
+
+02Vérifiez le résultat dans l’aperçu
+L'outil produit un tableau Markdown ; vérifiez le résultat dans l'aperçu.
+
+03Copiez ou téléchargez le fichier converti
+Copiez le tableau Markdown ou téléchargez-le en fichier .md.
+
+Questions fréquentes
+Convertisseur de fichiers Office vers Markdown — FAQ
+Les fonctions de base sont gratuites et sans compte ; le contenu ne quitte pas le navigateur.
+
+Quels types de fichiers puis-je convertir ?
+DOCX, XLSX, XLS, CSV et les PDF contenant du texte sélectionnable.
+
+Les PDF numérisés sont-ils pris en charge ?
+Pas encore. Un PDF numérisé doit d'abord passer par une OCR.
+
+Mes fichiers sont-ils téléversés ?
+Non. Les fichiers sont lus et convertis localement dans le navigateur.
+
+Limites
+Ce que cet outil ne fait pas
+
+01Conserver les cellules fusionnées
+Une plage fusionnée ne garde la valeur que dans la cellule en haut à gauche ; les en-têtes fusionnés sont à refaire.
+
+02Convertir toutes les feuilles d'un coup
+Une feuille est convertie par exécution ; changez le sélecteur et relancez.
+
+03Lire un PDF numérisé
+Sans couche texte, une OCR est nécessaire avant la conversion.
+
+---
+
+## Convertir Markdown en HTML — gratuit, sans envoi
+
+URL: https://aixuno.com/fr/tools/markdown-to-html.html
+Summary: Convertissez du Markdown ou un fichier MD en HTML propre pour sites, blogs, e-mails et CMS. Aperçu et téléchargement local, sans compte.
+
+Outil en ligne gratuit
+Convertisseur Markdown vers HTML
+Générez du HTML propre, copiez le code ou téléchargez un fichier HTML. La conversion s’effectue localement dans votre navigateur. Votre contenu n’est pas envoyé.
+
+Comment ça marche
+Convertisseur Markdown vers HTML
+
+01Collez ou importez votre contenu
+Collez du Markdown ou importez un fichier MD ; la structure du document est reprise.
+
+02Vérifiez le résultat dans l’aperçu
+L'aperçu montre le rendu de la page HTML finale.
+
+03Copiez ou téléchargez le fichier converti
+Exportez un fichier .html réutilisable dans votre projet.
+
+Questions fréquentes
+Convertisseur Markdown vers HTML — FAQ
+Les fonctions de base sont gratuites et sans compte ; le contenu ne quitte pas le navigateur.
+
+Quel HTML l'outil génère-t-il ?
+Un HTML sémantique issu des titres, listes, liens, tableaux, citations et blocs de code.
+
+Puis-je réutiliser le résultat sur mon site ?
+Oui. Vous obtenez un fichier HTML à intégrer dans votre projet.
+
+Les contenus sont-ils envoyés sur un serveur ?
+Non. La conversion s'effectue localement dans le navigateur.
+
+Limites
+Ce que cet outil ne fait pas
+
+01Fournir la mise en forme
+Aucun CSS n'est inclus ; sans feuille de styles la page reste sobre.
+
+02Ajouter de l'interactivité
+La sortie est un balisage statique, sans script ni composant.
+
+03Deviner la structure du CMS
+Pour une intégration partielle, il faut parfois retirer le doctype et le body.
+
+---
+
+## Convertir Markdown en PDF — gratuit, sans envoi
+
+URL: https://aixuno.com/fr/tools/markdown-to-pdf.html
+Summary: Convertissez du Markdown ou un fichier MD généré par IA en PDF propre et partageable. Aperçu et téléchargement locaux, sans envoi.
+
+Outil en ligne gratuit
+Convertisseur Markdown vers PDF
+Créez un PDF propre et partageable depuis Markdown ou un fichier MD. La conversion s’effectue localement dans votre navigateur. Votre contenu n’est pas envoyé.
+
+Comment ça marche
+Convertisseur Markdown vers PDF
+
+01Collez ou importez votre contenu
+Collez du Markdown ou le texte d'un fichier MD ; la hiérarchie des titres est conservée.
+
+02Vérifiez le résultat dans l’aperçu
+Vérifiez le rendu des titres, listes, citations et blocs de code avant l'export.
+
+03Copiez ou téléchargez le fichier converti
+Exportez un PDF A4 pour archiver, imprimer ou partager.
+
+Questions fréquentes
+Convertisseur Markdown vers PDF — FAQ
+Les fonctions de base sont gratuites et sans compte ; le contenu ne quitte pas le navigateur.
+
+Peut-on convertir du Markdown généré par une IA en PDF ?
+Oui. Collez le Markdown de DeepSeek, ChatGPT ou d'autres assistants et exportez-le en PDF.
+
+Faut-il téléverser un fichier ?
+Non. L'aperçu et l'export PDF s'exécutent entièrement dans le navigateur.
+
+Les tableaux et les blocs de code sont-ils pris en charge ?
+Oui. Les titres, listes, tableaux, citations et blocs de code sont conservés.
+
+Limites
+Ce que cet outil ne fait pas
+
+01Changer la taille ou l'orientation
+La version actuelle exporte uniquement en A4 portrait ; paysage et marges personnalisées ne sont pas réglables.
+
+02Emporter les images
+Les images ne font pas partie du texte copié, elles n'apparaissent donc pas dans le PDF.
+
+03Garder les tableaux très larges lisibles
+Environ 186 mm de largeur de texte sont disponibles ; les tableaux à nombreuses colonnes sont compressés.
+
+---
+
+## Convertir Markdown en Word — gratuit, sans envoi
+
+URL: https://aixuno.com/fr/tools/markdown-to-word.html
+Summary: Convertissez le Markdown de ChatGPT, Claude, Gemini ou Copilot en document Word modifiable. Traitement local, sans compte.
+
+Outil en ligne gratuit
+Convertisseur Markdown vers Word
+Transformez le Markdown généré par IA en document Word propre et modifiable. La conversion s’effectue localement dans votre navigateur. Votre contenu n’est pas envoyé.
+
+Comment ça marche
+Convertisseur Markdown vers Word
+
+01Collez ou importez votre contenu
+Collez directement du Markdown généré par DeepSeek, ChatGPT ou Claude.
+
+02Vérifiez le résultat dans l’aperçu
+Les titres, listes, tableaux et blocs de code s'affichent immédiatement dans l'aperçu.
+
+03Copiez ou téléchargez le fichier converti
+Téléchargez le fichier DOCX depuis votre navigateur.
+
+Questions fréquentes
+Convertisseur Markdown vers Word — FAQ
+Les fonctions de base sont gratuites et sans compte ; le contenu ne quitte pas le navigateur.
+
+Puis-je enregistrer une réponse de ChatGPT en Word ?
+Oui. Copiez la réponse dans le champ de saisie ; les titres, listes et tableaux sont conservés.
+
+Faut-il créer un compte ?
+Non. Les fonctions de base sont accessibles sans compte.
+
+Quels éléments Markdown sont conservés ?
+Titres, paragraphes, listes, tableaux, citations et blocs de code.
+
+Limites
+Ce que cet outil ne fait pas
+
+01Reproduire le thème d'origine
+La structure est conservée, le style visuel de la plateforme d'IA non.
+
+02Transformer les formules en équations Word
+Le LaTeX reste du texte et doit être ressaisi pour devenir modifiable.
+
+03Appliquer un modèle automatiquement
+Appliquer vos styles reste une étape manuelle après le téléchargement.
+
+---
+
+## Markdown 変換ツール｜Word・PDF・HTML へ無料変換
+
+URL: https://aixuno.com/ja/
+Summary: MarkdownやAI生成コンテンツをWord、PDF、HTML、Markdownに変換。ChatGPT、Claude、Gemini、Copilotの内容をブラウザ内で処理します。
+
+Markdown変換ツール · Aixuno
+オンラインMarkdown変換ツール
+
+用途を選び、貼り付け、アップロード、ダウンロード、コピー。コンテンツはこのブラウザ内だけで処理されます。
+
+
+ シンプルで実用的
+AIの回答を2ステップで使える文書に
+
+01貼り付けまたはアップロード
+Markdownを貼り付けるか、MD、DOCX、Excel、CSV、PDFをアップロードします。
+
+02ダウンロードまたはコピー
+Word、PDF、HTML、再利用可能なMarkdownとして書き出します。
+
+ローカル処理コンテンツは端末内に保持
+変換はブラウザ内で行われ、サーバーへアップロードされません。
+
+
+ 使い方ガイド
+単なる形式変換ではありません
+
+各ツールで対応形式、操作手順、プライバシーについて説明します。AIの出力を編集・公開・保存できる文書に変換できます。
+ガイドを見る →
+
+
+ プライバシー
+コンテンツの処理について
+
+01ブラウザ内で処理
+変換はすべてブラウザ内で実行されます。貼り付けた内容が Aixuno のサーバーに送信されることはありません。
+
+02アカウント不要
+登録もアカウントも不要で、貼り付けた内容は保存されません。
+
+03閉じれば解放
+ページを閉じると、貼り付けた内容はブラウザのメモリから解放されます。
+
+04対応する要素
+見出し・リスト・表・引用・コードブロックを正しく引き継ぎます。
+
+05広告なし・追跡なし
+変換内容を広告やプロファイリングに使うことはなく、ページ閲覧の集計のみを行います。
+
+よくある質問
+Markdown変換ツールについて
+
+MarkdownとMDファイルの違いは？
+Markdownは軽量なマークアップ形式です。MDファイルは.mdまたは.markdown拡張子でMarkdownを保存します。
+
+AI生成コンテンツを直接変換できますか？
+はい。ChatGPT、Claude、Gemini、Copilot、Perplexity、Grokなどの内容を貼り付けられます。
+
+どのOfficeファイルに対応していますか？
+DOCX、Excel、CSV、選択可能な文字を含むPDFに対応します。スキャンPDFにはOCRが必要です。
+
+PDF内の画像はどうなりますか？
+選択可能な文字を抽出し、画像や図形を含むページは確認を促します。
+
+ファイルはアップロードされますか？
+いいえ。変換はブラウザ内でローカルに実行されます。
+
+---
+
+## Excel を Markdown に変換｜無料・アップロード不要
+
+URL: https://aixuno.com/ja/tools/excel-to-markdown.html
+Summary: DOCX、Excel、CSV、テキストを選択できるPDFを、ブラウザ内で再利用しやすいMarkdownに変換します。ファイルを送信せず、結果の確認・コピー・ダウンロードができます。
+
+無料オンラインツール
+OfficeファイルからMarkdownへの変換ツール
+Officeファイルをアップロードせず再利用可能なMarkdownに変換します。 変換はブラウザ内で実行され、コンテンツはアップロードされません。
+
+使い方
+OfficeファイルからMarkdownへの変換ツール
+
+01コンテンツを貼り付けるかアップロード
+DOCX・XLSX・XLS・CSV、またはテキストを選択できる PDF を読み込みます。
+
+02ライブプレビューで結果を確認
+ツールが Markdown の表に変換します。プレビューで結果を確認してください。
+
+03変換結果をコピーまたはダウンロード
+Markdown の表をコピーするか、.md ファイルとして保存できます。
+
+よくある質問
+OfficeファイルからMarkdownへの変換ツール の FAQ
+基本機能は無料で、アカウント登録も不要です。内容がブラウザの外に送信されることはありません。
+
+どの形式のファイルを変換できますか？
+DOCX・XLSX・XLS・CSV、およびテキストを選択できる PDF に対応しています。
+
+スキャンした PDF は変換できますか？
+まだできません。スキャンした PDF は事前に OCR が必要です。
+
+ファイルはアップロードされますか？
+いいえ。ファイルはブラウザ内で読み込まれ、変換されます。
+
+活用場面
+どんなときに使うか
+
+01AI アシスタントに渡す
+パイプ記法の表は、スクリーンショットよりチャットへの貼り付けに耐えます。
+
+02リポジトリでデータを説明する
+Markdown の表はバージョン管理で行単位の差分が取れます。
+
+03ドキュメントや Wiki に書く
+多くのドキュメント環境がパイプ表をそのまま描画します。
+
+制限
+このツールでできないこと
+
+01結合セルを保つ
+結合範囲は左上のセルにしか値が残りません。結合した見出しは作り直しが必要です。
+
+02すべてのシートを一度に変換
+1 回の実行で 1 シートです。セレクタを切り替えて再実行してください。
+
+03スキャンした PDF を読む
+テキスト層がないため、事前に OCR が必要です。
+
+---
+
+## Markdown を HTML に変換｜無料・アップロード不要
+
+URL: https://aixuno.com/ja/tools/markdown-to-html.html
+Summary: MarkdownまたはMDファイルを、Webサイト、ブログ、メール、CMS向けのHTMLに変換します。登録不要で、ブラウザ内からプレビュー、コピー、ダウンロードできます。
+
+無料オンラインツール
+MarkdownからHTMLへの変換ツール
+HTMLコードを生成し、コピーまたはファイルとしてダウンロードできます。 変換はブラウザ内で実行され、コンテンツはアップロードされません。
+
+使い方
+MarkdownからHTMLへの変換ツール
+
+01コンテンツを貼り付けるかアップロード
+Markdown を貼り付けるか MD ファイルを読み込むと、文書構造が引き継がれます。
+
+02ライブプレビューで結果を確認
+プレビューで完成後の HTML ページの見た目を確認できます。
+
+03変換結果をコピーまたはダウンロード
+プロジェクトで使える .html ファイルとして書き出せます。
+
+よくある質問
+MarkdownからHTMLへの変換ツール の FAQ
+基本機能は無料で、アカウント登録も不要です。内容がブラウザの外に送信されることはありません。
+
+どのような HTML が生成されますか？
+見出し・リスト・リンク・表・引用・コードブロックから意味的な HTML を生成します。
+
+生成した HTML を自分のサイトで使えますか？
+はい。プロジェクトに組み込める HTML ファイルとして出力されます。
+
+内容はサーバーに送信されますか？
+いいえ。変換はブラウザ内で実行されます。
+
+活用場面
+どんなときに使うか
+
+01ブログや CMS に載せる
+意味的な見出し・リスト・表は、多くのエディタでそのまま扱えます。
+
+02エンジニアに渡す
+整ったマークアップは、スクリーンショットより統合しやすい形式です。
+
+03メールや LP の下地にする
+インラインスタイルを足す前の構造として使えます。
+
+制限
+このツールでできないこと
+
+01見た目も含めて出力する
+CSS は含みません。スタイルシートがないと素朴な見た目になります。
+
+02動きを加える
+出力は静的なマークアップで、スクリプトやコンポーネントは含みません。
+
+03CMS の構造を推測する
+部分として埋め込む場合は doctype と body を外す必要があります。
+
+---
+
+## Markdown を PDF に変換｜無料・アップロード不要
+
+URL: https://aixuno.com/ja/tools/markdown-to-pdf.html
+Summary: AIが生成したMarkdownまたはMDファイルを、共有しやすいPDFに変換します。登録やサーバーへのアップロードは不要で、ブラウザ内で確認してダウンロードできます。
+
+無料オンラインツール
+MarkdownからPDFへの変換ツール
+MarkdownやMDファイルから共有しやすいPDFを作成します。 変換はブラウザ内で実行され、コンテンツはアップロードされません。
+
+使い方
+MarkdownからPDFへの変換ツール
+
+01コンテンツを貼り付けるかアップロード
+Markdown または MD ファイルのテキストを貼り付けると、見出し構造がそのまま保たれます。
+
+02ライブプレビューで結果を確認
+書き出す前に、見出し・リスト・引用・コードブロックの表示を確認できます。
+
+03変換結果をコピーまたはダウンロード
+A4 の PDF として書き出し、保存・印刷・共有に使えます。
+
+よくある質問
+MarkdownからPDFへの変換ツール の FAQ
+基本機能は無料で、アカウント登録も不要です。内容がブラウザの外に送信されることはありません。
+
+AI が生成した Markdown を PDF にできますか？
+できます。DeepSeek や ChatGPT などが出力した Markdown を貼り付けて、そのまま PDF として書き出せます。
+
+ファイルをアップロードする必要はありますか？
+いいえ。プレビューと PDF の書き出しはすべてブラウザ内で完結します。
+
+表やコードブロックに対応していますか？
+はい。見出し・リスト・表・引用・コードブロックを反映します。
+
+活用場面
+どんなときに使うか
+
+01読むだけの人に送る
+開いて読むだけなら、レイアウトを誤って変える心配がありません。
+
+02印刷・保存用
+A4 のページ割りは固定なので、数か月後も同じ体裁で印刷できます。
+
+03確定版を残す
+下書きが承認されたら、PDF にすることで確定した状態がはっきりします。
+
+制限
+このツールでできないこと
+
+01ページサイズや向きの変更
+現在は A4 縦のみ出力します。横向きや独自の余白は設定できません。
+
+02画像を一緒に持っていく
+画像はコピーしたテキストに含まれないため、生成した PDF には入りません。
+
+03幅の広い表を読みやすく保つ
+本文幅は約 186 mm です。列の多い表は圧縮されます。
+
+---
+
+## Markdown を Word に変換｜無料・アップロード不要
+
+URL: https://aixuno.com/ja/tools/markdown-to-word.html
+Summary: ChatGPT、Claude、Gemini、CopilotのMarkdownまたはMDファイルを、編集可能なWord文書に変換します。登録不要で、内容はブラウザ内だけで処理されます。
+
+無料オンラインツール
+MarkdownからWordへの変換ツール
+AI生成Markdownを整った編集可能なWord文書に変換します。 変換はブラウザ内で実行され、コンテンツはアップロードされません。
+
+使い方
+MarkdownからWordへの変換ツール
+
+01コンテンツを貼り付けるかアップロード
+DeepSeek や ChatGPT、Claude が生成した Markdown をそのまま貼り付けられます。
+
+02ライブプレビューで結果を確認
+見出し・リスト・表・コードブロックが右側のプレビューにすぐ反映されます。
+
+03変換結果をコピーまたはダウンロード
+DOCX ファイルをブラウザから直接ダウンロードできます。
+
+よくある質問
+MarkdownからWordへの変換ツール の FAQ
+基本機能は無料で、アカウント登録も不要です。内容がブラウザの外に送信されることはありません。
+
+ChatGPT の回答を Word として保存できますか？
+できます。回答を入力欄に貼り付けると、見出し・リスト・表がそのまま保たれます。
+
+ログインは必要ですか？
+いいえ。基本機能はアカウントなしで利用できます。
+
+どの Markdown 記法に対応していますか？
+見出し・段落・リスト・表・引用・コードブロックに対応しています。
+
+活用場面
+どんなときに使うか
+
+01コメントや修正が必要なとき
+変更履歴とコメントは編集可能な文書にしか存在しません。
+
+02既存の報告書に差し込む
+出力した見出しとリストは、Word テンプレートのスタイルを引き継ぎます。
+
+03社内テンプレートに合わせる
+ダウンロード後に表紙やヘッダーを当てはめられます。
+
+制限
+このツールでできないこと
+
+01元のテーマを再現する
+構造は保持しますが、コピー元の AI サービスの見た目は再現しません。
+
+02数式を Word の数式に変換する
+LaTeX はテキストのまま残ります。編集可能な数式にするには入力し直してください。
+
+03テンプレートを自動適用する
+自社のスタイル適用はダウンロード後の手作業になります。
+
+---
+
+## Convert an AI Response to PDF | Free Browser Tool | Aixuno
+
+URL: https://aixuno.com/guides/ai-response-to-pdf.html
+Summary: Convert a ChatGPT, Claude, Gemini or Copilot response to a clean PDF locally in your browser.
+
+AI to PDF
+Convert an AI Response to PDF
+Updated August 9, 2026
+PDF is useful when an AI-generated report, study plan or outline needs a stable layout for sharing, printing or archiving.
+Three steps
+Copy the AI response with its headings and lists.
+Paste it into Markdown to PDF and inspect the preview.
+Download the PDF and verify page breaks before sharing.
+When PDF is the right choice
+Send a read-only report to a client or colleague.
+Archive research notes with a consistent layout.
+Print a study guide, checklist or meeting summary.
+Limitations to review
+Very wide tables, diagrams, remote images and long code lines can require adjustments. If collaborators need to edit the text, export to Word instead.
+The conversion runs on your device. Aixuno does not upload the pasted response to an application server.
+What the exported PDF actually contains
+
+A4 portrait pages with 12 mm side margins, so the text block matches a standard report.
+
+A page number in the format 1 / 4 in the bottom-right corner of every page.
+
+Real text, not an image, so the file stays searchable and copyable.
+
+When PDF is the wrong choice
+
+The recipient needs to edit or comment — send Word instead.
+
+The answer is a working draft that will keep changing.
+
+The content relies on wide tables: PDF cannot reflow them, so columns get squeezed instead.
+
+How it compares to other routes
+
+Route | Text selectable | Site chrome removed | Page numbers | 
+
+Print the chat window to PDF | Yes | No — headers and bubbles stay | Only if the browser adds them | 
+
+Screenshot, then save as PDF | No | Yes | No | 
+
+Aixuno Markdown to PDF | Yes | Yes — only your content is rendered | Yes, n / total | 
+
+Questions about the PDF output
+
+Is the exported PDF searchable?
+
+Yes. The output is real text rather than a rendered image, so it can be searched and copied.
+
+Can I change the page size?
+
+The current version exports A4 portrait only. Landscape and custom margins are not available yet.
+
+Are page numbers added automatically?
+
+Yes, in the form 1 / 4 in the bottom-right corner of every page.
+
+If the PDF does not look right
+
+A page is almost empty. Long unbroken blockquotes or code blocks push content down; split them into shorter paragraphs.
+
+A wide table is cut off. A4 portrait leaves about 186 mm for content. Tables wider than that need fewer columns or landscape handling elsewhere.
+
+Fonts changed. The export uses the browser's default rendering, so the PDF matches what the preview showed, not the source platform's font.
+
+Related tools
+
+Markdown to Word — when the document still needs editing.
+
+Markdown to HTML — when it becomes a web page.
+
+Convert AI response to PDF
+
+---
+
+## How to Export ChatGPT Answers to Word | Aixuno
+
+URL: https://aixuno.com/guides/chatgpt-to-word.html
+Summary: A simple guide to export ChatGPT answers as editable Word documents in your browser.
+
+ChatGPT guide
+How to Export ChatGPT Answers to Word
+Keep research, plans, drafts, and structured answers in an editable format.
+When a ChatGPT answer is worth keeping, you can turn it into a Word document in a few steps. Aixuno renders common Markdown elements and creates the document inside your browser.
+Three steps to export a ChatGPT answer
+Copy the answer from ChatGPT, including its headings and lists.
+Paste it into Markdown to Word and review the preview.
+Download the generated `.docx` file.
+No sign-up is required. Your copied content is processed locally in the browser.
+Tips for a cleaner document
+Keep headings and lists when you copy the response.
+Review tables and code blocks in the preview before downloading.
+Use a clear filename after opening the document in Word.
+Frequently asked question
+Is the ChatGPT response uploaded during conversion?
+No. The editor, preview, and export run in your browser.
+When a Word file is the right output
+
+Someone else needs to leave comments or tracked changes on the draft.
+
+The answer becomes one section of an existing report, so it has to merge with existing styles.
+
+You plan to print it, or send it to a recipient who cannot open PDF attachments.
+
+Limits worth knowing
+
+Images inside a ChatGPT answer are not part of the copied text, so they do not appear in the document.
+
+Mathematical notation arrives as plain text rather than native Word equations.
+
+A very long answer is easier to handle in two or three pastes than in one.
+
+How it compares to other routes
+
+Route | Structure kept | Account needed | Text leaves the device | 
+
+Paste straight into Word | Partly — styling comes along, heading levels drift | Word only | No | 
+
+Paste into a plain text editor first | No — everything collapses into one block | No | No | 
+
+Aixuno Markdown to Word | Yes — headings, lists, tables, quotes, code blocks | No | No, conversion runs in the browser | 
+
+Questions people ask before exporting
+
+Does exporting to Word keep the original formatting?
+
+Structure is kept — headings, lists, tables, quotes and code blocks — but the visual theme of the ChatGPT page is not reproduced.
+
+Is there a file size limit?
+
+The tool applies no fixed limit. Long answers are bounded only by what a browser text field can hold, so very long replies are easier in two or three parts.
+
+Can I export several messages into one document?
+
+Yes. Paste them in reading order and give each block its own heading, otherwise the outline merges into one flat section.
+
+If the output does not look right
+
+Hash marks appear in the document. The lines need a space after the #; without it Markdown treats them as plain text.
+
+A table arrives as one long paragraph. Pipe tables need a delimiter row of dashes under the header, and every row must carry the same number of pipes.
+
+Numbering restarts in the middle. List numbering is derived from the source, so an interrupted list has to be merged before conversion.
+
+Related tools
+
+Markdown to PDF — for a fixed copy that should not be edited.
+
+Markdown to HTML — when the answer belongs on a web page instead.
+
+Open Markdown to Word
+
+---
+
+## Copy an AI Answer to Word Without Losing Formatting | Aixuno
+
+URL: https://aixuno.com/guides/copy-ai-answer-to-word.html
+Summary: Copy a ChatGPT, Claude or Gemini answer to Word without losing headings, lists, tables or code formatting.
+
+AI to Word
+Copy an AI Answer to Word Without Losing Formatting
+Updated August 9, 2026 · Tested with common Markdown output
+Direct paste often changes spacing, list indentation and table borders. A more reliable workflow is to preserve the answer's Markdown structure, preview it, and then export a real DOCX file.
+Recommended workflow
+Copy the complete response from ChatGPT, Claude, Gemini, Copilot or Perplexity.
+Paste it into Aixuno Markdown to Word.
+Check headings, lists, tables, links and code in the preview.
+Download the DOCX and apply your organization's Word template if needed.
+What is preserved?
+Standard headings, paragraphs, bold and italic text, ordered and unordered lists, links, block quotes, tables and fenced code blocks are rendered. Complex interactive widgets, generated charts and remote images may need manual review.
+Why not paste directly into Word?
+AI chat interfaces copy a mixture of text and browser-specific HTML. Word may interpret that HTML differently. Converting the underlying Markdown gives the document a consistent structure before export.
+Sensitive content should always be reviewed before using any online tool. Aixuno performs this conversion locally in your browser.
+Copying differs by platform
+
+The same copy command produces different Markdown depending on where you copy from, and that difference decides how clean the resulting document is.
+
+Copied from | What the clipboard holds | What to check after pasting | 
+
+ChatGPT | Headings and lists as Markdown, tables as pipe tables | Code blocks that contain blank lines | 
+
+Claude | Quoted passages arrive as blockquotes | Nested quotes can look deeper than intended | 
+
+Gemini | Tables sometimes arrive as tab-separated text | Convert those rows into a pipe table before generating the file | 
+
+A mobile app | Rich text without Markdown markers | Heading markers may be missing entirely | 
+
+When the copy loses its structure
+
+Use the platform's own "copy as Markdown" action when it exists; it preserves heading markers.
+
+If only rich text is available, paste into the editor and re-add # markers on the lines that should be headings.
+
+Images and charts never travel through the clipboard, so export those separately.
+
+Limits worth knowing
+
+The tool reproduces structure, not the source platform's visual theme.
+
+Numbered lists restart numbering where a new list begins; long answers with interrupted numbering need a manual check.
+
+Footnotes are kept as plain text, not as Word footnote objects.
+
+Questions about copying from AI chats
+
+Why did the headings disappear after pasting?
+
+Rich-text copy drops Markdown markers. Use the platform's copy-as-Markdown action, or re-add # markers on the lines that should become headings.
+
+Which platforms can I paste from?
+
+Any source that provides text: the result only depends on whether the clipboard holds Markdown or plain paragraphs.
+
+Can several answers share one document?
+
+Yes. Separate each answer with a heading so the document keeps a readable outline.
+
+If the output does not look right
+
+Bold text stays literal. The asterisks came through as characters, which means the clipboard held plain text with visible markers rather than rendered emphasis.
+
+Quotes turned into ordinary paragraphs. The > prefix is missing; re-add it to the first line of each quoted block.
+
+Inline code lost its formatting. Backticks must sit directly against the text, with no space inside them.
+
+Related tools
+
+Exporting a ChatGPT answer to Word — the ChatGPT-specific walkthrough.
+
+Markdown to PDF — when the recipient only needs to read, not edit.
+
+Convert AI answer to Word
+
+---
+
+## How to Convert DeepSeek Answers to Word | Aixuno
+
+URL: https://aixuno.com/guides/deepseek-to-word.html
+Summary: Learn how to turn a DeepSeek answer into an editable Word document with a free browser-based tool.
+
+DeepSeek guide
+How to Convert DeepSeek Answers to Word
+Useful for reports, briefs, meeting notes, and product documents.
+DeepSeek answers often include headings, lists, and tables. Copy the Markdown-style content into Aixuno to create an editable Word document without uploading it to a server.
+Export a DeepSeek answer in three steps
+Copy the answer you want to keep from DeepSeek.
+Open the Markdown to Word tool, paste the content, and check the live preview.
+Select “Download Word” to save a `.docx` document.
+The conversion happens locally in your browser. You do not need an account or file upload.
+What can you convert?
+Weekly reports, meeting notes, and project plans
+Research summaries, competitive analysis, and product requirements
+Answers containing headings, lists, quotes, or tables
+Frequently asked question
+Can DeepSeek content be converted directly to Word?
+Yes. Paste the answer into the tool and export the document. Common Markdown structure is kept where supported.
+What DeepSeek output looks like after pasting
+
+A DeepSeek reply usually mixes three things: a short conclusion, a long reasoning block, and code or tables. Decide which of the three belongs in the document before pasting, because removing paragraphs afterwards is easier than repairing broken structure.
+
+Keep heading levels if the document needs a navigable outline in Word.
+
+Remove the reasoning block when the document is read by other people.
+
+Check tables on their own — they are the part most likely to need a manual fix.
+
+Limits worth knowing
+
+LaTeX written between dollar signs stays as text; it does not become an editable Word equation.
+
+Code blocks keep indentation and line breaks, but no syntax highlighting.
+
+Reasoning text copies like ordinary paragraphs, so it has to be deleted manually if it should not ship.
+
+How it compares to other routes
+
+Route | Editable afterwards | Keeps heading levels | Text leaves the device | 
+
+Copy from the DeepSeek web page | Partly — formatting is lost when pasting into Word | No | No | 
+
+Screenshot, then convert with OCR | Yes, but with recognition errors | No | Depends on the OCR service | 
+
+Aixuno Markdown to Word | Yes | Yes | No, conversion runs in the browser | 
+
+Questions about DeepSeek output
+
+Does the reasoning block get exported?
+
+Yes, if it was part of what you copied. Remove it in the editor before generating the file, since it usually should not reach other readers.
+
+Are mathematical formulas converted?
+
+LaTeX stays as plain text. Word equation objects are not created by the conversion.
+
+Do code blocks keep their formatting?
+
+Indentation and line breaks are preserved. Syntax highlighting is not applied.
+
+If the output does not look right
+
+Reasoning text appears in the document. It was inside the copied range. Delete those paragraphs in the editor and generate again.
+
+Formulas look like raw source. LaTeX is passed through as text by design; if the equation must be editable, retype it as a Word equation after export.
+
+Code indentation collapsed. Copy the block from a monospaced view, not from a rendered table cell.
+
+Related tools
+
+Markdown to PDF — for a locked, print-ready version.
+
+Markdown table to Excel — when the useful part of the answer is a table.
+
+Open Markdown to Word
+
+---
+
+## How to Convert Excel or CSV to a Markdown Table | Aixuno
+
+URL: https://aixuno.com/guides/excel-to-markdown-guide.html
+Summary: Learn how to convert Excel and CSV tables to Markdown locally, prepare headers, handle special characters, and reuse tables in documentation and AI workflows.
+
+Table conversion guide
+How do you convert Excel or CSV to Markdown?
+Markdown tables are easier to edit and reuse than screenshots when moving spreadsheet data into README files, Notion, Obsidian, documentation, or AI prompts.
+Updated July 26, 2026 · 5 minute read
+The quickest method
+Open the Excel / CSV to Markdown tool;
+Choose an .xlsx, .xls, or .csv file;
+Select the worksheet when the workbook contains several sheets;
+Copy the Markdown or download a .md file.
+The file is read locally in your browser and is not uploaded to an Aixuno application server.
+Prepare the spreadsheet
+Use short, unique column names in the first row;
+Remove empty rows and columns used only for visual spacing;
+Avoid merged cells, which Markdown tables do not support;
+Confirm formula results before conversion;
+Split extremely wide tables into smaller focused tables.
+Why are pipe characters escaped?
+Markdown uses | to separate cells. When a cell contains its own pipe, the converter adds a backslash so the table structure remains valid.
+How do you fix CSV encoding?
+Export the source as “CSV UTF-8” from Excel or another spreadsheet application. The downloaded Markdown file also uses UTF-8.
+Where can you use the result?
+The generated table works well in GitHub README files, technical documentation, Notion, Obsidian, knowledge bases, and AI workflows. For very large tables, keep only the rows and columns needed for the task.
+What happens to a workbook with several sheets
+
+Only one sheet is converted at a time. After upload, a sheet selector appears when the workbook holds more than one sheet, and the tool renders the first sheet by default. Switch sheets and convert again to capture the others.
+
+Three things spreadsheets do that Markdown cannot
+
+Merged cells. A merged range keeps its value in the top-left cell only; the covered cells arrive empty, so merged headers often need to be repeated manually.
+
+Cell styling. Colours, borders and number formats are presentation, and Markdown tables carry none of them.
+
+Formulas. Only the calculated value is transferred, never the formula itself.
+
+Which inputs work, and which do not
+
+Input | Supported | Note | 
+
+.xlsx, .xls, .csv | Yes | Converted to a pipe table | 
+
+.docx | Yes | Paragraphs and tables become Markdown | 
+
+PDF with selectable text | Yes | Text layer must exist | 
+
+Scanned or image-only PDF | No | Needs OCR before conversion | 
+
+Legacy .doc | No | Save as .docx first | 
+
+Questions about spreadsheet conversion
+
+Can I convert every sheet at once?
+
+No. One sheet is converted per run: pick another sheet in the selector and convert again.
+
+Why is my merged header incomplete?
+
+A merged range stores its value in the top-left cell only, so the covered cells arrive empty and the header has to be repeated manually.
+
+Does it work with a scanned PDF?
+
+Not directly. A scanned PDF has no text layer, so it needs OCR before conversion.
+
+If the table looks wrong
+
+The first row became the header instead of a real header. Markdown tables always treat the top row as the header, so a sheet without a header row produces a misleading table.
+
+Extra empty columns appear. The source sheet has formatting applied to unused cells; delete those columns and upload again.
+
+Numbers are left-aligned text. That is how the value was stored. Convert the column to a numeric format in the spreadsheet first.
+
+Related tools
+
+Markdown table to Excel — the reverse direction.
+
+Markdown to Word — when the table belongs in a document.
+
+Convert Excel or CSV
+
+---
+
+## How to Export an AI Answer: Word, PDF, or Markdown | Aixuno
+
+URL: https://aixuno.com/guides/how-to-export-ai-answer.html
+Summary: Choose the right format for exporting an AI answer: Word for editing, PDF for sharing, and Markdown for a knowledge base.
+
+AI workflow guide
+How to Export an AI Answer
+Choose Word, PDF, or Markdown based on what you need next.
+A useful AI answer should not disappear in a chat history. Save it in an appropriate format so it can be edited, shared, or reused as knowledge.
+Choose the right output format
+Word: best when you need to edit, comment on, or circulate a document.
+PDF: best for a stable version you want to share, print, or archive.
+Markdown: best for notes, documentation, and knowledge bases.
+A simple workflow
+Copy the answer from ChatGPT, Claude, Gemini, Copilot, Perplexity, or another AI assistant.
+Choose the output format that fits your next task.
+Review the result and download or copy it into your workflow.
+Aixuno processes content locally. Your source text and files are not sent to an application server.
+Frequently asked question
+Which format is most flexible?
+Markdown is easy to reuse in notes and documentation. Word is usually better when other people need to edit the result.
+Pick the format before the tool
+
+Most export mistakes start with choosing an output that does not match what happens next. Four destinations cover almost every case.
+
+What happens next | Best output | Why | 
+
+A colleague edits or comments | Word (.docx) | Tracked changes and comments only exist in editable documents | 
+
+You archive it or send it to a client | PDF | Layout stays fixed on every device | 
+
+It goes into a blog or landing page | HTML | Keeps semantic tags that a CMS can style | 
+
+It becomes a long-term note | Markdown | Plain text survives every editor and version control | 
+
+What usually goes wrong
+
+Printing the chat window straight to PDF keeps the site header, sidebar and message bubbles.
+
+Screenshotting to PDF produces images, so the text cannot be searched or copied later.
+
+Pasting rich text into Word keeps the browser font, which then fights the document's own styles.
+
+Checklist before exporting
+
+Remove the parts of the answer you do not need — models rarely produce only what you asked for.
+
+Confirm the heading levels: one level-1 heading per document, everything below it nested.
+
+Look at tables and code blocks in the preview, since those are the elements that break first.
+
+Questions about choosing a format
+
+Which format should I send to a client?
+
+PDF, because the layout stays identical on every device and cannot be edited by accident.
+
+Why not just print the chat window to PDF?
+
+The printed page carries the site header, the message bubbles and usually the page URL, none of which belongs in a deliverable.
+
+Can I export the same answer twice?
+
+Yes. The input stays in the editor, so you can generate Word first, then PDF from the same text.
+
+When the export fails
+
+The downloaded file is empty. The editor was empty at the moment of export; the action only becomes available once there is content.
+
+The wrong format came out. Each tool exports one format only, so switch tools rather than looking for a format selector.
+
+Images are missing. Text export never carries images, regardless of format. Save them separately and place them in the document afterwards.
+
+Related tools
+
+Markdown to Word
+
+Markdown to PDF
+
+Markdown to HTML
+
+Choose a conversion tool
+
+---
+
+## AI Content and Markdown Conversion Guides | Aixuno
+
+URL: https://aixuno.com/guides/
+Summary: Practical guides for converting ChatGPT, Claude, Gemini, Markdown, Word, PDF, Excel and HTML content with free browser-based tools.
+
+Aixuno learning center
+AI Content and Markdown Conversion Guides
+Step-by-step workflows for turning AI answers and Markdown into documents you can edit, share and archive. Every guide links to a free tool that processes content locally in your browser.
+Export AI answers
+How to export ChatGPT answers to Word
+Copy an AI answer to Word without losing formatting
+Convert an AI response to PDF
+Choose Word, PDF or Markdown for an AI answer
+Work with Markdown and tables
+Convert Markdown to clean HTML
+Move a Markdown table into Excel
+Convert an MD file to Word
+Convert Excel data to Markdown
+Privacy by design: Aixuno performs supported conversions on your device. Your pasted text and files are not uploaded to an Aixuno application server.
+Need a different tool?
+Use the Aixuno converter for Word, PDF, HTML and Markdown, or open Aixuno Image Tools for batch image conversion.
+How to use these guides
+
+Each guide follows the same shape: the situation it applies to, the steps, the limits you should know before relying on the output, and a comparison with alternative routes. The limits section is the part worth reading first when something goes wrong.
+
+Start with the guide that matches the platform you copied from.
+
+Every guide links to the tool that performs the conversion.
+
+Where a guide names a limitation, it is a property of the format, not a temporary bug.
+
+What is covered
+
+The guides cover exporting AI answers to Word, PDF and HTML, moving spreadsheets and documents into Markdown, and turning Markdown tables back into spreadsheets. Chinese-language editions add WeChat article formatting and local file workflows.
+
+---
+
+## How to Convert a Markdown Table to Excel | Aixuno
+
+URL: https://aixuno.com/guides/markdown-table-to-excel.html
+Summary: Move a Markdown table from ChatGPT or a Markdown file into Excel with clean rows and columns.
+
+Markdown tables
+How to Move a Markdown Table into Excel
+Updated August 9, 2026
+AI assistants often return comparison data as a Markdown table. Convert or copy it carefully so pipes, alignment rows and multiline cells do not become part of the data.
+Quick method
+Confirm that the table has one header row and a separator row.
+Preview the Markdown as HTML to check column boundaries.
+Copy the rendered table into Excel, then verify dates and numbers.
+Common problems
+A literal pipe inside a cell can create an extra column.
+Line breaks inside a cell may create extra spreadsheet rows.
+Leading zeros can disappear when Excel treats values as numbers.
+Need the opposite conversion?
+If you already have an Excel or CSV file and need a Markdown table, use Aixuno Excel to Markdown. It lets you select a sheet and preview the generated table.
+How many tables become how many sheets
+
+Every table found in the Markdown becomes its own worksheet, numbered in the order it appears. Two tables in the source therefore arrive as two sheets, not one stacked sheet.
+
+What the alignment row controls
+
+The line of dashes under the header decides column alignment, and it carries through to the spreadsheet:
+
+Markdown | Meaning | Result in Excel | 
+
+:--- | Left aligned | Text starts at the left edge | 
+
+:---: | Centred | Content centred in the cell | 
+
+---: | Right aligned | Useful for numeric columns | 
+
+Limits worth knowing
+
+Row spans and column spans have no Markdown syntax, so merged headers must be rebuilt in Excel.
+
+An escaped pipe \| stays inside one cell; an unescaped pipe splits the cell in two.
+
+Numbers arrive as text unless Excel converts them on open — check the column type before running formulas.
+
+Questions about the Excel output
+
+How are multiple tables handled?
+
+Each table becomes its own worksheet, numbered in the order it appears in the source.
+
+Can merged cells be preserved?
+
+No. Markdown has no row or column span syntax, so merges must be rebuilt in Excel.
+
+Do numbers stay numeric?
+
+Values are written as cell content. Check the column type before running formulas, since text-formatted numbers will not calculate.
+
+If the spreadsheet looks wrong
+
+Everything landed in one column. The table has no delimiter row of dashes under the header, so it was not recognised as a table at all.
+
+Rows are missing. A blank line inside a table ends it; remove empty lines between rows.
+
+Numbers behave as text. Select the column and convert it to a number format before using formulas.
+
+Related tools
+
+Office files to Markdown — the reverse direction.
+
+Markdown to PDF — when the table should be read, not calculated.
+
+Open Excel to Markdown
+
+---
+
+## How to Convert Markdown to Clean HTML | Aixuno
+
+URL: https://aixuno.com/guides/markdown-to-html-guide.html
+Summary: Convert Markdown to clean HTML for a blog, CMS, email draft or static website while reviewing links, code and tables.
+
+Markdown to HTML
+How to Convert Markdown to Clean HTML
+Updated August 9, 2026
+HTML is useful when Markdown content needs to move into a CMS, blog, email editor or static page that does not accept Markdown directly.
+Conversion workflow
+Paste Markdown or an AI-generated draft into the converter.
+Review headings, links, tables, quotations and code blocks.
+Copy the generated HTML and paste it into the destination's HTML or source mode.
+HTML fragment or complete page?
+A fragment contains only the article markup and is usually best for a CMS. A complete page also needs a doctype, language, title, description and viewport metadata.
+Safety check
+Review external links and embedded content before publishing. Do not paste untrusted scripts into a website. Aixuno focuses on the structural HTML generated from Markdown.
+What the exported file contains
+
+The download is a complete HTML5 document, not a fragment. It includes the doctype, a lang attribute, the UTF-8 charset declaration, a viewport meta tag and a title element. Your converted content sits in the body.
+
+What it deliberately leaves out
+
+Stylesheets. No CSS is attached, so the page inherits whatever the destination site provides.
+
+Scripts. The output is static markup with no behaviour attached.
+
+Site chrome. No navigation, footer or branding from Aixuno is included.
+
+That makes the file a starting point for a CMS template rather than a finished page — which is usually what you want, since pasting styled HTML into an existing site tends to fight its own design system.
+
+When HTML is the right target
+
+Destination | Why HTML works | What to adjust first | 
+
+Blog or CMS | Semantic tags map onto most editors | Drop the outer document wrapper if your CMS supplies one | 
+
+Email template | Headings and lists survive | Email clients need inline CSS, which must be added separately | 
+
+Static site | Ready to save as a partial | Remove the doctype when embedding into an existing layout | 
+
+Questions about the HTML output
+
+Does the export include CSS?
+
+No. The file carries structure only, so it inherits styling from whatever site it is placed into.
+
+Can I paste the output into a CMS?
+
+Yes. Remove the outer doctype and body wrapper when the CMS already supplies the document skeleton.
+
+Is the file valid on its own?
+
+Yes. It is a complete HTML5 document with a doctype, charset, viewport meta and title.
+
+If the HTML does not look right
+
+The page has no styling. That is expected: no CSS is included. Add the stylesheet at the destination.
+
+Tags appear as visible text. Angle brackets were escaped in the source, so they render literally instead of acting as markup.
+
+The layout breaks inside a CMS. The CMS is nested a full document inside its own page; keep only the body content.
+
+Related tools
+
+Markdown to PDF — when the page must look identical everywhere.
+
+Markdown to Word — when the audience expects a document.
+
+Convert Markdown to HTML
+
+---
+
+## AI 内容怎么排版到公众号？Markdown 转公众号教程｜Markdown 万能转换器
+
+URL: https://aixuno.com/zh/guides/ai-content-to-wechat.html
+Summary: 如何将 DeepSeek、豆包、ChatGPT 等 AI 内容整理为微信公众号排版？复制 Markdown 内容后可生成可粘贴的富文本。
+
+公众号排版教程
+AI 内容怎么排版到公众号？
+DeepSeek、豆包、腾讯元宝、通义千问、ChatGPT 等 AI 输出通常已带有标题和列表结构。保留这些 Markdown 结构，可以更快整理成公众号文章。
+将 AI 内容复制到公众号的步骤
+复制 AI 回答，保留标题、列表和引用符号。
+打开 Markdown 转公众号排版工具并粘贴内容。
+检查预览，选择合适配色后复制富文本。
+粘贴到微信公众号编辑器，再检查图片与段落间距。
+发布前检查
+检查标题层级，避免一篇文章出现多个一级标题。
+长段落拆分为 2 至 4 行，适应移动端阅读。
+核对 AI 内容中的数据、引用与链接，再发布。
+排版过程在本地浏览器进行，复制前请自行确认内容的准确性与版权。
+公众号编辑器为什么不认 Markdown
+
+微信公众号的编辑器只接受富文本，井号、星号、竖线这些标记贴进去会被当成普通字符显示。所以问题不是「怎么把 Markdown 传进去」，而是怎么先把标记转换成编辑器认识的样式。
+
+三个主题各自适合什么内容
+
+主题 | 主色 | 适合的文章 | 
+
+墨黑（ink） | 近似纯黑 | 偏严肃的分析、教程、行业观察 | 
+
+森林（forest） | 深绿 | 生活方式、健康、自然相关的选题 | 
+
+海洋（ocean） | 深蓝 | 科技、效率工具、职场方法论 | 
+
+为什么会生成内联样式
+
+公众号会过滤掉外部样式表和大部分 style 标签，只有写在元素上的内联样式能被保留。工具把字号、行高、标题边距、引用块底色这些规则直接写进每个标签的 style 属性，所以粘贴过去后能保持原样。
+
+粘贴到公众号后建议检查
+
+代码块在手机上可能横向滚动，超长代码建议先截断或改成分点说明。
+
+表格宽度超过手机屏幕时会被压缩，超过四列的表建议拆成两张。
+
+图片不会随富文本传递，需要单独上传到素材库。
+
+关于公众号排版的问题
+
+为什么不能直接把 Markdown 粘到公众号？
+
+公众号编辑器只接受富文本，井号和星号会被当成普通字符显示出来。
+
+三个主题能随时换吗？
+
+能。切换后重新复制一次即可，主题只影响标题、引用块和强调色。
+
+粘贴后表格变形怎么办？
+
+公众号会压缩宽表，超过四列的表建议拆成两张。
+
+相关工具
+
+Markdown 转 HTML——需要把内容放到自己的网站时用。
+
+Markdown 转 PDF——需要离线存档时用。
+
+开始公众号排版
+
+---
+
+## AI回答转PDF：免费在线转换方法 | Aixuno
+
+URL: https://aixuno.com/zh/guides/ai-response-to-pdf.html
+Summary: 免费把ChatGPT、DeepSeek等AI回答转为PDF，适合分享、打印和归档，在浏览器本地完成转换。
+
+AI回答转PDF
+如何把AI回答转为PDF
+更新于2026年8月9日
+当AI生成的报告、学习计划、方案或会议总结需要稳定版式用于发送、打印或归档时，PDF通常比聊天链接更合适。
+三步完成转换
+复制AI回答，保留标题和列表结构。
+粘贴到Markdown转PDF工具并检查预览。
+下载PDF，发送前检查分页和表格宽度。
+适合使用PDF的情况
+向客户或同事发送只读报告。
+保存研究资料和会议总结。
+打印学习计划、清单或操作说明。
+需要注意
+超宽表格、流程图、远程图片和很长的代码行可能需要调整。如果接收者还要编辑内容，建议改用Word格式。
+转换在你的设备上完成，Aixuno不会把粘贴的回答上传到应用服务器。
+导出的 PDF 里实际有什么
+
+A4 纵向页面，左右边距 12 mm，正文区域和常见报告的版心接近。
+
+每页右下角有页码，格式是 1 / 4。
+
+是真正的文字而不是图片，文件可以被搜索、被复制。
+
+什么时候不该用 PDF
+
+对方需要修改或批注——这种情况发 Word。
+
+内容还是草稿，后面会反复改。
+
+内容靠宽表格撑起来：PDF 不能重排，列会被压窄。
+
+几种做法对比
+
+做法 | 文字可选中 | 是否去掉站点框架 | 是否带页码 | 
+
+直接打印聊天窗口为 PDF | 可以 | 不能，页头和气泡都在 | 取决于浏览器设置 | 
+
+截图后存成 PDF | 不能 | 可以 | 没有 | 
+
+Aixuno Markdown 转 PDF | 可以 | 可以，只渲染你的内容 | 有，当前 / 总数 | 
+
+关于 PDF 输出的问题
+
+导出的 PDF 能搜索吗？
+
+能。输出的是真实文字而不是图片，可以搜索、可以复制。
+
+能改页面尺寸吗？
+
+当前版本只输出 A4 纵向，横版和自定义页边距还不支持。
+
+页码是自动加的吗？
+
+是。每页右下角按「当前页 / 总页数」显示。
+
+相关工具
+
+Markdown 转 Word——文档还要继续改时用。
+
+Markdown 转 HTML——内容要变成网页时用。
+
+立即把AI回答转为PDF
+
+---
+
+## ChatGPT回答怎么导出Word？免费教程｜Aixuno
+
+URL: https://aixuno.com/zh/guides/chatgpt-to-word.html
+Summary: 将 ChatGPT 回答转换为 Word 文档的免费教程。保留标题、列表、表格与引用，浏览器本地处理。
+
+ChatGPT 使用教程
+ChatGPT 回答怎么导出 Word？
+将 AI 回答保存为可编辑、可分享的正式文档
+复制 ChatGPT 的回答后，不必手工整理格式。Aixuno 会在浏览器中解析 Markdown，并导出为可编辑的 Word 文档。
+操作步骤
+复制 ChatGPT 回答的完整内容。
+将内容粘贴到 Markdown 转 Word 工具。
+在预览区域确认标题、列表和表格。
+点击“生成 Word”下载文件。
+导出前的建议
+保留回答中的 Markdown 标题和列表符号，文档结构会更清晰。
+对于重要文件，先在预览中检查表格与代码块。
+下载后可继续在 Word 中调整封面、页眉和品牌样式。
+你的内容只在本地浏览器处理，Aixuno 不保存回答文本。
+什么情况下应该导出成 Word
+
+需要别人在文档里批注或做修订记录——这类协作只在可编辑文档里成立。
+
+这段内容是某份报告的一节，要和已有的样式、页眉页脚合并。
+
+对方打不开 PDF 附件，或者你要打印出来带走。
+
+需要提前知道的限制
+
+回答里的图片不在复制范围内，导出后不会出现在文档中。
+
+数学公式会以纯文本保留，不会变成 Word 的公式对象。
+
+特别长的回答分两三次粘贴更好处理，一次粘入后定位修改比较费劲。
+
+几种做法对比
+
+做法 | 结构是否保留 | 是否需要账号 | 内容是否离开本机 | 
+
+直接粘贴到 Word | 部分保留，样式带过去但标题层级会乱 | 需要 Word | 否 | 
+
+先粘到记事本再复制 | 不保留，全部塌成一段 | 否 | 否 | 
+
+Aixuno Markdown 转 Word | 保留标题、列表、表格、引用、代码块 | 不需要 | 否，转换在浏览器里完成 | 
+
+导出前常问的几个问题
+
+导出后原来的样式还在吗？
+
+结构会保留——标题、列表、表格、引用和代码块；ChatGPT 网页的视觉主题不会被还原。
+
+有文件大小限制吗？
+
+工具本身不设上限，实际受浏览器文本框容量限制。特别长的回答分两三次粘贴更稳妥。
+
+多段对话能放进同一个文档吗？
+
+可以。按顺序粘贴，并给每段单独加一个标题，否则大纲会糊成一片。
+
+相关工具
+
+Markdown 转 PDF——需要一份不允许别人改动的版本时用。
+
+Markdown 转 HTML——内容要放到网页上时用。
+
+转换 ChatGPT 内容
+
+---
+
+## 复制AI回答到Word格式不乱 | Aixuno
+
+URL: https://aixuno.com/zh/guides/copy-ai-answer-to-word.html
+Summary: 把ChatGPT、DeepSeek、豆包等AI回答复制到Word，保留标题、列表、表格和代码格式。
+
+AI回答转Word
+复制AI回答到Word格式不乱
+更新于2026年8月9日 · 已测试常见Markdown结构
+直接粘贴AI回答时，Word可能改变标题、列表缩进和表格样式。更稳定的方法是保留Markdown结构，先预览，再导出真正的DOCX文件。
+推荐操作步骤
+完整复制ChatGPT、DeepSeek、豆包、元宝或通义千问的回答。
+粘贴到Aixuno Markdown转Word工具。
+检查标题、列表、表格、链接和代码块。
+下载DOCX，需要时再套用单位的Word模板。
+哪些格式可以保留？
+支持常见标题、段落、粗体、斜体、编号列表、项目列表、链接、引用、表格和代码块。复杂图表、交互组件及远程图片需要人工检查。
+为什么直接粘贴容易乱？
+AI聊天界面复制的通常是文字与网页HTML的组合，不同版本的Word或WPS可能采用不同方式解释这些HTML。先按Markdown结构转换，可以让文档层级更加稳定。
+转换在当前浏览器内完成，内容不会上传到Aixuno应用服务器；敏感材料仍建议先脱敏。
+不同平台复制出来的东西不一样
+
+同样一次复制，剪贴板里的内容格式差别很大，而这个差别直接决定最后文档的干净程度。
+
+从哪里复制 | 剪贴板里是什么 | 粘进来后要检查什么 | 
+
+ChatGPT | 标题和列表带 Markdown 标记，表格是竖线表格 | 含空行的代码块 | 
+
+Claude | 引用段落变成引用块 | 嵌套引用可能比原意深一层 | 
+
+DeepSeek | 结构基本完整，推理段落在最前面 | 删掉不需要展示的推理部分 | 
+
+手机 App | 富文本，通常不带井号等标记 | 标题层级可能完全丢失 | 
+
+复制后结构丢了怎么办
+
+平台有「复制 Markdown」入口就优先用它，标题标记会保留下来。
+
+只有富文本时，粘进编辑器后给该做标题的行补回 #。
+
+图片和图表不会通过剪贴板传递，需要单独导出。
+
+需要提前知道的限制
+
+工具还原的是结构，不是原平台的视觉主题。
+
+编号列表遇到新列表会重新从 1 开始，长回答里编号被中断的要手动核对。
+
+脚注以普通文字保留，不会变成 Word 的脚注对象。
+
+关于复制粘贴的问题
+
+为什么粘进来标题都没了？
+
+富文本复制会丢掉井号标记。改用平台的「复制 Markdown」入口，或手动给该做标题的行补回 #。
+
+支持从哪些平台复制？
+
+任何能复制出文字的地方。结果只取决于剪贴板里是 Markdown 还是纯段落。
+
+多段回答能合并成一个文档吗？
+
+可以。每段之间加一个标题，文档大纲才读得下去。
+
+相关工具
+
+把 ChatGPT 回答导出成 Word——针对 ChatGPT 的完整步骤。
+
+Markdown 转 PDF——对方只需要看、不需要改时用。
+
+立即把AI回答转为Word
+
+---
+
+## DeepSeek怎么转Word？免费导出教程｜Aixuno
+
+URL: https://aixuno.com/zh/guides/deepseek-to-word.html
+Summary: 了解如何将 DeepSeek 生成的 Markdown 内容免费转换为 Word 文档。无需登录，内容在浏览器本地处理。
+
+DeepSeek 使用教程
+DeepSeek 怎么转 Word？
+适用于工作总结、调研报告、方案与产品文档
+DeepSeek 的回答通常包含标题、列表和表格。复制 Markdown 内容后，用 Aixuno 即可在浏览器中生成一份结构清晰的 Word 文档。
+三步导出 DeepSeek 回答
+在 DeepSeek 中复制需要保存的回答内容。
+打开 Aixuno 的 Markdown 转 Word 工具，粘贴内容并检查右侧预览。
+点击“生成 Word”，下载 `.docx` 文档。
+转换在浏览器本地完成，不需要上传文件或创建账号。
+适合转换哪些内容？
+工作周报、会议纪要和项目方案
+调研报告、竞品分析和产品需求
+带有标题、清单、引用或表格的 AI 回答
+常见问题
+DeepSeek 内容可以直接转 Word 吗？
+可以。将回答复制到工具中，常见 Markdown 结构会被保留并导出。
+转换是否收费？
+基础 Markdown 转 Word 功能可以免费使用。
+DeepSeek 的回答粘进来是什么样
+
+一次完整回答通常混着三部分：简短结论、大段推理过程、代码或表格。粘进工具之前先想清楚哪部分要进文档——事后删段落，比事后修结构容易得多。
+
+需要 Word 里有导航目录，就保留标题层级，别手动删掉井号。
+
+文档要给其他人看时，推理过程通常要整段删掉。
+
+表格单独检查一遍，它是最容易需要手动调整的元素。
+
+需要提前知道的限制
+
+夹在美元符号之间的 LaTeX 会作为普通文字保留，不会变成 Word 公式。
+
+代码块保留缩进和换行，但不带语法高亮。
+
+推理段落和其他段落一样会被复制进来，不需要就手动删。
+
+几种做法对比
+
+做法 | 后续可编辑 | 保留标题层级 | 内容是否离开本机 | 
+
+从 DeepSeek 网页直接复制 | 部分可编辑，粘到 Word 后格式丢失 | 不保留 | 否 | 
+
+截图后用 OCR 转文字 | 可编辑，但存在识别错误 | 不保留 | 取决于用的 OCR 服务 | 
+
+Aixuno Markdown 转 Word | 可编辑 | 保留 | 否，转换在浏览器里完成 | 
+
+关于 DeepSeek 输出的问题
+
+推理过程会被一起导出吗？
+
+如果它在复制范围内就会。生成文件前在编辑器里删掉，这部分通常不适合给其他人看。
+
+数学公式能转换吗？
+
+LaTeX 以纯文本保留，不会变成 Word 公式对象。
+
+代码块的格式还在吗？
+
+缩进和换行保留，但不带语法高亮。
+
+相关工具
+
+Markdown 表格转 Excel——当回答里有价值的部分就是那张表。
+
+Markdown 转 PDF——需要一份定稿版本时用。
+
+打开 Markdown 转 Word
+
+---
+
+## Excel 表格怎么转 Markdown？CSV 转 MD 表格完整教程 | Aixuno
+
+URL: https://aixuno.com/zh/guides/excel-to-markdown-guide.html
+Summary: Excel 和 CSV 表格转 Markdown 教程：本地转换、表头整理、特殊字符处理及在 Notion、Obsidian 和 AI 提示词中的使用方法。
+
+表格转换教程
+Excel 和 CSV 表格怎么转成 Markdown？
+把 Excel 数据放进 README、Notion、Obsidian、知识库或 AI 提示词时，Markdown 表格通常比截图更容易编辑和复用。本教程介绍安全、快速的本地转换方法。
+更新于 2026 年 7 月 26 日 · 约 5 分钟
+最快的方法
+打开 Aixuno 的 Excel / CSV 转 Markdown 工具；
+选择一个 .xlsx、.xls 或 .csv 文件；
+多工作表文件选择需要的 Sheet；
+复制 Markdown，或下载为 .md 文件。
+文件在浏览器本地读取，不会上传到 Aixuno 的应用服务器。重要或敏感表格仍应确认设备和浏览器环境可信。
+转换前怎样整理表格
+第一行使用简短、唯一的列名；
+删除仅用于视觉排版的空行和空列；
+尽量避免合并单元格，因为 Markdown 表格不支持合并；
+将公式结果确认无误后再转换；
+过宽的表格可拆成两个主题明确的小表。
+为什么竖线会被转义
+Markdown 使用竖线 | 分隔单元格。单元格内容本身包含竖线时，转换器会添加反斜杠，避免表格结构被破坏。这是标准处理，不需要手动删除。
+CSV 中文乱码怎么办
+优先从 Excel 或 WPS 导出 UTF-8 编码的 CSV。如果源文件仍然乱码，可重新“另存为 CSV UTF-8（逗号分隔）”，再上传转换。转换完成后也可直接下载 UTF-8 编码的 Markdown 文件。
+转换后可以用在哪里
+生成的表格适合放入 GitHub README、技术文档、Notion、Obsidian、语雀，以及提交给 AI 进行汇总、分类或数据解释。对于数百行以上的大表格，建议先筛选必要行列，避免文档难以阅读。
+表格里有多个工作表会怎样
+
+一次只转换一个工作表。上传后如果工作簿包含多个表，会出现工作表选择器，默认渲染第一张。切换工作表后重新转换，才能把其余的表也取出来。
+
+电子表格有三件事 Markdown 表达不了
+
+合并单元格。合并区域的内容只保留在左上角单元格，被覆盖的单元格是空的，所以合并表头常常需要手动补一遍。
+
+单元格样式。底色、边框、数字格式都属于视觉表现，Markdown 表格一个都不带。
+
+公式。只传递计算结果，公式本身不会被带过去。
+
+哪些输入能用，哪些不能
+
+输入 | 是否支持 | 说明 | 
+
+.xlsx、.xls、.csv | 支持 | 转换成竖线表格 | 
+
+.docx | 支持 | 段落和表格转成 Markdown | 
+
+带文本层的 PDF | 支持 | 需要 PDF 里有可选中的文字 | 
+
+扫描版或纯图片 PDF | 不支持 | 需要先做 OCR 再转换 | 
+
+旧版 .doc | 不支持 | 先在 Word 或 WPS 里另存为 .docx | 
+
+关于表格转换的问题
+
+能一次转换所有工作表吗？
+
+不能，一次只转一张。切换工作表选择器后再转一次。
+
+为什么合并的表头缺了内容？
+
+合并区域只有左上角单元格存值，被覆盖的单元格是空的，表头需要手动补一遍。
+
+扫描版 PDF 能转吗？
+
+不能直接转。扫描件没有文本层，需要先做 OCR。
+
+相关工具
+
+Markdown 表格转 Excel——反方向操作。
+
+Markdown 转 Word——表格要放进正式文档时用。
+
+开始转换 Excel / CSV
+
+---
+
+## 如何保存AI回答为Word、PDF或Markdown？｜Aixuno
+
+URL: https://aixuno.com/zh/guides/how-to-export-ai-answer.html
+Summary: 如何保存 AI 回答？了解将 DeepSeek、ChatGPT 等 AI 内容转换为 Word、PDF、Markdown 的实用方法。
+
+AI 内容整理指南
+如何保存 AI 回答为 Word、PDF 或 Markdown？
+AI 生成的内容适合继续编辑、分享或沉淀为知识库。选择合适的导出格式，能让这些内容真正进入工作流。
+需要正式编辑：导出 Word
+方案、报告和会议纪要适合导出为 Word。你可以保留 AI 内容的标题层级，再在 Word 中补充封面、批注或企业模板。
+需要分享或归档：导出 PDF
+PDF 适合发送给同事、客户或用于打印。导出前先检查预览，确保内容层级和表格符合预期。
+需要建立知识库：使用 Markdown
+表格资料和 AI 内容可转为 Markdown，再导入 Obsidian、Notion 或其他知识库工具，方便检索和二次使用。
+安全建议
+处理包含敏感信息的内容时，优先选择浏览器本地转换工具，避免把文件上传到不必要的服务器。
+先定格式，再选工具
+
+多数导出问题出在格式选错了，而不是工具不好用。四种去处基本覆盖了所有情况。
+
+接下来要做什么 | 合适的输出 | 原因 | 
+
+同事要修改或批注 | Word（.docx） | 修订记录和批注只存在于可编辑文档里 | 
+
+存档或发给客户 | PDF | 在任何设备上版式都不变 | 
+
+发到博客或落地页 | HTML | 保留语义标签，方便套用站点样式 | 
+
+长期保存的笔记 | Markdown | 纯文本，任何编辑器和版本管理都能读 | 
+
+最容易踩的三个坑
+
+直接把聊天窗口打印成 PDF，会把站点头部、侧边栏和对话气泡一起印进去。
+
+截图再存成 PDF，得到的是图片，之后既不能搜索也不能复制文字。
+
+把富文本直接粘进 Word，会带着网页字体，和文档自身的样式打架。
+
+导出前的检查清单
+
+删掉回答里不需要的部分——模型很少只输出你要的那一段。
+
+确认标题层级：整篇一个一级标题，下面逐级嵌套。
+
+在预览里看一眼表格和代码块，这两类元素最容易出错。
+
+关于格式选择的问题
+
+发给客户应该选哪种格式？
+
+PDF。版式在任何设备上都一致，也不会被误改。
+
+为什么不能直接打印聊天窗口？
+
+打印结果会带上站点头部、对话气泡，通常还有页面地址，这些都不该出现在交付物里。
+
+同一段内容能导出两次吗？
+
+可以。输入框里的内容会保留，先导 Word 再导 PDF 都行。
+
+相关工具
+
+Markdown 转 Word
+
+Markdown 转 PDF
+
+Markdown 转 HTML
+
+查看全部工具
+
+---
+
+## AI内容与Markdown转换教程 | Aixuno
+
+URL: https://aixuno.com/zh/guides/
+Summary: Aixuno AI内容与Markdown转换教程：ChatGPT、DeepSeek回答转Word、PDF，Markdown表格转Excel及Markdown转HTML。
+
+Aixuno 教程中心
+AI内容与Markdown转换教程
+解决复制AI回答、文档排版和格式转换中的具体问题。每篇教程均链接到可直接使用的免费工具，支持在浏览器本地处理内容。
+整理AI回答
+ChatGPT回答转Word
+DeepSeek回答转Word
+复制AI回答到Word格式不乱
+AI回答转PDF
+Markdown与表格
+Markdown转HTML
+Markdown表格转Excel
+MD文件转Word
+Excel转Markdown
+隐私说明：Aixuno支持的转换均在当前设备的浏览器内完成，粘贴内容和文件不会上传到Aixuno应用服务器。
+还需要图片工具？
+使用Aixuno文档转换工具处理Word、PDF和Markdown，或打开Aixuno批量图片转换工具。
+这些教程怎么用
+
+每篇结构一致：适用场景、操作步骤、依赖输出前必须知道的限制、与其他做法的对比。出问题时，先看限制那一段。
+
+按你复制内容的来源平台选对应教程。
+
+每篇都有直达工具的入口。
+
+教程里写明的限制，多半是格式本身的性质，不是待修的 bug。
+
+覆盖范围
+
+教程覆盖：AI 回答导出 Word、PDF、HTML；表格与文档转 Markdown；Markdown 表格转回表格。中文版另含公众号排版与本地文件处理。
+
+---
+
+## Markdown表格转Excel的方法与注意事项 | Aixuno
+
+URL: https://aixuno.com/zh/guides/markdown-table-to-excel.html
+Summary: 将ChatGPT、DeepSeek生成的Markdown表格整理到Excel，避免竖线、换行和前导零造成错列。
+
+Markdown表格
+Markdown表格怎么转到Excel
+更新于2026年8月9日
+AI经常用Markdown表格返回比较结果。转入Excel前应先确认列边界，避免竖线、单元格换行和数字格式导致错列或数据变化。
+推荐方法
+确认表格包含一行表头和一行分隔符。
+将Markdown预览成HTML，检查每列是否对应正确。
+复制渲染后的表格到Excel，并复核日期、金额和编号。
+常见问题
+单元格中的竖线可能被误认为新的一列。
+单元格内换行可能在Excel中变成多行。
+手机号、编号等前导零可能被Excel自动删除。
+需要反向转换？
+如果你已经有Excel或CSV文件并希望生成Markdown表格，可以使用Aixuno Excel转Markdown工具，选择工作表后预览结果。
+几个表格会生成几个工作表
+
+Markdown 里有几张表，就生成几个工作表，按出现顺序编号。源文件里两张表，导出的 Excel 里就是两个工作表，不会堆在同一张表里。
+
+对齐行决定了什么
+
+表头下面那行短横线决定列的对齐方式，并且会带到 Excel 里：
+
+Markdown 写法 | 含义 | 在 Excel 里的效果 | 
+
+:--- | 左对齐 | 文字靠左 | 
+
+:---: | 居中 | 内容居中 | 
+
+---: | 右对齐 | 适合数值列 | 
+
+需要提前知道的限制
+
+Markdown 没有跨行、跨列的语法，合并表头必须在 Excel 里重新做。
+
+转义的竖线 \| 会留在一个单元格里，没转义的竖线会把单元格切开。
+
+数字默认按文本写入，要参与计算前先确认列类型是数值。
+
+关于 Excel 输出的问题
+
+多个表格会怎么处理？
+
+每张表单独生成一个工作表，按在原文里出现的顺序编号。
+
+合并单元格能保留吗？
+
+不能。Markdown 没有跨行跨列语法，合并在 Excel 里重新做。
+
+数字会保持数值格式吗？
+
+数值按单元格内容写入。做公式前先确认列类型，文本格式的数字不会参与计算。
+
+相关工具
+
+Office 文件转 Markdown——反方向操作。
+
+Markdown 转 PDF——只需要看、不需要计算时用。
+
+打开Excel转Markdown
+
+---
+
+## Markdown转HTML完整方法 | Aixuno
+
+URL: https://aixuno.com/zh/guides/markdown-to-html-guide.html
+Summary: 将Markdown转换为干净HTML，用于博客、CMS、邮件编辑器和静态网站，支持预览标题、链接、表格与代码。
+
+Markdown转HTML
+如何把Markdown转换为干净HTML
+更新于2026年8月9日
+当博客、CMS、邮件编辑器或静态网页不直接支持Markdown时，可以先转换成HTML，再粘贴到目标平台的HTML或源码模式。
+转换步骤
+粘贴Markdown或AI生成的草稿。
+预览标题、链接、表格、引用和代码块。
+复制HTML，粘贴到目标平台的源码模式。
+HTML片段还是完整网页？
+HTML片段只包含文章正文，通常更适合CMS。完整网页还需要DOCTYPE、语言、标题、描述和视口等元数据。
+发布前安全检查
+检查所有外部链接和嵌入内容，不要把来源不明的脚本直接放入网站。Aixuno主要生成Markdown对应的结构化HTML。
+导出的文件里有什么
+
+下载得到的是完整的 HTML5 文档，不是片段。里面有 doctype 声明、lang 属性、UTF-8 编码声明、viewport 元标签和 title 元素，转换后的内容放在 body 里。
+
+刻意不包含什么
+
+样式表。不带任何 CSS，页面会继承目标站点提供的样式。
+
+脚本。输出的纯静态结构，不附带任何行为。
+
+站点框架。不包含 Aixuno 的导航、页脚或品牌元素。
+
+这让文件成为一个「模板素材」而不是成品页面——这通常正是需要的，因为把带样式的 HTML 粘进已有站点，往往和它自己的设计系统打架。
+
+什么时候该选 HTML
+
+去处 | 为什么用 HTML | 用之前要先改什么 | 
+
+博客或 CMS | 语义标签能对应到多数编辑器 | CMS 自己会包一层文档结构时，去掉外层包装 | 
+
+邮件模板 | 标题和列表能保留 | 邮件客户端需要内联 CSS，得另外加 | 
+
+静态站 | 可以直接另存为片段 | 嵌入已有布局时去掉 doctype | 
+
+关于 HTML 输出的问题
+
+导出的文件带样式吗？
+
+不带。文件只有结构，样式由放置它的站点提供。
+
+能直接粘进 CMS 吗？
+
+能。但 CMS 自己会生成文档骨架时，要去掉外层的 doctype 和 body。
+
+这个文件能单独打开吗？
+
+能。它是完整的 HTML5 文档，含 doctype、编码声明、viewport 和 title。
+
+相关工具
+
+Markdown 转 PDF——要求各处显示完全一致时用。
+
+Markdown 转 Word——受众期待收到文档时用。
+
+立即把Markdown转为HTML
+
+---
+
+## MD 文件怎么转 Word？Markdown 文件转换教程｜Markdown 万能转换器
+
+URL: https://aixuno.com/zh/guides/md-file-to-word.html
+Summary: MD 文件怎么转 Word？了解如何上传 .md 或 .markdown 文件，在浏览器本地转换为可编辑 Word 文档。
+
+MD 文件教程
+MD 文件怎么转 Word？
+MD 文件通常保存 Markdown 格式的标题、列表、表格和引用。转换为 Word 后，可以继续编辑、补充封面或套用公司文档模板。
+三步将 Markdown 文件转为 Word
+打开 Markdown 转 Word 工具。
+上传 .md 或 .markdown 文件；也可以复制文件内容。
+检查预览，点击“生成 Word”下载 .docx 文件。
+适合转换的内容
+AI 生成的调研、方案、周报和产品文档
+Obsidian、Typora 等工具中的笔记
+包含标题、列表、引用和 Markdown 表格的内容
+MD 文件在读取、预览和导出时仅在浏览器本地处理。
+本地 .md 文件怎么处理
+
+转换工具接收的是文本，所以先在编辑器里打开 .md 文件，全选复制，再粘贴到输入框。这样比上传文件更直接，也不会因为编码识别出错而出现乱码。
+
+Windows 上用记事本或 VS Code 打开都可以，确认显示正常再复制。
+
+文件很大时按章节分段粘贴，逐段检查预览，比一次性粘完更好排查。
+
+粘完先看标题层级，这是最容易在复制过程中丢掉的元素。
+
+需要提前知道的限制
+
+工具不直接读取 .md 文件，需要你自己复制内容。
+
+文件里的图片是相对路径引用，转成 Word 后不会自动把图片带进来。
+
+YAML 前置元数据（两条横线之间的那段）会作为普通文字出现在文档里，需要手动删掉。
+
+几种做法对比
+
+做法 | 是否需要装软件 | 结构是否保留 | 内容是否离开本机 | 
+
+用 Pandoc 命令行转换 | 需要，且要会命令行 | 保留得最完整 | 否 | 
+
+用 Markdown 编辑器自带的导出 | 需要，功能通常要付费版 | 取决于编辑器 | 否 | 
+
+Aixuno Markdown 转 Word | 不需要，浏览器打开就能用 | 保留标题、列表、表格、代码块 | 否，转换在浏览器里完成 | 
+
+关于本地 MD 文件的问题
+
+为什么不直接上传 .md 文件？
+
+工具接收的是文本，当前版本没有 .md 上传入口。先在编辑器里打开复制内容更快，也不会因为编码判断出错而乱码。
+
+文件里的图片能一起转过去吗？
+
+不能。Markdown 里的图片是路径引用，导出后不会自动嵌入。
+
+YAML 头信息会出现在文档里吗？
+
+会。两条横线之间的内容会作为普通文字出现，生成文件前先删掉。
+
+相关工具
+
+Markdown 转 PDF——需要发出去但不许别人改时用。
+
+把 ChatGPT 回答导出成 Word——内容来自 AI 对话时看这篇。
+
+上传 MD 文件转 Word
+
+---
+
+## Help and Quick Reference — Every Aixuno Tool
+
+URL: https://aixuno.com/help.html
+Summary: What each Aixuno tool takes and produces, common questions, and a symptom-to-fix table for when the output does not look right.
+
+Help
+Help and quick reference
+What each tool takes, what it produces, and what to check when the output does not look right.
+
+Start here
+
+Copy what you want to convert — an AI answer, the contents of a Markdown file, or a spreadsheet.
+
+Paste it into the matching tool. The preview updates as you type or as the file is read.
+
+Check the preview, then export the file or copy the result.
+
+Tool reference
+
+Tool | Takes | Produces | Typical use | 
+
+Markdown to Word | Markdown text or pasted .md content | .docx | Sending a draft that needs comments | 
+
+Markdown to PDF | Markdown text | A4 PDF with page numbers | Reading, printing, archiving a final version | 
+
+Markdown to HTML | Markdown text | Complete HTML5 file, no CSS | Blogs, CMS, static sites | 
+
+Excel to Markdown | .xlsx, .xls, .csv, .docx, text-based PDF | Markdown table | Documentation, wikis, notes for an AI assistant | 
+
+Markdown table to Excel | A Markdown pipe table | .xlsx, one sheet per table | Calculating, filtering, sorting | 
+
+WeChat formatter | Markdown text | Rich text with inline styles | Pasting into a WeChat article editor | 
+
+Common questions
+
+Do I need an account?
+
+No. No tool requires registration, and there is no account system to create.
+
+Are my files uploaded?
+
+No. Text and files are read and converted inside the browser. Nothing is sent to an Aixuno server.
+
+Which Markdown features are supported?
+
+Headings, paragraphs, lists, links, tables, blockquotes and fenced code blocks. Footnotes and raw HTML are kept as text rather than interpreted.
+
+Can it convert a scanned PDF?
+
+Not yet. A scanned file has no text layer, so it needs OCR before it can be converted.
+
+Why did my headings disappear after pasting?
+
+Either the copy came from a rich-text source that dropped the markers, or the hashes were written without a space after them. Both are fixed by re-adding the markers on their own lines.
+
+Can I change the PDF page size?
+
+No. The current version exports A4 portrait only, with 12 mm side margins and a page counter in the bottom-right corner.
+
+Is there a length limit?
+
+No fixed limit is applied. Very long documents are bounded only by what the browser can hold in a text field, so splitting into two or three parts is more reliable.
+
+Will this work on a phone?
+
+Yes, the tools run in mobile browsers. Editing long tables is still easier on a desktop screen.
+
+If something goes wrong
+
+Symptom | Likely cause | What to do | 
+
+Hash marks appear in the document | No space after the marker | Write a space after each # | 
+
+A table arrives as one paragraph | The delimiter row is missing | Add a row of dashes under the header row | 
+
+The exported PDF is blank | The page was scrolled during capture | Scroll to the top and export again | 
+
+The download does not start | The browser blocked it | Use the manual save link shown in the status bar | 
+
+Numbering restarts mid-document | An interrupted list | Merge the list into one block before converting | 
+
+Column contents are shifted | An unescaped pipe inside a cell | Escape it as \| | 
+
+Data and privacy
+
+Pasted text and selected files stay in the browser's memory. Page analytics record which page was viewed, not what was converted. The privacy notice describes the full data flow, including the third-party scripts used for parsing.
+
+Still stuck
+
+Send the tool name, browser, the steps you took and what you expected instead. The contact page explains what makes a report reproducible.
+
+---
+
+## 帮助与速查｜各工具输入、输出与故障排查
+
+URL: https://aixuno.com/zh/help.html
+Summary: Aixuno 各工具的输入、产出与典型用途速查，常见问题解答，以及结果不对时的排查对照表。
+
+帮助
+帮助与速查
+每个工具吃什么、产出什么，以及结果不对时先检查什么。
+
+从这里开始
+
+复制要转换的内容——AI 回答、Markdown 文件的内容，或一张表格。
+
+粘贴进对应的工具。输入或读取文件时，预览会同步更新。
+
+确认预览无误，导出文件或复制结果。
+
+工具速查
+
+工具 | 输入 | 产出 | 典型用途 | 
+
+Markdown 转 Word | Markdown 文本或粘贴的 .md 内容 | .docx | 发给需要批注的人 | 
+
+Markdown 转 PDF | Markdown 文本 | 带页码的 A4 PDF | 阅读、打印、定稿存档 | 
+
+Markdown 转 HTML | Markdown 文本 | 完整 HTML5 文件，不含 CSS | 博客、CMS、静态站 | 
+
+Excel 转 Markdown | .xlsx、.xls、.csv、.docx、可选文本的 PDF | Markdown 表格 | 文档、Wiki、给 AI 的素材 | 
+
+Markdown 表格转 Excel | Markdown 竖线表格 | .xlsx，每表一个工作表 | 计算、筛选、排序 | 
+
+公众号排版 | Markdown 文本 | 带内联样式的富文本 | 粘贴进公众号编辑器 | 
+
+常见问题
+
+需要注册账号吗？
+
+不需要。所有工具都无需登录，也没有账号体系。
+
+文件会被上传吗？
+
+不会。文本和文件都在浏览器内读取并转换，不会发送到 Aixuno 的服务器。
+
+支持哪些 Markdown 语法？
+
+标题、段落、列表、链接、表格、引用和围栏代码块。脚注和原始 HTML 会作为普通文本保留，不会被解释执行。
+
+扫描版 PDF 能转换吗？
+
+暂时不能。扫描件没有文本层，需要先做 OCR 才能转换。
+
+粘贴后标题为什么消失了？
+
+两种情况：来源是富文本，井号标记在复制时被丢弃；或者井号后面没有空格。在各行开头重新补上标记即可解决。
+
+能改 PDF 的页面尺寸吗？
+
+不能。当前版本只输出 A4 纵向，左右边距 12 mm，右下角带页码。
+
+有长度限制吗？
+
+工具本身不设上限。特别长的文档受浏览器文本框容量限制，分成两三次处理更稳。
+
+手机上能用吗？
+
+能，工具在移动浏览器里可以正常使用。编辑长表格仍然在桌面端更顺手。
+
+结果不对时先查这些
+
+现象 | 常见原因 | 怎么处理 | 
+
+文档里出现井号 | 标记后没有空格 | 在 # 后面加一个空格 | 
+
+表格变成一整段 | 缺少分隔行 | 在表头下面补一行短横线 | 
+
+导出的 PDF 是空白 | 导出时页面处于滚动状态 | 回到页面顶部再导出 | 
+
+点击后没有下载 | 浏览器拦截了下载 | 使用状态栏里出现的手动保存链接 | 
+
+编号中途重新开始 | 列表被空行截断 | 转换前把列表合并成一段 | 
+
+列的内容错位 | 单元格里有未转义的竖线 | 写成 \| | 
+
+数据与隐私
+
+粘贴的文本和选择的文件只存在于浏览器内存中。访问统计只记录页面被访问，不涉及转换内容。完整的数据流说明见隐私说明。
+
+还是没解决
+
+反馈时请附上工具名、浏览器、操作步骤，以及你期望的结果。联系页面说明了什么样的描述能真正定位问题。
+
+---
+
+## About Aixuno — Local-First Document Conversion
+
+URL: https://aixuno.com/about.html
+Summary: About Aixuno, a local-first AI content conversion tool platform.
+
+About
+Make useful AI content part of your work.
+Aixuno is a collection of browser-based conversion tools. We help turn AI answers into documents and knowledge assets that can be edited, shared, published, and reused.
+Why we exist
+AI can produce a lot of useful content, but it often remains trapped in a chat window. We reduce the friction between getting an answer and putting it to work—without requiring an account, uploading sensitive content, or learning complex software.
+Our principles
+Local first: core conversions happen in the user's browser.
+Task first: every tool exists to complete a clear job.
+Honest and transparent: we only describe capabilities and limits that can be verified.
+Localized: each language version is adapted to its users, not merely translated.
+Current scope
+Aixuno currently supports Markdown to Word, Markdown to PDF, Excel/CSV to Markdown, and Markdown to HTML for websites, blogs, and CMS publishing workflows. The product is actively improving; material changes are recorded in the changelog.
+What we deliberately do not build
+
+No account system. Nothing you convert requires a login, and there is no profile to build.
+
+No server-side conversion. Text and files stay in the browser; the site serves static pages only.
+
+No paywall on core tools. The conversion, preview and export steps are free and stay that way.
+
+No content inspection. Analytics describe page views and device types, never what you pasted.
+
+How the guides are written
+
+Each guide starts from a problem that actually comes up while using the tools: a heading that disappears after pasting, a table that splits at the wrong column, a PDF that exports blank because the page was scrolled. The limitation sections list what the tool genuinely cannot do, because a page that only advertises strengths is not useful when something goes wrong.
+
+Where a guide compares routes, it names the alternative honestly — including cases where exporting through Word or a command-line tool is the better answer.
+
+---
+
+## baidu_verify_codeva-vi7uthga3h.html
+
+URL: https://aixuno.com/baidu_verify_codeva-vi7uthga3h.html
+
+
+
+---
+
+## Aixuno Changelog — New Tools and Fixes
+
+URL: https://aixuno.com/changelog.html
+Summary: Aixuno changelog: new Markdown conversion tools, language releases, and local-processing improvements, listed newest first.
+
+Product updates
+Changelog
+A record of material changes to product capabilities, privacy practices, language support, and page structure.
+2026-11-01Keyword-mapped page titlesHomepages and every language edition of the tool pages now lead with the action a visitor searches for, plus a free or local-processing qualifier.
+
+2026-11-01Share controlsGuides and tool pages gained copy-link, X and Weibo sharing. Copy falls back to the legacy clipboard path when the Clipboard API is blocked.
+
+2026-11-01Full-answer guidesAll 18 guides now cover where the tool fits, where it does not, comparisons with other routes, and troubleshooting. Guides and tool pages link to each other in both directions.
+
+2026-11-01International signals completedhreflang groups rebuilt so every language edition points at all the others, 45 pages carry FAQPage markup, and 18 articles declare author, publisher and dates.
+
+2026-10-31Open Graph and Twitter cards82 pages gained social cards backed by a generated 1200×630 image, with og:locale matched to each language edition.
+
+2026-10-31AI crawler accessrobots.txt now names thirteen AI crawlers explicitly, and 18 migrated stub pages were marked noindex while keeping their canonical target.
+
+2026-10-31One h1 per pagePreview headings are demoted and restyled so each page exposes a single h1 to crawlers; the homepage draft is now shared across all four export modes.
+
+2026-10-30Download reliabilityWhen a browser swallows a download, a manual save link stays available. The floating tray appears only when there is something to download.
+
+2026-10-29Blank PDF fixExports capture from the top of the page, so scrolled documents no longer produce blank pages.
+
+2026-10-29Local PDF assetspdf.js standard fonts and character maps are served from this site instead of a CDN.
+
+2026-10-29Performance and accessibilityStylesheets consolidated, layout shift from the JS-rendered workspace removed, contrast and tap targets raised.
+
+2026-10-29Site foundationsEvery page gained a favicon and declares its charset before any other tag.
+
+---
+
+## Contact Aixuno — Feedback and Bug Reports
+
+URL: https://aixuno.com/contact.html
+Summary: Contact Aixuno with product feedback, bug reports, privacy requests, or copyright notices.
+
+Contact
+Your feedback helps make Aixuno better.
+Send feature requests, conversion issues, page corrections, copyright notices, privacy requests, or responsible security reports. Do not include passwords, payment details, identity documents, or unpublished file contents.
+Submit feedback
+We currently use GitHub Issues. Include the tool, browser, steps to reproduce, and the result you observed. Redact personal information from screenshots.
+Submit feedback
+What we review
+Conversion failures and compatibility problems;
+Suggestions for tools and guides;
+Privacy, copyright, and correction requests;
+Responsible security disclosures.
+Response
+Aixuno is an independently maintained project. We try to review useful reports, but cannot guarantee a fixed response time or implementation of every request.
+What makes a report actionable
+
+The tool name and the page you were on.
+
+Browser and version, plus whether you were on desktop or mobile.
+
+The exact steps you took, in order.
+
+What you expected versus what happened.
+
+A screenshot with personal details covered, if the problem is visual.
+
+What we cannot help with
+
+Recovering content that was closed without being exported — nothing is stored on a server, so there is no copy to restore.
+
+Account, billing or access problems on third-party AI platforms.
+
+Requests to remove content you published elsewhere; those need to go to the platform that hosts it.
+
+Response expectations
+
+This is a maintained independent project; there is no support desk and no guaranteed reply time.
+
+Bug reports with reproduction steps are prioritised over general suggestions.
+
+A report that cannot be reproduced in a current browser may be closed without a fix.
+
+---
+
+## Disclaimer — Aixuno Conversion Limits
+
+URL: https://aixuno.com/disclaimer.html
+Summary: Aixuno disclaimer covering conversion output, third-party resources, and professional-use limitations.
+
+Disclaimer
+Conversion tools improve efficiency, but do not replace review.
+Aixuno aims to keep its tools available and documentation accurate, but cannot guarantee identical output across every file, browser, font, or office application.
+Conversion output
+Word, PDF, Markdown, and rich-text output may contain font substitutions, page-break changes, table differences, missing images, or simplified formatting. Review output before publishing, printing, contracting, tendering, or archiving.
+No professional advice
+The site provides technical tools and general information, not legal, financial, medical, tax, or other professional advice.
+Third-party services
+Some browser libraries may load from public CDNs. External links and third-party services are operated by their respective providers, and related features may be affected by outages.
+Content responsibility
+Aixuno does not inspect content processed locally in your browser. You are responsible for its source, authorization, accuracy, and legality.
+When human review is required
+
+Legal, medical or financial text. Structure converts; meaning and factual accuracy do not get verified.
+
+Numbers that drive decisions. Totals, dates and units should be re-checked against the source after conversion.
+
+Anything that will be signed. Verify the full document in its final format before it leaves your hands.
+
+What the output guarantees
+
+The tools preserve structure — headings, lists, tables, quotes and code blocks — within the limits of each target format. They do not guarantee pixel-level fidelity, exact font matching, or that a formula renders identically in another application. Where a format cannot express something, the limitation is stated on the tool page rather than silently dropped.
+
+---
+
+## Privacy — Your Files Stay in Your Browser
+
+URL: https://aixuno.com/privacy.html
+Summary: Aixuno privacy information: core conversions are processed locally in your browser.
+
+Privacy
+Your content stays in your browser by default.
+Aixuno's core conversion tools are designed to process content locally in your browser. We do not operate an account system or upload the text you paste or the spreadsheet files you select to an Aixuno application server.
+Content processed locally
+Text pasted into Markdown editors;
+Excel and CSV files you select and their tabular contents;
+Generated Word, PDF, Markdown, and rich-text results.
+Third-party resources
+Some parsing and export features load browser scripts from public CDNs when required. A CDN may process standard network request information under its own policy, but your conversion content is not sent as a request parameter to that CDN.
+Anonymous web analytics
+We use Cloudflare Web Analytics to understand aggregated page views, visits, referrers, device types, and performance. It is not used to inspect conversion content or build advertising profiles. Pasted text, selected file contents, generated documents, and file names are not included in analytics events.
+Changes
+This notice will be updated when material changes are made to product capabilities or data practices.
+Where each piece of data goes
+
+Pasted text and selected files stay in the browser's memory and are never part of a network request.
+
+Parsing libraries are downloaded from a public CDN, which sees the request but not your content.
+
+Page analytics tell Cloudflare which page was viewed and from what device; converted content is never included.
+
+Generated files are written to your device by the browser's own download mechanism.
+
+---
+
+## Terms of Service — Aixuno
+
+URL: https://aixuno.com/terms.html
+Summary: Aixuno terms of service covering permitted use, user responsibilities, intellectual property, and service changes.
+
+Terms of Service
+Use Aixuno reasonably and lawfully.
+By using this website, you acknowledge these terms. Last updated: July 26, 2026.
+Service
+Aixuno provides browser-based conversion and formatting tools on an “as is” basis. Features, compatibility, and content may change as the product develops.
+Your responsibilities
+Only process content you are authorized to use;
+Do not use the site for unlawful, infringing, fraudulent, or malicious activity;
+Keep original copies and review important conversion results before use.
+Intellectual property
+You retain the rights you already hold in your input and output. The Aixuno brand, interface, copy, and code remain subject to applicable law and open-source licenses.
+Changes
+We may add, change, suspend, or discontinue features for maintenance, security, or compliance reasons. Material changes to these terms will update the date above.
+Limitation of liability
+To the extent permitted by law, Aixuno is not liable for indirect losses caused by use or unavailability of the site, conversion errors, formatting differences, or third-party interruptions.
+Availability and changes
+
+The tools are free to use and provided without a service-level guarantee.
+
+Features may change or be removed as the project evolves.
+
+There is no account, so there is nothing to cancel and no subscription that can expire.
+
+What this service does not promise
+
+That a conversion will be free of formatting differences from the source document.
+
+That a generated file will open identically in every version of Word, Excel or a browser.
+
+That the tools will stay available without interruption while the project is maintained.
+
+---
+
+## 关于 Aixuno｜本地优先的文档转换工具
+
+URL: https://aixuno.com/zh/about.html
+Summary: 了解 Aixuno：一个以本地处理为原则的 AI 内容转换工具平台。
+
+关于我们
+让有价值的 AI 内容，真正进入工作流。
+Aixuno 是一组浏览器本地运行的转换工具。我们帮助用户把 AI 回答整理为可以编辑、分享、发布和沉淀的文档与知识资产。
+为什么做这件事
+AI 可以生成大量内容，但内容常常停留在聊天窗口。我们希望减少从“得到答案”到“拿去使用”之间的摩擦，让用户不用注册、不必上传敏感内容，也不需要学习复杂软件。
+产品原则
+本地优先：核心转换在用户自己的浏览器中完成。
+任务优先：每个工具解决一个清晰、可完成的任务。
+诚实透明：只描述已实现、可验证的能力与限制。
+语言本地化：不同语言版本不仅翻译文字，也适应对应的工作习惯。
+当前范围
+目前支持 Markdown 转 Word、Markdown 转 PDF、Excel/CSV 转 Markdown，以及中文市场的公众号 Markdown 排版。项目仍在持续完善中，功能范围与更新会记录在更新日志中。
+我们刻意不做的事
+
+不做账号体系。任何转换都不需要登录，也没有用户画像。
+
+不做服务端转换。文本和文件留在浏览器里，站点只提供静态页面。
+
+核心工具不设付费墙。转换、预览、导出三步都免费，并且会一直如此。
+
+不查看转换内容。统计只描述页面访问和设备类型，从不涉及你粘贴的内容。
+
+教程是怎么写的
+
+每篇教程都从实际使用中真正出现的问题出发：粘贴后标题消失、表格在错误的列断开、页面滚动后导出的 PDF 是空白。限制部分会如实列出工具做不到什么——只讲优点的页面，在出问题时帮不上忙。
+
+涉及方案对比时，会如实写出替代做法，包括「这种情况其实用 Word 或命令行更合适」。
+
+---
+
+## Aixuno 更新日志｜新工具与修复记录
+
+URL: https://aixuno.com/zh/changelog.html
+Summary: Aixuno 更新日志：新增 Markdown 转换工具、多语言版本与本地处理能力改进，按时间倒序排列。
+
+产品更新
+更新日志
+记录影响产品能力、隐私实践、语言支持和页面结构的重要变化。
+2026-11-01标题按搜索意图重写首页与各语言工具页的标题改为以「用户会搜的动作」开头，并带上免费或本地处理的限定词。
+
+2026-11-01分享按钮教程页与工具页新增复制链接、分享到 X、分享到微博。剪贴板 API 被拦截时会回退到传统复制方式。
+
+2026-11-01教程补齐为完整答案18 篇教程都补上了适用场景、不适用场景、与其他方案对比、故障排查；教程与工具页建立双向内链。
+
+2026-11-01国际化信号补全重建 hreflang 集群，使每个语言版本互相指向；45 个页面带 FAQPage 结构化数据，18 篇文章声明作者、发布方与日期。
+
+2026-10-31社交分享卡片82 个页面加入 Open Graph 与 Twitter 卡片，配一张生成的 1200×630 分享图，og:locale 按语言分别设置。
+
+2026-10-31放行 AI 爬虫robots.txt 显式列出 13 个 AI 爬虫；18 个迁移跳转页加 noindex，同时保留指向新地址的 canonical。
+
+2026-10-31每页只保留一个 h1预览区的标题降级并保持原有字号，让爬虫看到唯一的 h1；首页四种导出模式改为共享同一份草稿。
+
+2026-10-30下载可靠性浏览器拦截下载时保留手动保存入口；浮动下载条只在确实有文件可下载时出现。
+
+2026-10-29修复空白 PDF从页面顶部捕获内容，页面滚动后导出不再得到空白页。
+
+2026-10-29本地化 PDF 资源pdf.js 的标准字体与字符映射改为本站提供，不再依赖 CDN。
+
+2026-10-29性能与可访问性合并样式表，消除 JS 渲染工作区造成的内容位移，提高对比度与点击区域。
+
+2026-10-29站点基础每页加入 favicon，并把字符集声明放到最前面。
+
+---
+
+## 联系 Aixuno｜反馈与问题报告
+
+URL: https://aixuno.com/zh/contact.html
+Summary: 联系 Aixuno：提交功能建议、问题反馈或版权与隐私请求。
+
+联系我们
+你的反馈，会帮助 Aixuno 变得更好。
+欢迎提交功能建议、转换问题、页面错误、版权通知或隐私请求。请勿在反馈中粘贴身份证件、银行卡、密码或未公开文件内容。
+提交反馈
+目前我们通过 GitHub Issues 接收反馈。请说明使用的工具、浏览器、操作步骤和实际结果；如需截图，请先遮盖个人信息。
+提交反馈
+处理范围
+转换失败、格式异常与兼容性问题；
+新工具和教程建议；
+隐私、版权及页面内容更正请求；
+安全问题与负责任披露。
+响应说明
+Aixuno 目前是持续维护中的独立项目，我们会尽力查看反馈，但不承诺固定响应时间或逐项采纳。
+什么样的反馈能真正定位问题
+
+用的哪个工具、在哪个页面。
+
+浏览器和版本，桌面还是手机。
+
+按顺序做了什么操作。
+
+期望看到什么，实际看到什么。
+
+如果是显示问题，附一张遮掉个人信息的截图。
+
+我们帮不上什么
+
+找回没有导出就关闭的内容——服务器不留副本，没有可恢复的数据。
+
+第三方 AI 平台的账号、计费或访问问题。
+
+删除你在别处发布的内容，这需要找托管平台。
+
+---
+
+## 免责声明｜转换结果的边界与责任
+
+URL: https://aixuno.com/zh/disclaimer.html
+Summary: Aixuno 免责声明：转换结果、第三方资源及专业用途限制说明。
+
+免责声明
+转换工具可以提高效率，但不能替代人工复核。
+Aixuno 尽力保持功能可用和说明准确，但不保证转换结果在所有文件、浏览器、字体或办公软件中完全一致。
+转换结果
+导出的 Word、PDF、Markdown 或富文本可能出现字体替换、分页变化、表格差异、图片缺失或复杂格式简化。用于发布、打印、合同、投标或归档前，请人工检查。
+非专业建议
+本站提供的是技术工具和一般信息，不构成法律、财务、医疗、税务或其他专业意见。
+第三方服务
+部分浏览器脚本可能由公共 CDN 提供，外部链接和第三方服务由各自运营方负责。第三方不可用时，相关转换功能可能受影响。
+内容责任
+Aixuno 不审查你在本地浏览器中处理的内容。你应自行确认内容来源、授权、准确性与合法性，并承担相应责任。
+
+---
+
+## 隐私说明｜内容只在你的浏览器处理
+
+URL: https://aixuno.com/zh/privacy.html
+Summary: Aixuno 隐私说明：核心内容转换在浏览器本地完成。
+
+隐私说明
+你的内容默认留在你的浏览器中。
+Aixuno 的核心转换功能设计为浏览器本地处理。我们不设置账号系统，也不把你粘贴的文本或选择的表格文件上传到 Aixuno 的应用服务器。
+本地处理的内容
+你粘贴到 Markdown 编辑器中的文本；
+你选择的 Excel、CSV 文件及其表格内容；
+生成的 Word、PDF、Markdown 或富文本结果。
+第三方资源
+部分导出或解析能力会从公共 CDN 按需加载浏览器脚本。加载这些脚本时，CDN 可能按其自身政策处理标准网络请求信息；你的转换内容不会作为请求参数发送给 CDN。
+匿名访问统计
+我们使用 Cloudflare Web Analytics 了解汇总的页面浏览量、访问次数、来源、设备类型和性能情况，不用于查看转换内容或建立广告画像。粘贴文本、选择的文件内容、生成的文档和文件名不会进入统计事件。
+联系与更新
+本页面会随着产品能力和数据实践发生实质变化时更新。使用产品前，请以本页面的最新版本为准。
+
+---
+
+## 服务条款｜使用范围与责任说明
+
+URL: https://aixuno.com/zh/terms.html
+Summary: Aixuno 服务条款：使用范围、用户责任、知识产权与服务变更说明。
+
+服务条款
+请在合理、合法的范围内使用 Aixuno。
+使用本网站即表示你理解并同意以下条款。最后更新：2026 年 7 月 26 日。
+服务性质
+Aixuno 提供浏览器端内容转换与排版工具。工具按“现状”提供，功能、兼容范围和页面内容可能随产品更新而调整。
+用户责任
+你应确保有权处理、转换和下载所使用的内容；
+不得利用本站从事违法、侵权、欺诈、恶意攻击或规避安全措施的活动；
+重要文件应自行保留原始副本，并在使用转换结果前进行复核。
+知识产权
+你对自己输入的内容及转换结果保留原有权利。Aixuno 的品牌、页面设计、说明文字和程序代码受适用法律及其开源许可约束。
+服务变更
+我们可能新增、调整或停止部分功能，也可能为维护、安全或合规需要临时限制访问。重大条款变化会更新本页日期。
+责任限制
+在法律允许的范围内，Aixuno 不对因使用或无法使用本站、转换结果错误、格式差异或第三方资源中断造成的间接损失承担责任。
