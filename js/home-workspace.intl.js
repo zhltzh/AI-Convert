@@ -42,10 +42,14 @@ const SHARED_DRAFT = 'markdown';
 let activeMode = document.body.dataset.mode || new URLSearchParams(location.search).get('mode') || 'word';
 if (!modes.some(mode => mode.id === activeMode)) activeMode = 'word';
 
+const currentLabel = {
+  en: 'Current', es: 'Actual', de: 'Aktiv', ja: '選択中', fr: 'Actuel'
+}[locale.code] || 'Current';
+
 function cardMarkup(mode) {
   const active = mode.id === activeMode;
   const source = mode.source ?? 'MD';
-  return `<button class="mode-card mode-card--${mode.id}${active ? ' is-active' : ''}" type="button" role="tab" aria-selected="${active}" aria-controls="workspace" data-mode="${mode.id}"><span class="mode-card__top"><span class="format-glyph" aria-hidden="true"><b>${source}</b><i>→</i><em>${mode.target}</em></span></span><span class="mode-card__label">${mode.label}</span><strong>${mode.title}</strong><span class="mode-card__description">${mode.description}</span></button>`;
+  return `<button class="mode-card mode-card--${mode.id}${active ? ' is-active' : ''}" type="button" role="tab" aria-selected="${active}" aria-controls="workspace" data-mode="${mode.id}"><span class="mode-card__current" aria-hidden="true">${currentLabel}</span><span class="mode-card__top"><span class="format-glyph" aria-hidden="true"><b>${source}</b><i>→</i><em>${mode.target}</em></span></span><span class="mode-card__label">${mode.label}</span><strong>${mode.title}</strong><span class="mode-card__description">${mode.description}</span></button>`;
 }
 
 function markdownWorkspace(mode) {
