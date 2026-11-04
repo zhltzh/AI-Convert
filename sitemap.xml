@@ -230,6 +230,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/ai-response-to-pdf.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/ai-response-to-pdf.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/ai-response-to-pdf.html"/>
+  
+    <image:image>
+      <image:loc>https://aixuno.com/images/markdown-to-pdf-ui-en.webp</image:loc>
+      <image:title>AI response exported to an A4 PDF</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://aixuno.com/guides/chatgpt-to-word.html</loc>
@@ -237,6 +242,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/chatgpt-to-word.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/chatgpt-to-word.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/chatgpt-to-word.html"/>
+  
+    <image:image>
+      <image:loc>https://aixuno.com/images/markdown-to-word-ui-en.webp</image:loc>
+      <image:title>ChatGPT answer converted to Word with structure preserved</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://aixuno.com/guides/copy-ai-answer-to-word.html</loc>
@@ -244,6 +254,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/copy-ai-answer-to-word.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/copy-ai-answer-to-word.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/copy-ai-answer-to-word.html"/>
+  
+    <image:image>
+      <image:loc>https://aixuno.com/images/markdown-to-word-ui-en.webp</image:loc>
+      <image:title>Checking that a copied AI answer kept its headings</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://aixuno.com/guides/deepseek-to-word.html</loc>
@@ -251,6 +266,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/deepseek-to-word.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/deepseek-to-word.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/deepseek-to-word.html"/>
+  
+    <image:image>
+      <image:loc>https://aixuno.com/images/markdown-to-word-ui-en.webp</image:loc>
+      <image:title>DeepSeek response converted to Word</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://aixuno.com/guides/excel-to-markdown-guide.html</loc>
@@ -258,6 +278,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/excel-to-markdown-guide.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/excel-to-markdown-guide.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/excel-to-markdown-guide.html"/>
+  
+    <image:image>
+      <image:loc>https://aixuno.com/images/excel-to-markdown-ui-en.webp</image:loc>
+      <image:title>Spreadsheet converted to a Markdown table</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://aixuno.com/guides/how-to-export-ai-answer.html</loc>
@@ -265,6 +290,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/how-to-export-ai-answer.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/how-to-export-ai-answer.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/how-to-export-ai-answer.html"/>
+  
+    <image:image>
+      <image:loc>https://aixuno.com/images/export-format-compare-en.webp</image:loc>
+      <image:title>Comparing Word, PDF and HTML export formats</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://aixuno.com/guides/markdown-table-to-excel.html</loc>
@@ -279,6 +309,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/markdown-to-html-guide.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/markdown-to-html-guide.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/markdown-to-html-guide.html"/>
+  
+    <image:image>
+      <image:loc>https://aixuno.com/images/markdown-to-html-ui-en.webp</image:loc>
+      <image:title>Markdown to HTML snippet and standalone file</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://aixuno.com/ja/</loc>
@@ -358,6 +393,11 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/excel-to-markdown.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/excel-to-markdown.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/excel-to-markdown.html"/>
+  
+    <image:image>
+      <image:loc>https://aixuno.com/images/excel-to-markdown-ui-en.webp</image:loc>
+      <image:title>Excel and CSV to Markdown conversion result</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://aixuno.com/tools/markdown-to-html.html</loc>
@@ -368,6 +408,11 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/markdown-to-html.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/markdown-to-html.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/markdown-to-html.html"/>
+  
+    <image:image>
+      <image:loc>https://aixuno.com/images/markdown-to-html-ui-en.webp</image:loc>
+      <image:title>Markdown to HTML converter with copy and download buttons</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://aixuno.com/tools/markdown-to-pdf.html</loc>
@@ -379,6 +424,11 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/markdown-to-pdf.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/markdown-to-pdf.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/markdown-to-pdf.html"/>
+  
+    <image:image>
+      <image:loc>https://aixuno.com/images/markdown-to-pdf-ui-en.webp</image:loc>
+      <image:title>Markdown to PDF converter with A4 page preview</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://aixuno.com/tools/markdown-to-word.html</loc>
@@ -390,6 +440,11 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/markdown-to-word.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/markdown-to-word.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/markdown-to-word.html"/>
+  
+    <image:image>
+      <image:loc>https://aixuno.com/images/markdown-to-word-ui-en.webp</image:loc>
+      <image:title>Markdown to Word converter interface with live preview</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://aixuno.com/zh/</loc>
