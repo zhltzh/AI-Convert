@@ -88,7 +88,7 @@ button, a, input, textarea, select { -webkit-tap-highlight-color: transparent; }
 .section h2 { font-size: clamp(32px, 4vw, 48px); letter-spacing: -.055em; line-height: 1.12; margin-bottom: 0; }
 .site-header { height: 72px; display: flex; align-items: center; border-bottom: 1px solid rgba(229,229,229,.72); }
 .site-header__inner { display: flex; align-items: center; justify-content: space-between; width: 100%; }
-.site-network { border-bottom: 1px solid var(--color-border); background: #fff; }.site-network__inner { display: flex; justify-content: center; gap: 5px; padding-block: 7px; overflow-x: auto; scrollbar-width: none; }.site-network__inner::-webkit-scrollbar { display: none; }.site-network a { flex: 0 0 auto; padding: 6px 11px; border-radius: 8px; color: var(--color-muted); font-size: 12px; font-weight: 650; white-space: nowrap; }.site-network a:hover { color: var(--color-ink); background: var(--color-surface); }.site-network a.is-current { color: #fff; background: var(--color-ink); }
+.site-network { border-bottom: 1px solid var(--color-border); background: #fff; }.site-network__inner { display: flex; justify-content: center; gap: 5px; padding-block: 7px; overflow-x: auto; scrollbar-width: none; }.site-network__inner::-webkit-scrollbar { display: none; }.site-network a { display: inline-flex; align-items: center; gap: 6px; flex: 0 0 auto; padding: 5px 11px 5px 6px; border-radius: 8px; color: var(--color-muted); font-size: 12px; font-weight: 650; white-space: nowrap; }.site-network a:hover { color: var(--color-ink); background: var(--color-surface); }.site-network a.is-current { color: #fff; background: var(--color-ink); }
 .site-network a:nth-child(2):hover { color:#101820; background:#c9ff43; }.site-network a:nth-child(3):hover { color:#fff; background:linear-gradient(135deg,#2563eb,#10b981); }.site-network a:nth-child(4):hover { color:#fff; background:linear-gradient(135deg,#2563eb,#7c3aed); }.site-network a:nth-child(5):hover { color:#fff; background:linear-gradient(135deg,#7c3aed,#4f46e5); }
 .brand { font-size: 18px; font-weight: 750; letter-spacing: -.045em; }
 .brand__mark { display: inline-grid; place-items: center; width: 23px; height: 23px; margin-right: 7px; border: 1.5px solid var(--color-ink); border-radius: 7px; font-size: 13px; vertical-align: -2px; }
@@ -261,3 +261,34 @@ button, a, input, textarea, select { -webkit-tap-highlight-color: transparent; }
 .contact-email-line { margin: 2px 0 14px; font-size: 15px; line-height: 1.7; }
 .contact-email-line [data-contact-email] { font-weight: 650; color: var(--color-ink); letter-spacing: .01em; }
 .contact-email-line .text-link { font-weight: 650; }
+
+/* 微信二维码弹窗 */
+.qr-modal { position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; padding: 20px; background: rgba(20, 12, 6, .55); }
+.qr-modal__box { position: relative; width: 100%; max-width: 320px; padding: 26px 24px 22px; border-radius: 18px; background: #fff; box-shadow: 0 24px 60px rgba(0, 0, 0, .28); text-align: center; }
+.qr-modal__close { position: absolute; right: 12px; top: 10px; width: 32px; height: 32px; padding: 0; border: 0; border-radius: 50%; background: transparent; color: var(--color-muted); font-size: 22px; line-height: 1; cursor: pointer; }
+.qr-modal__close:hover { background: var(--color-surface); color: var(--color-ink); }
+.qr-modal__title { margin: 0 0 14px; font-size: 16px; font-weight: 700; letter-spacing: -.01em; }
+.qr-modal__code { display: grid; place-items: center; min-height: 200px; }
+.qr-modal__code svg { display: block; width: 200px; height: 200px; }
+.qr-modal__hint { margin: 14px 0 0; color: var(--color-muted); font-size: 13px; line-height: 1.65; }
+.qr-modal__fallback { margin: 0; padding: 30px 10px; color: var(--color-muted); font-size: 13px; }
+
+/* 工具页操作区下方的分享条 */
+.share-bar { border-top: 1px solid var(--color-border); background: var(--color-surface); }
+.share-bar > .container { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; padding-block: 20px; }
+.share-bar .share-links { margin: 0; padding: 0; border: 0; }
+.share-links button.share-links__wechat { border-color: #07c160; color: #07c160; }
+.share-links button.share-links__wechat:hover { border-color: #06ad56; background: #f0fdf5; }
+.share-links button.share-links__wechat[data-copied="1"] { border-color: #07c160; background: #f0fdf5; }
+@media (max-width: 560px) { .share-bar > .container { gap: 10px; padding-block: 16px; } }
+
+/* 跨站导航徽章：与 pdf / compress / image / bg 四站一致 */
+.site-net__brand { flex: 0 0 auto; margin-right: 4px; color: var(--color-muted); font-size: 11px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.site-net__mark { display: inline-grid; place-items: center; height: 20px; min-width: 26px; padding: 0 4px; border-radius: 5px; color: #fff; font-size: 10px; font-weight: 800; line-height: 1; letter-spacing: .02em; }
+.site-net__mark--amber { background: linear-gradient(135deg, #fbbf24, #f97316); }
+.site-net__mark--fuchsia { background: linear-gradient(135deg, #d946ef, #ec4899); }
+.site-net__mark--sky { background: linear-gradient(135deg, #0ea5e9, #10b981); }
+.site-net__mark--rose { background: linear-gradient(135deg, #f43f5e, #ef4444); }
+.site-net__mark--violet { background: linear-gradient(135deg, #8b5cf6, #6366f1); }
+.site-network a.is-current .site-net__mark { box-shadow: 0 0 0 2px rgba(255, 255, 255, .3); }
+@media (max-width: 760px) { .site-net__brand { display: none; } }
