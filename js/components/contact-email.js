@@ -8,7 +8,7 @@
  * 以后换成域名邮箱时，只改这里的 EMAIL_USER 和 EMAIL_DOMAIN 两行即可。
  */
 
-const EMAIL_USER = "40836112";
+const EMAIL_USER = "bushiyayaya";
 const EMAIL_DOMAIN = "qq.com";
 
 function mount() {
