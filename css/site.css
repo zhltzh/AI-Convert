@@ -256,3 +256,8 @@ button, a, input, textarea, select { -webkit-tap-highlight-color: transparent; }
 .tool-index__list strong { font-size: 16px; letter-spacing: -.02em; }
 .tool-index__list span { color: var(--color-muted); font-size: 13px; line-height: 1.6; }
 @media (max-width: 760px) { .tool-index__list { grid-template-columns: 1fr; } }
+
+/* 联系页邮箱 */
+.contact-email-line { margin: 2px 0 14px; font-size: 15px; line-height: 1.7; }
+.contact-email-line [data-contact-email] { font-weight: 650; color: var(--color-ink); letter-spacing: .01em; }
+.contact-email-line .text-link { font-weight: 650; }
