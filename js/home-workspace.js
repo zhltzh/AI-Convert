@@ -21,6 +21,7 @@ function workspaceCta(label, { disabled = false } = {}) {
 const modes = [
   { id: 'word', target: 'W', title: 'Markdown 转 Word', label: '文档交付', description: '将 Markdown 内容或 MD 文件转为可编辑 Word 文档。', action: '下载 Word' },
   { id: 'pdf', target: 'PDF', title: 'Markdown 转 PDF', label: '保存与打印', description: '将 Markdown 内容或 MD 文件导出为适合分享的 PDF。', action: '下载 PDF' },
+  { id: 'html', target: 'HTML', title: 'Markdown 转 HTML', label: '网页发布', description: '把 Markdown 转成干净的 HTML，复制代码或下载可打开的网页文件。', action: '复制 HTML' },
   { id: 'table', target: 'XLS', title: 'Markdown 表格转 Excel', label: '表格整理', description: '识别 Markdown 表格，导出 Excel 或 CSV 文件。', action: '下载 Excel' },
   { id: 'office', source: 'DOC', target: 'MD', title: '办公文件转 Markdown', label: '资料整理', description: '按 Word、Excel / CSV、PDF 的常用顺序整理办公资料。', action: '转换为 Markdown' },
 ];
@@ -28,7 +29,8 @@ const modes = [
 const drafts = new Map();
 // All markdown modes share one draft so switching Word/PDF/HTML/table keeps the text.
 const SHARED_DRAFT = 'markdown';
-let activeMode = 'word';
+let activeMode = document.body.dataset.mode || new URLSearchParams(location.search).get('mode') || 'word';
+if (!modes.some(mode => mode.id === activeMode)) activeMode = 'word';
 
 function cardMarkup(mode) {
   const active = mode.id === activeMode;
@@ -38,7 +40,7 @@ function cardMarkup(mode) {
 
 function markdownWorkspace(mode) {
   const placeholder = '在这里粘贴 Markdown 内容，例如来自 DeepSeek、豆包、ChatGPT 或 Claude 的回答…';
-  return `<div class="workspace__top"><div><p class="eyebrow">${mode.label}</p><h2>${mode.title}</h2><p>${mode.description}</p></div>${workspaceCta(mode.action)}</div><div class="editor-grid"><div class="editor-pane"><div class="pane-title"><label for="home-markdown">Markdown 内容</label></div>${renderMarkdownUpload({title:'将 Markdown 文件拖到这里，或点击选择文件',hint:'支持 .md、.markdown · 最大 5MB · 文件仅在本地处理'})}<textarea id="home-markdown" rows="16" placeholder="${placeholder}">${drafts.get(SHARED_DRAFT) ?? ''}</textarea><p class="field-note">支持标题、列表、表格、引用和代码块。</p></div><div class="preview-pane"><div class="pane-title"><p class="preview-pane__label">实时预览</p><button class="utility-button" type="button" id="copy-preview">复制预览</button></div><article id="home-preview" class="markdown-preview"><p class="preview-empty">粘贴内容后，会在这里显示预览。</p></article></div></div><div class="workspace__actions"><span class="status" id="workspace-status" role="status" aria-live="polite">支持 DeepSeek、豆包、腾讯元宝、通义千问、文心一言、ChatGPT、Claude 等 AI 内容；内容只在当前浏览器中处理。</span>${mode.id === 'pdf' ? '<button class="button button--secondary" type="button" id="workspace-print-pdf">打印 / 另存为 PDF</button>' : ''}<button class="button button--primary" type="button" id="workspace-action">${mode.action}</button></div>`;
+  return `<div class="workspace__top"><div><p class="eyebrow">${mode.label}</p><h2>${mode.title}</h2><p>${mode.description}</p></div>${workspaceCta(mode.action)}</div><div class="editor-grid"><div class="editor-pane"><div class="pane-title"><label for="home-markdown">Markdown 内容</label></div>${renderMarkdownUpload({title:'将 Markdown 文件拖到这里，或点击选择文件',hint:'支持 .md、.markdown · 最大 5MB · 文件仅在本地处理'})}<textarea id="home-markdown" rows="16" placeholder="${placeholder}">${drafts.get(SHARED_DRAFT) ?? ''}</textarea><p class="field-note">支持标题、列表、表格、引用和代码块。</p></div><div class="preview-pane"><div class="pane-title"><p class="preview-pane__label">实时预览</p><button class="utility-button" type="button" id="copy-preview">复制预览</button></div><article id="home-preview" class="markdown-preview"><p class="preview-empty">粘贴内容后，会在这里显示预览。</p></article></div></div><div class="workspace__actions"><span class="status" id="workspace-status" role="status" aria-live="polite">支持 DeepSeek、豆包、腾讯元宝、通义千问、文心一言、ChatGPT、Claude 等 AI 内容；内容只在当前浏览器中处理。</span>${mode.id === 'pdf' ? '<button class="button button--secondary" type="button" id="workspace-print-pdf">打印 / 另存为 PDF</button>' : ''}${mode.id === 'html' ? '<button class="button button--secondary" type="button" id="download-html">下载 HTML</button>' : ''}<button class="button button--primary" type="button" id="workspace-action">${mode.action}</button></div>`;
 }
 
 function tableWorkspace() {
@@ -86,6 +88,21 @@ function setStatus(message, isError = false) {
   status.classList.toggle('status--error', isError);
 }
 
+function htmlDocument(body) {
+  return `<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aixuno HTML 文档</title>
+</head>
+<body>
+${body}
+</body>
+</html>
+`;
+}
+
 async function wireMarkdownWorkspace(mode) {
   const input = document.querySelector('#home-markdown');
   const preview = document.querySelector('#home-preview');
@@ -104,6 +121,12 @@ async function wireMarkdownWorkspace(mode) {
       const html = await renderMarkdown(input.value);
       if (mode.id === 'word') await exportWord(html, 'markdown-to-word.docx');
       if (mode.id === 'pdf') await exportPdf(html, 'markdown-to-pdf.pdf');
+      if (mode.id === 'html') {
+        if (!html) throw new Error('请先输入需要转换的 Markdown 内容。');
+        await navigator.clipboard.writeText(html);
+        setStatus('HTML 代码已复制，可直接粘贴到 CMS 或博客编辑器。');
+        return;
+      }
       setStatus('文件已开始下载。');
     } catch (error) { setStatus(error.message, true); }
     finally { actionButtons.forEach(button => { button.disabled = false; }); }
@@ -122,6 +145,14 @@ async function wireMarkdownWorkspace(mode) {
       const html = await renderMarkdown(input.value);
       await copyRichText(html);
       setStatus('预览内容已复制，可直接粘贴到 Word、飞书或其他支持富文本的编辑器。');
+    } catch (error) { setStatus(error.message, true); }
+  });
+  document.querySelector('#download-html')?.addEventListener('click', async () => {
+    try {
+      const html = await renderMarkdown(input.value);
+      if (!html) throw new Error('请先输入需要转换的 Markdown 内容。');
+      downloadBlob(new Blob([htmlDocument(html)], { type: 'text/html;charset=utf-8' }), 'markdown-to-html.html');
+      setStatus('HTML 文件已开始下载。');
     } catch (error) { setStatus(error.message, true); }
   });
 }

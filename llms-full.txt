@@ -2,7 +2,7 @@
 
 > Full text of every public page on https://aixuno.com, generated for language models.
 > The condensed index is at https://aixuno.com/llms.txt.
-> Generated 2026-11-01. 66 pages.
+> Generated 2026-11-04. 67 pages.
 
 ## Contents
 
@@ -70,6 +70,7 @@
 - [Aixuno 更新日志｜新工具与修复记录](https://aixuno.com/zh/changelog.html)
 - [联系 Aixuno｜反馈与问题报告](https://aixuno.com/zh/contact.html)
 - [免责声明｜转换结果的边界与责任](https://aixuno.com/zh/disclaimer.html)
+- [Markdown 转 HTML｜免费生成干净网页代码，本地处理](https://aixuno.com/zh/tools/markdown-to-html.html)
 - [隐私说明｜内容只在你的浏览器处理](https://aixuno.com/zh/privacy.html)
 - [服务条款｜使用范围与责任说明](https://aixuno.com/zh/terms.html)
 
@@ -742,6 +743,26 @@ A4 分页固定，几个月后打开排版仍然一致。
 
 把 AI 回答导出成 PDF——A4 输出里有什么，哪里容易出问题
 把 ChatGPT 回答导出成 Word——文档还要继续修改时用
+
+---
+
+## Markdown 转 HTML｜免费生成干净网页代码，本地处理
+
+URL: https://aixuno.com/zh/tools/markdown-to-html.html
+Summary: 免费 Markdown 转 HTML 在线工具。粘贴 DeepSeek、ChatGPT 等 AI 生成内容或上传 MD 文件，在浏览器本地转成干净的 HTML，可复制代码或下载网页文件；无需登录，内容不上传。
+
+首页/Markdown 转 HTML
+免费在线工具
+Markdown 转 HTML 在线工具
+将 DeepSeek、ChatGPT 等 AI 生成的 Markdown 内容转换成干净的 HTML，复制代码或下载可直接打开的网页文件。转换全程在浏览器本地完成，内容不会上传。
+
+当前MD→W文档交付Markdown 转 Word将 Markdown 内容或 MD 文件转为可编辑 Word 文档。当前MD→PDF保存与打印Markdown 转 PDF将 Markdown 内容或 MD 文件导出为适合分享的 PDF。当前MD→HTML网页发布Markdown 转 HTML把 Markdown 转成干净的 HTML，复制代码或下载可打开的网页文件。当前MD→XLS表格整理Markdown 表格转 Excel识别 Markdown 表格，导出 Excel 或 CSV 文件。当前DOC→MD资料整理办公文件转 Markdown按 Word、Excel / CSV、PDF 的常用顺序整理办公资料。
+网页发布Markdown 转 HTML把 Markdown 转成干净的 HTML，复制代码或下载可打开的网页文件。复制 HTMLMarkdown 内容↥将 Markdown 文件拖到这里，或点击选择文件支持 .md、.markdown · 最大 5MB · 文件仅在本地处理支持标题、列表、表格、引用和代码块。实时预览复制预览粘贴内容后，会在这里显示预览。支持 DeepSeek、豆包、腾讯元宝、通义千问、文心一言、ChatGPT、Claude 等 AI 内容；内容只在当前浏览器中处理。下载 HTML复制 HTML
+
+工具说明输出语义化 HTML，不带多余装饰01粘贴或上传内容直接粘贴 Markdown，或载入 .md 文件，原有层级结构会完整保留。02检查实时预览左侧编辑，右侧即时渲染，导出前就能看到最终结构。03复制代码或下载文件复制 HTML 片段粘进 CMS，或下载完整的 .html 文件本地打开。
+常见问题Markdown 转 HTML FAQ关于生成的 HTML 与发布前的检查。生成的 HTML 包含什么？包含标题、段落、列表、链接、表格、引用和代码块等常用结构，不附带任何 CSS。能直接粘进博客或 CMS 吗？可以。多数 CMS 接受 HTML 片段，粘贴后建议检查最终的样式表现。可以下载完整的网页文件吗？可以。点击下载 HTML 会得到一个可直接在浏览器打开的 .html 文件。转换会上传我的内容吗？不会。解析和转换都在当前浏览器中完成。生成的 HTML 能直接发布吗？发布前请检查其中的链接和嵌入内容，尤其是来源不可信的 Markdown。
+相关工具与教程继续处理你的 Markdown 内容Markdown 转 Word →　Markdown 转 PDF →　Markdown 表格转 Excel →　Markdown 转 HTML 教程 →
+适用场景什么时候要 HTML 而不是 Word 或 PDF01发布到博客或 CMS语义化标题、列表和表格，是多数编辑器都接受的通用结构。02把内容交给开发同学干净的标记文件比截图或 Word 文档更容易直接集成。03搭邮件或落地页骨架先拿到结构，再按目的地补内联样式，比从零手写更快。限制这个工具做不到什么01附带任何样式输出不含 CSS，直接打开会是一张朴素的页面，需要目标站点自己提供样式。02加入任何交互输出是静态标记，不含脚本和组件。03猜你 CMS 的结构嵌入片段时可能需要自行去掉外层的 doctype 与 body 包裹。延伸阅读相关教程Markdown 转 HTML 指南——导出的文件包含什么、又刻意省略了什么选择导出格式——什么时候 HTML 比 Word 或 PDF 更合适
 
 ---
 
