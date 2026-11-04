@@ -249,3 +249,10 @@ button, a, input, textarea, select { -webkit-tap-highlight-color: transparent; }
 .share-links a:hover, .share-links button:hover { border-color: var(--color-ink); background: var(--color-surface); }
 .share-links button[data-copied="1"] { border-color: #16a34a; color: #16a34a; }
 @media (max-width: 560px) { .share-links { gap: 8px; } .share-links__label { width: 100%; margin-bottom: 2px; } }
+
+.tool-index__list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 0; padding: 0; list-style: none; }
+.tool-index__list a { display: flex; flex-direction: column; gap: 5px; height: 100%; padding: 18px 20px; border: 1px solid var(--color-border); border-radius: 14px; background: #fff; color: var(--color-ink); transition: border-color .2s, box-shadow .2s, transform .2s; }
+.tool-index__list a:hover { border-color: var(--color-accent-strong); box-shadow: 0 10px 26px rgba(54, 18, 7, .1); transform: translateY(-2px); }
+.tool-index__list strong { font-size: 16px; letter-spacing: -.02em; }
+.tool-index__list span { color: var(--color-muted); font-size: 13px; line-height: 1.6; }
+@media (max-width: 760px) { .tool-index__list { grid-template-columns: 1fr; } }
