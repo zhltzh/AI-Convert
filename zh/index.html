@@ -28,6 +28,6 @@
       <section class="section faq" id="faq" aria-labelledby="faq-title"><div class="container faq__layout"><div><p class="eyebrow">常见问题</p><h2 id="faq-title">关于 Markdown 万能转换器</h2></div><div class="faq__list"><details open><summary>Markdown 和 MD 文件有什么区别？</summary><p>Markdown 是一种轻量标记格式；MD 文件通常是以 <code>.md</code> 或 <code>.markdown</code> 为扩展名、保存 Markdown 内容的文件。本工具同时支持粘贴 Markdown 内容和上传 MD 文件。</p></details><details><summary>AI 内容可以直接转换吗？</summary><p>可以。DeepSeek、豆包、腾讯元宝、通义千问、文心一言、ChatGPT、Claude 等 AI 输出中常见的标题、列表、表格和引用结构，可作为 Markdown 内容粘贴后转换。</p></details><details><summary>哪些办公文件可以转 Markdown？</summary><p>支持 DOCX、Excel、CSV 和包含可选文字的 PDF。旧版 <code>.doc</code> 请先在 Word 或 WPS 中另存为 <code>.docx</code>；扫描 PDF 需要 OCR，当前会明确提示无法直接提取文字。</p></details><details><summary>PDF 中的图片会怎样处理？</summary><p>当前会提取可选文字；含图片或图形的页面会保留可提取的文字并提示你检查结果。扫描件或纯图片 PDF 不会被误报为已成功转换。</p></details><details><summary>我的文件会上传到服务器吗？</summary><p>不会。当前转换过程在你的浏览器本地完成；请仍避免在任何在线工具中处理不应暴露的敏感资料。</p></details></div></div></section>
     </main>
     <div id="site-footer"></div>
-    <script type="module" src="../js/app.js"></script>
+    <link rel="modulepreload" href="/js/components/header.js"><link rel="modulepreload" href="/js/components/footer.js"><link rel="modulepreload" href="/js/home-workspace.js"><link rel="modulepreload" href="/js/core/locale.js"><link rel="modulepreload" href="/js/components/ecosystem.js"><script type="module" src="../js/app.js"></script>
   </body>
 </html>
