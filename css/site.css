@@ -205,7 +205,7 @@ button, a, input, textarea, select { -webkit-tap-highlight-color: transparent; }
 @media (max-width: 420px) { .nav a:nth-child(2) { display: none; } .hero h1 { font-size: 42px; } .hero__actions { flex-direction: column; } .button { width: 100%; } }
 @media (max-width: 420px) { .brand > span:not(.brand__mark) { display: none; }.brand small { margin-left: 0; }.language-menu summary { font-size: 0; }.language-menu summary::before { content: '🌐'; font-size: 16px; } }
 @media (max-width: 1000px) { .ecosystem__grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 760px) { .site-network__inner { justify-content: flex-start; }.ecosystem__grid { grid-template-columns: 1fr; }.ecosystem-card { min-height: 160px; }.markdown-drop-zone { grid-template-columns: auto 1fr; padding: 13px; } }
+@media (max-width: 760px) { .site-network__inner { justify-content: flex-start; -webkit-mask-image: linear-gradient(90deg, #000 86%, transparent); mask-image: linear-gradient(90deg, #000 86%, transparent); }.ecosystem__grid { grid-template-columns: 1fr; }.ecosystem-card { min-height: 160px; }.markdown-drop-zone { grid-template-columns: auto 1fr; padding: 13px; } }
 
 @media (max-width: 760px) {
   .home--zh .hero { min-height: auto; padding: 42px 0 34px; }
