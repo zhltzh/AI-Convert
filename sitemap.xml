@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://aixuno.com/</loc>
     <lastmod>2026-11-01</lastmod>
@@ -74,6 +74,11 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/markdown-to-html.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/markdown-to-html.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/markdown-to-html.html"/>
+  
+    <image:image>
+      <image:loc>https://aixuno.com/images/markdown-to-html-ui.webp</image:loc>
+      <image:title>Markdown 转 HTML 工具界面与复制、下载按钮</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://aixuno.com/de/tools/markdown-to-pdf.html</loc>
@@ -435,6 +440,11 @@
   <url>
     <loc>https://aixuno.com/zh/guides/ai-content-to-wechat.html</loc>
     <lastmod>2026-11-01</lastmod>
+  
+    <image:image>
+      <image:loc>https://aixuno.com/images/wechat-format-ui.webp</image:loc>
+      <image:title>AI 内容转公众号排版的富文本预览</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://aixuno.com/zh/guides/ai-response-to-pdf.html</loc>
@@ -442,6 +452,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/ai-response-to-pdf.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/ai-response-to-pdf.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/ai-response-to-pdf.html"/>
+  
+    <image:image>
+      <image:loc>https://aixuno.com/images/markdown-to-pdf-ui.webp</image:loc>
+      <image:title>AI 回答转 PDF 的 A4 排版预览</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://aixuno.com/zh/guides/chatgpt-to-word.html</loc>
@@ -449,6 +464,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/chatgpt-to-word.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/chatgpt-to-word.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/chatgpt-to-word.html"/>
+  
+    <image:image>
+      <image:loc>https://aixuno.com/images/markdown-to-word-ui.webp</image:loc>
+      <image:title>ChatGPT 回答转换成 Word 的操作界面</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://aixuno.com/zh/guides/copy-ai-answer-to-word.html</loc>
@@ -456,6 +476,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/copy-ai-answer-to-word.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/copy-ai-answer-to-word.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/copy-ai-answer-to-word.html"/>
+  
+    <image:image>
+      <image:loc>https://aixuno.com/images/markdown-to-word-ui.webp</image:loc>
+      <image:title>复制 AI 回答后检查标题与列表是否保留</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://aixuno.com/zh/guides/deepseek-to-word.html</loc>
@@ -463,6 +488,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/deepseek-to-word.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/deepseek-to-word.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/deepseek-to-word.html"/>
+  
+    <image:image>
+      <image:loc>https://aixuno.com/images/markdown-to-word-ui.webp</image:loc>
+      <image:title>DeepSeek 回答转 Word 的解析结果</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://aixuno.com/zh/guides/excel-to-markdown-guide.html</loc>
@@ -470,6 +500,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/excel-to-markdown-guide.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/excel-to-markdown-guide.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/excel-to-markdown-guide.html"/>
+  
+    <image:image>
+      <image:loc>https://aixuno.com/images/excel-to-markdown-ui.webp</image:loc>
+      <image:title>Excel 表格转 Markdown 后的结果</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://aixuno.com/zh/guides/how-to-export-ai-answer.html</loc>
@@ -477,6 +512,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/how-to-export-ai-answer.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/how-to-export-ai-answer.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/how-to-export-ai-answer.html"/>
+  
+    <image:image>
+      <image:loc>https://aixuno.com/images/export-format-compare.webp</image:loc>
+      <image:title>AI 回答三种导出格式对比：Word、PDF、HTML</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://aixuno.com/zh/guides/markdown-table-to-excel.html</loc>
@@ -484,6 +524,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/markdown-table-to-excel.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/markdown-table-to-excel.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/markdown-table-to-excel.html"/>
+  
+    <image:image>
+      <image:loc>https://aixuno.com/images/markdown-table-to-excel-ui.webp</image:loc>
+      <image:title>Markdown 表格导出为 Excel 的界面</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://aixuno.com/zh/guides/markdown-to-html-guide.html</loc>
@@ -491,6 +536,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/markdown-to-html-guide.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/markdown-to-html-guide.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/markdown-to-html-guide.html"/>
+  
+    <image:image>
+      <image:loc>https://aixuno.com/images/markdown-to-html-ui.webp</image:loc>
+      <image:title>Markdown 转 HTML 的两种输出方式</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://aixuno.com/zh/guides/md-file-to-word.html</loc>
@@ -520,10 +570,20 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/excel-to-markdown.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/excel-to-markdown.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/excel-to-markdown.html"/>
+  
+    <image:image>
+      <image:loc>https://aixuno.com/images/excel-to-markdown-ui.webp</image:loc>
+      <image:title>Excel / CSV 转 Markdown 的转换结果</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://aixuno.com/zh/tools/markdown-table-to-excel.html</loc>
     <lastmod>2026-11-01</lastmod>
+  
+    <image:image>
+      <image:loc>https://aixuno.com/images/markdown-table-to-excel-ui.webp</image:loc>
+      <image:title>Markdown 表格转 Excel 界面与表格预览</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://aixuno.com/zh/tools/markdown-to-pdf.html</loc>
@@ -535,6 +595,11 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/markdown-to-pdf.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/markdown-to-pdf.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/markdown-to-pdf.html"/>
+  
+    <image:image>
+      <image:loc>https://aixuno.com/images/markdown-to-pdf-ui.webp</image:loc>
+      <image:title>Markdown 转 PDF 工具界面与 A4 版式预览</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://aixuno.com/zh/tools/markdown-to-word.html</loc>
@@ -546,10 +611,20 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/tools/markdown-to-word.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://aixuno.com/fr/tools/markdown-to-word.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/tools/markdown-to-word.html"/>
+  
+    <image:image>
+      <image:loc>https://aixuno.com/images/markdown-to-word-ui.webp</image:loc>
+      <image:title>Markdown 转 Word 工具界面：左侧编辑、右侧实时预览</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://aixuno.com/zh/tools/wechat-format.html</loc>
     <lastmod>2026-11-01</lastmod>
+  
+    <image:image>
+      <image:loc>https://aixuno.com/images/wechat-format-ui.webp</image:loc>
+      <image:title>Markdown 转公众号排版界面与富文本预览</image:title>
+    </image:image>
   </url>
   <url><loc>https://aixuno.com/help.html</loc><lastmod>2026-11-01</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/help.html"/><xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/help.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/help.html"/></url>
   <url><loc>https://aixuno.com/zh/help.html</loc><lastmod>2026-11-01</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/help.html"/><xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/help.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/help.html"/></url>
