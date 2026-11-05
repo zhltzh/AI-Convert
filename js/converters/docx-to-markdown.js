@@ -1,29 +1,23 @@
+import { loadScriptSources } from '../core/script-loader.js';
 import { htmlToMarkdown } from './html-to-markdown.js';
 
-const LOCAL_MAMMOTH = new URL('../../vendor/mammoth.browser.min.js', import.meta.url).href;
-const MAMMOTH_CDN = 'https://cdn.jsdelivr.net/npm/mammoth@1.12.0/mammoth.browser.min.js';
+// 本地副本 → 国内镜像 → 境外源，国内访问 jsdelivr 经常超时。
+const MAMMOTH_SOURCES = [
+  new URL('../../vendor/mammoth.browser.min.js', import.meta.url).href,
+  'https://registry.npmmirror.com/mammoth/1.12.0/files/mammoth.browser.min.js',
+  'https://unpkg.com/mammoth@1.12.0/mammoth.browser.min.js',
+  'https://cdn.jsdelivr.net/npm/mammoth@1.12.0/mammoth.browser.min.js',
+];
+const MAMMOTH_ERROR = '无法加载 Word 解析组件，请检查网络或更换网络环境后重试。';
 const MAX_FILE_BYTES = 20 * 1024 * 1024;
 let mammothLoader;
 
-function injectScript(source) {
-  return new Promise((resolve, reject) => {
-    const script = document.createElement('script');
-    script.src = source;
-    script.async = true;
-    script.onload = resolve;
-    script.onerror = () => reject(new Error('无法加载 Word 解析组件，请检查网络后重试。'));
-    document.head.append(script);
-  });
-}
-
 function loadMammoth() {
   if (globalThis.mammoth?.convertToHtml) return Promise.resolve(globalThis.mammoth);
-  mammothLoader ??= injectScript(LOCAL_MAMMOTH)
-    .catch(() => injectScript(MAMMOTH_CDN))
-    .then(() => {
-      if (!globalThis.mammoth?.convertToHtml) throw new Error('Word 解析组件加载失败，请刷新后重试。');
-      return globalThis.mammoth;
-    });
+  mammothLoader ??= loadScriptSources(MAMMOTH_SOURCES, {
+    isReady: () => Boolean(globalThis.mammoth?.convertToHtml),
+    errorMessage: MAMMOTH_ERROR,
+  }).then(() => globalThis.mammoth);
   return mammothLoader;
 }
 

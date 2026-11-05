@@ -8,6 +8,8 @@
  * 没有任何第三方统计，二维码在浏览器本地用 qrcode-generator 生成。
  */
 
+import { loadScriptSources } from '../core/script-loader.js';
+
 const TEXT = {
   zh: {
     label: "分享给同事或好友",
@@ -112,12 +114,27 @@ function isMobile() {
   return window.matchMedia("(max-width: 768px)").matches || /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
 }
 
+/**
+ * 本地副本优先，其次是国内镜像。npmmirror 不提供 +esm 转换，因此改用
+ * qrcode-generator 自带的 UMD 版本注入脚本，读取全局 `qrcode` 工厂函数
+ * （与原来的默认导出等价）。
+ */
+const QRCODE_SOURCES = [
+  new URL('../../vendor/qrcode.js', import.meta.url).href,
+  "https://registry.npmmirror.com/qrcode-generator/1.4.4/files/qrcode.js",
+  "https://unpkg.com/qrcode-generator@1.4.4/qrcode.js",
+  "https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.js",
+];
+const QRCODE_ERROR = "无法加载二维码组件，请检查网络或更换网络环境后重试。";
+
 /** 用 qrcode-generator 在本地生成二维码；加载失败返回 null，由调用方降级为复制链接。 */
 let qrModulePromise = null;
 async function loadQrLib() {
-  if (!qrModulePromise) {
-    qrModulePromise = import("https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/+esm").then((m) => m.default || m);
-  }
+  if (typeof globalThis.qrcode === "function") return globalThis.qrcode;
+  qrModulePromise ??= loadScriptSources(QRCODE_SOURCES, {
+    isReady: () => typeof globalThis.qrcode === "function",
+    errorMessage: QRCODE_ERROR,
+  }).then(() => globalThis.qrcode);
   return qrModulePromise;
 }
 

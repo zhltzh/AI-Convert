@@ -1,7 +1,28 @@
-const LOCAL_PDFJS = new URL('../../vendor/pdf.min.mjs', import.meta.url).href;
-const LOCAL_PDF_WORKER = new URL('../../vendor/pdf.worker.min.mjs', import.meta.url).href;
-const PDFJS_CDN = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@5.4.149/build/pdf.min.mjs';
-const PDF_WORKER_CDN = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@5.4.149/build/pdf.worker.min.mjs';
+import { importModule } from '../core/script-loader.js';
+
+/**
+ * 解析模块和它的 worker 必须成对来源，否则版本不一致会直接报错。
+ * 本地副本 → 国内镜像 → 境外源，jsdelivr 放在最后兜底。
+ */
+const PDFJS_SOURCES = [
+  {
+    module: new URL('../../vendor/pdf.min.mjs', import.meta.url).href,
+    worker: new URL('../../vendor/pdf.worker.min.mjs', import.meta.url).href,
+  },
+  {
+    module: 'https://registry.npmmirror.com/pdfjs-dist/5.4.149/files/build/pdf.min.mjs',
+    worker: 'https://registry.npmmirror.com/pdfjs-dist/5.4.149/files/build/pdf.worker.min.mjs',
+  },
+  {
+    module: 'https://unpkg.com/pdfjs-dist@5.4.149/build/pdf.min.mjs',
+    worker: 'https://unpkg.com/pdfjs-dist@5.4.149/build/pdf.worker.min.mjs',
+  },
+  {
+    module: 'https://cdn.jsdelivr.net/npm/pdfjs-dist@5.4.149/build/pdf.min.mjs',
+    worker: 'https://cdn.jsdelivr.net/npm/pdfjs-dist@5.4.149/build/pdf.worker.min.mjs',
+  },
+];
+const PDFJS_ERROR = '无法加载 PDF 解析组件，请检查网络或更换网络环境后重试。';
 // Character maps and standard fonts ship with the site: the CDN copy is often
 // unreachable on mainland networks, and a missing CJK cmap degrades extraction
 // to garbage text instead of failing loudly.
@@ -12,10 +33,18 @@ const MAX_PAGES = 100;
 let pdfJsLoader;
 
 async function loadPdfJs() {
-  pdfJsLoader ??= import(LOCAL_PDFJS)
-    .then((pdfjs) => { pdfjs.GlobalWorkerOptions.workerSrc = LOCAL_PDF_WORKER; return pdfjs; })
-    .catch(() => import(PDFJS_CDN).then((pdfjs) => { pdfjs.GlobalWorkerOptions.workerSrc = PDF_WORKER_CDN; return pdfjs; }))
-    .catch(() => { throw new Error('无法加载 PDF 解析组件，请检查网络后重试。'); });
+  pdfJsLoader ??= (async () => {
+    for (const source of PDFJS_SOURCES) {
+      try {
+        const pdfjs = await importModule(source.module, { errorMessage: PDFJS_ERROR });
+        pdfjs.GlobalWorkerOptions.workerSrc = source.worker;
+        return pdfjs;
+      } catch {
+        // 当前源不可用，换下一个。
+      }
+    }
+    throw new Error(PDFJS_ERROR);
+  })();
   return pdfJsLoader;
 }
 

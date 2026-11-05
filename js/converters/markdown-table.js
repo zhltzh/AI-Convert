@@ -1,5 +1,14 @@
-const LOCAL_SHEETJS = new URL('../../vendor/xlsx.full.min.js', import.meta.url).href;
-const SHEETJS_CDN = 'https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js';
+﻿import { loadScriptSources } from '../core/script-loader.js';
+
+/**
+ * xlsx@0.20.3 只在官方 CDN 发布（npm 上最高 0.18.5），没有可用的国内镜像，
+ * 因此本地副本之后只剩下官方源；版本必须保持一致，不能退回旧版本。
+ */
+const SHEETJS_SOURCES = [
+  new URL('../../vendor/xlsx.full.min.js', import.meta.url).href,
+  'https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js',
+];
+const SHEETJS_ERROR = '无法加载 Excel 导出组件，请检查网络或更换网络环境后重试。';
 let sheetJsLoader;
 
 function splitRow(line) {
@@ -65,25 +74,12 @@ export function tableToTsv(rows) {
   return rows.map((row) => row.map((cell) => String(cell ?? '').replace(/[\t\r\n]+/g, ' ')).join('\t')).join('\n');
 }
 
-function loadScript(source) {
-  return new Promise((resolve, reject) => {
-    const script = document.createElement('script');
-    script.src = source;
-    script.async = true;
-    script.onload = resolve;
-    script.onerror = () => reject(new Error('无法加载 Excel 导出组件，请检查网络连接后重试。'));
-    document.head.append(script);
-  });
-}
-
 async function loadSheetJs() {
   if (globalThis.XLSX?.utils) return globalThis.XLSX;
-  sheetJsLoader ??= loadScript(LOCAL_SHEETJS)
-    .catch(() => loadScript(SHEETJS_CDN))
-    .then(() => {
-      if (!globalThis.XLSX?.utils) throw new Error('Excel 导出组件加载失败。');
-      return globalThis.XLSX;
-    });
+  sheetJsLoader ??= loadScriptSources(SHEETJS_SOURCES, {
+    isReady: () => Boolean(globalThis.XLSX?.utils),
+    errorMessage: SHEETJS_ERROR,
+  }).then(() => globalThis.XLSX);
   return sheetJsLoader;
 }
 

@@ -3,8 +3,16 @@
  * Marked is loaded only when a conversion tool needs it, keeping the homepage
  * free from conversion-library downloads.
  */
-const LOCAL_MARKED = new URL('../../vendor/marked.min.js', import.meta.url).href;
-const MARKED_CDN = 'https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js';
+import { loadScriptSources } from './script-loader.js';
+
+// 本地副本 → 国内镜像 → 境外源：jsdelivr 在国内经常超时，只作为最后的兜底。
+const MARKED_SOURCES = [
+  new URL('../../vendor/marked.min.js', import.meta.url).href,
+  'https://registry.npmmirror.com/marked/15.0.12/files/marked.min.js',
+  'https://unpkg.com/marked@15.0.12/marked.min.js',
+  'https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js',
+];
+const MARKED_ERROR = '无法加载 Markdown 解析器，请检查网络或更换网络环境后重试。';
 let markedLoader;
 
 function normalizeMarkdown(markdown) {
@@ -13,17 +21,6 @@ function normalizeMarkdown(markdown) {
   }
 
   return markdown.replace(/\r\n?/g, '\n').trim();
-}
-
-function loadScript(source) {
-  return new Promise((resolve, reject) => {
-    const script = document.createElement('script');
-    script.src = source;
-    script.async = true;
-    script.onload = resolve;
-    script.onerror = () => reject(new Error('无法加载 Markdown 解析器，请检查网络连接后重试。'));
-    document.head.append(script);
-  });
 }
 
 /**
@@ -39,14 +36,10 @@ export async function loadMarkdownParser() {
     throw new Error('Markdown parser is only available in a browser environment.');
   }
 
-  markedLoader ??= loadScript(LOCAL_MARKED)
-    .catch(() => loadScript(MARKED_CDN))
-    .then(() => {
-      if (!globalThis.marked?.parse) {
-        throw new Error('Markdown parser loaded, but is unavailable.');
-      }
-      return globalThis.marked;
-    });
+  markedLoader ??= loadScriptSources(MARKED_SOURCES, {
+    isReady: () => Boolean(globalThis.marked?.parse),
+    errorMessage: MARKED_ERROR,
+  }).then(() => globalThis.marked);
 
   return markedLoader;
 }

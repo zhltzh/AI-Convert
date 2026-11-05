@@ -1,51 +1,202 @@
 User-agent: *
 Allow: /
+# 无需抓取（每个分组内 Allow 必须写在 Disallow 之前）
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
 
 # AI search and assistant crawlers are explicitly welcome.
 # These lines matter because many sites still block them via a wildcard rule.
 User-agent: GPTBot
 Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
 
 User-agent: Claude-SearchBot
 Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
 
 User-agent: Claude-User
 Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
 
 User-agent: anthropic-ai
 Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
 
 User-agent: Perplexity-User
 Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
 
 User-agent: Applebot-Extended
 Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
 
 User-agent: CCBot
 Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
 
 User-agent: Amazonbot
 Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
 
 User-agent: Meta-ExternalAgent
 Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
 
 User-agent: cohere-ai
 Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
 
+# 国内搜索引擎
+User-agent: Baiduspider
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: Baiduspider-mobile
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: Baiduspider-image
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: Baiduspider-video
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: Baiduspider-news
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: 360Spider
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: HaosouSpider
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: Sogou web spider
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: Sogou inst spider
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: Sogou Pic Spider
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: YisouSpider
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: Bytespider
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: msnbot
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+User-agent: Googlebot-Image
+Allow: /
+Disallow: /api/
+Disallow: /*?*utm_
+Disallow: /*?*from=
+
+# 不设置 Crawl-delay：静态站由搜索引擎自行决定抓取频率，避免拖慢收录。
 Sitemap: https://aixuno.com/sitemap.xml
+
+# 多站说明：本文件仅适用于 aixuno.com。
+# pdf.aixuno.com、compress.aixuno.com、image.aixuno.com、bg.aixuno.com
+# 需各自部署 robots.txt，内容结构与本文件完全一致，仅需替换 Sitemap 行。

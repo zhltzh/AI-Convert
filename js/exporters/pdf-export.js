@@ -1,27 +1,22 @@
-const LOCAL_HTML2PDF = new URL('../../vendor/html2pdf.bundle.min.js', import.meta.url).href;
-const CDN_HTML2PDF = 'https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js';
-let exporterLoader;
+import { loadScriptSources } from '../core/script-loader.js';
 
-function loadScript(source) {
-  return new Promise((resolve, reject) => {
-    const script = document.createElement('script');
-    script.src = source;
-    script.async = true;
-    script.onload = resolve;
-    script.onerror = () => reject(new Error('无法加载 PDF 导出组件，请检查网络连接后重试。'));
-    document.head.append(script);
-  });
-}
+// 随站点发布的本地副本优先级最高；jsdelivr 在国内常超时，放在最后兜底。
+const HTML2PDF_SOURCES = [
+  new URL('../../vendor/html2pdf.bundle.min.js', import.meta.url).href,
+  'https://registry.npmmirror.com/html2pdf.js/0.10.1/files/dist/html2pdf.bundle.min.js',
+  'https://unpkg.com/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js',
+  'https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js',
+];
+const HTML2PDF_ERROR = '无法加载 PDF 导出组件，请检查网络或更换网络环境后重试。';
+let exporterLoader;
 
 /** The bundled copy ships with the site, so exports keep working when the CDN is unreachable. */
 async function loadPdfExporter() {
   if (typeof globalThis.html2pdf === 'function') return globalThis.html2pdf;
-  exporterLoader ??= loadScript(LOCAL_HTML2PDF)
-    .catch(() => loadScript(CDN_HTML2PDF))
-    .then(() => {
-      if (typeof globalThis.html2pdf !== 'function') throw new Error('PDF 导出组件加载失败。');
-      return globalThis.html2pdf;
-    });
+  exporterLoader ??= loadScriptSources(HTML2PDF_SOURCES, {
+    isReady: () => typeof globalThis.html2pdf === 'function',
+    errorMessage: HTML2PDF_ERROR,
+  }).then(() => globalThis.html2pdf);
   return exporterLoader;
 }
 
