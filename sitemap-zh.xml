@@ -194,4 +194,10 @@
       <image:loc>https://aixuno.com/images/wechat-format-ui.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://aixuno.com/zh/use-cases</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/use-cases"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/zh/use-cases"/>
+  </url>
 </urlset>
