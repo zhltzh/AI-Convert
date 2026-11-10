@@ -195,7 +195,9 @@ Disallow: /*?*utm_
 Disallow: /*?*from=
 
 # 不设置 Crawl-delay：静态站由搜索引擎自行决定抓取频率，避免拖慢收录。
+Sitemap: https://aixuno.com/sitemap-index.xml
 Sitemap: https://aixuno.com/sitemap.xml
+Sitemap: https://aixuno.com/sitemap-zh.xml
 
 # 多站说明：本文件仅适用于 aixuno.com。
 # pdf.aixuno.com、compress.aixuno.com、image.aixuno.com、bg.aixuno.com
