@@ -5,3 +5,12 @@
 .guide-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--color-border); border-radius: 12px; background: #fff; }
 .guide-figure figcaption { margin-top: 10px; color: var(--color-muted); font-size: 13px; line-height: 1.65; }
 @media (max-width: 760px) { .guide-figure { margin: 20px 0 24px; } .guide-figure figcaption { font-size: 12px; } }
+
+/* 目录样式 */
+.guide-toc { margin: 32px 0 40px; padding: 20px 24px; border: 1px solid var(--color-border); border-radius: 12px; background: var(--color-surface); }
+.guide-toc__title { margin: 0 0 12px; font-size: 15px; font-weight: 600; color: var(--color-ink); }
+.guide-toc ul { margin: 0; padding-left: 1.2em; list-style: none; }
+.guide-toc li { margin: 6px 0; font-size: 14px; line-height: 1.6; }
+.guide-toc a { color: var(--color-muted); text-decoration: none; transition: color 0.2s; }
+.guide-toc a:hover { color: var(--color-ink); text-decoration: underline; }
+@media (max-width: 760px) { .guide-toc { margin: 24px 0 32px; padding: 16px 18px; } .guide-toc li { font-size: 13px; } }
