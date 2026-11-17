@@ -55,7 +55,8 @@ Each language homepage contains working Markdown to Word, Markdown to PDF, Markd
 - PDF tools: https://pdf.aixuno.com/
 - AI background removal: https://bg.aixuno.com/
 - Document scanner: https://scan.aixuno.com/
-- AI photo restore and video watermark removal: https://tools.aixuno.com/
+- Old photo restoration: https://restore.aixuno.com/
+- Video watermark removal: https://watermark.aixuno.com/
 
 ## Supported AI content sources
 
