@@ -57,6 +57,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/zh/guides/deepseek-to-word"/>
   </url>
   <url>
+    <loc>https://aixuno.com/zh/guides/doubao-to-pdf</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/doubao-to-pdf"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/zh/guides/doubao-to-pdf"/>
+  </url>
+  <url>
     <loc>https://aixuno.com/zh/guides/doubao-to-word</loc>
     <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/doubao-to-word"/>
@@ -81,6 +87,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/zh/guides/index"/>
   </url>
   <url>
+    <loc>https://aixuno.com/zh/guides/kimi-to-excel</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/kimi-to-excel"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/zh/guides/kimi-to-excel"/>
+  </url>
+  <url>
     <loc>https://aixuno.com/zh/guides/kimi-to-word</loc>
     <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/kimi-to-word"/>
@@ -103,6 +115,12 @@
     <lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/md-file-to-word"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/zh/guides/md-file-to-word"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/guides/qwen-to-html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/qwen-to-html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/zh/guides/qwen-to-html"/>
   </url>
   <url>
     <loc>https://aixuno.com/zh/guides/qwen-to-word</loc>
