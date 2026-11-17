@@ -54,6 +54,7 @@ Each language homepage contains working Markdown to Word, Markdown to PDF, Markd
 - File compression: https://compress.aixuno.com/
 - PDF tools: https://pdf.aixuno.com/
 - AI background removal: https://bg.aixuno.com/
+- Document scanner: https://scan.aixuno.com/
 - AI photo restore and video watermark removal: https://tools.aixuno.com/
 
 ## Supported AI content sources
