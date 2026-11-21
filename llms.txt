@@ -1,72 +1,71 @@
-# Aixuno
+# Markdown 万能转换器（Aixuno）
 
-Aixuno is a free, browser-based Markdown and AI content conversion platform. Content is processed locally without uploading files to an Aixuno application server.
+> 免费的在线 Markdown / AI 内容转换工具集：Markdown 转 Word、PDF、HTML，Markdown 表格转 Excel，Excel/CSV/DOCX 转 Markdown，以及一键生成微信公众号排版。全部转换在浏览器本地完成，文件不上传服务器。
 
-> Full text of every page (66 pages, ~100k characters): https://aixuno.com/llms-full.txt
-> Help and troubleshooting: https://aixuno.com/help.html (Chinese: https://aixuno.com/zh/help.html)
+## 品牌
+- 名称：Markdown 万能转换器
+- 站点：https://aixuno.com
+- 运营方：Aixuno
+- 语言：中文（zh-CN）为主，另提供 English / Español / Deutsch / 日本語 / Français
+- 成立定位：把 AI 助手（DeepSeek、ChatGPT、Kimi、通义千问、豆包、腾讯元宝）生成的 Markdown 内容转换成可交付的办公文档
 
-## Default English tools
+## 核心能力
+- Markdown 转 Word（.docx），保留标题层级、列表、表格、引用块
+- Markdown 转 PDF，生成 A4 版式适合打印归档
+- Markdown 转 HTML，输出干净语义化标签用于博客 / CMS
+- Markdown 表格转 Excel（.xlsx），多表分开成工作表
+- Excel / CSV / DOCX / 文本型 PDF 转 Markdown 表格
+- Markdown 转微信公众号富文本（内联样式，可直接粘贴到公众号编辑器）
 
-- Markdown to Word: /tools/markdown-to-word.html
-- Markdown to PDF: /tools/markdown-to-pdf.html
-- Markdown to HTML: /tools/markdown-to-html.html
-- Office files to Markdown: /tools/excel-to-markdown.html
-- Help and reference: /help.html
+## 关键信息
+- 所有转换在浏览器本地完成，内容不上传任何服务器
+- 完全免费，无需注册或登录
+- 支持粘贴文本与上传 .md 文件
+- 无文件数量限制（表格转 Excel 支持多表）
+- 兼容桌面与移动浏览器
 
-## Language versions
+## 工具页面
+- [Excel / CSV 转 Markdown](https://aixuno.com/zh/tools/excel-to-markdown.html): Excel 表格怎么转 Markdown？上传 xlsx、xls 或 csv 文件，选择工作表后免费在线生成标准 Markdown 表格，可直接复制到 Notion、Obsidian 或 AI 对话中使用，也可下载为 md 文件。
+- [Markdown 表格转 Excel](https://aixuno.com/zh/tools/markdown-table-to-excel.html): Markdown 表格怎么转 Excel？粘贴 DeepSeek、豆包、Kimi 等 AI 生成的 Markdown 表格，免费在线导出 xlsx 或 csv，多个表格会分别写入不同工作表，也可一键复制到 Excel。
+- [Markdown 转 HTML](https://aixuno.com/zh/tools/markdown-to-html.html): Markdown 怎么转 HTML？粘贴 AI 回答或上传 MD 文件，免费在线生成干净的网页代码，标题、列表、表格、链接和代码块都能转换，可复制代码片段或下载完整 HTML 文件。
+- [Markdown 转 PDF](https://aixuno.com/zh/tools/markdown-to-pdf.html): Markdown 怎么转 PDF？粘贴 DeepSeek、豆包、Kimi 等 AI 回答，或上传 MD 文件，免费在线转换为 PDF，支持 A4 版式预览、表格与代码块，导出前可先确认分页效果。
+- [Markdown 转 Word](https://aixuno.com/zh/tools/markdown-to-word.html): Markdown 怎么转 Word？粘贴 DeepSeek、豆包、Kimi 等 AI 生成的 Markdown 内容或上传 MD 文件，免费在线导出可编辑的 docx，标题、列表、表格与代码块都会保留。
+- [Markdown 转公众号排版](https://aixuno.com/zh/tools/wechat-format.html): Markdown 怎么排版到公众号？粘贴 DeepSeek、豆包、Kimi 等 AI 内容，免费在线转换为带内联样式的富文本，三种主题一键切换，复制后可直接粘进微信公众号编辑器，排版不会丢。
 
-- English: /
-- Simplified Chinese: /zh/
-- Spanish: /es/
-- German: /de/
-- Japanese: /ja/
-- French: /fr/
+## 教程
+- [AI 内容怎么排版到公众号](https://aixuno.com/zh/guides/ai-content-to-wechat.html): AI 内容怎么排版到公众号？把 DeepSeek、豆包、Kimi 生成的回答粘贴进转换工具，免费在线生成带内联样式的富文本，复制后直接粘进微信公众号编辑器，代码块和表格不会丢排版。
+- [AI 回答怎么转成 PDF](https://aixuno.com/zh/guides/ai-response-to-pdf.html): AI 回答怎么转成 PDF？把 ChatGPT、DeepSeek、豆包等 AI 的回答复制粘贴，免费在线转换为 PDF，适合分享、打印和归档。
+- [ChatGPT 回答怎么导出 Word](https://aixuno.com/zh/guides/chatgpt-to-word.html): ChatGPT 回答怎么导出 Word？复制回答后免费在线转换为 docx，标题、列表、表格和引用都会保留。
+- [AI 回答复制到 Word 怎么不乱](https://aixuno.com/zh/guides/copy-ai-answer-to-word.html): AI 回答复制到 Word 怎么不乱？直接粘贴常会丢标题、列表和表格，可用 Markdown 中转免费在线转换，保留原有结构，代码块和宽表格不会错位。
+- [DeepSeek 怎么转 Word](https://aixuno.com/zh/guides/deepseek-to-word.html): DeepSeek 怎么转 Word？复制 DeepSeek 回答后免费在线导出 docx，保留标题层级、列表和表格，适合继续批注、打印或提交。
+- [豆包怎么转 PDF](https://aixuno.com/zh/guides/doubao-to-pdf.html): 豆包怎么转 PDF？复制豆包回答后免费在线生成 A4 版式 PDF，保留标题层级、列表和表格，适合打印、归档和分享。
+- [豆包怎么转 Word](https://aixuno.com/zh/guides/doubao-to-word.html): 豆包怎么转 Word？复制豆包回答后免费在线导出 docx，保留标题层级、列表和表格，适合继续批注、打印或提交。
+- [Excel 表格怎么转 Markdown](https://aixuno.com/zh/guides/excel-to-markdown-guide.html): Excel 表格怎么转 Markdown？说明把 xlsx、csv 表格免费在线转换为 Markdown 表格的完整步骤，包括表头整理、竖线与特殊字符转义、空单元格处理，以及在 Notion、Obsidian 和 AI 提示词中的用法。
+- [AI 回答怎么保存为 Word、PDF](https://aixuno.com/zh/guides/how-to-export-ai-answer.html): AI 回答怎么保存成 Word、PDF 或 Markdown？对比三种保存方式的适用场景，说明如何免费在线转换并保留标题、列表和表格结构。
+- [Kimi 怎么转 Excel](https://aixuno.com/zh/guides/kimi-to-excel.html): Kimi 怎么转 Excel？复制 Kimi 回答中的表格内容，免费在线导出 xlsx 文件，多表分开成工作表，适合数据分析和报告整理。
+- [Kimi 怎么转 Word](https://aixuno.com/zh/guides/kimi-to-word.html): Kimi 怎么转 Word？复制 Kimi 回答后免费在线导出 docx，保留标题层级、列表和表格，适合继续批注、打印或提交。
+- [Markdown 表格怎么转 Excel](https://aixuno.com/zh/guides/markdown-table-to-excel.html): Markdown 表格怎么转 Excel？说明对齐符、空单元格、合并表头和竖线转义的处理方式，避免导出后错列，并给出免费在线转换为 xlsx 或 csv 的步骤，多个表格可分别成表。
+- [Markdown 怎么转 HTML](https://aixuno.com/zh/guides/markdown-to-html-guide.html): Markdown 怎么转 HTML？介绍免费在线把 Markdown 转换为干净 HTML 的完整方法，覆盖标题、链接、表格和代码块，适用于博客、CMS、邮件编辑器和静态网站，并说明复制代码片段与下载网页文件的区别。
+- [MD 文件怎么转 Word](https://aixuno.com/zh/guides/md-file-to-word.html): MD 文件怎么转 Word？说明如何上传 .md 或 .markdown 文件，免费在线转换为可编辑的 docx，保留标题层级、列表和表格。
+- [通义千问怎么转 HTML](https://aixuno.com/zh/guides/qwen-to-html.html): 通义千问怎么转 HTML？复制通义千问回答后免费在线生成干净的 HTML 代码，用于博客、CMS 和自建站。
+- [通义千问怎么转 Word](https://aixuno.com/zh/guides/qwen-to-word.html): 通义千问怎么转 Word？复制通义千问回答后免费在线导出 docx，保留标题层级、列表和表格，适合继续批注、打印或提交。
+- [腾讯元宝怎么转 Word](https://aixuno.com/zh/guides/yuanbao-to-word.html): 腾讯元宝怎么转 Word？复制腾讯元宝回答后免费在线导出 docx，保留标题层级、列表和表格，适合继续批注、打印或提交。
 
-Each language homepage contains working Markdown to Word, Markdown to PDF, Markdown to HTML, and office-file-to-Markdown workflows.
+## 站点结构
+- 中文站：https://aixuno.com/zh/
+- 英文站：https://aixuno.com/
+- 西班牙语：https://aixuno.com/es/
+- 德语：https://aixuno.com/de/
+- 日语：https://aixuno.com/ja/
+- 法语：https://aixuno.com/fr/
+- 使用场景：https://aixuno.com/zh/use-cases.html
+- 全部教程：https://aixuno.com/zh/guides/
+- 帮助与速查：https://aixuno.com/zh/help.html
 
-## English guides
+## 站点地图
+- https://aixuno.com/sitemap-index.xml
+- https://aixuno.com/sitemap.xml
+- https://aixuno.com/sitemap-zh.xml
 
-- Guide directory: /guides/
-- Export ChatGPT answers to Word: /guides/chatgpt-to-word.html
-- Convert DeepSeek answers to Word: /guides/deepseek-to-word.html
-- Excel and CSV to Markdown: /guides/excel-to-markdown-guide.html
-- Choose an export format for AI content: /guides/how-to-export-ai-answer.html
-- Copy an AI answer to Word without losing formatting: /guides/copy-ai-answer-to-word.html
-- Convert an AI response to PDF: /guides/ai-response-to-pdf.html
-- Move a Markdown table to Excel: /guides/markdown-table-to-excel.html
-- Convert Markdown to clean HTML: /guides/markdown-to-html-guide.html
-
-## Chinese content
-
-- Chinese homepage: /zh/
-- Chinese Markdown to Word: /zh/tools/markdown-to-word.html
-- Chinese Markdown to PDF: /zh/tools/markdown-to-pdf.html
-- Chinese Markdown to HTML: /zh/tools/markdown-to-html.html
-- Chinese Excel / CSV to Markdown: /zh/tools/excel-to-markdown.html
-- Chinese Markdown table to Excel / CSV: /zh/tools/markdown-table-to-excel.html
-- Chinese WeChat article formatting: /zh/tools/wechat-format.html
-- Chinese guides: /zh/guides/
-- Chinese help: /zh/help.html
-
-## Aixuno tool ecosystem
-
-- Batch image conversion: https://image.aixuno.com/
-- File compression: https://compress.aixuno.com/
-- PDF tools: https://pdf.aixuno.com/
-- AI background removal: https://bg.aixuno.com/
-- Document scanner: https://scan.aixuno.com/
-- Old photo restoration: https://restore.aixuno.com/
-- Video watermark removal: https://watermark.aixuno.com/
-
-## Supported AI content sources
-
-The international versions are designed for content from ChatGPT, Claude, Gemini, Microsoft Copilot, Perplexity, Grok, and other assistants. The Chinese version additionally covers DeepSeek, Doubao, Tencent Yuanbao, Qwen, and ERNIE Bot.
-
-## Trust and product information
-
-- About: /about.html
-- Contact: /contact.html
-- Privacy: /privacy.html
-- Terms: /terms.html
-- Disclaimer: /disclaimer.html
-- Changelog: /changelog.html
+## 引用建议
+引用本站内容时请注明来源「Markdown 万能转换器（aixuno.com）」。工具的具体使用方式以页面内说明为准；本地处理的隐私特性是本工具与在线转换服务的核心差异。

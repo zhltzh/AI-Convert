@@ -610,6 +610,18 @@
     </image:image>
   </url>
   <url>
+    <loc>https://aixuno.com/zh/guides/doubao-to-pdf.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/doubao-to-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/zh/guides/doubao-to-pdf.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/guides/doubao-to-word.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/doubao-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/zh/guides/doubao-to-word.html"/>
+  </url>
+  <url>
     <loc>https://aixuno.com/zh/guides/excel-to-markdown-guide.html</loc>
     <lastmod>2026-11-01</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/guides/excel-to-markdown-guide.html"/>
@@ -632,6 +644,18 @@
       <image:loc>https://aixuno.com/images/export-format-compare.webp</image:loc>
       <image:title>AI 回答三种导出格式对比：Word、PDF、HTML</image:title>
     </image:image>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/guides/kimi-to-excel.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/kimi-to-excel.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/zh/guides/kimi-to-excel.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/guides/kimi-to-word.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/kimi-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/zh/guides/kimi-to-word.html"/>
   </url>
   <url>
     <loc>https://aixuno.com/zh/guides/markdown-table-to-excel.html</loc>
@@ -662,6 +686,24 @@
     <lastmod>2026-11-09</lastmod>
   </url>
   <url>
+    <loc>https://aixuno.com/zh/guides/qwen-to-html.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/qwen-to-html.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/zh/guides/qwen-to-html.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/guides/qwen-to-word.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/qwen-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/zh/guides/qwen-to-word.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/guides/yuanbao-to-word.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/yuanbao-to-word.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/zh/guides/yuanbao-to-word.html"/>
+  </url>
+  <url>
     <loc>https://aixuno.com/zh/privacy.html</loc>
     <lastmod>2026-11-01</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/privacy.html"/>
@@ -674,6 +716,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://aixuno.com/terms.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/terms.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/terms.html"/>
+  </url>
+  <url>
+    <loc>https://aixuno.com/zh/use-cases.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/use-cases.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aixuno.com/zh/use-cases.html"/>
   </url>
   <url>
     <loc>https://aixuno.com/zh/tools/excel-to-markdown.html</loc>
