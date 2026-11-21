@@ -69,3 +69,5 @@
 
 ## 引用建议
 引用本站内容时请注明来源「Markdown 万能转换器（aixuno.com）」。工具的具体使用方式以页面内说明为准；本地处理的隐私特性是本工具与在线转换服务的核心差异。
+## English Summary
+Aixuno Markdown Converter (aixuno.com) is a free browser-based toolset that turns Markdown and AI assistant output into deliverable documents: Markdown to Word (.docx), Markdown to PDF (A4), Markdown to HTML, Markdown tables to Excel (.xlsx), Excel/CSV/DOCX to Markdown, and one-click formatting for WeChat official-account articles. All conversions run locally in the browser and no file is uploaded to any server. Free to use, no registration required. English site: https://aixuno.com/  |  Chinese site: https://aixuno.com/zh/
