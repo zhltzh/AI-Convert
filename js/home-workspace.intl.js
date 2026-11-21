@@ -2,6 +2,7 @@ import { renderMarkdown } from './core/markdown-engine.js';
 import { exportWord } from './exporters/word-export.js';
 import { exportPdf } from './exporters/pdf-export.js';
 import { readSpreadsheet } from './converters/excel-to-md.js';
+import { exportTablesToXlsx, parseMarkdownTables, tableToCsv, tableToTsv } from './converters/markdown-table.js';
 import { readDocxAsMarkdown } from './converters/docx-to-markdown.js';
 import { readPdfAsMarkdown } from './converters/pdf-to-markdown.js';
 import { downloadBlob } from './core/download.js';
@@ -64,6 +65,29 @@ function officeWorkspace() {
   return `<div class="workspace__top"><div><p class="eyebrow">${t.eyebrow}</p><h2>${t.title}</h2><p>${t.lead}</p></div><div class="workspace__cta"><button class="button button--primary" type="button" id="workspace-action-top" disabled>${t.download}</button></div></div><div class="office-types" role="list"><span role="listitem" class="office-type is-ready">Word <small>.docx</small></span><span role="listitem" class="office-type is-ready">Excel / CSV <small>.xlsx · .xls · .csv</small></span><span role="listitem" class="office-type is-ready">PDF <small>text PDF</small></span></div><div class="office-upload"><label class="drop-zone" for="office-file"><strong>${t.upload}</strong><span>${t.hint}</span><input id="office-file" type="file" accept=".docx,.xlsx,.xls,.csv,.pdf,text/csv,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" /></label><div class="office-result"><p class="preview-pane__label">${t.result} <select id="office-sheet" aria-label="Sheet" hidden></select></p><textarea id="office-output" rows="10" readonly placeholder="${t.placeholder}"></textarea></div></div><div class="workspace__actions"><span class="status" id="workspace-status" role="status" aria-live="polite">${t.privacy}</span><button class="button button--secondary" type="button" id="copy-office" disabled>${t.copy}</button><button class="button button--primary" type="button" id="download-office" disabled>${t.download}</button></div>`;
 }
 
+function tableWorkspace(mode){
+  const t=locale.table;
+  const sample='| Item | Qty | Note |\n| --- | ---: | --- |\n| Sample A | 10 | directly exportable |\n| Sample B | 20 | CJK content renders fine |';
+  return `<div class="workspace__top"><div><p class="eyebrow">${t.eyebrow}</p><h2>${t.title}</h2><p>${t.lead}</p></div><div class="workspace__cta"><button class="button button--primary" type="button" id="workspace-action-top">${mode.action}</button></div></div><div class="editor-grid"><div class="editor-pane"><div class="pane-title"><label for="home-markdown">${t.title}</label></div><textarea id="home-markdown" rows="16" placeholder="${t.placeholder}">${sample}</textarea><p class="field-note">${t.support}</p></div><div class="preview-pane"><div class="pane-title"><p class="preview-pane__label">${t.title}</p><span id="table-count">${t.count.replace('{n}','0')}</span></div><article id="home-preview" class="markdown-preview"></article></div></div><div class="workspace__actions"><span class="status" id="workspace-status" role="status" aria-live="polite">${t.privacy}</span><button class="button button--secondary" type="button" id="copy-table">${t.copyTable}</button><button class="button button--secondary" type="button" id="download-csv">${t.downloadCsv}</button><button class="button button--primary" type="button" id="download-xlsx">${t.downloadXlsx}</button></div>`;
+}
+
+async function wireTableWorkspace(){
+  const t=locale.table;
+  const input=document.querySelector('#home-markdown');const preview=document.querySelector('#home-preview');const count=document.querySelector('#table-count');
+  let tables=[];
+  const update=async()=>{drafts.set(SHARED_DRAFT,input.value);tables=parseMarkdownTables(input.value);count.textContent=t.count.replace('{n}',String(tables.length));preview.innerHTML=tables.length?await renderMarkdown(input.value,{demoteHeadings:true}):`<p class="preview-empty">${t.empty}</p>`;};
+  input.addEventListener('input',update);
+  document.querySelector('#copy-table').addEventListener('click',async()=>{try{if(!tables.length)throw new Error(t.noTables);await navigator.clipboard.writeText(tableToTsv(tables[0]));setStatus(t.copied);}catch(error){setStatus(error.message,true);}});
+  document.querySelector('#download-csv').addEventListener('click',()=>{try{if(!tables.length)throw new Error(t.noTables);downloadBlob(new Blob(['\ufeff',tableToCsv(tables[0])],{type:'text/csv;charset=utf-8'}),'markdown-table.csv');setStatus(t.csvDone);}catch(error){setStatus(error.message,true);}});
+  const topButton=document.querySelector('#workspace-action-top');
+  const xlsxButton=document.querySelector('#download-xlsx');
+  const downloadXlsx=async()=>{try{await exportTablesToXlsx(tables);setStatus(t.xlsxDone);}catch(error){setStatus(error.message,true);}};
+  xlsxButton.addEventListener('click',downloadXlsx);
+  topButton?.addEventListener('click',downloadXlsx);
+  mountDownloadTray({triggers:[topButton,xlsxButton],canShow:()=>tables.length>0});
+  await update();
+}
+
 async function copyRichText(html) {
   if (!html) throw new Error(locale.workspace.needContent);
   const text = new DOMParser().parseFromString(html, 'text/html').body.innerText;
@@ -117,7 +141,7 @@ function wireOfficeWorkspace(){
   topButton?.addEventListener('click',downloadOffice);
   mountDownloadTray({triggers:[topButton,downloadButton]});
 }
-async function renderWorkspace(workspace){const mode=modes.find(item=>item.id===activeMode);workspace.classList.remove('workspace--enter');workspace.innerHTML=activeMode==='office'?officeWorkspace():markdownWorkspace(mode);workspace.classList.add('is-ready');requestAnimationFrame(()=>workspace.classList.add('workspace--enter'));if(activeMode==='office')wireOfficeWorkspace();else await wireMarkdownWorkspace(mode);}
+async function renderWorkspace(workspace){const mode=modes.find(item=>item.id===activeMode);workspace.classList.remove('workspace--enter');workspace.innerHTML=activeMode==='office'?officeWorkspace():activeMode==='table'?tableWorkspace(mode):markdownWorkspace(mode);workspace.classList.add('is-ready');requestAnimationFrame(()=>workspace.classList.add('workspace--enter'));if(activeMode==='office')wireOfficeWorkspace();else if(activeMode==='table')await wireTableWorkspace();else await wireMarkdownWorkspace(mode);}
 export async function mountIntlWorkspace({cards,workspace}){const renderCards=()=>{cards.innerHTML=modes.map(cardMarkup).join('');cards.classList.add('is-ready');cards.querySelectorAll('[data-mode]').forEach(card=>card.addEventListener('click',async()=>{activeMode=card.dataset.mode;renderCards();await renderWorkspace(workspace);}));};renderCards();
   cards.addEventListener('keydown',(event)=>{if(!['ArrowRight','ArrowLeft','Home','End'].includes(event.key))return;const buttons=[...cards.querySelectorAll('[data-mode]')];const index=buttons.indexOf(document.activeElement);if(index<0)return;event.preventDefault();const next=event.key==='Home'?0:event.key==='End'?buttons.length-1:event.key==='ArrowRight'?(index+1)%buttons.length:(index-1+buttons.length)%buttons.length;buttons[next].click();window.setTimeout(()=>cards.querySelector('[data-mode].is-active')?.focus(),0);});
   await renderWorkspace(workspace);}
