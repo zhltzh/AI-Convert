@@ -22,6 +22,10 @@ const TEXT = {
     qrTitle: "用微信扫一扫",
     qrHint: "在微信中打开后，点右上角「···」转发给好友或群",
     qrClose: "关闭",
+    favorite: "收藏本站",
+    favTitle: "收藏这个工具",
+    favDesk: "按 Ctrl+D 收藏（Mac 用 ⌘+D），也可以拖到书签栏。下次打开不用再搜。",
+    favMobile: "点浏览器右上角或底部的「···」菜单，选「添加到主屏幕」或「收藏」，下次一步直达。",
   },
   ja: {
     label: "このページを共有",
@@ -30,6 +34,10 @@ const TEXT = {
     failed: "コピーできませんでした",
     x: "X で共有",
     weibo: "Weibo で共有",
+    favorite: "ブックマーク",
+    favTitle: "このツールをブックマーク",
+    favDesk: "Ctrl+D（Mac は ⌘+D）でブックマークできます。",
+    favMobile: "ブラウザのメニューから「ホーム画面に追加」を選んでください。",
   },
   de: {
     label: "Diese Seite teilen",
@@ -38,6 +46,10 @@ const TEXT = {
     failed: "Kopieren fehlgeschlagen",
     x: "Auf X teilen",
     weibo: "Auf Weibo teilen",
+    favorite: "Merken",
+    favTitle: "Dieses Tool merken",
+    favDesk: "Drücke Ctrl+D (Mac: ⌘+D), um die Seite zu merken.",
+    favMobile: "Öffne das Browsermenü und wähle „Zum Startbildschirm hinzufügen“.",
   },
   es: {
     label: "Compartir esta página",
@@ -46,6 +58,10 @@ const TEXT = {
     failed: "No se pudo copiar",
     x: "Compartir en X",
     weibo: "Compartir en Weibo",
+    favorite: "Guardar",
+    favTitle: "Guardar esta herramienta",
+    favDesk: "Pulsa Ctrl+D (Mac: ⌘+D) para guardar la página.",
+    favMobile: "Abre el menú del navegador y elige «Añadir a pantalla de inicio».",
   },
   fr: {
     label: "Partager cette page",
@@ -54,6 +70,10 @@ const TEXT = {
     failed: "Échec de la copie",
     x: "Partager sur X",
     weibo: "Partager sur Weibo",
+    favorite: "Favori",
+    favTitle: "Ajouter aux favoris",
+    favDesk: "Appuyez sur Ctrl+D (Mac : ⌘+D) pour ajouter la page aux favoris.",
+    favMobile: "Ouvrez le menu du navigateur et choisissez « Ajouter à l'écran d'accueil ».",
   },
   en: {
     label: "Share this page",
@@ -62,6 +82,10 @@ const TEXT = {
     failed: "Copy failed",
     x: "Share on X",
     weibo: "Share on Weibo",
+    favorite: "Bookmark",
+    favTitle: "Bookmark this tool",
+    favDesk: "Press Ctrl+D (⌘+D on Mac) to bookmark this page.",
+    favMobile: "Open the browser menu and choose “Add to Home Screen”.",
   },
 };
 
@@ -83,6 +107,8 @@ const WEIBO_ICON =
   '<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10.1 20.2c-4 0-7.2-1.9-7.2-4.4 0-1.3.8-2.8 2.3-4.2 1.9-1.8 4.1-2.6 5-1.8.4.4.4 1 .1 1.8-.1.4.4.2.4.2 1.6-.7 3-.7 3.5.1.3.4.2 1 0 1.6-.1.3 0 .3.2.4 1 .3 2.1 1.1 2.1 2.5 0 2.1-2.5 3.8-6.4 3.8Zm6.6-8.9c-.3-.1-.3-.3-.2-.5.2-.5.2-1 0-1.3-.4-.6-1.4-.5-2.6.1 0 0-.4.2-.3-.1.2-.5.2-1-.1-1.3-.5-.5-1.7-.2-3 .5-1.9 1-3.4 2.6-3.4 2.6s-.2-.6-.7-.9c-1.1-.7-2.4-.4-3.9.6C1.2 12.3.4 14 .4 15.3c0 2.6 3 4.6 6.9 4.6 4.5 0 7.8-2.2 7.8-4.9 0-1.4-1-2.5-2.4-3Zm3.6-6.7c-1-1.1-2.4-1.5-3.8-1.2-.4.1-.6.4-.5.8.1.4.4.6.8.5 1-.2 2 0 2.7.9.7.8.9 1.8.7 2.6-.1.4.1.7.5.8.4.1.7-.1.8-.5.3-1.3 0-2.7-1.2-3.9Zm-1.9 1.9c-.4-.5-1-.7-1.6-.5-.3.1-.4.4-.3.6.1.3.4.4.6.3.3-.1.5 0 .7.2.2.2.3.5.2.8-.1.3 0 .5.3.6.3.1.5 0 .6-.3.2-.6 0-1.2-.5-1.7Z"/></svg>';
 const WECHAT_ICON =
   '<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.2 2.6C5.1 2.6 1.8 5.4 1.8 8.8c0 2 1.2 3.7 3 4.8l-.8 2.3 2.6-1.3c.8.2 1.6.3 2.4.3h.7a5.9 5.9 0 0 1-.2-1.6c0-3.4 3.2-6.1 7.1-6.1h.5C16.2 4.5 13 2.6 9.2 2.6Zm-2.6 3.5a.95.95 0 1 1 0 1.9.95.95 0 0 1 0-1.9Zm5.2 0a.95.95 0 1 1 0 1.9.95.95 0 0 1 0-1.9Z"/><path d="M22.2 13.3c0-2.7-2.6-4.9-5.8-4.9s-5.8 2.2-5.8 4.9 2.6 4.9 5.8 4.9c.7 0 1.4-.1 2-.3l2 1.1-.6-1.8c1.5-.9 2.4-2.3 2.4-3.9Zm-7.7-1.3a.8.8 0 1 1 0 1.6.8.8 0 0 1 0-1.6Zm3.9 0a.8.8 0 1 1 0 1.6.8.8 0 0 1 0-1.6Z"/></svg>';
+const STAR_ICON =
+  '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9L12 3z"/></svg>';
 
 async function copyText(text) {
   if (navigator.clipboard && window.isSecureContext) {
@@ -167,6 +193,50 @@ function openQrModal(url, t) {
   return overlay.querySelector(".qr-modal__code");
 }
 
+/**
+ * 收藏引导浮层。
+ * 浏览器出于安全限制禁止网页脚本直接写入书签（window.sidebar.addPanel 仅旧版 Firefox 支持），
+ * 因此这里展示当前平台对应的快捷键/菜单路径指引，不假装"一键收藏"。
+ */
+function openFavoriteModal(t) {
+  document.querySelector(".fav-modal")?.remove();
+
+  const mobile = isMobile();
+  const hint = mobile ? t.favMobile : t.favDesk;
+
+  const overlay = document.createElement("div");
+  overlay.className = "fav-modal";
+  overlay.innerHTML = `<div class="fav-modal__box" role="dialog" aria-modal="true" aria-label="${t.favTitle}">
+    <button class="fav-modal__close" type="button" aria-label="${t.qrClose}">×</button>
+    <p class="fav-modal__title">${t.favTitle}</p>
+    <p class="fav-modal__hint">${hint}</p>
+    ${mobile ? "" : `<p class="fav-modal__keys"><kbd>Ctrl</kbd><span>+</span><kbd>D</kbd></p>`}
+  </div>`;
+
+  const close = () => overlay.remove();
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) close();
+  });
+  overlay.querySelector(".fav-modal__close").addEventListener("click", close);
+  document.addEventListener(
+    "keydown",
+    function onKey(e) {
+      if (e.key === "Escape") { close(); document.removeEventListener("keydown", onKey); }
+    },
+    { once: false }
+  );
+  document.body.appendChild(overlay);
+}
+
+function buildFavoriteButton(t) {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "share-links__fav";
+  button.innerHTML = `${STAR_ICON}<span>${t.favorite}</span>`;
+  button.addEventListener("click", () => openFavoriteModal(t));
+  return button;
+}
+
 function buildCopyButton(t, url) {
   const button = document.createElement("button");
   button.type = "button";
@@ -243,7 +313,7 @@ function mount(root) {
   label.className = "share-links__label";
   label.textContent = t.label;
 
-  root.append(label, buildCopyButton(t, url));
+  root.append(label, buildFavoriteButton(t), buildCopyButton(t, url));
 
   if (t.wechat) {
     root.append(buildWeChatButton(t, url));

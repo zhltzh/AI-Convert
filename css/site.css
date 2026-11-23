@@ -275,6 +275,18 @@ button, a, input, textarea, select { -webkit-tap-highlight-color: transparent; }
 .qr-modal__hint { margin: 14px 0 0; color: var(--color-muted); font-size: 13px; line-height: 1.65; }
 .qr-modal__fallback { margin: 0; padding: 30px 10px; color: var(--color-muted); font-size: 13px; }
 
+/* 收藏引导浮层 */
+.fav-modal { position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; padding: 20px; background: rgba(20, 12, 6, .55); }
+.fav-modal__box { position: relative; width: 100%; max-width: 360px; padding: 28px 26px 24px; border-radius: 18px; background: #fff; box-shadow: 0 24px 60px rgba(0, 0, 0, .28); text-align: center; }
+.fav-modal__close { position: absolute; right: 12px; top: 10px; width: 32px; height: 32px; padding: 0; border: 0; border-radius: 50%; background: transparent; color: var(--color-muted); font-size: 22px; line-height: 1; cursor: pointer; }
+.fav-modal__close:hover { background: var(--color-surface); color: var(--color-ink); }
+.fav-modal__title { margin: 0 0 12px; font-size: 17px; font-weight: 700; letter-spacing: -.01em; }
+.fav-modal__hint { margin: 0; color: var(--color-muted); font-size: 14px; line-height: 1.7; }
+.fav-modal__keys { display: flex; align-items: center; justify-content: center; gap: 6px; margin: 18px 0 0; color: var(--color-muted); font-size: 13px; }
+.fav-modal__keys kbd { padding: 5px 10px; border: 1px solid var(--color-border); border-bottom-width: 2px; border-radius: 7px; background: var(--color-surface); color: var(--color-ink); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+.share-links button.share-links__fav { border-color: #d97706; color: #b45309; }
+.share-links button.share-links__fav:hover { border-color: #b45309; background: #fffbeb; }
+
 /* 工具页操作区下方的分享条 */
 .share-bar { border-top: 1px solid var(--color-border); background: var(--color-surface); }
 .share-bar > .container { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; padding-block: 20px; }
