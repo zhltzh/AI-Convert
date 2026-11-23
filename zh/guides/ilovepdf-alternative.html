@@ -1,0 +1,79 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8" />
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<link rel="dns-prefetch" href="https://cdn.sheetjs.com">
+<link rel="dns-prefetch" href="https://registry.npmmirror.com">
+<link rel="dns-prefetch" href="https://unpkg.com">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://cdn.sheetjs.com https://registry.npmmirror.com https://unpkg.com; worker-src 'self' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; font-src 'self' data: https://cdn.jsdelivr.net; connect-src 'self' https://cdn.jsdelivr.net https://cdn.sheetjs.com https://registry.npmmirror.com https://unpkg.com; object-src 'none'; base-uri 'self'; form-action 'self'"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#ffffff"><meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="description" content="在找 iLovePDF 替代？如果你需要的只是把 Markdown、AI 回答转成 PDF，Aixuno 提供浏览器本地处理方案，文件不上传服务器。本文诚实对比两者能做什么、不能做什么，帮你选对工具。" />
+<meta name="keywords" content="iLovePDF替代,iLovePDF免费,iLovePDF国内使用,PDF工具对比,Markdown转PDF,本地处理">
+<meta name="author" content="Aixuno">
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow"><title>iLovePDF 免费替代方案：本地处理不上传的转换思路</title><meta property="og:type" content="article" /><meta property="og:site_name" content="Aixuno" /><meta property="og:locale" content="zh_CN" /><meta property="og:title" content="iLovePDF 免费替代方案：本地处理不上传的转换思路" /><meta property="og:description" content="在找 iLovePDF 替代？如果你需要的只是把 Markdown、AI 回答转成 PDF，Aixuno 提供浏览器本地处理方案，文件不上传服务器。本文诚实对比两者能做什么、不能做什么，帮你选对工具。" /><meta property="og:url" content="https://aixuno.com/zh/guides/ilovepdf-alternative.html" /><meta property="og:image" content="https://aixuno.com/og-image.png" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="iLovePDF 免费替代方案：本地处理不上传的转换思路" /><meta name="twitter:description" content="在找 iLovePDF 替代？如果你需要的只是把 Markdown、AI 回答转成 PDF，Aixuno 提供浏览器本地处理方案，文件不上传服务器。本文诚实对比两者能做什么、不能做什么，帮你选对工具。" /><meta name="twitter:image" content="https://aixuno.com/og-image.png" /><link rel="preload" href="../../css/site.css" as="style">
+<link rel="stylesheet" href="../../css/site.css" /><link rel="stylesheet" href="../../css/guide-page.css" /><link rel="canonical" href="https://aixuno.com/zh/guides/ilovepdf-alternative.html" /><link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/ilovepdf-alternative.html" /><link rel="alternate" hreflang="x-default" href="https://aixuno.com/zh/guides/ilovepdf-alternative.html" /><script defer src="/js/analytics.js"></script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"iLovePDF 免费替代方案怎么选？","description":"在找 iLovePDF 替代？如果你需要的只是把 Markdown、AI 回答转成 PDF，Aixuno 提供浏览器本地处理方案，文件不上传服务器。本文诚实对比两者能做什么、不能做什么，帮你选对工具。","url":"https://aixuno.com/zh/guides/ilovepdf-alternative.html","image":"https://aixuno.com/og-image.png","author":{"@type":"Organization","name":"Aixuno","url":"https://aixuno.com"},"publisher":{"@type":"Organization","name":"Aixuno","url":"https://aixuno.com","logo":{"@type":"ImageObject","url":"https://aixuno.com/apple-touch-icon.png","width":180,"height":180}},"datePublished":"2026-11-23","dateModified":"2026-11-23","mainEntityOfPage":"https://aixuno.com/zh/guides/ilovepdf-alternative.html","inLanguage":"zh-CN"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://aixuno.com/zh/"},{"@type":"ListItem","position":2,"name":"教程","item":"https://aixuno.com/zh/guides/"},{"@type":"ListItem","position":3,"name":"iLovePDF 免费替代方案怎么选？","item":"https://aixuno.com/zh/guides/ilovepdf-alternative.html"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Aixuno 能完全替代 iLovePDF 吗？","acceptedAnswer":{"@type":"Answer","text":"不能。iLovePDF 是 PDF 后期处理工具箱，Aixuno 是内容转文档工具。已有 PDF 的合并压缩等功能在 Aixuno 站群的 PDFBzy（pdf.aixuno.com）里。"}},{"@type":"Question","name":"为什么不想用 iLovePDF？","acceptedAnswer":{"@type":"Answer","text":"常见原因是上传文件的隐私顾虑和国内访问不稳定。Aixuno 用浏览器本地处理，文件不上传，且部署在国内可访问的托管上。"}},{"@type":"Question","name":"Aixuno 收费吗？","acceptedAnswer":{"@type":"Answer","text":"免费，无需注册登录。"}},{"@type":"Question","name":"转换质量比 iLovePDF 好吗？","acceptedAnswer":{"@type":"Answer","text":"两者解决不同问题，不构成直接竞争。就\"Markdown 转 PDF\"这件事，Aixuno 会保留标题层级、列表和表格结构；iLovePDF 不做这类转换。"}}]}</script></head><body><header class="mini-header"><div class="container mini-header__inner"><a class="brand" href="../index.html"><span class="brand__mark">M</span>Markdown 万能转换器</a><nav class="mini-nav"><a href="../index.html#tools">工具</a><a href="../index.html#guides">教程</a></nav></div></header><main><article class="guide-article"><p class="eyebrow">工具对比</p><h1>iLovePDF 免费替代方案怎么选？</h1><p class="guide-article__lead">搜索 iLovePDF 替代的常见原因有两个：上传文件的隐私顾虑，以及国内网络访问不稳定。但在推荐任何工具之前要说清楚一件事——iLovePDF 是 PDF 全能工具箱，而 Aixuno 只做"内容转文档"这一段。理解两者的边界，才不会选错。</p>
+<nav class="guide-toc" aria-label="目录">
+<p class="guide-toc__title">本页目录</p>
+<ul>
+<li><a href="#difference">两者的能力边界</a></li>
+<li><a href="#compare">功能横向对比</a></li>
+<li><a href="#privacy">隐私处理方式差异</a></li>
+<li><a href="#choose">什么情况选哪个</a></li>
+<li><a href="#faq">常见问题</a></li>
+<li><a href="#related">相关工具</a></li>
+</ul>
+</nav>
+<h2 id="difference">两者的能力边界</h2>
+<p>这是最容易被忽略的一点：<strong>iLovePDF 和 Aixuno 解决的不是同一类问题。</strong></p>
+<ul>
+<li><strong>iLovePDF</strong>：面向已有 PDF 文件的后期处理——合并、拆分、压缩、加水印、加密解密、PDF 转 Word、扫描件 OCR。它处理的对象是 <em>PDF 文件</em>。</li>
+<li><strong>Aixuno</strong>：面向生成文档之前的内容整理——把 Markdown、AI 助手回答（DeepSeek/ChatGPT/Kimi 等）转换成 Word、PDF、HTML，把表格转成 Excel。它处理的对象是 <em>文本内容</em>。</li>
+</ul>
+<div class="guide-callout">结论先说：如果你手里已经有一个 PDF 想合并或压缩，Aixuno 帮不上忙，应该去用 PDFBzy（aixuno 站群里的 PDF 工具站）。如果你手里是一段 AI 生成的文字想变成 PDF，那 Aixuno 是更对口的选择。</div>
+
+<h2 id="compare">功能横向对比</h2>
+<div class="table-scroll"><table><thead><tr><th>能力</th><th>iLovePDF</th><th>Aixuno</th></tr></thead><tbody>
+<tr><td>Markdown / AI 文本转 PDF</td><td>不支持（需先自行整理）</td><td>支持，保留标题/列表/表格层级</td></tr>
+<tr><td>Markdown 转 Word</td><td>不支持</td><td>支持，导出可编辑 docx</td></tr>
+<tr><td>表格转 Excel</td><td>不支持</td><td>支持，多表分工作表</td></tr>
+<tr><td>PDF 合并 / 拆分 / 压缩</td><td>支持</td><td>不支持（用 pdf.aixuno.com）</td></tr>
+<tr><td>PDF 加密 / 解密 / 签名</td><td>支持</td><td>不支持（用 pdf.aixuno.com）</td></tr>
+<tr><td>扫描件 OCR</td><td>支持</td><td>不支持（用 scan.aixuno.com）</td></tr>
+<tr><td>文件是否需要上传</td><td>需要上传到服务器处理</td><td>不需要，浏览器本地完成</td></tr>
+</tbody></table></div>
+
+<h2 id="privacy">隐私处理方式差异</h2>
+<p>这是很多人搜索"替代"的真正动机。两种模式各有取舍：</p>
+<ul>
+<li><strong>上传处理（iLovePDF 模式）</strong>：文件传到服务器，处理完再下载回来。优点是能做浏览器扛不动的重活（大文件压缩、复杂 OCR）。代价是文件离开了你的设备，依赖对方的隐私政策和自动删除承诺。</li>
+<li><strong>本地处理（Aixuno 模式）</strong>：所有计算在浏览器里完成，内容始终留在你的设备上，从技术上保证"没有上传"。代价是受限于浏览器算力，处理超大文件会慢。</li>
+</ul>
+<p>如果内容涉及合同、内部报告、客户资料，本地处理的隐私优势是实打实的，而不只是宣传话术——因为数据根本没有离开你的电脑。</p>
+
+<h2 id="choose">什么情况选哪个</h2>
+<div class="table-scroll"><table><thead><tr><th>你的需求</th><th>推荐</th></tr></thead><tbody>
+<tr><td>把 AI 回答/笔记导出成 PDF 存档</td><td>Aixuno Markdown 转 PDF</td></tr>
+<tr><td>AI 回答要变成可批注的 Word</td><td>Aixuno Markdown 转 Word</td></tr>
+<tr><td>AI 回答里的表格要变成 Excel</td><td>Aixuno Markdown 表格转 Excel</td></tr>
+<tr><td>已有 PDF 要合并、拆页、压缩</td><td>PDFBzy（pdf.aixuno.com）</td></tr>
+<tr><td>纸质文件扫描成 PDF 并识别文字</td><td>文档扫描（scan.aixuno.com）</td></tr>
+<tr><td>PDF 要加密码、电子签名</td><td>PDFBzy 的加密/签名工具</td></tr>
+</tbody></table></div>
+<h2 id="faq">常见问题</h2>
+<h3>Aixuno 能完全替代 iLovePDF 吗？</h3>
+<p>不能。iLovePDF 是 PDF 后期处理工具箱，Aixuno 是内容转文档工具。已有 PDF 的合并压缩等功能在 Aixuno 站群的 PDFBzy（pdf.aixuno.com）里。</p>
+<h3>为什么不想用 iLovePDF？</h3>
+<p>常见原因是上传文件的隐私顾虑和国内访问不稳定。Aixuno 用浏览器本地处理，文件不上传，且部署在国内可访问的托管上。</p>
+<h3>Aixuno 收费吗？</h3>
+<p>免费，无需注册登录。</p>
+<h3>转换质量比 iLovePDF 好吗？</h3>
+<p>两者解决不同问题，不构成直接竞争。就"Markdown 转 PDF"这件事，Aixuno 会保留标题层级、列表和表格结构；iLovePDF 不做这类转换。</p>
+<h2 id="related">相关工具</h2>
+<ul class="related-links">
+<li><a href="../tools/markdown-to-pdf.html">Markdown 转 PDF</a>——本地生成 A4 版式 PDF。</li>
+<li><a href="../tools/markdown-to-word.html">Markdown 转 Word</a>——需要可编辑 docx 时用。</li>
+<li><a href="smallpdf-alternative.html">Smallpdf 替代方案</a>——另一款在线 PDF 工具的对比。</li>
+<li><a href="https://pdf.aixuno.com/">PDFBzy（PDF 工具箱）</a>——合并、拆分、压缩、加密、签名。</li>
+</ul>
+<a class="button button--primary guide-cta" href="../tools/markdown-to-pdf.html">打开Markdown 转 PDF</a>
+<div class="share-links"></div>
+<script type="module" src="/js/components/share-links.js"></script>
+</article></main><footer class="mini-footer">Aixuno · 本地处理，减少不必要的数据暴露。</footer></body></html>
