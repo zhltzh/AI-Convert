@@ -16,7 +16,7 @@ const SITES = [
 
 const LABELS = {
   en: ["Markdown", "Pixkit Images", "File Compress", "PDF Tools", "AI Cutout", "Document Scan", "Photo Restore", "Watermark Remover"],
-  zh: ["Markdown 转换", "Pixkit 图片", "文件压缩", "PDF 工具", "AI 抠图", "文档扫描", "老照片修复", "视频去水印"],
+  zh: ["Markdown 转换", "Pixkit 图片批量处理", "文件压缩", "PDF 工具", "AI 抠图", "文档扫描", "老照片修复", "视频去水印"],
   es: ["Markdown", "Imágenes Pixkit", "Comprimir archivos", "Herramientas PDF", "Recorte con IA", "Escáner de documentos", "Restauración de fotos", "Quitar marcas de agua"],
   de: ["Markdown", "Pixkit Bilder", "Dateien komprimieren", "PDF-Werkzeuge", "KI-Freisteller", "Dokumentenscanner", "Foto-Restaurierung", "Video-Wasserzeichen"],
   ja: ["Markdown変換", "Pixkit画像", "ファイル圧縮", "PDFツール", "AI切り抜き", "ドキュメントスキャナー", "写真修復", "動画の透かし除去"],
