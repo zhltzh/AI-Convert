@@ -1,0 +1,75 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8" />
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<link rel="dns-prefetch" href="https://cdn.sheetjs.com">
+<link rel="dns-prefetch" href="https://registry.npmmirror.com">
+<link rel="dns-prefetch" href="https://unpkg.com">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://cdn.sheetjs.com https://registry.npmmirror.com https://unpkg.com; worker-src 'self' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; font-src 'self' data: https://cdn.jsdelivr.net; connect-src 'self' https://cdn.jsdelivr.net https://cdn.sheetjs.com https://registry.npmmirror.com https://unpkg.com; object-src 'none'; base-uri 'self'; form-action 'self'"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#ffffff"><meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="description" content="AI 生成的内容怎么转成 Markdown？把 Word、Excel、PDF 或网页里的内容整理为 Markdown 格式，方便存进 Obsidian、Notion、GitHub 或喂给 AI 继续加工。工具在浏览器本地运行。" />
+<meta name="keywords" content="AI内容转Markdown,文档转Markdown,Word转Markdown,Excel转Markdown,PDF转Markdown,Obsidian,在线转换">
+<meta name="author" content="Aixuno">
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow"><title>AI 内容怎么转 Markdown？整理笔记与文档的实用方法</title><meta property="og:type" content="article" /><meta property="og:site_name" content="Aixuno" /><meta property="og:locale" content="zh_CN" /><meta property="og:title" content="AI 内容怎么转 Markdown？整理笔记与文档的实用方法" /><meta property="og:description" content="AI 生成的内容怎么转成 Markdown？把 Word、Excel、PDF 或网页里的内容整理为 Markdown 格式，方便存进 Obsidian、Notion、GitHub 或喂给 AI 继续加工。工具在浏览器本地运行。" /><meta property="og:url" content="https://aixuno.com/zh/guides/ai-to-markdown.html" /><meta property="og:image" content="https://aixuno.com/og-image.png" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="AI 内容怎么转 Markdown？整理笔记与文档的实用方法" /><meta name="twitter:description" content="AI 生成的内容怎么转成 Markdown？把 Word、Excel、PDF 或网页里的内容整理为 Markdown 格式，方便存进 Obsidian、Notion、GitHub 或喂给 AI 继续加工。工具在浏览器本地运行。" /><meta name="twitter:image" content="https://aixuno.com/og-image.png" /><link rel="preload" href="../../css/site.css" as="style">
+<link rel="stylesheet" href="../../css/site.css" /><link rel="stylesheet" href="../../css/guide-page.css" /><link rel="canonical" href="https://aixuno.com/zh/guides/ai-to-markdown.html" /><link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/ai-to-markdown.html" /><link rel="alternate" hreflang="x-default" href="https://aixuno.com/zh/guides/ai-to-markdown.html" /><script defer src="/js/analytics.js"></script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI 内容怎么转 Markdown？","description":"AI 生成的内容怎么转成 Markdown？把 Word、Excel、PDF 或网页里的内容整理为 Markdown 格式，方便存进 Obsidian、Notion、GitHub 或喂给 AI 继续加工。工具在浏览器本地运行。","url":"https://aixuno.com/zh/guides/ai-to-markdown.html","image":"https://aixuno.com/og-image.png","author":{"@type":"Organization","name":"Aixuno","url":"https://aixuno.com"},"publisher":{"@type":"Organization","name":"Aixuno","url":"https://aixuno.com","logo":{"@type":"ImageObject","url":"https://aixuno.com/apple-touch-icon.png","width":180,"height":180}},"datePublished":"2026-11-23","dateModified":"2026-11-23","mainEntityOfPage":"https://aixuno.com/zh/guides/ai-to-markdown.html","inLanguage":"zh-CN"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://aixuno.com/zh/"},{"@type":"ListItem","position":2,"name":"教程","item":"https://aixuno.com/zh/guides/"},{"@type":"ListItem","position":3,"name":"AI 内容怎么转 Markdown？","item":"https://aixuno.com/zh/guides/ai-to-markdown.html"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Excel 能直接转成 Markdown 表格吗？","acceptedAnswer":{"@type":"Answer","text":"可以。上传 xlsx 或 csv，工具会转成标准 Markdown 表格语法，多个工作表分别生成。"}},{"@type":"Question","name":"扫描版 PDF 能转吗？","acceptedAnswer":{"@type":"Answer","text":"不能直接转，因为扫描件是图片没有文字层。需要先做 OCR 识别文字，再转 Markdown。"}},{"@type":"Question","name":"转换需要上传文件吗？","acceptedAnswer":{"@type":"Answer","text":"不需要。解析和转换在浏览器本地完成，文件不上传服务器。"}},{"@type":"Question","name":"转换后的 Markdown 能直接放进 Obsidian 吗？","acceptedAnswer":{"@type":"Answer","text":"可以。复制生成的 Markdown 文本，粘贴到 Obsidian 的笔记里即可。"}}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"AI 内容怎么转 Markdown？","description":"AI 生成的内容怎么转成 Markdown？把 Word、Excel、PDF 或网页里的内容整理为 Markdown 格式，方便存进 Obsidian、Notion、GitHub 或喂给 AI 继续加工。工具在浏览器本地运行。","step":[{"@type":"HowToStep","position":1,"text":"哪些格式可以转"},{"@type":"HowToStep","position":2,"text":"操作步骤"},{"@type":"HowToStep","position":3,"text":"转换后要检查什么"}],"totalTime":"PT2M"}</script></head><body><header class="mini-header"><div class="container mini-header__inner"><a class="brand" href="../index.html"><span class="brand__mark">M</span>Markdown 万能转换器</a><nav class="mini-nav"><a href="../index.html#tools">工具</a><a href="../index.html#guides">教程</a></nav></div></header><main><article class="guide-article"><p class="eyebrow">格式转换教程</p><h1>AI 内容怎么转 Markdown？</h1><p class="guide-article__lead">很多时候需求是反过来的：不是把 Markdown 转成文档，而是把 Word、Excel、网页里的内容整理成 Markdown，好存进笔记软件或者继续让 AI 加工。这篇讲清楚哪些格式能转、怎么转、转完要注意什么。</p>
+<nav class="guide-toc" aria-label="目录">
+<p class="guide-toc__title">本页目录</p>
+<ul>
+<li><a href="#why">为什么要把内容转成 Markdown</a></li>
+<li><a href="#which">哪些格式可以转</a></li>
+<li><a href="#steps">操作步骤</a></li>
+<li><a href="#check">转换后要检查什么</a></li>
+<li><a href="#faq">常见问题</a></li>
+<li><a href="#related">相关工具</a></li>
+</ul>
+</nav>
+<h2 id="why">为什么要把内容转成 Markdown</h2>
+<p>三个实际场景：</p>
+<ul>
+<li><strong>存进笔记软件</strong>：Obsidian、Logseq 这类工具用 Markdown 作为原生格式，Word 粘进去会变成一大坨纯文本。</li>
+<li><strong>继续喂给 AI</strong>：把 Excel 表格转成 Markdown 表格，粘给 AI 分析，比截图或者文字描述准确得多。</li>
+<li><strong>发布到博客或 GitHub</strong>：Markdown 是静态站点和 README 的通用格式，改起来比 HTML 舒服。</li>
+</ul>
+
+<h2 id="which">哪些格式可以转</h2>
+<div class="table-scroll"><table><thead><tr><th>源格式</th><th>支持情况</th><th>说明</th></tr></thead><tbody>
+<tr><td>Excel（.xlsx）/ CSV</td><td>支持</td><td>转成 Markdown 表格，多工作表分别处理</td></tr>
+<tr><td>Word（.docx）</td><td>支持</td><td>标题、列表和表格转成对应 Markdown 语法，复杂排版会简化</td></tr>
+<tr><td>文本型 PDF</td><td>支持</td><td>能提取文字的 PDF 可以转；扫描件（图片）不行，需要先 OCR</td></tr>
+<tr><td>网页内容</td><td>手动</td><td>复制后在工具里粘贴，或先用浏览器插件转成 Markdown</td></tr>
+</tbody></table></div>
+
+<h2 id="steps">操作步骤</h2>
+<ol>
+<li>打开 <a href="../tools/excel-to-markdown.html">办公文件转 Markdown</a> 工具。</li>
+<li>点击上传区域选择文件，或直接拖文件进来。支持一次选多个。</li>
+<li>等待浏览器本地解析（文件不上传，解析在你的电脑上完成）。</li>
+<li>在预览区检查生成的 Markdown，确认表格结构、标题层级正确。</li>
+<li>点「复制 Markdown」把结果复制到剪贴板，粘到你需要的编辑器里。</li>
+</ol>
+<div class="guide-callout">扫描版 PDF（整页是图片）提取不出文字。遇到这种文件，先用 <a href="https://scan.aixuno.com/">文档扫描</a> 做 OCR，拿到文字后再转 Markdown。</div>
+
+<h2 id="check">转换后要检查什么</h2>
+<ul>
+<li><strong>表格列数</strong>：源文件里有合并单元格的，转出来列会错位，需要手动调整。</li>
+<li><strong>标题层级</strong>：Word 里用「加粗」冒充标题的，转出来是普通段落，要手动加 <code>#</code>。</li>
+<li><strong>列表嵌套</strong>：多级列表的缩进可能丢失，检查一下第二级是不是还缩进着。</li>
+<li><strong>图片</strong>：图片不会转成 Markdown（Markdown 里图片是链接），需要单独上传图床再手动插入。</li>
+</ul>
+<h2 id="faq">常见问题</h2>
+<h3>Excel 能直接转成 Markdown 表格吗？</h3>
+<p>可以。上传 xlsx 或 csv，工具会转成标准 Markdown 表格语法，多个工作表分别生成。</p>
+<h3>扫描版 PDF 能转吗？</h3>
+<p>不能直接转，因为扫描件是图片没有文字层。需要先做 OCR 识别文字，再转 Markdown。</p>
+<h3>转换需要上传文件吗？</h3>
+<p>不需要。解析和转换在浏览器本地完成，文件不上传服务器。</p>
+<h3>转换后的 Markdown 能直接放进 Obsidian 吗？</h3>
+<p>可以。复制生成的 Markdown 文本，粘贴到 Obsidian 的笔记里即可。</p>
+<h2 id="related">相关工具</h2>
+<ul class="related-links">
+<li><a href="../tools/markdown-to-word.html">Markdown 转 Word</a>——反向操作，把 MD 变成 docx。</li>
+<li><a href="../tools/markdown-table-to-excel.html">Markdown 表格转 Excel</a>——表格的双向转换。</li>
+<li><a href="excel-to-markdown-guide.html">Excel 转 Markdown 教程</a>——专门讲表格转换的细节。</li>
+</ul>
+<a class="button button--primary guide-cta" href="../tools/excel-to-markdown.html">打开办公文件转 Markdown</a>
+<div class="share-links"></div>
+<script type="module" src="/js/components/share-links.js"></script>
+</article></main><footer class="mini-footer">Aixuno · 本地处理，减少不必要的数据暴露。</footer></body></html>
