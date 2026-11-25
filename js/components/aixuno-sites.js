@@ -10,17 +10,18 @@ const SITES = [
   { id: "pdf", href: "https://pdf.aixuno.com/", mark: "PDF", tone: "rose" },
   { id: "cutout", href: "https://bg.aixuno.com/", mark: "BG", tone: "violet" },
   { id: "scan", href: "https://scan.aixuno.com/", mark: "DOC", tone: "blue" },
+  { id: "idphoto", href: "https://idphoto.aixuno.com/", mark: "ID", tone: "pink" },
   { id: "restore", href: "https://restore.aixuno.com/", mark: "FIX", tone: "indigo" },
   { id: "watermark", href: "https://watermark.aixuno.com/", mark: "WM", tone: "cyan" },
 ];
 
 const LABELS = {
-  en: ["Markdown", "Pixkit Images", "File Compress", "PDF Tools", "AI Cutout", "Document Scan", "Photo Restore", "Watermark Remover"],
-  zh: ["Markdown 转换", "Pixkit 图片批量处理", "文件压缩", "PDF 工具", "AI 抠图", "文档扫描", "老照片修复", "视频去水印"],
-  es: ["Markdown", "Imágenes Pixkit", "Comprimir archivos", "Herramientas PDF", "Recorte con IA", "Escáner de documentos", "Restauración de fotos", "Quitar marcas de agua"],
-  de: ["Markdown", "Pixkit Bilder", "Dateien komprimieren", "PDF-Werkzeuge", "KI-Freisteller", "Dokumentenscanner", "Foto-Restaurierung", "Video-Wasserzeichen"],
-  ja: ["Markdown変換", "Pixkit画像", "ファイル圧縮", "PDFツール", "AI切り抜き", "ドキュメントスキャナー", "写真修復", "動画の透かし除去"],
-  fr: ["Markdown", "Images Pixkit", "Compression", "Outils PDF", "Détourage IA", "Scanner de documents", "Restauration de photos", "Suppression de filigranes"],
+  en: ["Markdown", "Pixkit Images", "File Compress", "PDF Tools", "AI Cutout", "Document Scan", "ID Photo", "Photo Restore", "Watermark Remover"],
+  zh: ["Markdown 转换", "Pixkit 图片批量处理", "文件压缩", "PDF 工具", "AI 抠图", "文档扫描", "证件照制作", "老照片修复", "视频去水印"],
+  es: ["Markdown", "Imágenes Pixkit", "Comprimir archivos", "Herramientas PDF", "Recorte con IA", "Escáner de documentos", "Foto de documento", "Restauración de fotos", "Quitar marcas de agua"],
+  de: ["Markdown", "Pixkit Bilder", "Dateien komprimieren", "PDF-Werkzeuge", "KI-Freisteller", "Dokumentenscanner", "Passfoto", "Foto-Restaurierung", "Video-Wasserzeichen"],
+  ja: ["Markdown変換", "Pixkit画像", "ファイル圧縮", "PDFツール", "AI切り抜き", "ドキュメントスキャナー", "証明写真", "写真修復", "動画の透かし除去"],
+  fr: ["Markdown", "Images Pixkit", "Compression", "Outils PDF", "Détourage IA", "Scanner de documents", "Photo d'identité", "Restauration de photos", "Suppression de filigranes"],
 };
 
 export function renderSitesNav(locale = "en") {
