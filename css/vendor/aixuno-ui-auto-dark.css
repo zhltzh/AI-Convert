@@ -1,0 +1,43 @@
+/* ============================================================
+   AIXUNO UI — automatic system dark mode (optional companion)
+   Include ONLY on sites that have finished token migration:
+   site stylesheet no longer overrides --ink/--paper/--accent etc.
+   in an unconditional :root block. Otherwise partially-migrated
+   sites render half-switched.
+   Load AFTER aixuno-ui.css:
+     <link rel="stylesheet" href="vendor/aixuno-ui.css">
+     <link rel="stylesheet" href="vendor/aixuno-ui-auto-dark.css">
+   ============================================================ */
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+
+    --ink: #ededed;
+    --ink-soft: #a1a1aa;
+    --muted: #8e8e96;
+    --paper: #0a0a0b;
+    --surface: #141416;
+    --surface-raised: #1b1b1e;
+    --border: #26262a;
+    --border-strong: #3a3a40;
+    --accent: #7b85d8;
+    --accent-strong: #98a0e3;
+    --accent-soft: #1e1f33;
+    --accent-contrast: #0a0a0b;
+    --success: #34d399;
+    --success-soft: #0d281f;
+    --warning: #fbbf24;
+    --warning-soft: #2b2110;
+    --danger: #f87171;
+    --danger-soft: #2d1311;
+    --focus-ring: rgba(123, 133, 216, 0.45);
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.45);
+    --shadow-overlay: 0 16px 48px rgba(0, 0, 0, 0.6);
+  }
+
+  :root:not([data-theme="light"]) .theme-toggle .icon-sun { display: block; }
+  :root:not([data-theme="light"]) .theme-toggle .icon-moon { display: none; }
+}

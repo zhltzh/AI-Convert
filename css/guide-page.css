@@ -2,7 +2,7 @@
 
 /* 教程配图 */
 .guide-figure { margin: 26px 0 30px; }
-.guide-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--color-border); border-radius: 12px; background: #fff; }
+.guide-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--color-border); border-radius: var(--radius-card); background: var(--color-paper); }
 .guide-figure figcaption { margin-top: 10px; color: var(--color-muted); font-size: 13px; line-height: 1.65; }
 @media (max-width: 760px) { .guide-figure { margin: 20px 0 24px; } .guide-figure figcaption { font-size: 12px; } }
 

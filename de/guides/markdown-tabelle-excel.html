@@ -1,0 +1,56 @@
+<!doctype html><html lang="de"><head><meta charset="UTF-8" />
+<link rel="preconnect" href="https://cdn.sheetjs.com" crossorigin>
+<link rel="preconnect" href="https://registry.npmmirror.com" crossorigin>
+<link rel="dns-prefetch" href="https://unpkg.com">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://cdn.sheetjs.com https://registry.npmmirror.com https://unpkg.com https://static.cloudflareinsights.com; worker-src 'self' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; font-src 'self' data: https://cdn.jsdelivr.net; connect-src 'self' https://cdn.jsdelivr.net https://cdn.sheetjs.com https://registry.npmmirror.com https://unpkg.com https://cloudflareinsights.com https://static.cloudflareinsights.com; object-src 'none'; base-uri 'self'; form-action 'self'"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#ffffff"><meta name="viewport" content="width=device-width,initial-scale=1" /><meta name="description" content="Markdown-Tabelle in Excel bringen: Anleitung für XLSX-Export mit einem Tabellenblatt pro Tabelle, den CSV-Import in deutschem Excel (Semikolon-Problem) und TSV-Kopieren." />
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow"><title>Markdown-Tabelle in Excel bringen — Trennzeichen, BOM und Tabellenblätter | Aixuno</title><meta property="og:type" content="article" /><meta property="og:site_name" content="Aixuno" /><meta property="og:locale" content="de_DE" /><meta property="og:title" content="Markdown-Tabelle in Excel bringen — Trennzeichen, BOM und Tabellenblätter | Aixuno"/><meta property="og:description" content="Anleitung für XLSX-Export mit einem Tabellenblatt pro Tabelle, den CSV-Import in deutschem Excel (Semikolon-Problem) und TSV-Kopieren." /><meta property="og:url" content="https://aixuno.com/de/guides/markdown-tabelle-excel.html" /><meta property="og:image" content="https://aixuno.com/og-image.png" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="Markdown-Tabelle in Excel bringen — Trennzeichen, BOM und Tabellenblätter | Aixuno"/><meta name="twitter:description" content="Anleitung für XLSX-Export mit einem Tabellenblatt pro Tabelle, den CSV-Import in deutschem Excel (Semikolon-Problem) und TSV-Kopieren." /><meta name="twitter:image" content="https://aixuno.com/og-image.png" /><link rel="stylesheet" href="../../css/site.css" /><link rel="stylesheet" href="../../css/guide-page.css" /><link rel="canonical" href="https://aixuno.com/de/guides/markdown-tabelle-excel.html" /><script defer src="/js/analytics.js"></script><link rel="alternate" hreflang="de" href="https://aixuno.com/de/guides/markdown-tabelle-excel.html" /><link rel="alternate" hreflang="en" href="https://aixuno.com/guides/markdown-table-to-excel.html" /><link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/markdown-table-to-excel.html" /><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Markdown-Tabelle in Excel bringen","description":"XLSX-Export, CSV-Import in deutschem Excel und TSV-Kopieren — Schritt für Schritt.","inLanguage":"de-DE","url":"https://aixuno.com/de/guides/markdown-tabelle-excel.html","image":{"@type":"ImageObject","url":"https://aixuno.com/og-image.png","width":1200,"height":630},"author":{"@type":"Organization","name":"Aixuno","url":"https://aixuno.com/"},"publisher":{"@type":"Organization","name":"Aixuno","url":"https://aixuno.com/","logo":{"@type":"ImageObject","url":"https://aixuno.com/apple-touch-icon.png","width":180,"height":180}}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://aixuno.com/de/"},{"@type":"ListItem","position":2,"name":"Anleitungen","item":"https://aixuno.com/de/guides/"},{"@type":"ListItem","position":3,"name":"Markdown-Tabelle in Excel bringen","item":"https://aixuno.com/de/guides/markdown-tabelle-excel.html"}]}]}</script><link rel="stylesheet" href="/css/vendor/aixuno-ui-auto-dark.css" /></head><body><header class="mini-header"><div class="container mini-header__inner"><a class="brand" href="../index.html"><span class="brand__mark">A</span>Aixuno</a><nav class="mini-nav"><a href="../index.html#tools">Werkzeuge</a><a href="/guides/markdown-table-to-excel.html" lang="en">EN</a></nav></div></header><main><article class="guide-article"><p class="eyebrow">Anleitung</p><h1>Markdown-Tabelle in Excel bringen — Trennzeichen, BOM und Tabellenblätter</h1><p class="guide-article__lead">Tabellen aus KI-Antworten sind in Markdown schnell erzeugt — aber in Excel sollen sie rechnen, filtern und sortieren. Diese Anleitung zeigt drei Wege dorthin und klärt das klassische Stolperbeispiel deutscher Excel-Installationen: das Listentrennzeichen.</p>
+
+<h2>Das Semikolon-Problem verstehen</h2>
+<p>Excel in deutscher Sprache nutzt das <strong>Semikolon</strong> (;) als Listentrennzeichen, weil das Komma in Deutschland Dezimaltrennzeichen ist. CSV-Dateien, die international mit Kommas getrennt sind, erscheinen beim Doppelklick deshalb oft komplett in <em>einer</em> Spalte. Das ist kein Fehler der Datei — es ist eine Frage des richtigen Imports.</p>
+
+<h2>Weg 1: XLSX exportieren (empfohlen)</h2>
+<p>Der XLSX-Export umgeht das Trennzeichen-Thema vollständig:</p>
+<ol>
+<li>Öffnen Sie den <a href="../tools/markdown-table-to-excel.html">Konverter für Markdown-Tabellen</a>;</li>
+<li>fügen Sie die Markdown-Tabelle ein — der Zähler zeigt, wie viele Tabellen erkannt wurden;</li>
+<li>prüfen Sie die Vorschau (Spaltenzahl, Kopfzeile);</li>
+<li>klicken Sie auf <strong>Excel herunterladen</strong>.</li>
+</ol>
+<p>Mehrere Tabellen landen als <strong>eigene Tabellenblätter</strong> in einer Arbeitsmappe — ideal, wenn eine Antwort mehrere Datensätze enthält. Umlaute und Sonderzeichen bleiben erhalten; Formeln und Pivot-Tabellen funktionieren direkt auf den Daten.</p>
+
+<h2>Weg 2: CSV über den Import-Assistenten</h2>
+<p>Wenn CSV nötig ist (ältere Systeme, Skripte):</p>
+<ol>
+<li><strong>Nicht</strong> per Doppelklick öffnen, sondern in Excel <strong>Daten → Aus Text/CSV</strong> wählen;</li>
+<li>die heruntergeladene CSV-Datei auswählen;</li>
+<li>im Import-Assistenten <strong>Komma</strong> als Trennzeichen und <strong>UTF-8</strong> als Dateiursprung einstellen;</li>
+<li>„Daten transformieren“ prüfen (Spaltentypen: Zahl statt Text) und laden.</li>
+</ol>
+<div class="guide-callout"><strong>Gut zu wissen:</strong> die CSV-Datei enthält ein UTF-8-BOM (Byte-Order-Mark). Damit zeigt der Import-Assistent Umlaute korrekt an — das klassische „ä wird zu Ã¤"-Problem tritt nicht auf.</div>
+
+<h2>Weg 3: Direkt per Zwischenablage</h2>
+<p>Für einzelne Tabellen am schnellsten: klicken Sie im Werkzeug auf <strong>Für Excel kopieren</strong>. Die erste Tabelle wird als tabulatorgetrennter Text in die Zwischenablage gelegt — in Excel mit Strg+V eingefügt, landet jede Zelle sauber in ihrer eigenen Spalte. Perfekt für den schnellen Blick in eine KI-Tabelle, ohne Datei.</p>
+
+<h2>Wenn die Tabelle nicht erkannt wird</h2>
+<ul>
+<li><strong>Trennzeile fehlt:</strong> unter der Kopfzeile muss eine Zeile wie <code>| --- | --- |</code> stehen — ohne sie ist es keine Markdown-Tabelle;</li>
+<li><strong>Spaltenzahl schwankt:</strong> jede Zeile braucht dieselbe Anzahl Pipes;</li>
+<li><strong>Pipes im Zelltext:</strong> ein Pipe-Zeichen innerhalb einer Zelle muss als <code>\|</code> maskiert werden.</li>
+</ul>
+
+<h2>Nach dem Import: was Sie manuell nachziehen</h2>
+<ul>
+<li><strong>Verbundene Zellen:</strong> Markdown kennt keine Zellverbünde — verbundene Kopfzeilen in Excel neu setzen;</li>
+<li><strong>Zahlenformate:</strong> prüfen Sie, ob numerische Spalten als Zahl erkannt wurden (rechtsbündig statt linksbündig ist der erste Hinweis);</li>
+<li><strong>Spaltentypen für Formeln:</strong> Datumsspalten je nach Zellinhalt nachformatieren.</li>
+</ul>
+
+<h2>Weiterführend</h2>
+<ul>
+<li><a href="../tools/markdown-table-to-excel.html">Markdown-Tabellen zu Excel — das Werkzeug aus dieser Anleitung</a></li>
+<li><a href="chatgpt-in-word.html">ChatGPT-Antwort als Word-Dokument speichern</a></li>
+<li><a href="../help.html">Hilfe und Kurzreferenz für alle Werkzeuge</a></li>
+</ul>
+</article></main><footer class="mini-footer">Aixuno · Lokale Verarbeitung, weniger unnötige Datenweitergabe.</footer></body></html>

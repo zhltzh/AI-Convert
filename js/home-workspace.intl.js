@@ -21,14 +21,14 @@ const OFFICE_EXTENSION = /\.(docx|xlsx|xls|csv|pdf|doc)$/i;
 const printCopy = {
   en:{label:'Print / Save as PDF',done:'Print dialog opened. Choose “Save as PDF” for a text-based, searchable PDF.'},
   es:{label:'Imprimir / Guardar como PDF',done:'Se abrió el diálogo de impresión. Elige «Guardar como PDF» para obtener un PDF con texto seleccionable.'},
-  de:{label:'Drucken / Als PDF speichern',done:'Der Druckdialog wurde geöffnet. Wähle „Als PDF speichern“ für ein durchsuchbares PDF.'},
+  de:{label:'Drucken / Als PDF speichern',done:'Der Druckdialog wurde geöffnet. Wählen Sie „Als PDF speichern“ für ein durchsuchbares PDF.'},
   ja:{label:'印刷 / PDFとして保存',done:'印刷ダイアログを開きました。「PDFに保存」を選ぶと、文字を選択できるPDFになります。'},
   fr:{label:'Imprimer / Enregistrer en PDF',done:'La boîte d’impression est ouverte. Choisissez « Enregistrer au format PDF » pour un PDF avec texte sélectionnable.'}
 }[locale.code] || {label:'Print / Save as PDF',done:'Print dialog opened.'};
 const uploadCopy = {
   en:{title:'Drop a Markdown file here, or click to choose',hint:'Supports .md and .markdown · 5 MB max · processed locally',invalid:'Choose a .md or .markdown file.',readError:'This Markdown file could not be read.',loaded:'Loaded {name}. You can export it now.',officeFile:'That is an office file. Switch to the “Office files to Markdown” mode to convert it.'},
   es:{title:'Arrastra un archivo Markdown aquí o haz clic para elegirlo',hint:'Admite .md y .markdown · máximo 5 MB · procesamiento local',invalid:'Elige un archivo .md o .markdown.',readError:'No se pudo leer el archivo Markdown.',loaded:'{name} cargado. Ya puedes exportarlo.',officeFile:'Es un archivo de Office. Cambia al modo «Archivos de Office a Markdown» para convertirlo.'},
-  de:{title:'Markdown-Datei hier ablegen oder zum Auswählen klicken',hint:'Unterstützt .md und .markdown · max. 5 MB · lokale Verarbeitung',invalid:'Bitte eine .md- oder .markdown-Datei auswählen.',readError:'Die Markdown-Datei konnte nicht gelesen werden.',loaded:'{name} geladen. Die Datei kann jetzt exportiert werden.',officeFile:'Das ist eine Office-Datei. Wechsle zu „Office-Dateien zu Markdown“.'},
+  de:{title:'Markdown-Datei hier ablegen oder zum Auswählen klicken',hint:'Unterstützt .md und .markdown · max. 5 MB · lokale Verarbeitung',invalid:'Bitte eine .md- oder .markdown-Datei auswählen.',readError:'Die Markdown-Datei konnte nicht gelesen werden.',loaded:'{name} geladen. Die Datei kann jetzt exportiert werden.',officeFile:'Das ist eine Office-Datei. Wechseln Sie zu „Office-Dateien zu Markdown“.'},
   ja:{title:'Markdownファイルをここにドロップ、またはクリックして選択',hint:'.md・.markdown対応 · 最大5MB · ローカル処理',invalid:'.mdまたは.markdownファイルを選択してください。',readError:'Markdownファイルを読み込めませんでした。',loaded:'{name}を読み込みました。書き出しできます。',officeFile:'これは Office ファイルです。「OfficeファイルからMarkdown」に切り替えてください。'},
   fr:{title:'Déposez un fichier Markdown ici ou cliquez pour le choisir',hint:'Formats .md et .markdown · 5 Mo max. · traitement local',invalid:'Choisissez un fichier .md ou .markdown.',readError:'Impossible de lire ce fichier Markdown.',loaded:'{name} chargé. Vous pouvez maintenant l’exporter.',officeFile:'C’est un fichier Office. Passez au mode « Fichiers Office vers Markdown ».'}
 }[locale.code];
@@ -75,7 +75,7 @@ async function wireTableWorkspace(){
   const t=locale.table;
   const input=document.querySelector('#home-markdown');const preview=document.querySelector('#home-preview');const count=document.querySelector('#table-count');
   let tables=[];
-  const update=async()=>{drafts.set(SHARED_DRAFT,input.value);tables=parseMarkdownTables(input.value);count.textContent=t.count.replace('{n}',String(tables.length));preview.innerHTML=tables.length?await renderMarkdown(input.value,{demoteHeadings:true}):`<p class="preview-empty">${t.empty}</p>`;};
+  const update=async()=>{drafts.set(SHARED_DRAFT,input.value);tables=parseMarkdownTables(input.value);count.textContent=tables.length===1?t.countOne:t.count.replace('{n}',String(tables.length));preview.innerHTML=tables.length?await renderMarkdown(input.value,{demoteHeadings:true}):`<p class="preview-empty">${t.empty}</p>`;};
   input.addEventListener('input',update);
   document.querySelector('#copy-table').addEventListener('click',async()=>{try{if(!tables.length)throw new Error(t.noTables);await navigator.clipboard.writeText(tableToTsv(tables[0]));setStatus(t.copied);}catch(error){setStatus(error.message,true);}});
   document.querySelector('#download-csv').addEventListener('click',()=>{try{if(!tables.length)throw new Error(t.noTables);downloadBlob(new Blob(['\ufeff',tableToCsv(tables[0])],{type:'text/csv;charset=utf-8'}),'markdown-table.csv');setStatus(t.csvDone);}catch(error){setStatus(error.message,true);}});
