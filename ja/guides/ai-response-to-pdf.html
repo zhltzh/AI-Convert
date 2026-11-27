@@ -1,0 +1,49 @@
+<!doctype html><html lang="ja"><head><meta charset="UTF-8" />
+<link rel="preconnect" href="https://cdn.sheetjs.com" crossorigin>
+<link rel="preconnect" href="https://registry.npmmirror.com" crossorigin>
+<link rel="dns-prefetch" href="https://unpkg.com">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://cdn.sheetjs.com https://registry.npmmirror.com https://unpkg.com https://static.cloudflareinsights.com; worker-src 'self' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; font-src 'self' data: https://cdn.jsdelivr.net; connect-src 'self' https://cdn.jsdelivr.net https://cdn.sheetjs.com https://registry.npmmirror.com https://unpkg.com https://cloudflareinsights.com https://static.cloudflareinsights.com; object-src 'none'; base-uri 'self'; form-action 'self'"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#f0fdfa"><meta name="viewport" content="width=device-width,initial-scale=1" /><meta name="description" content="ChatGPT、Claude、Gemini、Copilot の回答を、ブラウザの中で美しい PDF に変換する方法。" /><title>AI の回答を PDF に変換する | 無料のブラウザツール | Aixuno</title><meta property="og:type" content="website" /><meta property="og:site_name" content="Aixuno" /><meta property="og:locale" content="ja_JP" /><meta property="og:title" content="AI の回答を PDF に変換する | 無料のブラウザツール | Aixuno" /><meta property="og:description" content="ChatGPT、Claude、Gemini、Copilot の回答を、ブラウザの中で美しい PDF に変換する方法。" /><meta property="og:url" content="https://aixuno.com/ja/guides/ai-response-to-pdf.html" /><meta property="og:image" content="https://aixuno.com/og-image.png" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="AI の回答を PDF に変換する | 無料のブラウザツール | Aixuno" /><meta name="twitter:description" content="ChatGPT、Claude、Gemini、Copilot の回答を、ブラウザの中で美しい PDF に変換する方法。" /><meta name="twitter:image" content="https://aixuno.com/og-image.png" />
+    <link rel="canonical" href="https://aixuno.com/ja/guides/ai-response-to-pdf.html" />
+    <link rel="alternate" hreflang="en" href="https://aixuno.com/guides/ai-response-to-pdf.html" />
+    <link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/ai-response-to-pdf.html" />
+    <link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/guides/ai-response-to-pdf.html" />
+    <link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/ai-response-to-pdf.html" />
+    <script defer src="/js/analytics.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI の回答を PDF に変換する | Aixuno","description":"AI が生成した回答を、共有・印刷・保存に耐える PDF にする手順。","url":"https://aixuno.com/ja/guides/ai-response-to-pdf.html","inLanguage":"ja","datePublished":"2026-11-27","dateModified":"2026-11-27","author":{"@type":"Organization","name":"Aixuno","url":"https://aixuno.com/"},"publisher":{"@type":"Organization","name":"Aixuno","url":"https://aixuno.com/","logo":{"@type":"ImageObject","url":"https://aixuno.com/apple-touch-icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aixuno.com/ja/guides/ai-response-to-pdf.html"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://aixuno.com/#organization","name":"Aixuno","url":"https://aixuno.com/","logo":{"@type":"ImageObject","url":"https://aixuno.com/apple-touch-icon.png","width":180,"height":180},"description":"Aixuno builds browser-based tools that turn AI-generated content into usable documents, images and PDFs. Conversion runs locally without uploading files.","sameAs":["https://github.com/zhltzh/AI-Convert"],"knowsAbout":["Markdown conversion","AI content export","Word document generation","PDF generation","spreadsheet conversion"]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://aixuno.com/ja/"},{"@type":"ListItem","position":2,"name":"AI の回答を PDF に変換する","item":"https://aixuno.com/ja/guides/ai-response-to-pdf.html"}]}</script>
+    <link rel="stylesheet" href="/css/site.css" /><link rel="stylesheet" href="/css/guide-page.css" />
+    <link rel="stylesheet" href="/css/vendor/aixuno-ui-auto-dark.css" /></head><body><header class="mini-header"><div class="container mini-header__inner"><a class="brand" href="../index.html"><span class="brand__mark">A</span>Aixuno</a><nav class="mini-nav"><a href="how-to-export-ai-answer.html">ガイド</a><a href="../tools/markdown-to-pdf.html">PDF ツール</a></nav></div></header><main><article class="guide-article"><p class="eyebrow">AI から PDF へ</p><h1>AI の回答を PDF に変換する</h1><p class="guide-meta">更新：2026 年 8 月 9 日</p><p class="guide-article__lead">AI が生成したレポート、学習計画、アウトラインを共有・印刷・保存に回すには、レイアウトが固定される PDF が便利です。</p><figure class="guide-figure"><img src="/images/markdown-to-pdf-ui-en.webp" alt="AI の回答を PDF に変換：A4 縦のプレビューでページの割れ目が確認できる様子" width="2560" height="2298" loading="lazy" decoding="async" /><figcaption>長い回答は、ダウンロード後より A4 プレビューで確認するほうが楽です。</figcaption></figure><h2>3 ステップ</h2><ol><li>AI の回答を、見出しとリストごとコピーします。</li><li>「Markdown から PDF」に貼り付けて、プレビューを確認します。</li><li>PDF をダウンロードし、共有前にページの割れ目を確認します。</li></ol><h2>PDF が適しているケース</h2><ul><li>読み取り専用のレポートを取引先や同僚に送る。</li><li>調査メモを、崩れないレイアウトでアーカイブする。</li><li>学習ガイド、チェックリスト、会議のまとめを印刷する。</li></ul><h2>確認しておきたい制限</h2><p>非常に広い表、図、外部画像、長いコード行は調整が必要な場合があります。共同作業者が文章を編集する必要があるなら、代わりに Word への書き出しをお使いください。</p><div class="guide-callout">変換はあなたの端末で実行されます。Aixuno は、貼り付けられた回答をアプリケーションサーバーへアップロードしません。</div><h2>書き出した PDF の中身</h2>
+<ul>
+<li>A4 縦のページに 12&nbsp;mm の左右余白——文書部分が標準的なレポートと同じ体裁になります。</li>
+<li>すべてのページの右下に <code>1 / 4</code> 形式のページ番号。</li>
+<li>画像ではなく本物のテキスト——検索もコピーもできます。</li>
+</ul>
+<h2>PDF が向いていないケース</h2>
+<ul>
+<li>受け取り側が編集やコメントをする必要がある——代わりに Word を。</li>
+<li>回答が、これから変わっていく作業中の下書きである。</li>
+<li>内容が広い表に依存している——PDF は列を折り返せないため、列が詰め込まれます。</li>
+</ul>
+<h2>他の方法との比較</h2>
+<div class="table-scroll"><table><thead><tr><th>方法</th><th>テキスト選択</th><th>画面の余計な要素</th><th>ページ番号</th></tr></thead><tbody>
+<tr><td>チャット画面を PDF 印刷</td><td>できる</td><td>残る——ヘッダーと吹き出しが混入</td><td>ブラウザが付ける場合のみ</td></tr>
+<tr><td>スクリーンショットを PDF 化</td><td>できない</td><td>消える</td><td>付かない</td></tr>
+<tr><td>Aixuno の Markdown から PDF</td><td>できる</td><td>消える——内容だけをレンダリング</td><td>付く。<code>n / 合計</code> 形式</td></tr>
+</tbody></table></div>
+<h2>PDF 出力についての疑問</h2>
+<h3>書き出した PDF は検索できますか？</h3>
+<p>はい。出力はレンダリング画像ではなく本物のテキストなので、検索もコピーもできます。</p>
+<h3>ページサイズは変えられますか？</h3>
+<p>現行版は A4 縦のみです。横方向とカスタム余白には、まだ対応していません。</p>
+<h3>ページ番号は自動で付きますか？</h3>
+<p>はい。すべてのページの右下に <code>1 / 4</code> の形式で付きます。</p>
+<h2>PDF の見た目がおかしいとき</h2>
+<ul>
+<li><strong>ほぼ空のページがある。</strong>分断されていない長い引用やコードブロックが内容を押し下げています。より短い段落に分割してください。</li>
+<li><strong>広い表が切れている。</strong>A4 縦では内容幅は約 186&nbsp;mm です。それより広い表は、列を減らすか、別の手段で横方向の処理が必要です。</li>
+<li><strong>フォントが変わっている。</strong>書き出しはブラウザの既定のレンダリングを使うため、PDF はプレビューの見た目と一致し、元プラットフォームのフォントとは一致しません。</li>
+</ul>
+<h2>関連ツール</h2>
+<ul class="related-links">
+<li><a href="../tools/markdown-to-word.html">Markdown から Word</a>——まだ編集が必要な文書ならこちら。</li>
+<li><a href="../tools/markdown-to-html.html">Markdown から HTML</a>——Web ページにするならこちら。</li>
+</ul><a class="button button--primary guide-cta" href="../tools/markdown-to-pdf.html">AI の回答を PDF に変換する</a><div class="share-links"></div><script type="module" src="/js/components/share-links.js"></script></article></main><footer class="mini-footer">Aixuno · AI の内容を、そのまま使える文書に。</footer></body></html>

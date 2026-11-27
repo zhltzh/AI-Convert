@@ -12,7 +12,6 @@ function pageSuffix() {
 function languageHref(code) {
   let suffix = pageSuffix();
   if (code === 'zh' && suffix === 'tools/markdown-to-html.html') return '/zh/';
-  if ((code === 'es' || code === 'de') && suffix === 'tools/markdown-table-to-excel.html') return `/${code}/`;
   const prefix = code === 'en' ? '/' : `/${code}/`;
   return prefix + suffix;
 }
@@ -25,7 +24,7 @@ export function renderIntlHeader() {
   const locale = getLocale();
   const home = locale.code === 'en' ? '/' : `/${locale.code}/`;
   const helpWords = { en: 'Help', es: 'Ayuda', de: 'Hilfe', ja: 'ヘルプ', fr: 'Aide' };
-  const localizedHelpPages = { fr: '/fr/help.html', ja: '/ja/help.html', de: '/de/help.html' };
+  const localizedHelpPages = { fr: '/fr/help.html', ja: '/ja/help.html', es: '/es/help.html', de: '/de/help.html' };
   const helpHref = localizedHelpPages[locale.code] || '/help.html';
   const languageLinks = languageOrder.map(code => `<a href="${languageHref(code)}" hreflang="${code}" lang="${code}" data-locale="${code}">${labels[code]}</a>`).join('');
   return `${renderSitesNav(locale.code)}<header class="site-header"><div class="container site-header__inner"><a class="brand" href="${home}"><span class="brand__mark" aria-hidden="true">M</span><span>${locale.brand}</span><small>Aixuno</small></a><nav class="nav" aria-label="Primary navigation"><a href="${home}#tools">${locale.nav[0]}</a><a href="${home}#guides">${locale.nav[1]}</a><a href="${home}#faq">${locale.nav[2]}</a><a href="${helpHref}">${helpWords[locale.code] || 'Help'}</a>${THEME_TOGGLE}<details class="language-menu"><summary>${labels[locale.code]}</summary><div class="language-menu__list">${languageLinks}</div></details></nav></div></header>`;
@@ -43,7 +42,7 @@ export function renderIntlFooter() {
   }[locale.code] || ['About','Contact','Privacy','Terms','Disclaimer','Changelog','Your content stays in your browser.'];
   // Pages that have a translated version for this locale. Anything missing
   // falls back to the English page and is labeled as such for ja.
-  const localizedTrustPages = { ja: ['about.html','contact.html','privacy.html','terms.html','disclaimer.html','changelog.html'], fr: ['about.html','contact.html','privacy.html','terms.html','disclaimer.html','changelog.html'], de: ['about.html','contact.html','privacy.html','terms.html','disclaimer.html','changelog.html'] };
+  const localizedTrustPages = { ja: ['about.html','contact.html','privacy.html','terms.html','disclaimer.html','changelog.html'], fr: ['about.html','contact.html','privacy.html','terms.html','disclaimer.html','changelog.html'], es: ['about.html','contact.html','privacy.html','terms.html','disclaimer.html','changelog.html'], de: ['about.html','contact.html','privacy.html','terms.html','disclaimer.html','changelog.html'] };
   const pages=['about.html','contact.html','privacy.html','terms.html','disclaimer.html','changelog.html'];
   const missingWords = { ja: '（英語）', fr: ' (en anglais)' };
   const trustLinks = pages.map((p,i)=>{

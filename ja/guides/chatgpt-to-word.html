@@ -1,0 +1,49 @@
+<!doctype html><html lang="ja"><head><meta charset="UTF-8" />
+<link rel="preconnect" href="https://cdn.sheetjs.com" crossorigin>
+<link rel="preconnect" href="https://registry.npmmirror.com" crossorigin>
+<link rel="dns-prefetch" href="https://unpkg.com">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://cdn.sheetjs.com https://registry.npmmirror.com https://unpkg.com https://static.cloudflareinsights.com; worker-src 'self' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; font-src 'self' data: https://cdn.jsdelivr.net; connect-src 'self' https://cdn.jsdelivr.net https://cdn.sheetjs.com https://registry.npmmirror.com https://unpkg.com https://cloudflareinsights.com https://static.cloudflareinsights.com; object-src 'none'; base-uri 'self'; form-action 'self'"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#f0fdfa"><meta name="viewport" content="width=device-width,initial-scale=1" /><meta name="description" content="ChatGPT の回答を、ブラウザの中で編集可能な Word 文書として書き出す簡単な手順。" /><title>ChatGPT の回答を Word に書き出す方法 | Aixuno</title><meta property="og:type" content="website" /><meta property="og:site_name" content="Aixuno" /><meta property="og:locale" content="ja_JP" /><meta property="og:title" content="ChatGPT の回答を Word に書き出す方法 | Aixuno" /><meta property="og:description" content="ChatGPT の回答を、ブラウザの中で編集可能な Word 文書として書き出す簡単な手順。" /><meta property="og:url" content="https://aixuno.com/ja/guides/chatgpt-to-word.html" /><meta property="og:image" content="https://aixuno.com/og-image.png" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="ChatGPT の回答を Word に書き出す方法 | Aixuno" /><meta name="twitter:description" content="ChatGPT の回答を、ブラウザの中で編集可能な Word 文書として書き出す簡単な手順。" /><meta name="twitter:image" content="https://aixuno.com/og-image.png" />
+    <link rel="canonical" href="https://aixuno.com/ja/guides/chatgpt-to-word.html" />
+    <link rel="alternate" hreflang="en" href="https://aixuno.com/guides/chatgpt-to-word.html" />
+    <link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/chatgpt-to-word.html" />
+    <link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/guides/chatgpt-to-word.html" />
+    <link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/chatgpt-to-word.html" />
+    <script defer src="/js/analytics.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"ChatGPT の回答を Word に書き出す方法 | Aixuno","description":"ChatGPT の回答を編集可能な Word 文書として保存する手順。","url":"https://aixuno.com/ja/guides/chatgpt-to-word.html","inLanguage":"ja","datePublished":"2026-11-27","dateModified":"2026-11-27","author":{"@type":"Organization","name":"Aixuno","url":"https://aixuno.com/"},"publisher":{"@type":"Organization","name":"Aixuno","url":"https://aixuno.com/","logo":{"@type":"ImageObject","url":"https://aixuno.com/apple-touch-icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aixuno.com/ja/guides/chatgpt-to-word.html"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://aixuno.com/#organization","name":"Aixuno","url":"https://aixuno.com/","logo":{"@type":"ImageObject","url":"https://aixuno.com/apple-touch-icon.png","width":180,"height":180},"description":"Aixuno builds browser-based tools that turn AI-generated content into usable documents, images and PDFs. Conversion runs locally without uploading files.","sameAs":["https://github.com/zhltzh/AI-Convert"],"knowsAbout":["Markdown conversion","AI content export","Word document generation","PDF generation","spreadsheet conversion"]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://aixuno.com/ja/"},{"@type":"ListItem","position":2,"name":"ChatGPT の回答を Word に書き出す方法","item":"https://aixuno.com/ja/guides/chatgpt-to-word.html"}]}</script>
+    <link rel="stylesheet" href="/css/site.css" /><link rel="stylesheet" href="/css/guide-page.css" />
+    <link rel="stylesheet" href="/css/vendor/aixuno-ui-auto-dark.css" /></head><body><header class="mini-header"><div class="container mini-header__inner"><a class="brand" href="../index.html"><span class="brand__mark">A</span>Aixuno</a><nav class="mini-nav"><a href="../index.html#tools">ツール</a><a href="../tools/markdown-to-word.html">Markdown から Word</a></nav></div></header><main><article class="guide-article"><p class="eyebrow">ChatGPT ガイド</p><h1>ChatGPT の回答を Word に書き出す方法</h1><p class="guide-meta">調査結果、計画、下書き、構造化された回答を、編集できる形式で残しましょう。</p><p class="guide-article__lead">残しておく価値のある ChatGPT の回答は、いくつかの手順で Word 文書にできます。Aixuno は一般的な Markdown 要素をレンダリングし、文書をブラウザの中で生成します。</p><figure class="guide-figure"><img src="/images/markdown-to-word-ui-en.webp" alt="ChatGPT の回答を Markdown から Word への変換ツールに貼り付け、解析された見出しと表の構造がライブプレビューに表示されている様子" width="2560" height="2298" loading="lazy" decoding="async" /><figcaption>回答を貼り付けて、プレビューを確認して、書き出すだけ——手作業の整形は不要です。</figcaption></figure><h2>3 ステップで書き出す</h2><ol><li>ChatGPT の回答を、見出しとリストごとコピーします。</li><li>「Markdown から Word」に貼り付けて、プレビューを確認します。</li><li>生成された <code>.docx</code> ファイルをダウンロードします。</li></ol><div class="guide-callout">登録は不要です。コピーした内容は、ブラウザの中だけで処理されます。</div><h2>文書をきれいに仕上げるコツ</h2><ul><li>回答をコピーするとき、見出しとリストをそのまま保ちます。</li><li>ダウンロード前に、プレビューで表とコードブロックを確認します。</li><li>Word で開いたら、分かりやすいファイル名を付け直します。</li></ul><h2>よくある質問</h2><p><strong>変換中に ChatGPT の回答はアップロードされますか？</strong><br />いいえ。エディタ、プレビュー、書き出しはすべてブラウザの中で動きます。</p><h2>Word が適しているケース</h2>
+<ul>
+<li>下書きに、他の人がコメントや変更履歴を残す必要がある。</li>
+<li>回答が既存のレポートの一部になるため、既存のスタイルと統合しなければならない。</li>
+<li>印刷する、または PDF の添付を開けない相手に送る。</li>
+</ul>
+<h2>知っておくべき制限</h2>
+<ul>
+<li>ChatGPT の回答の中の画像はコピーしたテキストに含まれないため、文書にも現れません。</li>
+<li>数式表記は、Word ネイティブの数式ではなく通常のテキストとして届きます。</li>
+<li>とても長い回答は、1 度に貼るより 2〜3 回に分けたほうが扱いやすいです。</li>
+</ul>
+<h2>他の方法との比較</h2>
+<div class="table-scroll"><table><thead><tr><th>方法</th><th>構造の保持</th><th>アカウント</th><th>テキストが端末の外へ</th></tr></thead><tbody>
+<tr><td>Word に直接貼り付け</td><td>部分的——スタイルが混ざり、見出しレベルがずれる</td><td>Word のみ</td><td>出ない</td></tr>
+<tr><td>一度テキストエディタに貼る</td><td>されない——すべて 1 つのブロックにつぶれる</td><td>不要</td><td>出ない</td></tr>
+<tr><td>Aixuno の Markdown から Word</td><td>保持——見出し・リスト・表・引用・コードブロック</td><td>不要</td><td>出ない。変換はブラウザ内で実行</td></tr>
+</tbody></table></div>
+<h2>書き出し前の疑問</h2>
+<h3>Word に書き出すと元の書式は保たれますか？</h3>
+<p>構造は保たれます——見出し、リスト、表、引用、コードブロック。ただし ChatGPT ページの見た目のテーマは再現されません。</p>
+<h3>ファイルサイズの上限はありますか？</h3>
+<p>ツール自体に上限はありません。長い回答の上限はブラウザのテキスト領域の容量だけなので、非常に長い返信は 2〜3 回に分けると安定します。</p>
+<h3>複数のメッセージを 1 つの文書にできますか？</h3>
+<p>はい。読む順に貼り付けて、それぞれのブロックに見出しを付けてください。付けないと、アウトラインが 1 つの平坦なセクションにつぶれます。</p>
+<h2>出力がおかしいとき</h2>
+<ul>
+<li><strong>文書にシャープ記号がそのまま残る。</strong>行頭の <code>#</code> の後に半角スペースが必要です。ない場合、Markdown は通常のテキストとして扱います。</li>
+<li><strong>表が 1 つの長い段落になる。</strong>縦棒の表には、ヘッダーの下のハイフン区切り行が必要で、すべての行の縦棒の数が揃っていなければなりません。</li>
+<li><strong>番号が途中で最初に戻る。</strong>リストの番号は元のテキストから決まるため、分断されたリストは変換前にまとめる必要があります。</li>
+</ul>
+<h2>関連ツール</h2>
+<ul class="related-links">
+<li><a href="../tools/markdown-to-pdf.html">Markdown から PDF</a>——編集させたくない、固定の版向け。</li>
+<li><a href="../tools/markdown-to-html.html">Markdown から HTML</a>——回答を Web ページに載せるならこちら。</li>
+</ul><a class="button button--primary guide-cta" href="../tools/markdown-to-word.html">Markdown から Word を開く</a><div class="share-links"></div><script type="module" src="/js/components/share-links.js"></script></article></main><footer class="mini-footer">Aixuno · AI の内容を、そのまま使える文書に。</footer></body></html>

@@ -284,3 +284,34 @@ html[lang="ja"] {
   --font-sans: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic UI", "Yu Gothic", "YuGothic", "Meiryo", "Noto Sans JP", system-ui, -apple-system, sans-serif;
 }
 html[lang="ja"] body { overflow-wrap: break-word; line-height: 1.75; }
+
+/* ===== fr theme =====
+   Pour la France : une violette douce inspirée de la lavande.
+   Sobre et élégante, loin des tons chauds du site chinois. */
+html[lang="fr"] {
+  --accent: #6d28d9;
+  --accent-strong: #5b21b6;
+  --accent-soft: #f5f3ff;
+  --accent-2: #5b21b6;
+  --focus-ring: 0 0 0 4px rgba(109, 40, 217, .35);
+}
+
+/* ===== es theme =====
+   Para España e Hispanoamérica: un rojo cálido, sobrio y acogedor. */
+html[lang="es"] {
+  --accent: #be123c;
+  --accent-strong: #9f1239;
+  --accent-soft: #fff1f2;
+  --accent-2: #9f1239;
+  --focus-ring: 0 0 0 4px rgba(190, 18, 60, .35);
+}
+
+/* ===== de theme =====
+   Für Deutschland: ein warmes, goldenes Bernstein. Sachlich und einladend. */
+html[lang="de"] {
+  --accent: #b45309;
+  --accent-strong: #92400e;
+  --accent-soft: #fffbeb;
+  --accent-2: #92400e;
+  --focus-ring: 0 0 0 4px rgba(180, 83, 9, .35);
+}

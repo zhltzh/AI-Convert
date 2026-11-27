@@ -1,0 +1,46 @@
+<!doctype html><html lang="ja"><head><meta charset="UTF-8" />
+<link rel="preconnect" href="https://cdn.sheetjs.com" crossorigin>
+<link rel="preconnect" href="https://registry.npmmirror.com" crossorigin>
+<link rel="dns-prefetch" href="https://unpkg.com">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://cdn.sheetjs.com https://registry.npmmirror.com https://unpkg.com https://static.cloudflareinsights.com https://hm.baidu.com; worker-src 'self' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; font-src 'self' data: https://cdn.jsdelivr.net; connect-src 'self' https://cdn.jsdelivr.net https://cdn.sheetjs.com https://registry.npmmirror.com https://unpkg.com https://cloudflareinsights.com https://static.cloudflareinsights.com https://hm.baidu.com; object-src 'none'; base-uri 'self'; form-action 'self'"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#f0fdfa"><meta name="viewport" content="width=device-width,initial-scale=1" /><meta name="description" content="ChatGPT や Markdown ファイルの表を、行と列がきれいに揃った Excel へ移す方法。縦棒・整列行・複数行セルをデータに混ぜない手順を解説。" /><title>Markdown の表を Excel に移す方法 | Aixuno</title><meta property="og:type" content="website" /><meta property="og:site_name" content="Aixuno" /><meta property="og:locale" content="ja_JP" /><meta property="og:title" content="Markdown の表を Excel に移す方法 | Aixuno" /><meta property="og:description" content="ChatGPT や Markdown ファイルの表を、行と列がきれいに揃った Excel へ移す方法。縦棒・整列行・複数行セルをデータに混ぜない手順を解説。" /><meta property="og:url" content="https://aixuno.com/ja/guides/markdown-table-to-excel.html" /><meta property="og:image" content="https://aixuno.com/og-image.png" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="Markdown の表を Excel に移す方法 | Aixuno" /><meta name="twitter:description" content="ChatGPT や Markdown ファイルの表を、行と列がきれいに揃った Excel へ移す方法。縦棒・整列行・複数行セルをデータに混ぜない手順を解説。" /><meta name="twitter:image" content="https://aixuno.com/og-image.png" />
+    <link rel="canonical" href="https://aixuno.com/ja/guides/markdown-table-to-excel.html" />
+    <link rel="alternate" hreflang="en" href="https://aixuno.com/guides/markdown-table-to-excel.html" />
+    <link rel="alternate" hreflang="zh-CN" href="https://aixuno.com/zh/guides/markdown-table-to-excel.html" />
+    <link rel="alternate" hreflang="ja" href="https://aixuno.com/ja/guides/markdown-table-to-excel.html" />
+    <link rel="alternate" hreflang="x-default" href="https://aixuno.com/guides/markdown-table-to-excel.html" />
+    <script defer src="/js/analytics.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Markdown の表を Excel に移す方法 | Aixuno","description":"Markdown の表を Excel へ正しく移す手順と注意点。","url":"https://aixuno.com/ja/guides/markdown-table-to-excel.html","inLanguage":"ja","datePublished":"2026-11-26","dateModified":"2026-11-26","author":{"@type":"Organization","name":"Aixuno","url":"https://aixuno.com/"},"publisher":{"@type":"Organization","name":"Aixuno","url":"https://aixuno.com/","logo":{"@type":"ImageObject","url":"https://aixuno.com/apple-touch-icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://aixuno.com/ja/guides/markdown-table-to-excel.html"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://aixuno.com/#organization","name":"Aixuno","url":"https://aixuno.com/","logo":{"@type":"ImageObject","url":"https://aixuno.com/apple-touch-icon.png","width":180,"height":180},"description":"Aixuno builds browser-based tools that turn AI-generated content into usable documents, images and PDFs. Conversion runs locally without uploading files.","sameAs":["https://github.com/zhltzh/AI-Convert"],"knowsAbout":["Markdown conversion","AI content export","Word document generation","PDF generation","spreadsheet conversion"]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://aixuno.com/ja/"},{"@type":"ListItem","position":2,"name":"Markdown の表を Excel に移す方法","item":"https://aixuno.com/ja/guides/markdown-table-to-excel.html"}]}</script>
+    <link rel="stylesheet" href="/css/site.css" /><link rel="stylesheet" href="/css/guide-page.css" />
+    <link rel="stylesheet" href="/css/vendor/aixuno-ui-auto-dark.css" /></head><body><header class="mini-header"><div class="container mini-header__inner"><a class="brand" href="../index.html"><span class="brand__mark">A</span>Aixuno</a><nav class="mini-nav"><a href="https://aixuno.com/ja/guides/how-to-export-ai-answer.html">ガイド</a><a href="../tools/markdown-to-html.html">HTML ツール</a></nav></div></header><main><article class="guide-article"><p class="eyebrow">Markdown の表</p><h1>Markdown の表を Excel に移す方法</h1><p class="guide-meta">更新：2026 年 8 月 9 日</p><p class="guide-article__lead">AI アシスタントは比較データを Markdown の表で返すことが多いもの。縦棒、整列行、複数行セルがデータの一部にならないよう、正しく変換・コピーしましょう。</p><h2>最短の手順</h2><ol><li>表にヘッダー行と区切り行が 1 行ずつあることを確認します。</li><li>Markdown を HTML でプレビューして、列の境目を確認します。</li><li>表示された表を Excel にコピーしたら、日付と数値を必ず確認します。</li></ol><h2>よくある問題</h2><ul><li>セル内の縦棒（|）が、そのまま余分な列を作ってしまう。</li><li>セル内の改行が、スプレッドシート上の余分な行になる。</li><li>Excel が値を数値と見なすと、先頭のゼロが消える。</li></ul><h2>逆方向の変換が必要なときは</h2><p>Excel や CSV のファイルから Markdown の表が必要な場合は、Aixuno の「Office ファイルから Markdown」をお使いください。シートを選んで、生成される表をプレビューできます。</p><h2>複数の表は複数のシートに</h2>
+<p>Markdown の中で見つかった表は、それぞれ独立したワークシートになり、出現順に番号が付きます。つまり元のテキストに表が 2 つあれば、シートも 2 枚——1 枚に連結されるわけではありません。</p>
+<h2>整列行が決めること</h2>
+<p>ヘッダーの下のハイフン行が列の整列を決め、そのままスプレッドシートに引き継がれます：</p>
+<div class="table-scroll"><table><thead><tr><th>Markdown</th><th>意味</th><th>Excel での結果</th></tr></thead><tbody>
+<tr><td><code>:---</code></td><td>左寄せ</td><td>文字列が左端から始まる</td></tr>
+<tr><td><code>:---:</code></td><td>中央寄せ</td><td>セル内で中央に表示</td></tr>
+<tr><td><code>---:</code></td><td>右寄せ</td><td>数値列に便利</td></tr>
+</tbody></table></div>
+<h2>知っておくべき制限</h2>
+<ul>
+<li>行またぎ・列またぎの結合には Markdown の記法がないため、結合ヘッダーは Excel 側で組み直す必要があります。</li>
+<li>エスケープした縦棒 <code>\|</code> は 1 つのセルに収まりますが、エスケープしていない縦棒はセルを 2 つに割ります。</li>
+<li>数値は、Excel が開くときに変換しないかぎり文字列として届きます。数式を使う前に列の型を確認してください。</li>
+</ul>
+<h2>Excel 出力についての疑問</h2>
+<h3>複数の表はどう扱われますか？</h3>
+<p>各表は、元のテキストでの出現順に独立したワークシートになります。</p>
+<h3>結合セルは保持されますか？</h3>
+<p>いいえ。Markdown には行またぎ・列またぎの記法がないため、結合は Excel で組み直す必要があります。</p>
+<h3>数値は数値のまま入りますか？</h3>
+<p>値はセルの内容として書き込まれます。文字列として入った数値は計算されないため、数式の前に列の型を確認してください。</p>
+<h2>シートの表示がおかしいとき</h2>
+<ul>
+<li><strong>全部が 1 列に入った。</strong>ヘッダーの下にハイフンの区切り行がなく、表として認識されていません。</li>
+<li><strong>行が抜けている。</strong>表の中の空行は表を終わらせます。行の間の空行を削除してください。</li>
+<li><strong>数値が文字列扱い。</strong>対象の列を選択して、数値形式に変換してから数式をお使いください。</li>
+</ul>
+<h2>関連ツール</h2>
+<ul class="related-links">
+<li><a href="../tools/excel-to-markdown.html">Office ファイルから Markdown</a>——逆方向の変換。</li>
+<li><a href="../tools/markdown-to-pdf.html">Markdown から PDF</a>——計算ではなく、読むための表ならこちら。</li>
+</ul><a class="button button--primary guide-cta" href="../tools/excel-to-markdown.html">Office ファイルから Markdown を開く</a><div class="share-links"></div><script type="module" src="/js/components/share-links.js"></script></article></main><footer class="mini-footer">Aixuno · AI の内容を、そのまま使える文書に。</footer></body></html>

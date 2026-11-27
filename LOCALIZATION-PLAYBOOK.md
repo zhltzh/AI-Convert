@@ -207,19 +207,21 @@
 - FilePomelo：/ja/ 首页+工具页+privacy 全日文、hreflang 三语、跨站导航日文、无 mojibake、无中文泄漏
 
 ### 遗留（按优先级）
-1. **PDFBzy 迁移方案（新会话执行，照此步骤）**：
-   - 现状：Next.js 14 App Router + 静态导出（`output: "export"`），26 个工具页 + about/contact/privacy/terms/guides 全部中文硬编码，**无任何 i18n**
-   - 迁移步骤（FilePomelo 已验证模式，逐条照做）：
-     a. `npm install next-intl`；`next.config.js` 加 `createNextIntlPlugin("./src/i18n/request.ts")`
-     b. 建 `src/i18n/routing.ts`（`locales: ["zh","en","ja"], defaultLocale: "zh", localePrefix: "always"`）与 `src/i18n/request.ts`
-     c. 建 `src/messages/{zh,en,ja}.json`——文案抽取自 `src/config/tool-content.ts`（每工具 shortIntro/fullIntro/steps×3/faq×3-6）+ header/footer/site-network/信任页
-     d. **目录重构**：`src/app/*` 全部移入 `src/app/[locale]/`（保留根 layout 模板），每个 page 加 `setRequestLocale(locale)` + `generateStaticParams`
-     e. header 语言切换改三语循环（zh→en→ja）；`sites.ts` 跨站标签加 ja 键（照抄 `filepomelo/src/config/sites.ts` 的 ja 值）
-     f. `sitemap.ts` 每条 URL ×3 locale；`robots.ts`/canonical/hreflang 同步
-     g. 工作量评估：约 3-4 个会话（抽取 3000+ 键 + 26 页重构 + 验证）
-2. **Pixkit**：同为 Next.js 无 i18n，方案同上；先盘点 `app/tool-content.ts` 与 `app/workbench.tsx` 的文案分布
+1. **PDFBzy：⚠️ 外部会话正在施工，勿双头作业（2026-11-26 18:00 发现）**
+   - 外部已建 `src/app/[locale]/`（30 页全部 git R）+ `src/i18n/`（routing/request/navigation）+ `scripts/apply-i18n.cjs` 等迁移脚本
+   - **外部架构与 Playbook 方案不同**：工具文案不走 messages JSON，而是 `src/config/tools.en.ts / tools.ko.ts`（按语言复制 TS）+ `src/lib/i18n-tool.ts` 切换 import；`src/messages/{en,ko}.json` 只放站点级 Meta/Header/Footer
+   - 施工中已知问题（外部半成品，勿动）：`src/app/[locale]/sign-pdf/page.tsx:164` 引用不存在的 `L.tipBatch`，build 失败——留给外部会话自修
+   - **本会话产物已撤离**到 `D:\真的游戏\.zhanlu\pdfbzy-ja-seed\`（避免架构冲突）：
+     - `zh.json`（62KB）：tool-content.ts 全量抽取（30 工具名 + 22 工具 shortIntro/fullIntro/steps/faq 结构化基准）——**这是唯一的全量结构化中文抽取**，外部迁移会话翻译任何语言时可直接用作对照源
+     - `ja.json`（17KB）：30 工具名全量日文化（PDF を結合/PDF を分割/PDF を圧縮/PDF をロック解除/証明書式页码等）+ **4 核心工具完整日译**（merge-pdf/split-pdf/compress-pdf/pdf-to-jpg：shortIntro+fullIntro+3 steps+5-6 FAQ，零中文残留，术语与本 Playbook 术语表一致）
+   - 后续会话若继续 PDFBzy：先 `git status` 看外部是否完工、按**外部的 tools.{lang}.ts 架构**接入（把种子里 4 工具翻译改写成 tools.ja.ts 片段），不要按本 Playbook 原方案重来
+2. **Pixkit**：同为 Next.js 无 i18n，方案同 FilePomelo 模式；先盘点 `app/tool-content.ts` 与 `app/workbench.tsx` 的文案分布（PDFBzy 的教训：动手前先 `git status` 确认无外部施工）
 3. **ID Photo**：本地无源码仓库——需确认源码位置
 4. 主站 `ja/guides/` 11 篇教程（现回落英文版并标注「（英語）」）
+   - **进展（2026-11-27）**：2/14 篇已完成完整日文本地化——`how-to-export-ai-answer.html`（首页主链接，标注已撤）与 `markdown-table-to-excel.html`（table 工具页主引用，标注已撤）
+   - 已验证：200/日文/Hiragino/CSS 加载/hreflang 四条/零中文残留/站内链接 0 死链
+   - **新写 guide 的路径铁律**：`ja/guides/` 是两层深——CSS 与图片必须用绝对路径（`/css/site.css`、`/images/xx.webp`），`../` 相对路径会 404；工具链接用 `../tools/`（指向 ja/tools/）
+   - 剩余 12 篇优先级：chatgpt-to-word / ai-response-to-pdf（AI 导出系列）＞ excel-to-markdown-guide（table 工具页引用）＞ markdown-to-html-guide ＞ meeting-notes-to-word ＞ 2 篇 alternative（iLovePDF/smallpdf 对比文，日本市场可加 Adobe Acrobat 对比维度）＞ 其余短篇
 5. Scan 站 `ja/guides/` 5 篇教程正文（目录页已完成，卡片暂指英文版并标注）
 6. 全局 Bug 不变：OG 乱码 git 提交（部署前阻断）、CSP hm.baidu.com、线上部署的 sitemap 缺 zh/ja 新条目（仓库内 sitemap.xml 已含 39 条 ja，待部署）
 
@@ -320,3 +322,18 @@
 | 直引号省字号 | `rg -o "[a-zA-Zà-ü]'[a-zA-Zà-ü]" fr/` | 0（全部为 ’） |
 | tutoiement | `rg -o "\b(ton\|ta\|tes)\b" fr/` | 仅名词误报（le ton=语气） |
 | 模型名 | 保留 ChatGPT/Claude/Gemini/Copilot/Perplexity/Grok 原名 | 9 个文件覆盖 |
+
+## 九、改动记录（站群 es/de 补齐批 2026-11-27）
+
+审计发现 es 处于 fr 第一批之前的水平、de 有硬伤，且新 token 架构重构后 fr 主题一度丢失。本批全部修复：
+
+- `es/` 硬伤清理（fr 第一批同款）：5 页 JSON-LD 中文 featureList → 西语、USD→EUR、3 处 DeepSeek、8 处中文破折号、theme-color→#fff1f2、home--intl→home--es
+- `de/`：17 处 theme-color 统一 #fffbeb（含 index 的 zh 橙残留 #fff7ed）、home--intl→home--de
+- `css/site.css`：新 token 架构（`html[lang]` + canonical `--accent`）下追加 fr/es/de 三主题块——fr 紫恢复、es 玫红（#be123c 西班牙暖红）、de 琥珀（#b45309）；全四语言 token 实测生效
+- 新增 `es/tools/markdown-table-to-excel.html`（data-mode="table" 工作区复用型，对齐 de 版；含西语 Excel 分号 FAQ 本地巧思）；`intl-shell.js` 注册 es 本地信任页 + es Help 导航 `/es/help.html`；删除 es/de 表格工具页语言菜单回落规则
+- 新增 `es/guides/`：index + 7 篇全西语（与英文同名文件，UI 图用现成 `*-ui-es.webp`；how-to-export 暂用英文 compare 图）；es index 的 guides 链接改指本地
+- 新增 `es/` 7 个信任页（privacy/terms/about/contact/disclaimer/changelog/help）——此前 es 实际只有 index+404（早期侦查把 es/de 文件列表混读误判为 es 也有全套）；help 页删 WeChat 工具行
+- 新增 `es/404.html`、`de/404.html`（法语 fr/404 同构，各语言 5 个常用工具链接）
+- `sitemap.xml`：追加 es 条目 17 条（表格工具 1 + guides 8 + 信任页 7 + help），对齐 de 条目格式
+- 验证（esde-verify.cjs）：11 新页 200+lang 正确；四语言主题 token 实测（--accent）；es footer/Help/guides 全指本地；es 表格工具西语工作区正常；70 条站内链接零死链
+- 注：de 侧信任页/guides/impressum 由并行 de 会话完成（sitemap de 条目亦由其补齐），本批仅回归验证

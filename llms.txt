@@ -52,15 +52,13 @@
 - [腾讯元宝怎么转 Word](https://aixuno.com/zh/guides/yuanbao-to-word.html): 腾讯元宝怎么转 Word？复制腾讯元宝回答后免费在线导出 docx，保留标题层级、列表和表格，适合继续批注、打印或提交。
 
 ## 站点结构
-- 中文站：https://aixuno.com/zh/
-- 英文站：https://aixuno.com/
-- 西班牙语：https://aixuno.com/es/
-- 德语：https://aixuno.com/de/
-- 日语：https://aixuno.com/ja/
-- 法语：https://aixuno.com/fr/
+- 中文站：https://aixuno.com/zh/（教程：https://aixuno.com/zh/guides/ · 帮助：https://aixuno.com/zh/help.html）
+- 英文站：https://aixuno.com/（教程：https://aixuno.com/guides/ · 帮助：https://aixuno.com/help.html）
+- 西班牙语：https://aixuno.com/es/（教程：https://aixuno.com/es/guides/ · 帮助：https://aixuno.com/es/help.html）
+- 德语：https://aixuno.com/de/（教程：https://aixuno.com/de/guides/ · 帮助：https://aixuno.com/de/help.html）
+- 日语：https://aixuno.com/ja/（教程：https://aixuno.com/ja/guides/ · 帮助：https://aixuno.com/ja/help.html）
+- 法语：https://aixuno.com/fr/（教程：https://aixuno.com/fr/guides/ · 帮助：https://aixuno.com/fr/help.html）
 - 使用场景：https://aixuno.com/zh/use-cases.html
-- 全部教程：https://aixuno.com/zh/guides/
-- 帮助与速查：https://aixuno.com/zh/help.html
 
 ## 站点地图
 - https://aixuno.com/sitemap-index.xml
